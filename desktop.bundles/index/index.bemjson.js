@@ -20,6 +20,7 @@ module.exports = {
 
             {
               block: 'position',
+              mix : [{block: 'block1', elem: 'elem'}, {block: 'block2', elem: 'elem'}],
               content: [
                 {
                     elem : 'image'
