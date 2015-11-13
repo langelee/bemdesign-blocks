@@ -18,6 +18,280 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
+              block : 'form',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                  {
+                    elem : 'header',
+                    content : 'Войти'
+                  },
+                  {
+                    elem : 'content',
+                    content : [
+                        {
+                          block : 'form-ctrl',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'input',
+                                  mods : { theme : 'islands', size : 'l', width : 'available' },
+                                  placeholder : 'Введите e-mail'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              content: [
+                                {
+                                  block : 'input',
+                                  mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
+                                  placeholder : 'Введите пароль'
+                                }
+                              ]
+                            },
+                          ]
+                        },
+                        {
+                          block : 'form-action',
+                          content : [
+                            {
+                              elem : 'item',
+                              mods : { align : 'left' },
+                              content : [
+                                {
+                                  block : 'checkbox',
+                                  mods : { theme : 'islands', size : 'm' },
+                                  name: 'islands',
+                                  val: 'val_3',
+                                  text : 'Чужой компьютер'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              mods : { align : 'right' },
+                              content : [
+                                {
+                                  block : 'button',
+                                  mods : { theme : 'islands', size : 'l', view : 'action' },
+                                  text : 'Войти'
+                                }
+                              ]
+                            },
+                          ]
+                        }
+                    ]
+                  },
+                  {
+                      elem : 'footer',
+                      content : [
+                          {
+                              block : 'form-link',
+                              content : [
+                                  {
+                                    elem : 'item',
+                                    mods : { align : 'left' },
+                                    content : [
+                                      {
+                                        block : 'link',
+                                        mods : { theme : 'islands', size : 'm', pseudo : true },
+                                        content : 'Забыли пароль?'
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    elem : 'item',
+                                    mods : { align : 'right' },
+                                    content : [
+                                      {
+                                        block : 'link',
+                                        mods : { theme : 'islands', size : 'm', pseudo : true },
+                                        content : 'Зерегистрироваться'
+                                      }
+                                    ]
+                                  },
+                              ]
+                          },
+                      ]
+                  }
+              ]
+          }
+
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+                block : 'form',
+                mix : { block : 'kit', elem : 'item'},
+                content : [
+                    {
+                        elem : 'header',
+                        content: 'Восстановить пароль'
+                    },
+                    {
+                        elem : 'content',
+                        content : [
+                            {
+                                block : 'form-ctrl',
+                                content : [
+                                    {
+                                      elem : 'item',
+                                      content : [
+                                        {
+                                          block : 'input',
+                                          mods : { theme : 'islands', size : 'l', width : 'available' },
+                                          placeholder : 'Введите e-mail'
+                                        }
+                                      ]
+                                    }
+                                ]
+                            },
+                            {
+                                block : 'form-action',
+                                content : [
+                                    {
+                                      elem : 'item',
+                                      mods : { align : 'left' },
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size : 'm', pseudo : true },
+                                          content : 'Забыли e-mail?'
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem : 'item',
+                                      mods : { align : 'right' },
+                                      content : [
+                                        {
+                                          block : 'button',
+                                          mods : { theme : 'islands', size : 'l', view : 'action' },
+                                          text : 'Отправить'
+                                        }
+                                      ]
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'footer',
+                        content : [
+                            {
+                                block : 'form-link',
+                                content : [
+                                    {
+                                      elem : 'item',
+                                      mods : { align : 'left' },
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size : 'm', pseudo : true },
+                                          content : 'Уже зарегистрированы?'
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem : 'item',
+                                      mods : { align : 'right' },
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size : 'm', pseudo : true },
+                                          content : 'Зерегистрироваться'
+                                        }
+                                      ]
+                                    },
+                                ]
+                            },
+                        ]
+                    }
+                ]
+            }
+          
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'form',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                  {
+                      elem : 'header',
+                      content: 'Регистрация'
+                  },
+                  {
+                      elem : 'content',
+                      content : [
+                          {
+                              block : 'form-ctrl',
+                              content : [
+                                  {
+                                    elem : 'item',
+                                    content : [
+                                      {
+                                        block : 'input',
+                                        mods : { theme : 'islands', size : 'l', width : 'available' },
+                                        placeholder : 'Введите e-mail'
+                                      }
+                                    ]
+                                  }
+                              ]
+                          },
+                          {
+                              block : 'form-action',
+                              content : [
+                                  {
+                                    elem : 'item',
+                                    mods : { align : 'left' },
+                                    content : [
+                                      {
+                                        block : 'link',
+                                        mods : { theme : 'islands', size : 'm', pseudo : true },
+                                        content : 'Уже зарегистрованы?'
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    elem : 'item',
+                                    mods : { align : 'right' },
+                                    content : [
+                                      {
+                                        block : 'button',
+                                        mods : { theme : 'islands', size : 'l', view : 'action' },
+                                        text : 'Зерегистрироваться'
+                                      }
+                                    ]
+                                  },
+                              ]
+                          }
+                      ]
+                  }
+              ]
+          }
+          
+          ]
+        }
+      ]
+    },
+
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
               block : 'kit',
               content : [
 
