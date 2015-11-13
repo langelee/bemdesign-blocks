@@ -22,6 +22,7 @@ module.exports = {
               content : [
                 {
                   elem : 'item',
+                  block : 'position-list',
                   content : [
                     {
                       block: 'position',
@@ -39,6 +40,7 @@ module.exports = {
                 },
                 {
                   elem : 'item',
+                  block : 'document-list',
                   content : [
                     {
                       block: 'document',
@@ -71,6 +73,7 @@ module.exports = {
                 },
                 {
                   elem : 'item',
+                  block : 'user-list',
                   content : [
                     {
                       block: 'user',
@@ -103,6 +106,7 @@ module.exports = {
                 },
                 {
                   elem : 'item',
+                  block : 'top-news-list',
                   content : [
                     {
                       block: 'top-news',
@@ -121,6 +125,7 @@ module.exports = {
                 },
                 {
                   elem : 'item',
+                  block : 'news-list',
                   content : [
                     {
                       block: 'news',
