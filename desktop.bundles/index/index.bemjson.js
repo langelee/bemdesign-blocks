@@ -17,116 +17,142 @@ module.exports = {
           elem : 'col',
           mods : { sw : 12, mw : 6, lw : 6, xl : 6, xxl : 4 },
           content : [
-
             {
-              block: 'position',
-              mix : [{block: 'block1', elem: 'elem'}, {block: 'block2', elem: 'elem'}],
-              content: [
+              block : 'kit',
+              content : [
                 {
-                    elem : 'image'
-                },
-                {
-                    elem : 'text',
-                    content : 'Front-end developer'
-                },
-              ]
-            },
-
-
-            {
-              block: 'document',
-              content: [
-                {
-                  elem : 'image',
-                  content : ''
-                },
-                {
-                  elem : 'content',
-                  content: [
+                  elem : 'item',
+                  content : [
                     {
-                      block: 'document-content',
-                      content: [
+                      block: 'position',
+                      content : [
                         {
-                          elem : 'title',
-                          content : 'Pellentesque habitant'
+                          elem : 'image'
                         },
                         {
                           elem : 'text',
-                          content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                          content : 'Front-end developer'
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'document',
+                      content: [
+                        {
+                          elem : 'image',
+                          content : ''
+                        },
+                        {
+                          elem : 'content',
+                          content: [
+                            {
+                              block: 'document-content',
+                              content: [
+                                {
+                                  elem : 'title',
+                                  content : 'Pellentesque habitant'
+                                },
+                                {
+                                  elem : 'text',
+                                  content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                                },
+                              ]
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'user',
+                      content: [
+                        {
+                            elem : 'image',
+                            content : ''
+                        },
+                        {
+                            elem : 'content',
+                            content: [
+                              {
+                                block: 'user-content',
+                                content: [
+                                  {
+                                      elem : 'name',
+                                      content : 'Mikhail Koloskov'
+                                  },
+                                  {
+                                      elem : 'position',
+                                      content : 'UI Engineer'
+                                  },
+                                ]
+                              }
+                            ]
                         },
                       ]
                     }
                   ]
                 },
-              ]
-            },
-            {
-              block: 'user',
-              content: [
                 {
-                    elem : 'image',
-                    content : ''
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'top-news',
+                      content: [
+                        {
+                          elem : 'date',
+                          content : '16.03.2015'
+                        },
+                        {
+                          elem : 'text',
+                          content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
+                        },
+                      ]
+                    }
+                  ]
                 },
                 {
-                    elem : 'content',
-                    content: [
-                      {
-                        block: 'user-content',
-                        content: [
-                          {
-                              elem : 'name',
-                              content : 'Mikhail Koloskov'
-                          },
-                          {
-                              elem : 'position',
-                              content : 'UI Engineer'
-                          },
-                        ]
-                      }
-                    ]
-                },
-              ]
-            },
-            {
-              block: 'top-news',
-              content: [
-                {
-                    elem : 'date',
-                    content : '16.03.2015'
-                },
-                {
-                    elem : 'text',
-                    content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
-                },
-              ]
-            },
-            {
-              block: 'news',
-              content: [
-                {
-                    elem : 'image'
-                },
-                {
-                    elem : 'content',
-                    content: [
-                      {
-                          block : 'news-content',
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'news',
+                      content: [
+                        {
+                          elem : 'image'
+                        },
+                        {
+                          elem : 'content',
                           content: [
                             {
-                                elem : 'title',
-                                content : 'Название новости'
-                            },
-                            {
-                                elem : 'date',
-                                content : '16.03.2015'
-                            },
-                            {
-                                elem : 'text',
-                                content : 'текст новости'
-                            },
+                              block : 'news-content',
+                              content: [
+                                {
+                                    elem : 'title',
+                                    content : 'Название новости'
+                                },
+                                {
+                                    elem : 'date',
+                                    content : '16.03.2015'
+                                },
+                                {
+                                    elem : 'text',
+                                    content : 'текст новости'
+                                },
+                              ]
+                            }
                           ]
-                      },
-                    ]
+                        },
+                      ]
+                    }
+                  ]
                 },
               ]
             }
