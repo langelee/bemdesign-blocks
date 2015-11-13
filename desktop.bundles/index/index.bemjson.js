@@ -15,6 +15,92 @@ module.exports = {
       content : [
         {
           elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'header',
+              content : [
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'promo',
+              content : [
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'component-nav',
+              content : [
+                {
+                  block : 'control-group',
+                  content : [
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'm', type : 'button' },
+                      name: 'tv',
+                      val: '1',
+                      text : 'Телевизоры'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'm', type : 'button' },
+                      name: 'photo',
+                      val: '1',
+                      text : 'Фотокамеры'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'm', type : 'button' },
+                      name: 'book',
+                      val: '1',
+                      text : 'Электронные книги'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
@@ -550,6 +636,21 @@ module.exports = {
                 ]
               })
             },
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block: 'footer',
+              content : 'bem-kit'
+            }
           ]
         }
       ]
