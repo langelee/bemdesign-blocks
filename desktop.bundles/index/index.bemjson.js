@@ -15,7 +15,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 6, lw : 6, xl : 6, xxl : 4 },
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'kit',
@@ -30,9 +30,18 @@ module.exports = {
                       documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
                     },  
                     {
-                      documentTitle : 'Doc2',
-                      documentText : 'Fames ac turpis egestas.'
-                    }  
+                      documentTitle : 'Doc1',
+                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                    },  
+                    {
+                      documentTitle : 'Doc1',
+                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                    },
+                    {
+                      documentTitle : 'Doc1',
+                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                    } 
+  
                   ].map(function(item) {
                     return [
                       {
@@ -67,52 +76,6 @@ module.exports = {
                   })
                 },
                 {
-                  block : 'user-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      userName : 'Mikhail Koloskov',
-                      userPosition : 'UI Engineer'
-                    },  
-                    {
-                      userName : 'Tobias',
-                      userPosition : 'Product Designer'
-                    } 
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'user',
-                        mix : { block: 'user-list', elem : 'item'},
-                        content: [
-                          {
-                            elem : 'image',
-                            content : ''
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                block: 'user-content',
-                                content: [
-                                  {
-                                    elem : 'name',
-                                    content : item.userName
-                                  },
-                                  {
-                                    elem : 'position',
-                                    content : item.userPosition
-                                  },
-                                ]
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-
-                },
-                {
                   block : 'top-news-list',
                   mix : { block : 'kit', elem : 'item'},
                   content: [
@@ -120,6 +83,14 @@ module.exports = {
                       topNewsDate : '24.24.24',
                       topNewsText : 'News'
                     },  
+                    {
+                      topNewsDate : '24.24.24',
+                      topNewsText : 'News'
+                    }, 
+                    {
+                      topNewsDate : '24.24.24',
+                      topNewsText : 'News2'
+                    },
                     {
                       topNewsDate : '24.24.24',
                       topNewsText : 'News2'
@@ -143,47 +114,81 @@ module.exports = {
                     ]
                   })
                 },
-
               ]
             }
           ]
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 6, xl : 6 },
-          content : [
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4 },
+          content : [  
             {
-              block : 'position-list',
+              block : 'user-list',
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  position : 'Front-end developer'
+                  userName : 'Mikhail Koloskov',
+                  userPosition : 'UI Engineer'
                 },  
                 {
-                  position : 'UI designer'
+                  userName : 'Tobias',
+                  userPosition : 'Product Designer'
                 },
+                {
+                  userName : 'Mikhail Koloskov',
+                  userPosition : 'UI Engineer'
+                },  
+                {
+                  userName : 'Tobias',
+                  userPosition : 'Product Designer'
+                }  
               ].map(function(item) {
                 return [
                   {
-                    block: 'position',
-                    mix : { block: 'position-list', elem : 'item'},
-                    content : [
+                    block: 'user',
+                    mix : { block: 'user-list', elem : 'item'},
+                    content: [
                       {
-                        elem : 'image'
+                        elem : 'image',
+                        content : ''
                       },
                       {
-                        elem : 'text',
-                        content : item.position
-                      }
+                        elem : 'content',
+                        content: [
+                          {
+                            block: 'user-content',
+                            content: [
+                              {
+                                elem : 'name',
+                                content : item.userName
+                              },
+                              {
+                                elem : 'position',
+                                content : item.userPosition
+                              },
+                            ]
+                          }
+                        ]
+                      },
                     ]
                   }
                 ]
               })
-            },
+            },          
             {
               block : 'news-list',
               mix : { block : 'kit', elem : 'item'},
               content: [
+                {
+                  newsContentTitle : 'Name',
+                  newsContentDate : '24.24.24',
+                  newsContentText : 'Text'
+                },
+                {
+                  newsContentTitle : 'Name',
+                  newsContentDate : '24.24.24',
+                  newsContentText : 'Text'
+                },
                 {
                   newsContentTitle : 'Name',
                   newsContentDate : '24.24.24',
@@ -225,6 +230,47 @@ module.exports = {
                           }
                         ]
                       },
+                    ]
+                  }
+                ]
+              })
+            },
+
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4 },
+          content : [
+            {
+              block : 'position-list',
+              mix : { block : 'kit', elem : 'item'},
+              content: [
+                {
+                  position : 'Front-end developer'
+                },  
+                {
+                  position : 'UI designer'
+                },
+                {
+                  position : 'Front-end developer'
+                },  
+                {
+                  position : 'UI designer'
+                }
+              ].map(function(item) {
+                return [
+                  {
+                    block: 'position',
+                    mix : { block: 'position-list', elem : 'item'},
+                    content : [
+                      {
+                        elem : 'image'
+                      },
+                      {
+                        elem : 'text',
+                        content : item.position
+                      }
                     ]
                   }
                 ]
