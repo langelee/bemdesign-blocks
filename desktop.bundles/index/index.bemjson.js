@@ -20,33 +20,7 @@ module.exports = {
             {
               block : 'kit',
               content : [
-                {
-                  block : 'position-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      position : 'Front-end developer'
-                    },  
-                    {
-                      position : 'UI designer'
-                    },
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'position',
-                        content : [
-                          {
-                            elem : 'image'
-                          },
-                          {
-                            elem : 'text',
-                            content : item.position
-                          }
-                        ]
-                      }
-                    ]
-                  })
-                },
+
                 {
                   block : 'document-list',
                   mix : { block : 'kit', elem : 'item'},
@@ -63,6 +37,7 @@ module.exports = {
                     return [
                       {
                         block: 'document',
+                        mix : { block: 'document-list', elem : 'item'},
                         content: [
                           {
                             elem : 'image',
@@ -107,6 +82,7 @@ module.exports = {
                     return [
                       {
                         block: 'user',
+                        mix : { block: 'user-list', elem : 'item'},
                         content: [
                           {
                             elem : 'image',
@@ -152,6 +128,7 @@ module.exports = {
                     return [
                       {
                         block: 'top-news',
+                        mix : { block: 'top-news-list', elem : 'item'},
                         content: [
                           {
                             elem : 'date',
@@ -166,64 +143,93 @@ module.exports = {
                     ]
                   })
                 },
-                {
-                  block : 'news-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      newsContentTitle : 'Name',
-                      newsContentDate : '24.24.24',
-                      newsContentText : 'Text'
-                    },
-                    {
-                      newsContentTitle : 'Name',
-                      newsContentDate : '24.24.24',
-                      newsContentText : 'Text'
-                    }
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'news',
-                        content: [
-                          {
-                            elem : 'image'
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                block : 'news-content',
-                                content: [
-                                  {
-                                      elem : 'title',
-                                      content : item.newsContentTitle
-                                  },
-                                  {
-                                      elem : 'date',
-                                      content : item.newsContentDate
-                                  },
-                                  {
-                                      elem : 'text',
-                                      content : item.newsContentText
-                                  },
-                                ]
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-                },
+
               ]
             }
           ]
         },
         {
           elem : 'col',
-          mods : { sw : 10, mw : 8, lw : 0, xl : 0 },
+          mods : { sw : 12, mw : 12, lw : 6, xl : 6 },
           content : [
-            'Вторая колонка'
+            {
+              block : 'position-list',
+              mix : { block : 'kit', elem : 'item'},
+              content: [
+                {
+                  position : 'Front-end developer'
+                },  
+                {
+                  position : 'UI designer'
+                },
+              ].map(function(item) {
+                return [
+                  {
+                    block: 'position',
+                    mix : { block: 'position-list', elem : 'item'},
+                    content : [
+                      {
+                        elem : 'image'
+                      },
+                      {
+                        elem : 'text',
+                        content : item.position
+                      }
+                    ]
+                  }
+                ]
+              })
+            },
+            {
+              block : 'news-list',
+              mix : { block : 'kit', elem : 'item'},
+              content: [
+                {
+                  newsContentTitle : 'Name',
+                  newsContentDate : '24.24.24',
+                  newsContentText : 'Text'
+                },
+                {
+                  newsContentTitle : 'Name',
+                  newsContentDate : '24.24.24',
+                  newsContentText : 'Text'
+                }
+              ].map(function(item) {
+                return [
+                  {
+                    block: 'news',
+                    mix : { block: 'news-list', elem : 'item'},
+                    content: [
+                      {
+                        elem : 'image'
+                      },
+                      {
+                        elem : 'content',
+                        content: [
+                          {
+                            block : 'news-content',
+                            content: [
+                              {
+                                  elem : 'title',
+                                  content : item.newsContentTitle
+                              },
+                              {
+                                  elem : 'date',
+                                  content : item.newsContentDate
+                              },
+                              {
+                                  elem : 'text',
+                                  content : item.newsContentText
+                              },
+                            ]
+                          }
+                        ]
+                      },
+                    ]
+                  }
+                ]
+              })
+            },
           ]
         }
       ]
