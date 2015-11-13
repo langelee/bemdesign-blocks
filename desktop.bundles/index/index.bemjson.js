@@ -21,143 +21,199 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  elem : 'item',
                   block : 'position-list',
-                  content : [
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
                     {
-                      block: 'position',
-                      content : [
-                        {
-                          elem : 'image'
-                        },
-                        {
-                          elem : 'text',
-                          content : 'Front-end developer'
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  elem : 'item',
-                  block : 'document-list',
-                  content : [
+                      position : 'Front-end developer'
+                    },  
                     {
-                      block: 'document',
-                      content: [
-                        {
-                          elem : 'image',
-                          content : ''
-                        },
-                        {
-                          elem : 'content',
-                          content: [
-                            {
-                              block: 'document-content',
-                              content: [
-                                {
-                                  elem : 'title',
-                                  content : 'Pellentesque habitant'
-                                },
-                                {
-                                  elem : 'text',
-                                  content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
-                                },
-                              ]
-                            }
-                          ]
-                        },
-                      ]
+                      position : 'UI designer'
                     },
-                  ]
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'position',
+                        content : [
+                          {
+                            elem : 'image'
+                          },
+                          {
+                            elem : 'text',
+                            content : item.position
+                          }
+                        ]
+                      }
+                    ]
+                  })
                 },
                 {
-                  elem : 'item',
-                  block : 'user-list',
-                  content : [
+                  block : 'document-list',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
                     {
-                      block: 'user',
-                      content: [
-                        {
+                      documentTitle : 'Doc1',
+                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                    },  
+                    {
+                      documentTitle : 'Doc2',
+                      documentText : 'Fames ac turpis egestas.'
+                    }  
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'document',
+                        content: [
+                          {
                             elem : 'image',
                             content : ''
-                        },
-                        {
+                          },
+                          {
+                            elem : 'content',
+                            content: [
+                              {
+                                block: 'document-content',
+                                content: [
+                                  {
+                                    elem : 'title',
+                                    content : item.documentTitle
+                                  },
+                                  {
+                                    elem : 'text',
+                                    content : item.documentText
+                                  },
+                                ]
+                              }
+                            ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
+                },
+                {
+                  block : 'user-list',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
+                    {
+                      userName : 'Mikhail Koloskov',
+                      userPosition : 'UI Engineer'
+                    },  
+                    {
+                      userName : 'Tobias',
+                      userPosition : 'Product Designer'
+                    } 
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'user',
+                        content: [
+                          {
+                            elem : 'image',
+                            content : ''
+                          },
+                          {
                             elem : 'content',
                             content: [
                               {
                                 block: 'user-content',
                                 content: [
                                   {
-                                      elem : 'name',
-                                      content : 'Mikhail Koloskov'
+                                    elem : 'name',
+                                    content : item.userName
                                   },
                                   {
-                                      elem : 'position',
-                                      content : 'UI Engineer'
+                                    elem : 'position',
+                                    content : item.userPosition
                                   },
                                 ]
                               }
                             ]
-                        },
-                      ]
-                    }
-                  ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
+
                 },
                 {
-                  elem : 'item',
                   block : 'top-news-list',
-                  content : [
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
                     {
-                      block: 'top-news',
-                      content: [
-                        {
-                          elem : 'date',
-                          content : '16.03.2015'
-                        },
-                        {
-                          elem : 'text',
-                          content : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
-                        },
-                      ]
-                    }
-                  ]
+                      topNewsDate : '24.24.24',
+                      topNewsText : 'News'
+                    },  
+                    {
+                      topNewsDate : '24.24.24',
+                      topNewsText : 'News2'
+                    } 
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'top-news',
+                        content: [
+                          {
+                            elem : 'date',
+                            content : item.topNewsDate
+                          },
+                          {
+                            elem : 'text',
+                            content : item.topNewsText
+                          },
+                        ]
+                      }
+                    ]
+                  })
                 },
                 {
-                  elem : 'item',
                   block : 'news-list',
-                  content : [
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
                     {
-                      block: 'news',
-                      content: [
-                        {
-                          elem : 'image'
-                        },
-                        {
-                          elem : 'content',
-                          content: [
-                            {
-                              block : 'news-content',
-                              content: [
-                                {
-                                    elem : 'title',
-                                    content : 'Название новости'
-                                },
-                                {
-                                    elem : 'date',
-                                    content : '16.03.2015'
-                                },
-                                {
-                                    elem : 'text',
-                                    content : 'текст новости'
-                                },
-                              ]
-                            }
-                          ]
-                        },
-                      ]
+                      newsContentTitle : 'Name',
+                      newsContentDate : '24.24.24',
+                      newsContentText : 'Text'
+                    },
+                    {
+                      newsContentTitle : 'Name',
+                      newsContentDate : '24.24.24',
+                      newsContentText : 'Text'
                     }
-                  ]
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'news',
+                        content: [
+                          {
+                            elem : 'image'
+                          },
+                          {
+                            elem : 'content',
+                            content: [
+                              {
+                                block : 'news-content',
+                                content: [
+                                  {
+                                      elem : 'title',
+                                      content : item.newsContentTitle
+                                  },
+                                  {
+                                      elem : 'date',
+                                      content : item.newsContentDate
+                                  },
+                                  {
+                                      elem : 'text',
+                                      content : item.newsContentText
+                                  },
+                                ]
+                              }
+                            ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
                 },
               ]
             }
