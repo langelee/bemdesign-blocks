@@ -37,7 +37,24 @@ module.exports = {
             {
               block : 'promo',
               content : [
-
+                {
+                  elem : 'heading',
+                  content : 'Stay BEMed'
+                },
+                {
+                  elem : 'description',
+                  content : 'Основная идея БЭМ-методологии — сделать разработку простой и быстрой, а работу в команде — понятной и слаженной.'
+                },
+                {
+                  elem : 'download',
+                  content : [
+                    {
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                      text : 'Скачать с Github'
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -62,21 +79,21 @@ module.exports = {
                       mods : { theme : 'islands', size : 'm', type : 'button' },
                       name: 'tv',
                       val: '1',
-                      text : 'Телевизоры'
+                      text : 'Формы'
                     },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'm', type : 'button' },
-                      name: 'photo',
+                      name: 'Списки',
                       val: '1',
-                      text : 'Фотокамеры'
+                      text : ' Списки'
                     },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'm', type : 'button' },
                       name: 'book',
                       val: '1',
-                      text : 'Электронные книги'
+                      text : 'Плитки'
                     }
                   ]
                 }
@@ -86,16 +103,6 @@ module.exports = {
         }
       ]
     },
-
-
-
-
-
-
-
-
-
-
     {
       block : 'row',
       content : [
@@ -649,7 +656,7 @@ module.exports = {
           content : [
             {
               block: 'footer',
-              content : 'bem-kit'
+              content : 'Stay BEMed'
             }
           ]
         }
