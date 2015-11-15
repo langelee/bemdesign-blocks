@@ -670,11 +670,92 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  block : 'user-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [  
+                    {
+                      elem : 'icon',
+                      content : ''
+                    },
+                    {
+                      elem : 'name',
+                      content : 'name'
+                    }
+                  ]
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  block : 'product-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [  
+                    {
+                      elem : 'icon',
+                      content : ''
+                    },
+                    {
+                      elem : 'name',
+                      content : 'name'
+                    }
+                  ]
+                }
+              ]
+            },
+          ]
+        },
+                {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  block : 'event-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [  
+                    {
+                      elem : 'icon',
+                      content : ''
+                    },
+                    {
+                      elem : 'name',
+                      content : 'name'
+                    }
+                  ]
+                }
+              ]
+            },
+
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block: 'footer',
-              content : 'Stay BEMed'
+              content : 'stay BEMed'
             }
           ]
         }
