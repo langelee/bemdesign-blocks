@@ -17,10 +17,12 @@ module.exports = {
          
           {
             elem: 'logo',
+            mix : { block : 'clearfix'},
             mods: { align: 'left' },
             content: [
               {
                 block: 'logo',
+                mix : { block : 'clearfix'},
                 content: {
                   block: 'image',
                   alt: 'Яндекс',
