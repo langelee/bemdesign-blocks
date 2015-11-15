@@ -10,22 +10,59 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
-    {
-      block : 'row',
-      content : [
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'header',
-              content : [
+      {
+        block : 'header',
+        mix : { block : 'clearfix'},
+        content : [
+         
+          {
+            elem: 'logo',
+            mods: { align: 'left' },
+            content: [
+              {
+                block: 'logo',
+                content: {
+                  block: 'image',
+                  alt: 'Яндекс',
+                  url: '../../img/logo.svg'
+                }
+              },
+              {
+                elem: 'nameplate',
+                url: '//music.yandex.ru',
+                content: 'Интерфейс'
+              },
+            ]
+          },
+          {
+            block : 'nav',
+            mix : { block : 'clearfix'},
+            content : [
+              {
+                elem : 'item',
+                content : 'Компоненты',
+                mods : {'active' : true}
+              },
+              {
+                elem : 'item',
+                content : 'Гайды'
+              },
+              {
+                elem : 'item',
+                content : 'Контрибьютеры'
+              },
+            ]
+          }
+         
+          /*
+          {
+            elem : 'nav',
+            content : [
 
-              ]
-            }
-          ]
-        }
-      ]
+            ]
+          }
+          */
+        ]
     },
     {
       block : 'row',
@@ -76,22 +113,22 @@ module.exports = {
                   content : [
                     {
                       block : 'checkbox',
-                      mods : { theme : 'islands', size : 'm', type : 'button' },
-                      name: 'tv',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'form',
                       val: '1',
                       text : 'Формы'
                     },
                     {
                       block : 'checkbox',
-                      mods : { theme : 'islands', size : 'm', type : 'button' },
-                      name: 'Списки',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'list',
                       val: '1',
                       text : ' Списки'
                     },
                     {
                       block : 'checkbox',
-                      mods : { theme : 'islands', size : 'm', type : 'button' },
-                      name: 'book',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'tile',
                       val: '1',
                       text : 'Плитки'
                     }
@@ -232,16 +269,16 @@ module.exports = {
                             {
                                 block : 'form-ctrl',
                                 content : [
-                                    {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'input',
-                                          mods : { theme : 'islands', size : 'l', width : 'available' },
-                                          placeholder : 'Введите e-mail'
-                                        }
-                                      ]
-                                    }
+                                  {
+                                    elem : 'item',
+                                    content : [
+                                      {
+                                        block : 'input',
+                                        mods : { theme : 'islands', size : 'l', width : 'available' },
+                                        placeholder : 'Введите e-mail'
+                                      }
+                                    ]
+                                  }
                                 ]
                             },
                             {
@@ -391,24 +428,19 @@ module.exports = {
                 {
                   block : 'document-list',
                   mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  content: [  
                     {
-                      documentTitle : 'Doc1',
-                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                      documentTitle : 'Методология',
+                      documentText : 'Основная идея БЭМ-методологии'
                     },  
                     {
-                      documentTitle : 'Doc1',
-                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
-                    },  
-                    {
-                      documentTitle : 'Doc1',
-                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                      documentTitle : 'Краткий обзор библиотек',
+                      documentText : 'Краткий обзор библиотек'
                     },
                     {
-                      documentTitle : 'Doc1',
-                      documentText : 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+                      documentTitle : 'Инструменты',
+                      documentText : 'Краткий обзор инструментов'
                     } 
-  
                   ].map(function(item) {
                     return [
                       {
@@ -447,21 +479,17 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [
                     {
-                      topNewsDate : '24.24.24',
-                      topNewsText : 'News'
+                      topNewsDate : '18:05',
+                      topNewsText : '«Яндекс» попросил Еврокомиссию расследовать возможную монополию Google в Android'
                     },  
                     {
-                      topNewsDate : '24.24.24',
-                      topNewsText : 'News'
+                      topNewsDate : '12:45',
+                      topNewsText : '«Яндекс.Деньги» откроет бесплатную школу для мобильных разработчиков'
                     }, 
                     {
-                      topNewsDate : '24.24.24',
-                      topNewsText : 'News2'
-                    },
-                    {
-                      topNewsDate : '24.24.24',
-                      topNewsText : 'News2'
-                    } 
+                      topNewsDate : '13:16',
+                      topNewsText : '«Яндекс.Почта» представила обновленный веб-интерфейс сервиса'
+                    }
                   ].map(function(item) {
                     return [
                       {
@@ -498,17 +526,13 @@ module.exports = {
                   userPosition : 'UI Engineer'
                 },  
                 {
-                  userName : 'Tobias',
-                  userPosition : 'Product Designer'
+                  userName : 'Vadim Sherbakov',
+                  userPosition : 'Interactive Art Director'
                 },
                 {
-                  userName : 'Mikhail Koloskov',
-                  userPosition : 'UI Engineer'
-                },  
-                {
-                  userName : 'Tobias',
-                  userPosition : 'Product Designer'
-                }  
+                  userName : 'Tobias van Schneider',
+                  userPosition : 'Product designer'
+                } 
               ].map(function(item) {
                 return [
                   {
@@ -547,24 +571,19 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  newsContentTitle : 'Name',
-                  newsContentDate : '24.24.24',
-                  newsContentText : 'Text'
+                  newsContentTitle : 'Релиз документации: i-bem',
+                  newsContentDate : '3 ноября 2015',
+                  newsContentText : 'Мы подготовили большое обновление документации к технологии i-bem и с радостью делимся новостями с вами!'
                 },
                 {
-                  newsContentTitle : 'Name',
-                  newsContentDate : '24.24.24',
-                  newsContentText : 'Text'
+                  newsContentTitle : 'Релиз: bem-core v2.8.0',
+                  newsContentDate : '30 сентября 2015',
+                  newsContentText : 'Мы рады сообщить вам о выпуске очередного минорного релиза bem-core 2.8.0'
                 },
                 {
-                  newsContentTitle : 'Name',
-                  newsContentDate : '24.24.24',
-                  newsContentText : 'Text'
-                },
-                {
-                  newsContentTitle : 'Name',
-                  newsContentDate : '24.24.24',
-                  newsContentText : 'Text'
+                  newsContentTitle : 'Релиз: enb-stylus v2.0.0',
+                  newsContentDate : '26 августа 2015',
+                  newsContentText : 'Мы полностью переписали технологии для сборки стилей'
                 }
               ].map(function(item) {
                 return [
@@ -614,17 +633,14 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  position : 'Front-end developer'
+                  position : 'Дизайнер интерфейсов'
                 },  
                 {
-                  position : 'UI designer'
+                  position : 'Разработчик интерфейсов'
                 },
                 {
-                  position : 'Front-end developer'
-                },  
-                {
-                  position : 'UI designer'
-                }
+                  position : 'Информационный архитектор'
+                }  
               ].map(function(item) {
                 return [
                   {
