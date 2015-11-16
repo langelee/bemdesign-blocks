@@ -1,6 +1,6 @@
 module.exports = {
   block : 'page',
-  title : 'bem-kit',
+  title : 'Stay BEMed',
   favicon : '/favicon.ico',
   head : [
     { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -10,61 +10,51 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
-      {
-        block : 'header',
-        mix : { block : 'clearfix'},
-        content : [
-         
-          {
-            elem: 'logo',
-            mix : { block : 'clearfix'},
-            mods: { align: 'left' },
-            content: [
-              {
-                block: 'logo',
-                mix : { block : 'clearfix'},
-                content: {
-                  block: 'image',
-                  alt: 'Яндекс',
-                  url: '../../img/logo.svg'
-                }
-              },
-              {
-                elem: 'nameplate',
-                url: '//music.yandex.ru',
-                content: 'Интерфейс'
-              },
-            ]
-          },
-          {
-            block : 'nav',
-            mix : { block : 'clearfix'},
-            content : [
-              {
-                elem : 'item',
-                content : 'Компоненты',
-                mods : {'active' : true}
-              },
-              {
-                elem : 'item',
-                content : 'Гайды'
-              },
-              {
-                elem : 'item',
-                content : 'Контрибьютеры'
-              },
-            ]
-          }
-         
-          /*
-          {
-            elem : 'nav',
-            content : [
-
-            ]
-          }
-          */
-        ]
+    {
+      block : 'header',
+      mix : { block : 'clearfix'},
+      content : [
+        {
+          elem: 'logo',
+          mix : { block : 'clearfix'},
+          mods: { align: 'left' },
+          content: [
+            {
+              block: 'logo',
+              mix : { block : 'clearfix'},
+              content: {
+                block: 'image',
+                alt: 'Яндекс',
+                url: '../../img/logo.svg'
+              }
+            },
+            {
+              elem: 'nameplate',
+              url: '//music.yandex.ru',
+              content: 'Интерфейс'
+            },
+          ]
+        },
+        {
+          block : 'nav',
+          mix : { block : 'clearfix'},
+          content : [
+            {
+              elem : 'item',
+              content : 'Компоненты',
+              mods : {'active' : true}
+            },
+            {
+              elem : 'item',
+              content : 'Гайды'
+            },
+            {
+              elem : 'item',
+              content : 'Контрибьютеры'
+            },
+          ]
+        }
+      ]
     },
     {
       block : 'row',
@@ -144,6 +134,7 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -153,104 +144,103 @@ module.exports = {
               block : 'form',
               mix : { block : 'kit', elem : 'item'},
               content : [
-                  {
-                    elem : 'header',
-                    content : 'Войти'
-                  },
-                  {
-                    elem : 'content',
-                    content : [
+                {
+                  elem : 'header',
+                  content : 'Войти'
+                },
+                {
+                  elem : 'content',
+                  content : [
+                    {
+                      block : 'form-ctrl',
+                      content : [
                         {
-                          block : 'form-ctrl',
+                          elem : 'item',
                           content : [
                             {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'input',
-                                  mods : { theme : 'islands', size : 'l', width : 'available' },
-                                  placeholder : 'Введите e-mail'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'item',
-                              content: [
-                                {
-                                  block : 'input',
-                                  mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
-                                  placeholder : 'Введите пароль'
-                                }
-                              ]
-                            },
+                              block : 'input',
+                              mods : { theme : 'islands', size : 'l', width : 'available' },
+                              placeholder : 'Введите e-mail'
+                            }
                           ]
                         },
                         {
-                          block : 'form-action',
+                          elem : 'item',
+                          content: [
+                            {
+                              block : 'input',
+                              mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
+                              placeholder : 'Введите пароль'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                    {
+                      block : 'form-action',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
                           content : [
                             {
-                              elem : 'item',
-                              mods : { align : 'left' },
-                              content : [
-                                {
-                                  block : 'checkbox',
-                                  mods : { theme : 'islands', size : 'm' },
-                                  name: 'islands',
-                                  val: 'val_3',
-                                  text : 'Чужой компьютер'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'item',
-                              mods : { align : 'right' },
-                              content : [
-                                {
-                                  block : 'button',
-                                  mods : { theme : 'islands', size : 'l', view : 'action' },
-                                  text : 'Войти'
-                                }
-                              ]
-                            },
+                              block : 'checkbox',
+                              mods : { theme : 'islands', size : 'm' },
+                              name: 'islands',
+                              val: 'val_3',
+                              text : 'Чужой компьютер'
+                            }
                           ]
-                        }
-                    ]
-                  },
-                  {
-                      elem : 'footer',
-                      content : [
-                          {
-                              block : 'form-link',
-                              content : [
-                                  {
-                                    elem : 'item',
-                                    mods : { align : 'left' },
-                                    content : [
-                                      {
-                                        block : 'link',
-                                        mods : { theme : 'islands', size : 'm', pseudo : true },
-                                        content : 'Забыли пароль?'
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    elem : 'item',
-                                    mods : { align : 'right' },
-                                    content : [
-                                      {
-                                        block : 'link',
-                                        mods : { theme : 'islands', size : 'm', pseudo : true },
-                                        content : 'Зерегистрироваться'
-                                      }
-                                    ]
-                                  },
-                              ]
-                          },
+                        },
+                        {
+                          elem : 'item',
+                          mods : { align : 'right' },
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Войти'
+                            }
+                          ]
+                        },
                       ]
-                  }
+                    }
+                  ]
+                },
+                {
+                  elem : 'footer',
+                  content : [
+                    {
+                      block : 'form-link',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Забыли пароль?'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'item',
+                          mods : { align : 'right' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Зерегистрироваться'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                }
               ]
-          }
-
+            }
           ]
         },
         {
@@ -357,67 +347,66 @@ module.exports = {
               block : 'form',
               mix : { block : 'kit', elem : 'item'},
               content : [
-                  {
-                      elem : 'header',
-                      content: 'Регистрация'
-                  },
-                  {
-                      elem : 'content',
+                {
+                  elem : 'header',
+                  content: 'Регистрация'
+                },
+                {
+                  elem : 'content',
+                  content : [
+                    {
+                      block : 'form-ctrl',
                       content : [
-                          {
-                              block : 'form-ctrl',
-                              content : [
-                                  {
-                                    elem : 'item',
-                                    content : [
-                                      {
-                                        block : 'input',
-                                        mods : { theme : 'islands', size : 'l', width : 'available' },
-                                        placeholder : 'Введите e-mail'
-                                      }
-                                    ]
-                                  }
-                              ]
-                          },
-                          {
-                              block : 'form-action',
-                              content : [
-                                  {
-                                    elem : 'item',
-                                    mods : { align : 'left' },
-                                    content : [
-                                      {
-                                        block : 'link',
-                                        mods : { theme : 'islands', size : 'm', pseudo : true },
-                                        content : 'Уже зарегистрованы?'
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    elem : 'item',
-                                    mods : { align : 'right' },
-                                    content : [
-                                      {
-                                        block : 'button',
-                                        mods : { theme : 'islands', size : 'l', view : 'action' },
-                                        text : 'Зерегистрироваться'
-                                      }
-                                    ]
-                                  },
-                              ]
-                          }
+                        {
+                          elem : 'item',
+                          content : [
+                            {
+                              block : 'input',
+                              mods : { theme : 'islands', size : 'l', width : 'available' },
+                              placeholder : 'Введите e-mail'
+                            }
+                          ]
+                        }
                       ]
-                  }
+                    },
+                    {
+                      block : 'form-action',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Уже зарегистрованы?'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'item',
+                          mods : { align : 'right' },
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Зерегистрироваться'
+                            }
+                          ]
+                        },
+                      ]
+                    }
+                  ]
+                }
               ]
-          }
-          
+            }
           ]
         }
       ]
     },
-
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -426,7 +415,6 @@ module.exports = {
             {
               block : 'kit',
               content : [
-
                 {
                   block : 'document-list',
                   mix : { block : 'kit', elem : 'item'},
@@ -603,16 +591,16 @@ module.exports = {
                             block : 'news-content',
                             content: [
                               {
-                                  elem : 'title',
-                                  content : item.newsContentTitle
+                                elem : 'title',
+                                content : item.newsContentTitle
                               },
                               {
-                                  elem : 'date',
-                                  content : item.newsContentDate
+                                elem : 'date',
+                                content : item.newsContentDate
                               },
                               {
-                                  elem : 'text',
-                                  content : item.newsContentText
+                                elem : 'text',
+                                content : item.newsContentText
                               },
                             ]
                           }
@@ -623,7 +611,6 @@ module.exports = {
                 ]
               })
             },
-
           ]
         },
         {
@@ -667,6 +654,7 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -685,7 +673,21 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'name'
+                      content : 'User'
+                    },
+                    {
+                      elem : 'description',
+                      content : 'description'
+                    },
+                    {
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          text : 'Купить сейчас!'
+                        }
+                      ]
                     }
                   ]
                 }
@@ -710,7 +712,21 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'name'
+                      content : 'Product'
+                    },
+                    {
+                      elem : 'description',
+                      content : 'description'
+                    },
+                    {
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          text : 'Купить сейчас!'
+                        }
+                      ]
                     }
                   ]
                 }
@@ -718,7 +734,7 @@ module.exports = {
             },
           ]
         },
-                {
+        {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
@@ -735,7 +751,21 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'name'
+                      content : 'Event'
+                    },
+                    {
+                      elem : 'description',
+                      content : 'description'
+                    },
+                    {
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          text : 'Купить сейчас!'
+                        }
+                      ]
                     }
                   ]
                 }
@@ -751,11 +781,11 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
               block: 'footer',
-              content : 'stay BEMed'
+              content : 'Stay BEMed'
             }
           ]
         }
