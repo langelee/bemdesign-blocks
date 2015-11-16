@@ -25,7 +25,7 @@ module.exports = {
               content: {
                 block: 'image',
                 alt: 'Яндекс',
-                url: '../../img/logo.svg'
+                url: '/i/logo.svg'
               }
             },
             {
@@ -390,7 +390,7 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Зерегистрироваться'
+                              text : 'Регистрация'
                             }
                           ]
                         },
@@ -437,9 +437,10 @@ module.exports = {
                         block: 'document',
                         mix : { block: 'document-list', elem : 'item'},
                         content: [
-                          {
-                            elem : 'image',
-                            content : ''
+                          { 
+                            mix : { block : 'document', elem : 'image'},
+                            block: 'image',
+                            url: '/i/document.png'
                           },
                           {
                             elem : 'content',
@@ -512,16 +513,19 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  userName : 'Mikhail Koloskov',
-                  userPosition : 'UI Engineer'
+                  userName : 'Dustin Senos',
+                  userPosition : 'Former head of design @medium',
+                  userIcon : '/i/dastin.jpg'
                 },  
                 {
-                  userName : 'Vadim Sherbakov',
-                  userPosition : 'Interactive Art Director'
+                  userName : 'Vivek Venkatraman',
+                  userPosition : 'Designer for @airbnb',
+                  userIcon : '/i/vivek.jpg'
                 },
                 {
                   userName : 'Tobias van Schneider',
-                  userPosition : 'Product designer'
+                  userPosition : 'Product designer of @spotify',
+                  userIcon : '/i/tobias.jpg'
                 } 
               ].map(function(item) {
                 return [
@@ -529,9 +533,10 @@ module.exports = {
                     block: 'user',
                     mix : { block: 'user-list', elem : 'item'},
                     content: [
-                      {
-                        elem : 'image',
-                        content : ''
+                      { 
+                        mix : { block : 'user', elem : 'image'},
+                        block: 'image',
+                        url: item.userIcon
                       },
                       {
                         elem : 'content',
@@ -622,22 +627,46 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  position : 'Дизайнер интерфейсов'
+                  position : 'Дизайнер интерфейсов',
+                  icon : '/i/yandex.png',
+                  alt : 'yandex'
                 },  
                 {
-                  position : 'Разработчик интерфейсов'
+                  position : 'Разработчик интерфейсов',
+                  icon : '/i/tinder.png',
+                  alt : 'tinder'
                 },
                 {
-                  position : 'Информационный архитектор'
-                }  
+                  position : 'Информационный архитектор',
+                  icon : '/i/medium.png',
+                  alt : 'medium'
+                },
+                {
+                  position : 'Дизайн-менеджер',
+                  icon : '/i/uber.png',
+                  alt : 'uber'
+                },
+                {
+                  position : 'Иллюстратор',
+                  icon : '/i/mailru.png',
+                  alt : 'mailru'
+                },
+                {
+                  position : 'Арт директор',
+                  icon : '/i/dribbble.png',
+                  alt : 'dribbble'
+                }     
               ].map(function(item) {
                 return [
                   {
                     block: 'position',
                     mix : { block: 'position-list', elem : 'item'},
                     content : [
-                      {
-                        elem : 'image'
+                      { 
+                        mix : { block : 'position', elem : 'image'},
+                        block: 'image',
+                        alt: item.alt,
+                        url: item.icon
                       },
                       {
                         elem : 'text',
