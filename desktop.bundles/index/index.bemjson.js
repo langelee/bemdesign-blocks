@@ -50,7 +50,7 @@ module.exports = {
             },
             {
               elem : 'item',
-              content : 'Контрибьютеры'
+              content : 'Контрибьютерам'
             },
           ]
         }
@@ -751,11 +751,11 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'Event'
+                      content : 'Вебинар по БЭМ: декларативные шаблоны '
                     },
                     {
                       elem : 'description',
-                      content : 'description'
+                      content : 'Онлайн'
                     },
                     {
                       elem : 'action',
@@ -771,11 +771,22 @@ module.exports = {
                 }
               ]
             },
-
           ]
         }
       ]
     },
+    {
+      block : 'test',
+      content : [
+        {
+          elem : 'inner', 
+          content : 'text',
+          mods : { active : true }
+        }
+        
+      ]
+    },
+
     {
       block : 'row',
       content : [
