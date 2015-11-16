@@ -586,8 +586,10 @@ module.exports = {
                     block: 'news',
                     mix : { block: 'news-list', elem : 'item'},
                     content: [
-                      {
-                        elem : 'image'
+                      { 
+                        mix : { block : 'news', elem : 'image'},
+                        block: 'image',
+                        url: '/i/document.png'
                       },
                       {
                         elem : 'content',
@@ -713,7 +715,7 @@ module.exports = {
                       content : [
                         {
                           block : 'button',
-                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          mods : { theme : 'islands', size : 'l', view : 'action' },
                           text : 'Купить сейчас!'
                         }
                       ]
@@ -752,7 +754,7 @@ module.exports = {
                       content : [
                         {
                           block : 'button',
-                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          mods : { theme : 'islands', size : 'l', view : 'action' },
                           text : 'Купить сейчас!'
                         }
                       ]
@@ -791,7 +793,7 @@ module.exports = {
                       content : [
                         {
                           block : 'button',
-                          mods : { theme : 'islands', size : 'm', view : 'action' },
+                          mods : { theme : 'islands', size : 'l', view : 'action' },
                           text : 'Купить сейчас!'
                         }
                       ]
