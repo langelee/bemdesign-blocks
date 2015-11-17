@@ -40,16 +40,24 @@ module.exports = {
           mix : { block : 'clearfix'},
           content : [
             {
-              elem : 'item',
-              content : 'Компоненты',
-              mods : {'active' : true}
+              mix : { block : 'nav', elem : 'item'},
+              block : 'link',
+              mods : { theme : 'islands', size : 'm' , focused : true },
+              url : 'https://bem.info/',
+              content : 'Компоненты'
             },
             {
-              elem : 'item',
+              mix : { block : 'nav', elem : 'item'},
+              block : 'link',
+              mods : { theme : 'islands', size : 'm'},
+              url : 'https://gist.github.com/koloskof/1123be38177d7b2dad68',
               content : 'Гайды'
             },
             {
-              elem : 'item',
+              mix : { block : 'nav', elem : 'item'},
+              block : 'link',
+              mods : { theme : 'islands', size : 'm'},
+              url : 'https://gist.github.com/koloskof/444cf7be8136a041bb10/',
               content : 'Контрибьютерам'
             },
           ]
@@ -699,16 +707,22 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [  
                     {
-                      elem : 'icon',
-                      content : ''
+                      mix : { block : 'user-tile', elem : 'icon'},
+                      block: 'image',
+                      alt: 'elizabeth',
+                      url: '/i/elizabeth.jpg'
                     },
                     {
                       elem : 'name',
-                      content : 'User'
+                      content : 'Elizabeth Lin'
+                    },
+                    {
+                      elem : 'twitter',
+                      content : '@lalizlabeth'
                     },
                     {
                       elem : 'description',
-                      content : 'description'
+                      content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy. @Cal 2014. Previously @Sprig and @LinkedIn.'
                     },
                     {
                       elem : 'action',
@@ -716,7 +730,7 @@ module.exports = {
                         {
                           block : 'button',
                           mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Купить сейчас!'
+                          text : 'Читать'
                         }
                       ]
                     }
@@ -738,16 +752,22 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [  
                     {
-                      elem : 'icon',
-                      content : ''
+                      mix : { block : 'product-tile', elem : 'icon'},
+                      block: 'image',
+                      alt: 'spotify',
+                      url: '/i/spotify.png'
                     },
                     {
                       elem : 'name',
-                      content : 'Product'
+                      content : 'Spotify'
+                    },
+                    {
+                      elem : 'web',
+                      content : 'spotify.com'
                     },
                     {
                       elem : 'description',
-                      content : 'description'
+                      content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at @SpotifyCares'
                     },
                     {
                       elem : 'action',
@@ -755,7 +775,7 @@ module.exports = {
                         {
                           block : 'button',
                           mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Купить сейчас!'
+                          text : 'Перейти'
                         }
                       ]
                     }
@@ -777,16 +797,22 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [  
                     {
-                      elem : 'icon',
-                      content : ''
+                      mix : { block : 'event-tile', elem : 'icon'},
+                      block: 'image',
+                      alt: 'behance',
+                      url: '/i/behance.jpg'
                     },
                     {
                       elem : 'name',
-                      content : 'Вебинар по БЭМ: декларативные шаблоны '
+                      content : 'Behance Portfolio Review'
+                    },
+                    {
+                      elem : 'date',
+                      content : '24.01.2016'
                     },
                     {
                       elem : 'description',
-                      content : 'Онлайн'
+                      content : 'Подключитесь и получите отзывы о ваших творческих проектах'
                     },
                     {
                       elem : 'action',
@@ -794,7 +820,7 @@ module.exports = {
                         {
                           block : 'button',
                           mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Купить сейчас!'
+                          text : 'Собираюсь пойти'
                         }
                       ]
                     }
@@ -806,18 +832,6 @@ module.exports = {
         }
       ]
     },
-    {
-      block : 'test',
-      content : [
-        {
-          elem : 'inner', 
-          content : 'text',
-          mods : { active : true }
-        }
-        
-      ]
-    },
-
     {
       block : 'row',
       content : [
