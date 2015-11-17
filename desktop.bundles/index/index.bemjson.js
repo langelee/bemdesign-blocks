@@ -58,7 +58,7 @@ module.exports = {
               mix : { block : 'nav', elem : 'item'},
               mods : { theme : 'islands', size : 'l'},
               url : 'https://gist.github.com/koloskof/444cf7be8136a041bb10/',
-              content : 'Контрибьютерам'
+              content : 'Контрибьюторам'
             },
           ]
         }
