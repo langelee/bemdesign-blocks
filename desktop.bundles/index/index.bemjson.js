@@ -30,8 +30,8 @@ module.exports = {
             },
             {
               elem: 'nameplate',
-              url: '//music.yandex.ru',
-              content: 'Интерфейс'
+              url: 'http://koloskov.kz',
+              content: 'БЭМНУТЫЕ'
             },
           ]
         },
@@ -40,23 +40,23 @@ module.exports = {
           mix : { block : 'clearfix'},
           content : [
             {
-              mix : { block : 'nav', elem : 'item'},
               block : 'link',
-              mods : { theme : 'islands', size : 'm' , focused : true },
+              mix : { block : 'nav', elem : 'item'},
+              mods : { theme : 'islands', size : 'l' , focused : true },
               url : 'https://bem.info/',
               content : 'Компоненты'
             },
             {
+              block : 'link',              
               mix : { block : 'nav', elem : 'item'},
-              block : 'link',
-              mods : { theme : 'islands', size : 'm'},
+              mods : { theme : 'islands', size : 'l'},
               url : 'https://gist.github.com/koloskof/1123be38177d7b2dad68',
               content : 'Гайды'
             },
             {
-              mix : { block : 'nav', elem : 'item'},
               block : 'link',
-              mods : { theme : 'islands', size : 'm'},
+              mix : { block : 'nav', elem : 'item'},
+              mods : { theme : 'islands', size : 'l'},
               url : 'https://gist.github.com/koloskof/444cf7be8136a041bb10/',
               content : 'Контрибьютерам'
             },
