@@ -1,6 +1,6 @@
 module.exports = {
   block : 'page',
-  title : 'Stay BEMed',
+  title : 'STAY BEMed',
   favicon : '/favicon.ico',
   head : [
     { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -76,7 +76,7 @@ module.exports = {
               content : [
                 {
                   elem : 'heading',
-                  content : 'Stay BEMed'
+                  content : 'STAY BEMed'
                 },
                 {
                   elem : 'description',
@@ -841,7 +841,7 @@ module.exports = {
           content : [
             {
               block: 'footer',
-              content : 'Stay BEMed'
+              content : 'STAY BEMed'
             }
           ]
         }
