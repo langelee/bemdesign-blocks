@@ -730,7 +730,7 @@ module.exports = {
                           url : '@KhanAcademy',
                           content : '@KhanAcademy'
                         },
-                        ' . ',
+                        '. ',
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
