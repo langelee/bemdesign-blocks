@@ -767,7 +767,18 @@ module.exports = {
                     },
                     {
                       elem : 'description',
-                      content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at @SpotifyCares'
+                      content : [
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands', size: 'm' },
+                          url : '@SpotifyCares',
+                          content : '@SpotifyCares'
+                        },
+                        {
+                          block : 'text',
+                          content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at '
+                        } 
+                      ]
                     },
                     {
                       elem : 'action',
