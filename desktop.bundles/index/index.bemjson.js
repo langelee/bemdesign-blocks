@@ -256,92 +256,92 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-                block : 'form',
-                mix : { block : 'kit', elem : 'item'},
-                content : [
-                    {
-                        elem : 'header',
-                        content: 'Восстановить пароль'
-                    },
-                    {
-                        elem : 'content',
+              block : 'form',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                  {
+                    elem : 'header',
+                    content: 'Восстановить пароль'
+                  },
+                  {
+                    elem : 'content',
+                    content : [
+                      {
+                        block : 'form-ctrl',
                         content : [
-                            {
-                                block : 'form-ctrl',
-                                content : [
-                                  {
-                                    elem : 'item',
-                                    content : [
-                                      {
-                                        block : 'input',
-                                        mods : { theme : 'islands', size : 'l', width : 'available' },
-                                        placeholder : 'Введите e-mail'
-                                      }
-                                    ]
-                                  }
-                                ]
-                            },
-                            {
-                                block : 'form-action',
-                                content : [
-                                    {
-                                      elem : 'item',
-                                      mods : { align : 'left' },
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size : 'm', pseudo : true },
-                                          content : 'Забыли e-mail?'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      elem : 'item',
-                                      mods : { align : 'right' },
-                                      content : [
-                                        {
-                                          block : 'button',
-                                          mods : { theme : 'islands', size : 'l', view : 'action' },
-                                          text : 'Отправить'
-                                        }
-                                      ]
-                                    },
-                                ]
-                            }
+                          {
+                            elem : 'item',
+                            content : [
+                              {
+                                block : 'input',
+                                mods : { theme : 'islands', size : 'l', width : 'available' },
+                                placeholder : 'Введите e-mail'
+                              }
+                            ]
+                          }
                         ]
-                    },
-                    {
-                        elem : 'footer',
+                      },
+                      {
+                        block : 'form-action',
                         content : [
-                            {
-                                block : 'form-link',
-                                content : [
-                                    {
-                                      elem : 'item',
-                                      mods : { align : 'left' },
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size : 'm', pseudo : true },
-                                          content : 'Уже зарегистрированы?'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      elem : 'item',
-                                      mods : { align : 'right' },
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size : 'm', pseudo : true },
-                                          content : 'Зерегистрироваться'
-                                        }
-                                      ]
-                                    },
-                                ]
-                            },
+                          {
+                            elem : 'item',
+                            mods : { align : 'left' },
+                            content : [
+                              {
+                                block : 'link',
+                                mods : { theme : 'islands', size : 'm', pseudo : true },
+                                content : 'Забыли e-mail?'
+                              }
+                            ]
+                          },
+                          {
+                            elem : 'item',
+                            mods : { align : 'right' },
+                            content : [
+                              {
+                                block : 'button',
+                                mods : { theme : 'islands', size : 'l', view : 'action' },
+                                text : 'Отправить'
+                              }
+                            ]
+                          },
                         ]
-                    }
+                      }
+                    ]
+                  },
+                  {
+                    elem : 'footer',
+                    content : [
+                      {
+                        block : 'form-link',
+                        content : [
+                          {
+                            elem : 'item',
+                            mods : { align : 'left' },
+                            content : [
+                              {
+                                block : 'link',
+                                mods : { theme : 'islands', size : 'm', pseudo : true },
+                                content : 'Уже зарегистрированы?'
+                              }
+                            ]
+                          },
+                          {
+                            elem : 'item',
+                            mods : { align : 'right' },
+                            content : [
+                              {
+                                block : 'link',
+                                mods : { theme : 'islands', size : 'm', pseudo : true },
+                                content : 'Зерегистрироваться'
+                              }
+                            ]
+                          },
+                        ]
+                      },
+                    ]
+                  }
                 ]
             }
           
@@ -722,7 +722,44 @@ module.exports = {
                     },
                     {
                       elem : 'description',
-                      content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy. @Cal 2014. Previously @Sprig and @LinkedIn.'
+                      content : [
+                        'Designer + Aspiring Princess. Product Designer ',
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : '@KhanAcademy',
+                          content : '@KhanAcademy'
+                        },
+                        ' . ',
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : '@Cal 2014',
+                          content : '@Cal 2014'
+                        },
+                        '. Previously ',
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : '@Sprig',
+                          content : '@Sprig'
+                        },
+                        ' ',
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : '@SpotifyCares',
+                          content : '@SpotifyCares'
+                        },
+                        ' and ',
+                        {
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : '@LinkedIn',
+                          content : '@LinkedIn'
+                        },
+                        '.'
+                      ]
                     },
                     {
                       elem : 'action',
@@ -768,16 +805,13 @@ module.exports = {
                     {
                       elem : 'description',
                       content : [
+                        'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at ',
                         {
                           block : 'link',
-                          mods : { theme : 'islands', size: 'm' },
+                          mods : { theme : 'islands' },
                           url : '@SpotifyCares',
                           content : '@SpotifyCares'
                         },
-                        {
-                          block : 'text',
-                          content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at '
-                        } 
                       ]
                     },
                     {
