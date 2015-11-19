@@ -522,17 +522,17 @@ module.exports = {
               content: [
                 {
                   userName : 'Dustin Senos',
-                  userPosition : 'Former head of design @medium',
+                  userPosition : 'Former head of design Medium',
                   userIcon : '/i/dastin.jpg'
                 },  
                 {
                   userName : 'Vivek Venkatraman',
-                  userPosition : 'Designer for @airbnb',
+                  userPosition : 'Designer for Airbnb',
                   userIcon : '/i/vivek.jpg'
                 },
                 {
                   userName : 'Tobias van Schneider',
-                  userPosition : 'Product designer of @spotify',
+                  userPosition : 'Product designer of Spotify',
                   userIcon : '/i/tobias.jpg'
                 } 
               ].map(function(item) {
