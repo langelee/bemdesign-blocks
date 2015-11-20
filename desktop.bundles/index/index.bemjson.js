@@ -891,9 +891,12 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block: 'footer',
-              content : 'STAY BEMed'
-            }
+              mix : { block : 'footer'},
+              block : 'link',
+              mods : { theme : 'islands' },
+              url : 'https://twitter.com/hashtag/staybemed',
+              content : '#staybemed'
+            },
           ]
         }
       ]
