@@ -717,7 +717,10 @@ module.exports = {
                       content : 'Elizabeth Lin'
                     },
                     {
-                      elem : 'twitter',
+                      mix : { block : 'user-tile', elem : 'twitter'},
+                      block : 'link',
+                      mods : { theme : 'islands' },
+                      url : '@lalizlabeth',
                       content : '@lalizlabeth'
                     },
                     {
@@ -799,7 +802,10 @@ module.exports = {
                       content : 'Spotify'
                     },
                     {
-                      elem : 'web',
+                      mix : { block : 'product-tile', elem : 'web'},
+                      block : 'link',
+                      mods : { theme : 'islands' },
+                      url : 'spotify.com',
                       content : 'spotify.com'
                     },
                     {
