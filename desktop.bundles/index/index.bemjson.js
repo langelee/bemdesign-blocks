@@ -160,7 +160,7 @@ module.exports = {
                   elem : 'content',
                   content : [
                     {
-                      block : 'form-ctrl',
+                      block : 'form-control',
                       content : [
                         {
                           elem : 'item',
@@ -259,90 +259,90 @@ module.exports = {
               block : 'form',
               mix : { block : 'kit', elem : 'item'},
               content : [
-                  {
-                    elem : 'header',
-                    content: 'Восстановить пароль'
-                  },
-                  {
-                    elem : 'content',
-                    content : [
-                      {
-                        block : 'form-ctrl',
-                        content : [
-                          {
-                            elem : 'item',
-                            content : [
-                              {
-                                block : 'input',
-                                mods : { theme : 'islands', size : 'l', width : 'available' },
-                                placeholder : 'Введите e-mail'
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        block : 'form-action',
-                        content : [
-                          {
-                            elem : 'item',
-                            mods : { align : 'left' },
-                            content : [
-                              {
-                                block : 'link',
-                                mods : { theme : 'islands', size : 'm', pseudo : true },
-                                content : 'Забыли e-mail?'
-                              }
-                            ]
-                          },
-                          {
-                            elem : 'item',
-                            mods : { align : 'right' },
-                            content : [
-                              {
-                                block : 'button',
-                                mods : { theme : 'islands', size : 'l', view : 'action' },
-                                text : 'Отправить'
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    elem : 'footer',
-                    content : [
-                      {
-                        block : 'form-link',
-                        content : [
-                          {
-                            elem : 'item',
-                            mods : { align : 'left' },
-                            content : [
-                              {
-                                block : 'link',
-                                mods : { theme : 'islands', size : 'm', pseudo : true },
-                                content : 'Уже зарегистрированы?'
-                              }
-                            ]
-                          },
-                          {
-                            elem : 'item',
-                            mods : { align : 'right' },
-                            content : [
-                              {
-                                block : 'link',
-                                mods : { theme : 'islands', size : 'm', pseudo : true },
-                                content : 'Зерегистрироваться'
-                              }
-                            ]
-                          },
-                        ]
-                      },
-                    ]
-                  }
-                ]
+                {
+                  elem : 'header',
+                  content: 'Восстановить пароль'
+                },
+                {
+                  elem : 'content',
+                  content : [
+                    {
+                      block : 'form-control',
+                      content : [
+                        {
+                          elem : 'item',
+                          content : [
+                            {
+                              block : 'input',
+                              mods : { theme : 'islands', size : 'l', width : 'available' },
+                              placeholder : 'Введите e-mail'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'form-action',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Забыли e-mail?'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'item',
+                          mods : { align : 'right' },
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Отправить'
+                            }
+                          ]
+                        },
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'footer',
+                  content : [
+                    {
+                      block : 'form-link',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Уже зарегистрированы?'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'item',
+                          mods : { align : 'right' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Зерегистрироваться'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                }
+              ]
             }
           
           ]
@@ -363,7 +363,7 @@ module.exports = {
                   elem : 'content',
                   content : [
                     {
-                      block : 'form-ctrl',
+                      block : 'form-control',
                       content : [
                         {
                           elem : 'item',
@@ -405,7 +405,28 @@ module.exports = {
                       ]
                     }
                   ]
-                }
+                },
+                {
+                  elem : 'footer',
+                  content: [
+                    {
+                      block : 'form-link',
+                      content : [
+                        {
+                          elem : 'item',
+                          mods : { align : 'left' },
+                          content : [
+                            {
+                              block : 'link',
+                              mods : { theme : 'islands', size : 'm', pseudo : true },
+                              content : 'Войти'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                },
               ]
             }
           ]
