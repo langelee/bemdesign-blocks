@@ -796,7 +796,30 @@ module.exports = {
                       ]
                     }
                   ]
-                }
+                },
+                {
+                  block : 'expert-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content : [
+                    {
+                      block : 'expert-info',
+                      mix : { block : 'expert-tile', elem : 'info'},
+                      content : [
+                        {
+                          elem : 'image'
+                        },
+                        {
+                          elem : 'name',
+                          content : 'name'
+                        }
+                      ]
+                    },
+                    {
+                      elem : 'description',
+                      content : 'description'
+                    }
+                  ]
+                },
               ]
             },
           ]
@@ -852,7 +875,20 @@ module.exports = {
                       ]
                     }
                   ]
-                }
+                },
+                {
+                  block : 'partner-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content : [
+                    {
+                      elem : 'icon'
+                    },
+                    {
+                      elem : 'name',
+                      content : 'name'
+                    }
+                  ]
+                },
               ]
             },
           ]
@@ -897,9 +933,28 @@ module.exports = {
                       ]
                     }
                   ]
-                }
+                },
+                {
+                  block : 'document-tile',
+                  mix : { block : 'kit', elem : 'item'},
+                  content : [
+                    {
+                      elem : 'icon'
+                    },
+                    {
+                      elem : 'name',
+                      content : 'Ключевые документ'
+                    },
+                   {
+                      elem : 'text',
+                      content : 'Раздел содержи наиболее востребованные и нужные документы'
+                    }
+                  ] 
+                },
               ]
             },
+
+
           ]
         }
       ]
