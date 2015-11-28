@@ -131,7 +131,28 @@ module.exports = {
                       name: 'tile',
                       val: '1',
                       text : 'Плитки'
-                    }
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'tile',
+                      val: '1',
+                      text : 'Навигаяция'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'tile',
+                      val: '1',
+                      text : 'Натификации'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'tile',
+                      val: '1',
+                      text : 'Модалки'
+                    },
                   ]
                 }
               ]
