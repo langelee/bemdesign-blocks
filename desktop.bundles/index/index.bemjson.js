@@ -137,14 +137,14 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'tile',
                       val: '1',
-                      text : 'Навигаяция'
+                      text : 'Навигация'
                     },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'tile',
                       val: '1',
-                      text : 'Натификации'
+                      text : 'Нотификации'
                     },
                     {
                       block : 'checkbox',
