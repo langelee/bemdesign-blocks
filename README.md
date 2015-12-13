@@ -35,7 +35,7 @@
   * **xl** - 96px
 
 
-## Aavatars
+## Avatars
   * **s** - 60px
   * **m** - 90px
   * **l** - 120px
