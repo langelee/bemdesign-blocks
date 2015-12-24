@@ -32,7 +32,7 @@
   * **m** - 24px
   * **l** - 32px
   * **xl** - 48px
-  * **xl** - 96px
+  * **xxl** - 96px
 
 
 ## Avatars
