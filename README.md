@@ -2,8 +2,8 @@
 ## Typography
 
 ### _size
- * **.text_size_xs** - 11px
- * **.text_size_s** - 14px
+ * **.text_size_xs** - 13px
+ * **.text_size_s** - 15px
  * **.text_size_m** - 18px
  * **.text_size_l** - 24px
  * **.text_size_xl** - 32px
