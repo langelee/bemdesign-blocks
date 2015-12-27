@@ -10,6 +10,7 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
+    /*
     {
       block : 'header',
       mix : { block : 'clearfix'},
@@ -64,6 +65,32 @@ module.exports = {
         }
       ]
     },
+    */
+
+    {
+      block : 'promo',
+      content : [
+        {
+          elem : 'heading',
+          content : 'STAY BEMed'
+        },
+        {
+          elem : 'description',
+          content : 'Основная идея БЭМ-методологии — сделать разработку простой и быстрой, а работу в команде — понятной и слаженной.'
+        },
+        {
+          elem : 'download',
+          content : [
+            {
+              block : 'button',
+              mods : { theme : 'islands', size : 'l', view : 'action' },
+              text : 'Скачать с Github'
+            }
+          ]
+        }
+      ]
+    },
+    /*
     {
       block : 'row',
       content : [
@@ -71,33 +98,12 @@ module.exports = {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
-            {
-              block : 'promo',
-              content : [
-                {
-                  elem : 'heading',
-                  content : 'STAY BEMed'
-                },
-                {
-                  elem : 'description',
-                  content : 'Основная идея БЭМ-методологии — сделать разработку простой и быстрой, а работу в команде — понятной и слаженной.'
-                },
-                {
-                  elem : 'download',
-                  content : [
-                    {
-                      block : 'button',
-                      mods : { theme : 'islands', size : 'l', view : 'action' },
-                      text : 'Скачать с Github'
-                    }
-                  ]
-                }
-              ]
-            }
+
           ]
         }
       ]
     },
+    */
     {
       block : 'row',
       content : [
@@ -174,14 +180,10 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content : [
                 {
-                  elem : 'header',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l',},
-                      content : 'Войти'
-                    }
-                  ]
+                  mix : { block : 'form', elem : 'header'},
+                  block : 'text',
+                  mods : { size : 'l',},
+                  content : 'Войти'
                 },
                 {
                   elem : 'content',
@@ -287,14 +289,10 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content : [
                 {
-                  elem : 'header',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l',},
-                      content : 'Восстановить пароль'
-                    }
-                  ]
+                  mix : { block : 'form', elem : 'header'},
+                  block : 'text',
+                  mods : { size : 'l',},
+                  content : 'Восстановить пароль'
                 },
                 {
                   elem : 'content',
@@ -389,14 +387,10 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content : [
                 {
-                  elem : 'header',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l',},
-                      content : 'Регистрация'
-                    }
-                  ]
+                  mix : { block : 'form', elem : 'header'},
+                  block : 'text',
+                  mods : { size : 'l',},
+                  content : 'Регистрация'
                 },
                 {
                   elem : 'content',
@@ -503,10 +497,10 @@ module.exports = {
                     return [
                       {
                         block: 'document',
-                        mix : { block: 'document-list', elem : 'item'},
+                        mix : { block: 'document-list', elem : 'item' },
                         content: [
                           {
-                            mix : { block : 'document', elem : 'image'},
+                            mix : { block : 'document', elem : 'image' },
                             block: 'image',
                             url: '/i/document.png'
                           },
@@ -514,29 +508,16 @@ module.exports = {
                             elem : 'content',
                             content: [
                               {
-                                block: 'document-content',
-                                content: [
-                                  {
-                                    elem : 'title',
-                                    content : [
-                                      {
-                                        block : 'text',
-                                        mods : { size : 'm'},
-                                        content : item.documentTitle
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    elem : 'text',
-                                    content : [
-                                      {
-                                        block : 'text',
-                                        mods : { size : 's'},
-                                        content : item.documentText
-                                      }
-                                    ]
-                                  },
-                                ]
+                                mix : { block : 'document-content', elem : 'title' },
+                                block : 'text',
+                                mods : { size : 'm' },
+                                content : item.documentTitle
+                              },
+                              {
+                                mix : { block : 'document-content', elem : 'text' },
+                                block : 'text',
+                                mods : { size : 's' },
+                                content : item.documentText
                               }
                             ]
                           },
@@ -547,7 +528,7 @@ module.exports = {
                 },
                 {
                   block : 'top-news-list',
-                  mix : { block : 'kit', elem : 'item'},
+                  mix : { block : 'kit', elem : 'item' },
                   content: [
                     {
                       topNewsDate : '18:05',
@@ -565,24 +546,21 @@ module.exports = {
                     return [
                       {
                         block: 'top-news',
-                        mix : { block: 'top-news-list', elem : 'item'},
+                        mix : { block: 'top-news-list', elem : 'item' },
                         content: [
                           {
                             elem : 'date',
                             content : [
                               {
+                                mix : { block: 'top-news', elem : 'date' },
                                 block : 'text',
-                                mods : { size : 'm'},
+                                mods : { size : 'm' },
                                 content : item.topNewsDate
-                              }
-                            ]
-                          },
-                          {
-                            elem : 'text',
-                            content : [
+                              },
                               {
+                                mix : { block: 'top-news', elem : 'text' },
                                 block : 'text',
-                                mods : { size : 's'},
+                                mods : { size : 's' },
                                 content : item.topNewsText
                               }
                             ]
@@ -637,25 +615,17 @@ module.exports = {
                             block: 'user-content',
                             content: [
                               {
-                                elem : 'name',
-                                content : [
-                                  {
-                                    block : 'text',
-                                    mods : { size : 'm'},
-                                    content : item.userName
-                                  }
-                                ]
+                                mix : { block : 'user-content', elem : 'name'},
+                                block : 'text',
+                                mods : { size : 'm'},
+                                content : item.userName
                               },
                               {
-                                elem : 'position',
-                                content : [
-                                  {
-                                    block : 'text',
-                                    mods : { size : 's'},
-                                    content : item.userPosition
-                                  }
-                                ]
-                              },
+                                mix : { block : 'user-content', elem : 'position'},
+                                block : 'text',
+                                mods : { size : 's'},
+                                content : item.userPosition
+                              }
                             ]
                           }
                         ]
@@ -702,35 +672,23 @@ module.exports = {
                             block : 'news-content',
                             content: [
                               {
-                                elem : 'title',
-                                content : [
-                                  {
-                                    block : 'text',
-                                    mods : { size : 'm'},
-                                    content : item.newsContentTitle
-                                  }
-                                ]
+                                mix : { block: 'news-content', elem : 'title'},
+                                block : 'text',
+                                mods : { size : 'm'},
+                                content : item.newsContentTitle
                               },
                               {
-                                elem : 'date',
-                                content : [
-                                  {
-                                    block : 'text',
-                                    mods : { size : 's'},
-                                    content : item.newsContentDate
-                                  }
-                                ]
+                                mix : { block: 'news-content', elem : 'date'},
+                                block : 'text',
+                                mods : { size : 's'},
+                                content : item.newsContentDate
                               },
                               {
-                                elem : 'text',
-                                content : [
-                                  {
-                                    block : 'text',
-                                    mods : { size : 's'},
-                                    content : item.newsContentText
-                                  }
-                                ]
-                              },
+                                mix : { block: 'news-content', elem : 'text'},
+                                block : 'text',
+                                mods : { size : 's'},
+                                content : item.newsContentText
+                              }
                             ]
                           }
                         ]
@@ -793,14 +751,10 @@ module.exports = {
                         url: item.icon
                       },
                       {
-                        elem : 'text',
-                        content : [
-                          {
-                            block : 'text',
-                            mods : { size : 'm'},
-                            content : item.position
-                          }
-                        ]
+                        mix : { block : 'position', elem : 'text'},
+                        block : 'text',
+                        mods : { size : 'm'},
+                        content : item.position
                       }
                     ]
                   }
@@ -833,27 +787,17 @@ module.exports = {
                       url: '/i/elizabeth.jpg'
                     },
                     {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Elizabeth Lin'
-                        }
-                      ]
+                      mix : { block : 'user-tile', elem : 'name'},
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : 'Elizabeth Lin'
                     },
                     {
                       mix : { block : 'user-tile', elem : 'twitter'},
                       block : 'link',
                       mods : { theme : 'islands' },
                       url : '@lalizlabeth',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '@lalizlabeth'
-                        }
-                      ]
+                      content : '@lalizlabeth'
                     },
                     {
                       elem : 'description',
@@ -956,26 +900,18 @@ module.exports = {
                           elem : 'image'
                         },
                         {
-                          elem : 'name',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 'm'},
-                              content : 'Name'
-                            }
-                          ]
+                          mix : { block : 'expert-info', elem : 'name'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Name'
                         }
                       ]
                     },
                     {
-                      elem : 'description',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'description'
-                        }
-                      ]
+                      mix : { block : 'expert-tile', elem : 'description'},
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'description'
                     }
                   ]
                 },
@@ -1001,7 +937,9 @@ module.exports = {
                       url: '/i/spotify.png'
                     },
                     {
-                      elem : 'name',
+                      mix : { block : 'product-tile', elem : 'name'},
+                      block : 'text',
+                      mods : { size : 'm'},
                       content : 'Spotify'
                     },
                     {
@@ -1080,34 +1018,22 @@ module.exports = {
                       url: '/i/behance.jpg'
                     },
                     {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Behance Portfolio Review'
-                        }
-                      ]
+                      mix : { block : 'event-tile', elem : 'name'},
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : 'Behance Portfolio Review'
                     },
                     {
-                      elem : 'date',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '24.01.2016'
-                        }
-                      ]
+                      mix : { block : 'event-tile', elem : 'date'},
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '24.01.2016'
                     },
                     {
-                      elem : 'description',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'Подключитесь и получите отзывы о ваших творческих проектах'
-                        }
-                      ]
+                      mix : { block : 'event-tile', elem : 'description'},
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'Подключитесь и получите отзывы о ваших творческих проектах'
                     },
                     {
                       elem : 'action',
@@ -1129,31 +1055,21 @@ module.exports = {
                       elem : 'icon'
                     },
                     {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Ключевые документ'
-                        }
-                      ]
+                      mix : { block : 'document-tile', elem : 'name'},
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : 'Ключевые документ'
                     },
-                   {
-                      elem : 'text',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'Раздел содержи наиболее востребованные и нужные документы'
-                        }
-                      ]
+                    {
+                      mix : { block : 'document-tile', elem : 'text'},
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'Раздел содержи наиболее востребованные и нужные документы'
                     }
                   ]
                 },
               ]
             },
-
-
           ]
         }
       ]
