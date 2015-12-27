@@ -47,7 +47,7 @@ module.exports = {
               content : 'Компоненты'
             },
             {
-              block : 'link',              
+              block : 'link',
               mix : { block : 'nav', elem : 'item'},
               mods : { theme : 'islands', size : 'l'},
               url : 'https://gist.github.com/koloskof/1123be38177d7b2dad68',
@@ -175,7 +175,13 @@ module.exports = {
               content : [
                 {
                   elem : 'header',
-                  content : 'Войти'
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l',},
+                      content : 'Войти'
+                    }
+                  ]
                 },
                 {
                   elem : 'content',
@@ -282,7 +288,13 @@ module.exports = {
               content : [
                 {
                   elem : 'header',
-                  content: 'Восстановить пароль'
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l',},
+                      content : 'Восстановить пароль'
+                    }
+                  ]
                 },
                 {
                   elem : 'content',
@@ -365,7 +377,7 @@ module.exports = {
                 }
               ]
             }
-          
+
           ]
         },
         {
@@ -378,7 +390,13 @@ module.exports = {
               content : [
                 {
                   elem : 'header',
-                  content: 'Регистрация'
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l',},
+                      content : 'Регистрация'
+                    }
+                  ]
                 },
                 {
                   elem : 'content',
@@ -468,11 +486,11 @@ module.exports = {
                 {
                   block : 'document-list',
                   mix : { block : 'kit', elem : 'item'},
-                  content: [  
+                  content: [
                     {
                       documentTitle : 'Методология',
                       documentText : 'Основная идея БЭМ-методологии'
-                    },  
+                    },
                     {
                       documentTitle : 'Краткий обзор библиотек',
                       documentText : 'Краткий обзор библиотек'
@@ -480,14 +498,14 @@ module.exports = {
                     {
                       documentTitle : 'Инструменты',
                       documentText : 'Краткий обзор инструментов'
-                    } 
+                    }
                   ].map(function(item) {
                     return [
                       {
                         block: 'document',
                         mix : { block: 'document-list', elem : 'item'},
                         content: [
-                          { 
+                          {
                             mix : { block : 'document', elem : 'image'},
                             block: 'image',
                             url: '/i/document.png'
@@ -500,11 +518,23 @@ module.exports = {
                                 content: [
                                   {
                                     elem : 'title',
-                                    content : item.documentTitle
+                                    content : [
+                                      {
+                                        block : 'text',
+                                        mods : { size : 'm'},
+                                        content : item.documentTitle
+                                      }
+                                    ]
                                   },
                                   {
                                     elem : 'text',
-                                    content : item.documentText
+                                    content : [
+                                      {
+                                        block : 'text',
+                                        mods : { size : 's'},
+                                        content : item.documentText
+                                      }
+                                    ]
                                   },
                                 ]
                               }
@@ -522,11 +552,11 @@ module.exports = {
                     {
                       topNewsDate : '18:05',
                       topNewsText : '«Яндекс» попросил Еврокомиссию расследовать возможную монополию Google в Android'
-                    },  
+                    },
                     {
                       topNewsDate : '12:45',
                       topNewsText : '«Яндекс.Деньги» откроет бесплатную школу для мобильных разработчиков'
-                    }, 
+                    },
                     {
                       topNewsDate : '13:16',
                       topNewsText : '«Яндекс.Почта» представила обновленный веб-интерфейс сервиса'
@@ -539,11 +569,23 @@ module.exports = {
                         content: [
                           {
                             elem : 'date',
-                            content : item.topNewsDate
+                            content : [
+                              {
+                                block : 'text',
+                                mods : { size : 'm'},
+                                content : item.topNewsDate
+                              }
+                            ]
                           },
                           {
                             elem : 'text',
-                            content : item.topNewsText
+                            content : [
+                              {
+                                block : 'text',
+                                mods : { size : 's'},
+                                content : item.topNewsText
+                              }
+                            ]
                           },
                         ]
                       }
@@ -557,7 +599,7 @@ module.exports = {
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4 },
-          content : [  
+          content : [
             {
               block : 'user-list',
               mix : { block : 'kit', elem : 'item'},
@@ -566,7 +608,7 @@ module.exports = {
                   userName : 'Dustin Senos',
                   userPosition : 'Former head of design Medium',
                   userIcon : '/i/dastin.jpg'
-                },  
+                },
                 {
                   userName : 'Vivek Venkatraman',
                   userPosition : 'Designer for Airbnb',
@@ -576,14 +618,14 @@ module.exports = {
                   userName : 'Tobias van Schneider',
                   userPosition : 'Product designer of Spotify',
                   userIcon : '/i/tobias.jpg'
-                } 
+                }
               ].map(function(item) {
                 return [
                   {
                     block: 'user',
                     mix : { block: 'user-list', elem : 'item'},
                     content: [
-                      { 
+                      {
                         mix : { block : 'user', elem : 'image'},
                         block: 'image',
                         url: item.userIcon
@@ -596,11 +638,23 @@ module.exports = {
                             content: [
                               {
                                 elem : 'name',
-                                content : item.userName
+                                content : [
+                                  {
+                                    block : 'text',
+                                    mods : { size : 'm'},
+                                    content : item.userName
+                                  }
+                                ]
                               },
                               {
                                 elem : 'position',
-                                content : item.userPosition
+                                content : [
+                                  {
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.userPosition
+                                  }
+                                ]
                               },
                             ]
                           }
@@ -610,7 +664,7 @@ module.exports = {
                   }
                 ]
               })
-            },          
+            },
             {
               block : 'news-list',
               mix : { block : 'kit', elem : 'item'},
@@ -636,7 +690,7 @@ module.exports = {
                     block: 'news',
                     mix : { block: 'news-list', elem : 'item'},
                     content: [
-                      { 
+                      {
                         mix : { block : 'news', elem : 'image'},
                         block: 'image',
                         url: '/i/document.png'
@@ -649,15 +703,33 @@ module.exports = {
                             content: [
                               {
                                 elem : 'title',
-                                content : item.newsContentTitle
+                                content : [
+                                  {
+                                    block : 'text',
+                                    mods : { size : 'm'},
+                                    content : item.newsContentTitle
+                                  }
+                                ]
                               },
                               {
                                 elem : 'date',
-                                content : item.newsContentDate
+                                content : [
+                                  {
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.newsContentDate
+                                  }
+                                ]
                               },
                               {
                                 elem : 'text',
-                                content : item.newsContentText
+                                content : [
+                                  {
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.newsContentText
+                                  }
+                                ]
                               },
                             ]
                           }
@@ -682,7 +754,7 @@ module.exports = {
                   position : 'Дизайнер интерфейсов',
                   icon : '/i/yandex.png',
                   alt : 'yandex'
-                },  
+                },
                 {
                   position : 'Разработчик интерфейсов',
                   icon : '/i/tinder.png',
@@ -707,14 +779,14 @@ module.exports = {
                   position : 'Арт директор',
                   icon : '/i/dribbble.png',
                   alt : 'dribbble'
-                }     
+                }
               ].map(function(item) {
                 return [
                   {
                     block: 'position',
                     mix : { block: 'position-list', elem : 'item'},
                     content : [
-                      { 
+                      {
                         mix : { block : 'position', elem : 'image'},
                         block: 'image',
                         alt: item.alt,
@@ -722,7 +794,13 @@ module.exports = {
                       },
                       {
                         elem : 'text',
-                        content : item.position
+                        content : [
+                          {
+                            block : 'text',
+                            mods : { size : 'm'},
+                            content : item.position
+                          }
+                        ]
                       }
                     ]
                   }
@@ -747,7 +825,7 @@ module.exports = {
                 {
                   block : 'user-tile',
                   mix : { block : 'kit', elem : 'item'},
-                  content: [  
+                  content: [
                     {
                       mix : { block : 'user-tile', elem : 'icon'},
                       block: 'image',
@@ -756,54 +834,102 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'Elizabeth Lin'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Elizabeth Lin'
+                        }
+                      ]
                     },
                     {
                       mix : { block : 'user-tile', elem : 'twitter'},
                       block : 'link',
                       mods : { theme : 'islands' },
                       url : '@lalizlabeth',
-                      content : '@lalizlabeth'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '@lalizlabeth'
+                        }
+                      ]
                     },
                     {
                       elem : 'description',
                       content : [
-                        'Designer + Aspiring Princess. Product Designer ',
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Designer + Aspiring Princess. Product Designer'
+                        },
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@KhanAcademy',
-                          content : '@KhanAcademy'
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : '@KhanAcademy'
+                            }
+                          ]
                         },
-                        '. ',
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '. '
+                        },
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@Cal 2014',
-                          content : '@Cal 2014'
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : '@Cal 2014'
+                            }
+                          ]
                         },
-                        '. Previously ',
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '. Previously'
+                        },
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@Sprig',
                           content : '@Sprig'
                         },
-                        ' ',
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : ' '
+                        },
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@SpotifyCares',
                           content : '@SpotifyCares'
                         },
-                        ' and ',
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'and'
+                        },
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@LinkedIn',
                           content : '@LinkedIn'
                         },
-                        '.'
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '.'
+                        }
                       ]
                     },
                     {
@@ -831,13 +957,25 @@ module.exports = {
                         },
                         {
                           elem : 'name',
-                          content : 'name'
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'm'},
+                              content : 'Name'
+                            }
+                          ]
                         }
                       ]
                     },
                     {
                       elem : 'description',
-                      content : 'description'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'description'
+                        }
+                      ]
                     }
                   ]
                 },
@@ -855,7 +993,7 @@ module.exports = {
                 {
                   block : 'product-tile',
                   mix : { block : 'kit', elem : 'item'},
-                  content: [  
+                  content: [
                     {
                       mix : { block : 'product-tile', elem : 'icon'},
                       block: 'image',
@@ -876,12 +1014,16 @@ module.exports = {
                     {
                       elem : 'description',
                       content : [
-                        'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at ',
                         {
                           block : 'link',
                           mods : { theme : 'islands' },
                           url : '@SpotifyCares',
                           content : '@SpotifyCares'
+                        },
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at'
                         },
                       ]
                     },
@@ -906,7 +1048,13 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'name'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Name'
+                        },
+                      ]
                     }
                   ]
                 },
@@ -924,7 +1072,7 @@ module.exports = {
                 {
                   block : 'event-tile',
                   mix : { block : 'kit', elem : 'item'},
-                  content: [  
+                  content: [
                     {
                       mix : { block : 'event-tile', elem : 'icon'},
                       block: 'image',
@@ -933,15 +1081,33 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'Behance Portfolio Review'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Behance Portfolio Review'
+                        }
+                      ]
                     },
                     {
                       elem : 'date',
-                      content : '24.01.2016'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '24.01.2016'
+                        }
+                      ]
                     },
                     {
                       elem : 'description',
-                      content : 'Подключитесь и получите отзывы о ваших творческих проектах'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Подключитесь и получите отзывы о ваших творческих проектах'
+                        }
+                      ]
                     },
                     {
                       elem : 'action',
@@ -964,13 +1130,25 @@ module.exports = {
                     },
                     {
                       elem : 'name',
-                      content : 'Ключевые документ'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Ключевые документ'
+                        }
+                      ]
                     },
                    {
                       elem : 'text',
-                      content : 'Раздел содержи наиболее востребованные и нужные документы'
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Раздел содержи наиболее востребованные и нужные документы'
+                        }
+                      ]
                     }
-                  ] 
+                  ]
                 },
               ]
             },
