@@ -1,6 +1,6 @@
 module.exports = {
   block : 'page',
-  title : 'STAY BEMed',
+  title : 'BEM Custom',
   favicon : '/favicon.ico',
   head : [
     { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -71,11 +71,19 @@ module.exports = {
       block : 'promo',
       content : [
         {
-          elem : 'heading',
-          content : 'STAY BEMed'
+          block : 'image',
+          url : 'https://img-fotki.yandex.ru/get/5405/259818507.0/0_130be5_948d59aa_S'
+        } ,
+        {
+          mix : { block : 'promo', elem : 'heading'},
+          block : 'text',
+          mods : { size : 'xl'},
+          content : 'BEM Custom'
         },
         {
-          elem : 'description',
+          mix : { block : 'promo', elem : 'description'},
+          block : 'text',
+          mods : { size : 's' },
           content : 'Основная идея БЭМ-методологии — сделать разработку простой и быстрой, а работу в команде — понятной и слаженной.'
         },
         {
@@ -804,75 +812,8 @@ module.exports = {
                       content : [
                         {
                           block : 'text',
-                          mods : { size : 's'},
-                          content : 'Designer + Aspiring Princess. Product Designer'
-                        },
-                        {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@KhanAcademy',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 's'},
-                              content : '@KhanAcademy'
-                            }
-                          ]
-                        },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '. '
-                        },
-                        {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@Cal 2014',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 's'},
-                              content : '@Cal 2014'
-                            }
-                          ]
-                        },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '. Previously'
-                        },
-                        {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@Sprig',
-                          content : '@Sprig'
-                        },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : ' '
-                        },
-                        {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@SpotifyCares',
-                          content : '@SpotifyCares'
-                        },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'and'
-                        },
-                        {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@LinkedIn',
-                          content : '@LinkedIn'
-                        },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '.'
+                          mods : { size : 's', display : 'inline' },
+                          content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy'
                         }
                       ]
                     },
