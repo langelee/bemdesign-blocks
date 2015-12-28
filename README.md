@@ -1,3 +1,39 @@
+#Install
+    1. 
+    ```
+        git clone https://github.com/bemcustom/bemcustom-blocks bemcustom
+    ```
+    2. 
+    ```
+        npm i 
+    ```
+    3. 
+    ```
+        cd bemcustom/libs/bem-components
+    ```
+    4. 
+    ```
+        git clone https://github.com/bemcustom/bemcustom-components
+    ```
+    5. 
+     ```
+        npm i
+    ```
+    6. 
+    ```
+        cd ../../
+    ```
+    7. 
+    ```
+        export PATH=./node_modules/.bin:$PATH
+    ```
+    8. 
+    ```
+        bem server
+    ```
+    
+    
+
 # BEM guides
 ## Typography
 
