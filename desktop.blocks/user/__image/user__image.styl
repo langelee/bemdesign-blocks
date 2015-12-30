@@ -1,11 +1,14 @@
+@import "../../../libs/bem-components/design/colors.styl"
+@import "../../../libs/bem-components/design/spaces.styl"
+
 .user__image
   border-radius: 50%
   overflow: hidden
   position: absolute
-  top: 16px
-  left: 16px
+  top: $s
+  left: $s
   height: 60px
   width: 60px
-  background: #ccc
+  background: lighten($base, 80%)
   img
     width: 100%

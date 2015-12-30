@@ -1,8 +1,10 @@
+@import "../../libs/bem-components/design/colors.styl"
+@import "../../libs/bem-components/design/spaces.styl"
+
 .news
   border-box: box-sizing
   position: relative
-  padding: 24px
-  background: #fff
+  padding: $m
+  background: $clean
   &:hover
-    background: #ffeba0
-
+    background: lighten($project, 81%)
