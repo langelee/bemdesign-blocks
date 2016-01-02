@@ -5,7 +5,9 @@ module.exports = {
   head : [
     { elem : 'meta', attrs : { name : 'description', content : '' } },
     { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
-    { elem : 'css', url : 'index.min.css' }
+    { elem : 'css', url : 'index.min.css' },
+    { elem : 'css', url : 'https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.css' },
+    { elem : 'js', url : 'https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.js' }
   ],
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
@@ -34,7 +36,7 @@ module.exports = {
           content : [
             {
               block : 'button',
-              mods : { theme : 'islands', size : 'l', view : 'action' },
+              mods : { theme : 'islands', size : 'xl', view : 'action' },
               text : 'Скачать с Github'
             }
           ]
@@ -491,24 +493,19 @@ module.exports = {
                       {
                         block: 'top-news',
                         mix : { block: 'top-news-list', elem : 'item' },
-                        content: [
+                        content : [
                           {
-                            elem : 'date',
-                            content : [
-                              {
-                                mix : { block: 'top-news', elem : 'date' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.topNewsDate
-                              },
-                              {
-                                mix : { block: 'top-news', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.topNewsText
-                              }
-                            ]
+                            mix : { block: 'top-news', elem : 'date' },
+                            block : 'text',
+                            mods : { size : 'm' },
+                            content : item.topNewsDate
                           },
+                          {
+                            mix : { block: 'top-news', elem : 'text' },
+                            block : 'text',
+                            mods : { size : 's' },
+                            content : item.topNewsText
+                          }
                         ]
                       }
                     ]
@@ -774,13 +771,16 @@ module.exports = {
                       mix : { block : 'expert-tile', elem : 'info'},
                       content : [
                         {
-                          elem : 'image'
+                          mix : { block : 'expert-info', elem : 'image'},
+                          block: 'image',
+                          alt: 'elizabeth',
+                          url: '/i/elizabeth.jpg'
                         },
                         {
                           mix : { block : 'expert-info', elem : 'name'},
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Name'
+                          content : 'Elizabeth Lin'
                         }
                       ]
                     },
@@ -788,7 +788,7 @@ module.exports = {
                       mix : { block : 'expert-tile', elem : 'description'},
                       block : 'text',
                       mods : { size : 's'},
-                      content : 'description'
+                      content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy'
                     }
                   ]
                 },
@@ -859,7 +859,10 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content : [
                     {
-                      elem : 'icon'
+                      mix : { block : 'partner-tile', elem : 'icon'},
+                      block: 'image',
+                      alt: 'elizabeth',
+                      url: '/i/elizabeth.jpg'
                     },
                     {
                       elem : 'name',
@@ -867,7 +870,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Name'
+                          content : 'Elizabeth Lin'
                         },
                       ]
                     }
@@ -935,13 +938,13 @@ module.exports = {
                       mix : { block : 'document-tile', elem : 'name'},
                       block : 'text',
                       mods : { size : 'm'},
-                      content : 'Ключевые документ'
+                      content : 'Document'
                     },
                     {
                       mix : { block : 'document-tile', elem : 'text'},
                       block : 'text',
                       mods : { size : 's'},
-                      content : 'Раздел содержи наиболее востребованные и нужные документы'
+                      content : 'Document description'
                     }
                   ]
                 },
@@ -953,18 +956,27 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'menu-lst',
-              content : {
-                block : 'menu-menu',
-                mix : { block : 'menu-lst', elem : 'item'},
-                content : 'item'
-              }
+              block : 'menu-list',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                {
+                  mix : { block : 'menu-list', elem : 'item'},
+                  block : 'menu-item',
+                  content : 'item'
+                },
+                {
+                  mix : { block : 'menu-list', elem : 'item'},
+                  block : 'menu-item',
+                  content : 'item'
+                },
+              ]
             }
           ]
         },
@@ -974,7 +986,16 @@ module.exports = {
           content : [
             {
               block : 'breadcrumbs',
+              mix : { block : 'kit', elem : 'item'},
               content : [
+                {
+                  elem : 'link',
+                  content : 'link'
+                },
+                {
+                  elem : 'dash',
+                  content : '/'
+                },
                 {
                   elem : 'link',
                   content : 'link'
@@ -997,12 +1018,23 @@ module.exports = {
           content : [
             {
               block : 'tag-list',
+              mix : { block : 'kit', elem : 'item'},
               content : [
                 {
                   mix : { block : 'tag-list', elem : 'item'},
                   block : 'tag',
                   content : 'tag'
-                }
+                },
+                {
+                  mix : { block : 'tag-list', elem : 'item'},
+                  block : 'tag',
+                  content : 'tag'
+                },
+                {
+                  mix : { block : 'tag-list', elem : 'item'},
+                  block : 'tag',
+                  content : 'tag'
+                },
               ]
             }
           ]
@@ -1011,16 +1043,21 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mix : { block : 'kit', elem : 'item'},
           content : [
             {
               block : 'alert',
               content : [
                 {
                   elem : 'icon',
+                  content : [
+
+                  ]
                 },
                 {
                   elem : 'text',
@@ -1033,12 +1070,16 @@ module.exports = {
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mix : { block : 'kit', elem : 'item'},
           content : [
             {
               block : 'tip',
               content : [
                 {
                   elem : 'icon',
+                  content : [
+
+                  ]
                 },
                 {
                   elem : 'text',
@@ -1051,12 +1092,16 @@ module.exports = {
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mix : { block : 'kit', elem : 'item'},
           content : [
             {
               block : 'success',
               content : [
                 {
                   elem : 'icon',
+                  content : [
+
+                  ]
                 },
                 {
                   elem : 'text',
@@ -1070,17 +1115,24 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'footer'},
-              block : 'link',
-              mods : { theme : 'islands' },
-              url : 'https://twitter.com/hashtag/staybemed',
-              content : '#staybemed'
+              block : 'footer',
+              content : [
+
+                {
+                  block : 'link',
+                  mods : { theme : 'islands' },
+                  url : 'http://bem.info',
+                  content : 'Stay BEMed!',
+                  target : '_blank'
+                }
+              ]
             },
           ]
         }
