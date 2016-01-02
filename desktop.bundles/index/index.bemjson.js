@@ -10,63 +10,6 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
-    /*
-    {
-      block : 'header',
-      mix : { block : 'clearfix'},
-      content : [
-        {
-          elem: 'logo',
-          mix : { block : 'clearfix'},
-          mods: { align: 'left' },
-          content: [
-            {
-              block: 'logo',
-              mix : { block : 'clearfix'},
-              content: {
-                block: 'image',
-                alt: 'Яндекс',
-                url: '/i/logo.svg'
-              }
-            },
-            {
-              elem: 'nameplate',
-              url: 'http://koloskov.kz',
-              content: 'БЭМНУТЫЕ'
-            },
-          ]
-        },
-        {
-          block : 'nav',
-          mix : { block : 'clearfix'},
-          content : [
-            {
-              block : 'link',
-              mix : { block : 'nav', elem : 'item'},
-              mods : { theme : 'islands', size : 'l' , focused : true },
-              url : 'https://bem.info/',
-              content : 'Компоненты'
-            },
-            {
-              block : 'link',
-              mix : { block : 'nav', elem : 'item'},
-              mods : { theme : 'islands', size : 'l'},
-              url : 'https://gist.github.com/koloskof/1123be38177d7b2dad68',
-              content : 'Гайды'
-            },
-            {
-              block : 'link',
-              mix : { block : 'nav', elem : 'item'},
-              mods : { theme : 'islands', size : 'l'},
-              url : 'https://gist.github.com/koloskof/444cf7be8136a041bb10/',
-              content : 'Контрибьюторам'
-            },
-          ]
-        }
-      ]
-    },
-    */
-
     {
       block : 'promo',
       content : [
@@ -159,14 +102,7 @@ module.exports = {
                       name: 'tile',
                       val: '1',
                       text : 'Нотификации'
-                    },
-                    {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'tile',
-                      val: '1',
-                      text : 'Модалки'
-                    },
+                    }
                   ]
                 }
               ]
@@ -1020,6 +956,123 @@ module.exports = {
       content : [
         {
           elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'menu-lst',
+              content : {
+                block : 'menu-menu',
+                mix : { block : 'menu-lst', elem : 'item'},
+                content : 'item'
+              }
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'breadcrumbs',
+              content : [
+                {
+                  elem : 'link',
+                  content : 'link'
+                },
+                {
+                  elem : 'dash',
+                  content : '/'
+                },
+                {
+                  elem : 'link',
+                  content : 'link'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'tag-list',
+              content : [
+                {
+                  mix : { block : 'tag-list', elem : 'item'},
+                  block : 'tag',
+                  content : 'tag'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'alert',
+              content : [
+                {
+                  elem : 'icon',
+                },
+                {
+                  elem : 'text',
+                  content : 'alert text'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'tip',
+              content : [
+                {
+                  elem : 'icon',
+                },
+                {
+                  elem : 'text',
+                  content : 'tip text'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'success',
+              content : [
+                {
+                  elem : 'icon',
+                },
+                {
+                  elem : 'text',
+                  content : 'success text'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
@@ -1032,6 +1085,6 @@ module.exports = {
           ]
         }
       ]
-    }
+    },
   ]
 };
