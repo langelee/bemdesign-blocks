@@ -91,20 +91,6 @@ module.exports = {
                       val: '1',
                       text : 'Плитки'
                     },
-                    {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'tile',
-                      val: '1',
-                      text : 'Навигация'
-                    },
-                    {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'tile',
-                      val: '1',
-                      text : 'Нотификации'
-                    }
                   ]
                 }
               ]
@@ -954,6 +940,7 @@ module.exports = {
         }
       ]
     },
+    /*
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -1041,6 +1028,8 @@ module.exports = {
         }
       ]
     },
+    */
+    /*
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -1113,6 +1102,7 @@ module.exports = {
         }
       ]
     },
+    */
     {
       block : 'row',
       mix : { block : 'page-row'},
