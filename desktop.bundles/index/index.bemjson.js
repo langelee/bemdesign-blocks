@@ -913,6 +913,7 @@ module.exports = {
                     }
                   ]
                 },
+                /*
                 {
                   block : 'document-tile',
                   mix : { block : 'kit', elem : 'item'},
@@ -934,6 +935,7 @@ module.exports = {
                     }
                   ]
                 },
+                */
               ]
             },
           ]
