@@ -105,7 +105,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'form',
@@ -214,7 +214,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'form',
@@ -312,7 +312,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'form',
@@ -404,7 +404,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'kit',
@@ -503,7 +503,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'user-list',
@@ -629,7 +629,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'position-list',
@@ -698,7 +698,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'kit',
@@ -784,7 +784,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'kit',
@@ -868,7 +868,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'kit',
@@ -1111,7 +1111,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
               block : 'footer',
