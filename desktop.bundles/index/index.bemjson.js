@@ -414,16 +414,16 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [
                     {
-                      documentTitle : 'Методология',
-                      documentText : 'Основная идея БЭМ-методологии'
+                      documentTitle : 'React',
+                      documentText : 'React is a JavaScript library for creating user interfaces'
                     },
                     {
-                      documentTitle : 'Краткий обзор библиотек',
-                      documentText : 'Краткий обзор библиотек'
+                      documentTitle : 'Pop',
+                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X'
                     },
                     {
-                      documentTitle : 'Инструменты',
-                      documentText : 'Краткий обзор инструментов'
+                      documentTitle : 'Origami',
+                      documentText : 'Design prototyping'
                     }
                   ].map(function(item) {
                     return [
@@ -463,16 +463,16 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item' },
                   content: [
                     {
-                      topNewsDate : '18:05',
-                      topNewsText : '«Яндекс» попросил Еврокомиссию расследовать возможную монополию Google в Android'
+                      topNewsDate : 'Dec 15, 2015',
+                      topNewsText : 'Designing Facebook Collage'
                     },
                     {
-                      topNewsDate : '12:45',
-                      topNewsText : '«Яндекс.Деньги» откроет бесплатную школу для мобильных разработчиков'
+                      topNewsDate : 'Nov 14, 2015',
+                      topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
                     },
                     {
-                      topNewsDate : '13:16',
-                      topNewsText : '«Яндекс.Почта» представила обновленный веб-интерфейс сервиса'
+                      topNewsDate : 'Oct 8, 2015',
+                      topNewsText : 'Photographing Diverse Hands at Facebook'
                     }
                   ].map(function(item) {
                     return [
@@ -483,13 +483,13 @@ module.exports = {
                           {
                             mix : { block: 'top-news', elem : 'date' },
                             block : 'text',
-                            mods : { size : 'm' },
+                            mods : { size : 's' },
                             content : item.topNewsDate
                           },
                           {
                             mix : { block: 'top-news', elem : 'text' },
                             block : 'text',
-                            mods : { size : 's' },
+                            mods : { size : 'm' },
                             content : item.topNewsText
                           }
                         ]
@@ -636,32 +636,32 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  position : 'Дизайнер интерфейсов',
+                  position : 'UI Engineer',
                   icon : '/i/yandex.png',
                   alt : 'yandex'
                 },
                 {
-                  position : 'Разработчик интерфейсов',
+                  position : 'UX Designer',
                   icon : '/i/tinder.png',
                   alt : 'tinder'
                 },
                 {
-                  position : 'Информационный архитектор',
+                  position : 'Chief design officer',
                   icon : '/i/medium.png',
                   alt : 'medium'
                 },
                 {
-                  position : 'Дизайн-менеджер',
+                  position : 'UI Designer',
                   icon : '/i/uber.png',
                   alt : 'uber'
                 },
                 {
-                  position : 'Иллюстратор',
+                  position : 'Illustrator',
                   icon : '/i/mailru.png',
                   alt : 'mailru'
                 },
                 {
-                  position : 'Арт директор',
+                  position : 'Iteraction designer',
                   icon : '/i/dribbble.png',
                   alt : 'dribbble'
                 }
