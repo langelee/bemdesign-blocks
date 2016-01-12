@@ -37,7 +37,7 @@ module.exports = {
             {
               block : 'button',
               mods : { theme : 'islands', size : 'xl', view : 'action' },
-              text : 'Скачать с Github'
+              text : 'Quick start'
             }
           ]
         }
@@ -75,21 +75,21 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'form',
                       val: '1',
-                      text : 'Формы'
+                      text : 'forms'
                     },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'list',
                       val: '1',
-                      text : ' Списки'
+                      text : ' list'
                     },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'tile',
                       val: '1',
-                      text : 'Плитки'
+                      text : 'tiles'
                     },
                   ]
                 }
@@ -415,15 +415,18 @@ module.exports = {
                   content: [
                     {
                       documentTitle : 'React',
-                      documentText : 'React is a JavaScript library for creating user interfaces'
+                      documentText : 'React is a JavaScript library for creating user interfaces',
+                      documentImage : '/i/react.png'
                     },
                     {
                       documentTitle : 'Pop',
-                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X'
+                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
+                      documentImage : '/i/pop.png'
                     },
                     {
                       documentTitle : 'Origami',
-                      documentText : 'Design prototyping'
+                      documentText : 'Design prototyping',
+                      documentImage : '/i/origami.png'
                     }
                   ].map(function(item) {
                     return [
@@ -434,7 +437,7 @@ module.exports = {
                           {
                             mix : { block : 'document', elem : 'image' },
                             block: 'image',
-                            url: '/i/document.png'
+                            url: item.documentImage
                           },
                           {
                             elem : 'content',
@@ -510,19 +513,19 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  userName : 'Dustin Senos',
-                  userPosition : 'Former head of design Medium',
-                  userIcon : '/i/dastin.jpg'
+                  userName : 'Julie Zhuo',
+                  userPosition : 'Design director at Facebook',
+                  userIcon : '/i/juliezhuo.jpg'
                 },
                 {
-                  userName : 'Vivek Venkatraman',
-                  userPosition : 'Designer for Airbnb',
-                  userIcon : '/i/vivek.jpg'
+                  userName : 'Andrew Hwang',
+                  userPosition : 'Product designer at Facebook',
+                  userIcon : '/i/ahwng.jpg'
                 },
                 {
-                  userName : 'Tobias van Schneider',
-                  userPosition : 'Product designer of Spotify',
-                  userIcon : '/i/tobias.jpg'
+                  userName : 'Frankie Gaw',
+                  userPosition : 'Stories from the design team at Facebook',
+                  userIcon : '/i/frankiegaw.jpg'
                 }
               ].map(function(item) {
                 return [
@@ -637,33 +640,33 @@ module.exports = {
               content: [
                 {
                   position : 'UI Engineer',
-                  icon : '/i/yandex.png',
-                  alt : 'yandex'
+                  icon : '/i/messenger.png',
+                  alt : 'messenger'
                 },
                 {
                   position : 'UX Designer',
-                  icon : '/i/tinder.png',
-                  alt : 'tinder'
+                  icon : '/i/messenger.png',
+                  alt : 'messenger'
                 },
                 {
                   position : 'Chief design officer',
-                  icon : '/i/medium.png',
-                  alt : 'medium'
+                  icon : '/i/facebook.png',
+                  alt : 'facebook'
                 },
                 {
                   position : 'UI Designer',
-                  icon : '/i/uber.png',
-                  alt : 'uber'
+                  icon : '/i/messenger.png',
+                  alt : 'messenger'
                 },
                 {
                   position : 'Illustrator',
-                  icon : '/i/mailru.png',
-                  alt : 'mailru'
+                  icon : '/i/facebook.png',
+                  alt : 'facebook'
                 },
                 {
                   position : 'Iteraction designer',
-                  icon : '/i/dribbble.png',
-                  alt : 'dribbble'
+                  icon : '/i/facebook.png',
+                  alt : 'facebook'
                 }
               ].map(function(item) {
                 return [
@@ -796,35 +799,29 @@ module.exports = {
                     {
                       mix : { block : 'product-tile', elem : 'icon'},
                       block: 'image',
-                      alt: 'spotify',
-                      url: '/i/spotify.png'
+                      alt: 'facebookdesign',
+                      url: '/i/facebookdesign.jpg'
                     },
                     {
                       mix : { block : 'product-tile', elem : 'name'},
                       block : 'text',
                       mods : { size : 'm'},
-                      content : 'Spotify'
+                      content : 'Facebook Design'
                     },
                     {
                       mix : { block : 'product-tile', elem : 'web'},
                       block : 'link',
                       mods : { theme : 'islands' },
-                      url : 'spotify.com',
-                      content : 'spotify.com'
+                      url : 'http://medium.com/@facebookdesign',
+                      content : '@facebookdesign'
                     },
                     {
                       elem : 'description',
                       content : [
                         {
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : '@SpotifyCares',
-                          content : '@SpotifyCares'
-                        },
-                        {
                           block : 'text',
                           mods : { size : 's'},
-                          content : 'Music for every moment. Play, discover, and share for free. Need support? We re happy to help at'
+                          content : 'Stories from the design team at Facebook offices across the world'
                         },
                       ]
                     },
@@ -856,7 +853,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Facebook Design'
+                          content : 'Frankie Gaw'
                         },
                         {
                           block : 'text',
@@ -885,20 +882,20 @@ module.exports = {
                     {
                       mix : { block : 'event-tile', elem : 'icon'},
                       block: 'image',
-                      alt: 'behance',
-                      url: '/i/behance.jpg'
+                      alt: 'FBF8',
+                      url: '/i/fbf8.svg'
                     },
                     {
                       mix : { block : 'event-tile', elem : 'name'},
                       block : 'text',
                       mods : { size : 'm'},
-                      content : 'Behance Portfolio Review'
+                      content : 'Facebook Developer Conference'
                     },
                     {
                       mix : { block : 'event-tile', elem : 'date'},
                       block : 'text',
                       mods : { size : 's'},
-                      content : '24.01.2016'
+                      content : 'April 12, 2016'
                     },
                     {
                       mix : { block : 'event-tile', elem : 'description'},
