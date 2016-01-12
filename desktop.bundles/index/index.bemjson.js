@@ -101,6 +101,24 @@ module.exports = {
     },
     {
       block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Forms'
+            },
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
       mix : { block : 'page-row'},
       content : [
         {
@@ -373,6 +391,24 @@ module.exports = {
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'List'
+            },
           ]
         }
       ]
@@ -669,6 +705,24 @@ module.exports = {
                   }
                 ]
               })
+            },
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Tiles'
             },
           ]
         }
