@@ -29,7 +29,7 @@ module.exports = {
           mix : { block : 'promo', elem : 'description'},
           block : 'text',
           mods : { size : 's' },
-          content : 'Основная идея БЭМ-методологии — сделать разработку простой и быстрой, а работу в команде — понятной и слаженной.'
+          content : 'The main idea of BEM methodology is to speed development process up and ease the teamwork of developers.'
         },
         {
           elem : 'download',
@@ -115,7 +115,7 @@ module.exports = {
                   mix : { block : 'form', elem : 'header'},
                   block : 'text',
                   mods : { size : 'l',},
-                  content : 'Войти'
+                  content : 'Log in'
                 },
                 {
                   elem : 'content',
@@ -129,7 +129,7 @@ module.exports = {
                             {
                               block : 'input',
                               mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Введите e-mail'
+                              placeholder : 'E-mail'
                             }
                           ]
                         },
@@ -139,7 +139,7 @@ module.exports = {
                             {
                               block : 'input',
                               mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Введите пароль'
+                              placeholder : 'Password'
                             }
                           ]
                         },
@@ -157,7 +157,7 @@ module.exports = {
                               mods : { theme : 'islands', size : 'm' },
                               name: 'islands',
                               val: 'val_3',
-                              text : 'Чужой компьютер'
+                              text : 'Remember me'
                             }
                           ]
                         },
@@ -168,7 +168,7 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Войти'
+                              text : 'Log in'
                             }
                           ]
                         },
@@ -189,7 +189,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Забыли пароль?'
+                              content : 'Forgot password?'
                             }
                           ]
                         },
@@ -200,7 +200,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Зерегистрироваться'
+                              content : 'Sing up now!'
                             }
                           ]
                         },
@@ -224,7 +224,7 @@ module.exports = {
                   mix : { block : 'form', elem : 'header'},
                   block : 'text',
                   mods : { size : 'l',},
-                  content : 'Восстановить пароль'
+                  content : 'Reset your password '
                 },
                 {
                   elem : 'content',
@@ -238,7 +238,7 @@ module.exports = {
                             {
                               block : 'input',
                               mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Введите e-mail'
+                              placeholder : 'E-mail'
                             }
                           ]
                         }
@@ -254,7 +254,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Забыли e-mail?'
+                              content : 'Forgot e-mail?'
                             }
                           ]
                         },
@@ -265,7 +265,7 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Отправить'
+                              text : 'Reset'
                             }
                           ]
                         },
@@ -286,7 +286,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Уже зарегистрированы?'
+                              content : 'Log in'
                             }
                           ]
                         },
@@ -297,7 +297,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Зерегистрироваться'
+                              content : 'Sing up now!'
                             }
                           ]
                         },
@@ -322,7 +322,7 @@ module.exports = {
                   mix : { block : 'form', elem : 'header'},
                   block : 'text',
                   mods : { size : 'l',},
-                  content : 'Регистрация'
+                  content : 'Sing up'
                 },
                 {
                   elem : 'content',
@@ -336,7 +336,7 @@ module.exports = {
                             {
                               block : 'input',
                               mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Введите e-mail'
+                              placeholder : 'E-mail'
                             }
                           ]
                         }
@@ -352,7 +352,7 @@ module.exports = {
                             {
                               block : 'link',
                               mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Уже зарегистрованы?'
+                              content : 'Log in'
                             }
                           ]
                         },
@@ -363,35 +363,14 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Регистрация'
+                              text : 'Sing up'
                             }
                           ]
                         },
                       ]
                     }
                   ]
-                },
-                {
-                  elem : 'footer',
-                  content: [
-                    {
-                      block : 'form-link',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Войти'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                  ]
-                },
+                }
               ]
             }
           ]
@@ -855,12 +834,12 @@ module.exports = {
                           mods : { size : 'm'},
                           content : 'Frankie Gaw'
                         },
-                        {
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'Stories from the design team at Facebook offices across the world'
-                        },
                       ]
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'Stories from the design team at Facebook offices across the world'
                     }
                   ]
                 },
@@ -901,7 +880,7 @@ module.exports = {
                       mix : { block : 'event-tile', elem : 'description'},
                       block : 'text',
                       mods : { size : 's'},
-                      content : 'Подключитесь и получите отзывы о ваших творческих проектах'
+                      content : 'Join us in San Francisco for our annual developer conference'
                     },
                     {
                       elem : 'action',
