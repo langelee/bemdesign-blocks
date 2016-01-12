@@ -567,19 +567,19 @@ module.exports = {
               mix : { block : 'kit', elem : 'item'},
               content: [
                 {
-                  newsContentTitle : 'Релиз документации: i-bem',
-                  newsContentDate : '3 ноября 2015',
-                  newsContentText : 'Мы подготовили большое обновление документации к технологии i-bem и с радостью делимся новостями с вами!'
+                  newsContentTitle : 'Here’s to 2016 with Messenger',
+                  newsContentDate : 'January 7, 2016',
+                  newsContentText : 'The first week of the New Year is always a good moment to look back at the year behind and think about the one ahead.'
                 },
                 {
-                  newsContentTitle : 'Релиз: bem-core v2.8.0',
-                  newsContentDate : '30 сентября 2015',
-                  newsContentText : 'Мы рады сообщить вам о выпуске очередного минорного релиза bem-core 2.8.0'
+                  newsContentTitle : 'Messenger Adds New Features For Sharing During the Holidays',
+                  newsContentDate : 'December 17, 2015',
+                  newsContentText : 'In preparation for the coming weeks as many of us spend lots of time with friends.'
                 },
                 {
-                  newsContentTitle : 'Релиз: enb-stylus v2.0.0',
-                  newsContentDate : '26 августа 2015',
-                  newsContentText : 'Мы полностью переписали технологии для сборки стилей'
+                  newsContentTitle : 'Introducing Transportation on Messenger',
+                  newsContentDate : 'December 16, 2015',
+                  newsContentText : 'Messenger is your place to communicate seamlessly with everyone – from making plans with friends.'
                 }
               ].map(function(item) {
                 return [
@@ -711,20 +711,20 @@ module.exports = {
                       mix : { block : 'user-tile', elem : 'icon'},
                       block: 'image',
                       alt: 'elizabeth',
-                      url: '/i/elizabeth.jpg'
+                      url: '/i/juliezhuo.jpg'
                     },
                     {
                       mix : { block : 'user-tile', elem : 'name'},
                       block : 'text',
                       mods : { size : 'm'},
-                      content : 'Elizabeth Lin'
+                      content : 'Julie Zhuo'
                     },
                     {
                       mix : { block : 'user-tile', elem : 'twitter'},
                       block : 'link',
                       mods : { theme : 'islands' },
-                      url : '@lalizlabeth',
-                      content : '@lalizlabeth'
+                      url : 'http://twitter.com/joulee',
+                      content : '@joulee'
                     },
                     {
                       elem : 'description',
@@ -732,7 +732,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 's', display : 'inline' },
-                          content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy'
+                          content : 'Design director at Facebook'
                         }
                       ]
                     },
@@ -759,14 +759,14 @@ module.exports = {
                         {
                           mix : { block : 'expert-info', elem : 'image'},
                           block: 'image',
-                          alt: 'elizabeth',
-                          url: '/i/elizabeth.jpg'
+                          alt: 'ahwng',
+                          url: '/i/ahwng.jpg'
                         },
                         {
                           mix : { block : 'expert-info', elem : 'name'},
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Elizabeth Lin'
+                          content : 'Andrew Hwang'
                         }
                       ]
                     },
@@ -774,7 +774,7 @@ module.exports = {
                       mix : { block : 'expert-tile', elem : 'description'},
                       block : 'text',
                       mods : { size : 's'},
-                      content : 'Designer + Aspiring Princess. Product Designer @KhanAcademy'
+                      content : 'Product designer at Facebook. Encourager of empathy.'
                     }
                   ]
                 },
@@ -847,8 +847,8 @@ module.exports = {
                     {
                       mix : { block : 'partner-tile', elem : 'icon'},
                       block: 'image',
-                      alt: 'elizabeth',
-                      url: '/i/elizabeth.jpg'
+                      alt: 'frankiegaw',
+                      url: '/i/frankiegaw.jpg'
                     },
                     {
                       elem : 'name',
@@ -856,7 +856,12 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Elizabeth Lin'
+                          content : 'Facebook Design'
+                        },
+                        {
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Stories from the design team at Facebook offices across the world'
                         },
                       ]
                     }
