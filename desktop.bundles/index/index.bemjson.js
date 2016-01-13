@@ -57,8 +57,14 @@ module.exports = {
       ]
     },
     */
+
+
+
+
+
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -70,6 +76,13 @@ module.exports = {
                 {
                   block : 'control-group',
                   content : [
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'guide',
+                      val: '1',
+                      text : 'guide'
+                    },
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'l', type : 'button' },
@@ -91,6 +104,297 @@ module.exports = {
                       val: '1',
                       text : 'tiles'
                     },
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'base'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$base = #000'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'active'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { color: 'base'},
+                  content : '$active = #070'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'link'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$link = #44b'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'project'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$project = #fc0'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'alert'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$alert = #e00'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'clean'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$clean = #fff'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'normal'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$normal = #f6f5f3'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              mix : { block : 'kit', elem : 'item'},
+              block : 'typography',
+              content : [
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xl'},
+                  content : '$xl typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l'},
+                  content : '$l typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$m typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 's'},
+                  content : '$s typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xs'},
+                  content : '$xs typography'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$xxl = 96px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$xl = 48px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$l = 32px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$m = 24px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$s = 16px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$xs = 8px'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'space',
+              content : [
+                {
+                  elem : 'image'
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'm'},
+                      content : '$xxs = 4px'
+                    }
                   ]
                 }
               ]
