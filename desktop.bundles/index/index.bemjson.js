@@ -289,47 +289,52 @@ module.exports = {
                       ]
                     },
                     {
-                      block : 'avatar',
+                      block : 'avatars',
                       content : [
                         {
-                          elem : 'image',
-                          mods : { size : 'l' }
+                          block : 'avatar',
+                          content : [
+                            {
+                              elem : 'image',
+                              mods : { size : 'l' }
+                            },
+                            {
+                              mix : { block : 'avatar', elem : 'text'},
+                              block : '',
+                              mods : { size : 'l' },
+                              content : '$l = 120px'
+                            }
+                          ]
                         },
                         {
-                          mix : { block : 'avatar', elem : 'text'},
-                          block : '',
-                          mods : { size : 'l' },
-                          content : '$l = 120px'
-                        }
-                      ]
-                    },
-                    {
-                      block : 'avatar',
-                      content : [
-                        {
-                          elem : 'image',
-                          mods : { size : 'm' }
+                          block : 'avatar',
+                          content : [
+                            {
+                              elem : 'image',
+                              mods : { size : 'm' }
+                            },
+                            {
+                              mix : { block : 'avatar', elem : 'text'},
+                              block : '',
+                              mods : { size : 'm' },
+                              content : '$m = 90px'
+                            }
+                          ]
                         },
                         {
-                          mix : { block : 'avatar', elem : 'text'},
-                          block : '',
-                          mods : { size : 'm' },
-                          content : '$m = 90px'
-                        }
-                      ]
-                    },
-                    {
-                      block : 'avatar',
-                      content : [
-                        {
-                          elem : 'image',
-                          mods : { size : 's' }
-                        },
-                        {
-                          mix : { block : 'avatar', elem : 'text'},
-                          block : '',
-                          mods : { size : 's' },
-                          content : '$l = 60px'
+                          block : 'avatar',
+                          content : [
+                            {
+                              elem : 'image',
+                              mods : { size : 's' }
+                            },
+                            {
+                              mix : { block : 'avatar', elem : 'text'},
+                              block : '',
+                              mods : { size : 's' },
+                              content : '$l = 60px'
+                            }
+                          ]
                         }
                       ]
                     }
