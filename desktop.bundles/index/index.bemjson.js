@@ -36,13 +36,15 @@ module.exports = {
           content : [
             {
               block : 'button',
-              mods : { theme : 'islands', size : 'xl', view : 'action' },
+              mods : { theme : 'islands', size : 'xl', view : 'action', type : 'link' },
+              url : 'https://github.com/bemcustom',
               text : 'Quick start'
             }
           ]
         }
       ]
     },
+
     /*
     {
       block : 'row',
@@ -57,10 +59,6 @@ module.exports = {
       ]
     },
     */
-
-
-
-
 
     {
       block : 'row',
@@ -108,6 +106,24 @@ module.exports = {
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Guide'
+            },
           ]
         }
       ]
@@ -232,41 +248,69 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              mix : { block : 'kit', elem : 'item'},
-              block : 'typography',
+              block : 'kit',
               content : [
                 {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xl'},
-                  content : '$xl typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l'},
-                  content : '$l typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'm'},
-                  content : '$m typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$s typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xs'},
-                  content : '$xs typography'
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'typography',
+                      content : [
+                        {
+                          mix : { block : 'typography', elem : 'item'},
+                          block : 'text',
+                          mods : { size : 'xl'},
+                          content : '$xl typography'
+                        },
+                        {
+                          mix : { block : 'typography', elem : 'item'},
+                          block : 'text',
+                          mods : { size : 'l'},
+                          content : '$l typography'
+                        },
+                        {
+                          mix : { block : 'typography', elem : 'item'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : '$m typography'
+                        },
+                        {
+                          mix : { block : 'typography', elem : 'item'},
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : '$s typography'
+                        },
+                        {
+                          mix : { block : 'typography', elem : 'item'},
+                          block : 'text',
+                          mods : { size : 'xs'},
+                          content : '$xs typography'
+                        }
+                      ]
+                    },
+                    {
+                      block : 'avatar',
+                      content : [
+                        {
+                          elem : 'image',
+                        },
+                        {
+                          mix : { block : 'avatar', elem : 'text'},
+                          block : 'text',
+                          mods : { size : 'm' },
+                          content : '$m typography'
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
+
+            /*
+
+            */
+
           ]
         },
         {
@@ -277,7 +321,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'xxl'}
                 },
                 {
                   elem : 'text',
@@ -295,7 +340,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'xl'}
                 },
                 {
                   elem : 'text',
@@ -313,7 +359,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'l'}
                 },
                 {
                   elem : 'text',
@@ -331,7 +378,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'm'}
                 },
                 {
                   elem : 'text',
@@ -349,7 +397,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 's'}
                 },
                 {
                   elem : 'text',
@@ -367,7 +416,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'xs'}
                 },
                 {
                   elem : 'text',
@@ -385,7 +435,8 @@ module.exports = {
               block : 'space',
               content : [
                 {
-                  elem : 'image'
+                  elem : 'image',
+                  mods : { size : 'xxs'}
                 },
                 {
                   elem : 'text',
