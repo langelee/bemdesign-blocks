@@ -293,12 +293,43 @@ module.exports = {
                       content : [
                         {
                           elem : 'image',
+                          mods : { size : 'l' }
                         },
                         {
                           mix : { block : 'avatar', elem : 'text'},
-                          block : 'text',
+                          block : '',
+                          mods : { size : 'l' },
+                          content : '$l = 120px'
+                        }
+                      ]
+                    },
+                    {
+                      block : 'avatar',
+                      content : [
+                        {
+                          elem : 'image',
+                          mods : { size : 'm' }
+                        },
+                        {
+                          mix : { block : 'avatar', elem : 'text'},
+                          block : '',
                           mods : { size : 'm' },
-                          content : '$m typography'
+                          content : '$m = 90px'
+                        }
+                      ]
+                    },
+                    {
+                      block : 'avatar',
+                      content : [
+                        {
+                          elem : 'image',
+                          mods : { size : 's' }
+                        },
+                        {
+                          mix : { block : 'avatar', elem : 'text'},
+                          block : '',
+                          mods : { size : 's' },
+                          content : '$l = 60px'
                         }
                       ]
                     }

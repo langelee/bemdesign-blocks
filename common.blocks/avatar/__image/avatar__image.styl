@@ -1,2 +1,17 @@
-.avatar__image {
-}
+@import "../../../libs/bem-components/design/colors.styl"
+@import "../../../libs/bem-components/design/spaces.styl"
+
+.avatar__image
+  background: $normal
+  border-radius: 50%
+  margin-bottom: $xs
+  &_size
+    &_l
+      width: 120px
+      height: 120px
+    &_m
+      width: 90px
+      height: 90px
+    &_s
+      width: 60px
+      height: 60px
