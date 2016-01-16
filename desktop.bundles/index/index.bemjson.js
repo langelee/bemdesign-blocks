@@ -205,7 +205,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$project = #fc0'
                 }
               ]
@@ -220,7 +220,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$base = #000'
                 }
               ]
@@ -235,7 +235,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$clean = #fff'
                 }
               ]
@@ -250,7 +250,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$normal = #f6f5f3'
                 }
               ]
@@ -265,7 +265,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$alert = #e00'
                 }
               ]
@@ -295,7 +295,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$link = #44b'
                 }
               ]
@@ -316,7 +316,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$project = #fc0'
                 }
               ]
@@ -337,7 +337,7 @@ module.exports = {
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
-                  mods : { size : 'm'},
+                  mods : { size : 's'},
                   content : '$project = #fc0'
                 }
               ]
@@ -382,7 +382,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$xxl = 96px'
                     }
                   ]
@@ -401,7 +401,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$xl = 48px'
                     }
                   ]
@@ -420,7 +420,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$l = 32px'
                     }
                   ]
@@ -445,7 +445,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$m = 24px'
                     }
                   ]
@@ -464,7 +464,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$s = 16px'
                     }
                   ]
@@ -483,7 +483,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$xs = 8px'
                     }
                   ]
@@ -508,7 +508,7 @@ module.exports = {
                   content : [
                     {
                       block : 'text',
-                      mods : { size : 'm'},
+                      mods : { size : 's'},
                       content : '$xxs = 4px'
                     }
                   ]
@@ -552,8 +552,8 @@ module.exports = {
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
-                  block : '',
-                  mods : { size : 'l' },
+                  block : 'text',
+                  mods : { size : 's' },
                   content : '$l = 120px'
                 }
               ]
@@ -573,8 +573,8 @@ module.exports = {
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
-                  block : '',
-                  mods : { size : 'm' },
+                  block : 'text',
+                  mods : { size : 's' },
                   content : '$m = 90px'
                 }
               ]
@@ -594,7 +594,7 @@ module.exports = {
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
-                  block : '',
+                  block : 'text',
                   mods : { size : 's' },
                   content : '$l = 60px'
                 }
