@@ -593,7 +593,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'xxl'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'xxl'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -612,7 +617,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'xl'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'xl'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -631,7 +641,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'l'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'l'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -656,7 +671,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'm'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'm'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -675,7 +695,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 's'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 's'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -694,7 +719,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'xs'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'xs'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -719,7 +749,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'xxs'}
+                  content : [
+                    {
+                      block : 'space-image',
+                      mods : { size : 'xxs'},
+                    }
+                  ]
                 },
                 {
                   elem : 'text',
@@ -766,7 +801,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'l' }
+                  content : [
+                    {
+                      block : 'avatar-image',
+                      mods : { size : 'l' }
+                    }
+                  ]
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
@@ -787,7 +827,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 'm' }
+                  content : [
+                    {
+                      block : 'avatar-image',
+                      mods : { size : 'm' }
+                    }
+                  ]
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
@@ -808,7 +853,12 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { size : 's' }
+                  content : [
+                    {
+                      block : 'avatar-image',
+                      mods : { size : 's' }
+                    }
+                  ]
                 },
                 {
                   mix : { block : 'avatar', elem : 'text'},
@@ -846,13 +896,39 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              bem: false,
-              tag: 'div',
-              attrs: {
-                'data-icon': 'ei-spinner',
-                'data-size': 'l'
-              }
-            },
+              block : 'evil-icon',
+              content : [
+                {
+                  elem : 'image',
+                  content : [
+                    {
+                      block : 'evil-icon-image',
+                      mods : { size : 'l' },
+                      content : [
+                        {
+                          bem: false,
+                          tag: 'div',
+                          attrs: {
+                            'data-icon': 'ei-spinner',
+                            'data-size': 'l'
+                          }
+                        },
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's' },
+                      content : '$l = 96px'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -860,13 +936,39 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              bem: false,
-              tag: 'div',
-              attrs: {
-                'data-icon': 'ei-spinner',
-                'data-size': 'm'
-              }
-            },
+              block : 'evil-icon',
+              content : [
+                {
+                  elem : 'image',
+                  content : [
+                    {
+                      block : 'evil-icon-image',
+                      mods : { size : 'm' },
+                      content : [
+                        {
+                          bem: false,
+                          tag: 'div',
+                          attrs: {
+                            'data-icon': 'ei-spinner',
+                            'data-size': 'm'
+                          }
+                        },
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's' },
+                      content : '$m = 48px'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -874,13 +976,39 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              bem: false,
-              tag: 'div',
-              attrs: {
-                'data-icon': 'ei-spinner',
-                'data-size': 's'
-              }
-            },
+              block : 'evil-icon',
+              content : [
+                {
+                  elem : 'image',
+                  content : [
+                    {
+                      block : 'evil-icon-image',
+                      mods : { size : 's' },
+                      content : [
+                        {
+                          bem: false,
+                          tag: 'div',
+                          attrs: {
+                            'data-icon': 'ei-spinner',
+                            'data-size': 's'
+                          }
+                        },
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's' },
+                      content : '$s = 24px'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
       ]
