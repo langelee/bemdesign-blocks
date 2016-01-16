@@ -12,6 +12,16 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
+    /* eliv-icons
+    {
+      bem: false,
+      tag: 'div',
+      attrs: {
+        'data-icon': 'ei-spinner',
+        'data-size': 'm'
+      }
+    },
+    */
     {
       block : 'promo',
       content : [
@@ -66,7 +76,58 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          mods : { lw : 6, xl : 6, xxl : 6 },
+          content : [
+            {
+              block : 'component-nav',
+              content : [
+                {
+                  block : 'control-group',
+                  content : [
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'colors',
+                      val: '1',
+                      text : 'colors'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'spaces',
+                      val: '1',
+                      text : 'spaces'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'avatars',
+                      val: '1',
+                      text : 'avatars'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'icons',
+                      val: '1',
+                      text : 'icons'
+                    },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'typography',
+                      val: '1',
+                      text : 'typography'
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 6, xl : 6, xxl : 6   },
           content : [
             {
               block : 'component-nav',
@@ -110,77 +171,30 @@ module.exports = {
         }
       ]
     },
-    {
-      block : 'row',
-      content : [
-        {
-          elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Guide'
-            },
-          ]
-        }
-      ]
-    },
+
+
+    /* Colors */
     {
       block : 'row',
       mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'color',
-              content : [
-                {
-                  elem : 'image',
-                  mods : { color: 'base'}
-                },
-                {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 'm'},
-                  content : '$base = #000'
-                }
-              ]
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Colors'
             },
-            {
-              block : 'color',
-              content : [
-                {
-                  elem : 'image',
-                  mods : { color: 'active'}
-                },
-                {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { color: 'base'},
-                  content : '$active = #070'
-                }
-              ]
-            },
-            {
-              block : 'color',
-              content : [
-                {
-                  elem : 'image',
-                  mods : { color: 'link'}
-                },
-                {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 'm'},
-                  content : '$link = #44b'
-                }
-              ]
-            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
             {
               block : 'color',
               content : [
@@ -201,13 +215,13 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'alert'}
+                  mods : { color: 'base'}
                 },
                 {
                   mix : { block : 'color', elem : 'text'},
                   block : 'text',
                   mods : { size : 'm'},
-                  content : '$alert = #e00'
+                  content : '$base = #000'
                 }
               ]
             },
@@ -241,6 +255,51 @@ module.exports = {
                 }
               ]
             },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'alert'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$alert = #e00'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'active'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { color: 'base'},
+                  content : '$active = #070'
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'link'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$link = #44b'
+                }
+              ]
+            },
           ]
         },
         {
@@ -248,105 +307,63 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'kit',
+              block : 'color',
               content : [
                 {
-                  elem : 'item',
-                  content : [
-                    {
-                      block : 'typography',
-                      content : [
-                        {
-                          mix : { block : 'typography', elem : 'item'},
-                          block : 'text',
-                          mods : { size : 'xl'},
-                          content : '$xl typography'
-                        },
-                        {
-                          mix : { block : 'typography', elem : 'item'},
-                          block : 'text',
-                          mods : { size : 'l'},
-                          content : '$l typography'
-                        },
-                        {
-                          mix : { block : 'typography', elem : 'item'},
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : '$m typography'
-                        },
-                        {
-                          mix : { block : 'typography', elem : 'item'},
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : '$s typography'
-                        },
-                        {
-                          mix : { block : 'typography', elem : 'item'},
-                          block : 'text',
-                          mods : { size : 'xs'},
-                          content : '$xs typography'
-                        }
-                      ]
-                    },
-                    {
-                      block : 'avatars',
-                      content : [
-                        {
-                          block : 'avatar',
-                          content : [
-                            {
-                              elem : 'image',
-                              mods : { size : 'l' }
-                            },
-                            {
-                              mix : { block : 'avatar', elem : 'text'},
-                              block : '',
-                              mods : { size : 'l' },
-                              content : '$l = 120px'
-                            }
-                          ]
-                        },
-                        {
-                          block : 'avatar',
-                          content : [
-                            {
-                              elem : 'image',
-                              mods : { size : 'm' }
-                            },
-                            {
-                              mix : { block : 'avatar', elem : 'text'},
-                              block : '',
-                              mods : { size : 'm' },
-                              content : '$m = 90px'
-                            }
-                          ]
-                        },
-                        {
-                          block : 'avatar',
-                          content : [
-                            {
-                              elem : 'image',
-                              mods : { size : 's' }
-                            },
-                            {
-                              mix : { block : 'avatar', elem : 'text'},
-                              block : '',
-                              mods : { size : 's' },
-                              content : '$l = 60px'
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  elem : 'image',
+                  mods : { color: 'project'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$project = #fc0'
                 }
               ]
-            }
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'project'}
+                },
+                {
+                  mix : { block : 'color', elem : 'text'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$project = #fc0'
+                }
+              ]
+            },
+          ]
+        },
+      ]
+    },
 
-            /*
 
-            */
-
+    /* Spaces */
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Spaces'
+            },
           ]
         },
         {
@@ -410,6 +427,12 @@ module.exports = {
                 }
               ]
             },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
             {
               block : 'space',
               content : [
@@ -467,6 +490,12 @@ module.exports = {
                 }
               ]
             },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
             {
               block : 'space',
               content : [
@@ -485,11 +514,240 @@ module.exports = {
                   ]
                 }
               ]
-            }
+            },
           ]
-        }
+        },
       ]
     },
+
+
+    /* Avatars */
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Avatars'
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'avatar',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { size : 'l' }
+                },
+                {
+                  mix : { block : 'avatar', elem : 'text'},
+                  block : '',
+                  mods : { size : 'l' },
+                  content : '$l = 120px'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'avatar',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { size : 'm' }
+                },
+                {
+                  mix : { block : 'avatar', elem : 'text'},
+                  block : '',
+                  mods : { size : 'm' },
+                  content : '$m = 90px'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'avatar',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { size : 's' }
+                },
+                {
+                  mix : { block : 'avatar', elem : 'text'},
+                  block : '',
+                  mods : { size : 's' },
+                  content : '$l = 60px'
+                }
+              ]
+            }
+          ]
+        },
+      ]
+    },
+
+    /* Icons */
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Icons'
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              bem: false,
+              tag: 'div',
+              attrs: {
+                'data-icon': 'ei-spinner',
+                'data-size': 'l'
+              }
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              bem: false,
+              tag: 'div',
+              attrs: {
+                'data-icon': 'ei-spinner',
+                'data-size': 'm'
+              }
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              bem: false,
+              tag: 'div',
+              attrs: {
+                'data-icon': 'ei-spinner',
+                'data-size': 's'
+              }
+            },
+          ]
+        },
+      ]
+    },
+
+    /* Typography */
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Typography'
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'typography',
+              content : [
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xl'},
+                  content : '$xl typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l'},
+                  content : '$l typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'm'},
+                  content : '$m typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 's'},
+                  content : '$s typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xs'},
+                  content : '$xs typography'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+
+          ]
+        },
+      ]
+    },
+
+
+
+
+
     {
       block : 'row',
       content : [
