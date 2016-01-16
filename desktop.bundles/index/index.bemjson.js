@@ -138,13 +138,6 @@ module.exports = {
                     {
                       block : 'checkbox',
                       mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'guide',
-                      val: '1',
-                      text : 'guide'
-                    },
-                    {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'form',
                       val: '1',
                       text : 'forms'
@@ -193,7 +186,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 3, xl : 3, xxl : 3 },
           content : [
             {
               block : 'color',
@@ -203,10 +196,24 @@ module.exports = {
                   mods : { color: 'project'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$project = #fc0'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$project'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(48, 100%, 50%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#fc0'
+                    },
+                  ]
                 }
               ]
             },
@@ -218,25 +225,24 @@ module.exports = {
                   mods : { color: 'base'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$base = #000'
-                }
-              ]
-            },
-            {
-              block : 'color',
-              content : [
-                {
-                  elem : 'image',
-                  mods : { color: 'clean'}
-                },
-                {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$clean = #fff'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$base'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 0%, 0%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#000'
+                    }
+                  ]
                 }
               ]
             },
@@ -248,10 +254,53 @@ module.exports = {
                   mods : { color: 'normal'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$normal = #f6f5f3'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$normal'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(40, 14%, 96%) '
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#f6f5f3'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'clean'}
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$clean'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 0%, 100%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#fff'
+                    }
+                  ]
                 }
               ]
             },
@@ -263,10 +312,24 @@ module.exports = {
                   mods : { color: 'alert'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$alert = #e00'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$alert'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 100%, 47%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#e00'
+                    }
+                  ]
                 }
               ]
             },
@@ -278,10 +341,24 @@ module.exports = {
                   mods : { color: 'active'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { color: 'base'},
-                  content : '$active = #070'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { color: 'base'},
+                      content : '$active'
+                    },
+                    {
+                      block : 'text',
+                      mods : { color: 'base'},
+                      content : 'hsl(120, 100%, 23%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { color: 'base'},
+                      content : '#070'
+                    }
+                  ]
                 }
               ]
             },
@@ -293,10 +370,24 @@ module.exports = {
                   mods : { color: 'link'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$link = #44b'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '$link'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(240, 47%, 50%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#44b'
+                    }
+                  ]
                 }
               ]
             },
@@ -304,7 +395,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 3, xl : 3, xxl : 3 },
           content : [
             {
               block : 'color',
@@ -314,10 +405,53 @@ module.exports = {
                   mods : { color: 'project'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$project = #fc0'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($project, 63%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(48, 100%, 63%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#ffdb4d'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'base'}
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($base, 18%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 0%, 18%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#2e2e2e'
+                    }
+                  ]
                 }
               ]
             },
@@ -325,7 +459,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 3, xl : 3, xxl : 3 },
           content : [
             {
               block : 'color',
@@ -335,13 +469,97 @@ module.exports = {
                   mods : { color: 'project'}
                 },
                 {
-                  mix : { block : 'color', elem : 'text'},
-                  block : 'text',
-                  mods : { size : 's'},
-                  content : '$project = #fc0'
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($project, 81%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(47, 100%, 81%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#ffeba0'
+                    }
+                  ]
                 }
               ]
             },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'base'}
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($base, 60%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 0%, 60%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#999'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 3, xl : 3, xxl : 3 },
+          content : [
+            {
+              block : 'color',
+              content : [
+
+              ]
+            },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'base'}
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($base, 80%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(0, 0%, 80%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : '#ccc'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
       ]
