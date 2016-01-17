@@ -12,17 +12,30 @@
   left: 0px
   &_color
     &_base
-      background: #000
+      background: $base
+    &_l-base-18
+      background: lighten($base, 18%)
+    &_l-base-60
+      background: lighten($base, 60%)
+    &_l-base-80
+      background: lighten($base, 80%)
     &_active
-      background: #070
+      background: $active
     &_link
-      background: #44b
+      background: $link
     &_project
-      background: #fc0
+      background: $project
+    &_l-project-63
+      background: lighten($project, 63%)
+    &_l-project-81
+      background: lighten($project, 81%)
     &_alert
-      background: #e00
+      background: $alert
     &_clean
-      background: #fff
-      border: 1px solid #f6f5f3
+      background: $clean
+      border: 1px solid $normal
     &_normal
-      background: #f6f5f3
+      background: $normal
+    &_l-normal-86
+      background: lighten($normal, 86%)
+      border: 1px solid $normal

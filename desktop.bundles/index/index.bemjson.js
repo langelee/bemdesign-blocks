@@ -165,7 +165,6 @@ module.exports = {
       ]
     },
 
-
     /* Colors */
     {
       block : 'row',
@@ -402,7 +401,7 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'project'}
+                  mods : { color: 'l-project-63'}
                 },
                 {
                   elem : 'text',
@@ -431,7 +430,7 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'base'}
+                  mods : { color: 'l-base-18'}
                 },
                 {
                   elem : 'text',
@@ -455,6 +454,30 @@ module.exports = {
                 }
               ]
             },
+            {
+              block : 'color',
+              content : [
+                {
+                  elem : 'image',
+                  mods : { color: 'l-normal-86'}
+                },
+                {
+                  elem : 'text',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'lighten($normal, 86%)'
+                    },
+                    {
+                      block : 'text',
+                      mods : { size : 's'},
+                      content : 'hsl(40, 14%, 86%)'
+                    },
+                  ]
+                }
+              ]
+            },
           ]
         },
         {
@@ -466,7 +489,7 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'project'}
+                  mods : { color: 'l-project-81'}
                 },
                 {
                   elem : 'text',
@@ -495,7 +518,7 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'base'}
+                  mods : { color: 'l-base-60'}
                 },
                 {
                   elem : 'text',
@@ -536,7 +559,7 @@ module.exports = {
               content : [
                 {
                   elem : 'image',
-                  mods : { color: 'base'}
+                  mods : { color: 'l-base-80  '}
                 },
                 {
                   elem : 'text',
@@ -564,6 +587,7 @@ module.exports = {
         },
       ]
     },
+
 
 
     /* Spaces */
