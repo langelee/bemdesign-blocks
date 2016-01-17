@@ -155,6 +155,13 @@ module.exports = {
                       val: '1',
                       text : 'tiles'
                     },
+                    {
+                      block : 'checkbox',
+                      mods : { theme : 'islands', size : 'l', type : 'button' },
+                      name: 'sections',
+                      val: '1',
+                      text : 'sections'
+                    },
                   ]
                 }
               ]
@@ -2411,7 +2418,68 @@ module.exports = {
     */
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'footer-section',
+              content : [
+                {
+                  block : 'row',
+                  content : [
+                    {
+                      elem : 'col',
+                      mods : { lw : 3, xl : 3, xxl : 3 },
+                      content : [
+                        {
+                          block : 'footer-section-item',
+                          content : [
+
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      ]
+    },
+
+
+    {
+      block : 'row',
+      content : [
+        {
+          block : 'kit-item-header',
+          content : [
+            {
+              elem : 'name',
+              content : [
+                {
+                  block : 'text',
+                  mods : { size : 'l' },
+                  content : 'Sections'
+                },
+              ]
+            },
+            {
+              elem : 'name',
+              content : [
+                {
+                  block : 'text',
+                  mods : { size : 's',},
+                  content : 'Description description description'
+                },
+              ]
+            }
+          ]
+        },
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
