@@ -72,7 +72,6 @@ module.exports = {
 
     {
       block : 'row',
-      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -147,7 +146,7 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'list',
                       val: '1',
-                      text : ' list'
+                      text : ' lists'
                     },
                     {
                       block : 'checkbox',
@@ -1322,45 +1321,42 @@ module.exports = {
         },
       ]
     },
-
-
-
-
-
-    {
-      block : 'row',
-      content : [
-        {
-          block : 'kit-item-header',
-          content : [
-            {
-              elem : 'name',
-              content : [
-                {
-                  block : 'text',
-                  mods : { size : 'l' },
-                  content : 'Forms'
-                },
-              ]
-            },
-            {
-              elem : 'name',
-              content : [
-                {
-                  block : 'text',
-                  mods : { size : 's',},
-                  content : 'Description description description'
-                },
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       block : 'row',
       mix : { block : 'page-row'},
       content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Forms'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
@@ -1637,11 +1633,12 @@ module.exports = {
     },
     {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
           mix : { block : 'kit', elem : 'item'},
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
               block : 'kit-item-header',
@@ -1652,7 +1649,7 @@ module.exports = {
                     {
                       block : 'text',
                       mods : { size : 'l' },
-                      content : 'List'
+                      content : 'Lists'
                     },
                   ]
                 },
@@ -1669,13 +1666,7 @@ module.exports = {
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      content : [
+        },
         {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
@@ -2420,7 +2411,6 @@ module.exports = {
     */
     {
       block : 'row',
-      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
