@@ -176,15 +176,30 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Colors'
-            },
-            {
-              block : 'text',
-              mods : { size : 's',},
-              content : 'description'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Colors'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -631,11 +646,30 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Spaces'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Spaces'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -839,11 +873,30 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Avatars'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Avatars'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -938,11 +991,30 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Icons'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Icons'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1079,11 +1151,30 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Typography'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Typography'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1240,16 +1331,28 @@ module.exports = {
       block : 'row',
       content : [
         {
-          elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          block : 'kit-item-header',
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Forms'
+              elem : 'name',
+              content : [
+                {
+                  block : 'text',
+                  mods : { size : 'l' },
+                  content : 'Forms'
+                },
+              ]
             },
+            {
+              elem : 'name',
+              content : [
+                {
+                  block : 'text',
+                  mods : { size : 's',},
+                  content : 'Description description description'
+                },
+              ]
+            }
           ]
         }
       ]
@@ -1541,11 +1644,30 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'List'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'List'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -1856,11 +1978,30 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              mix : { block : 'document-content', elem : 'title' },
-              block : 'text',
-              mods : { size : 'l' },
-              content : 'Tiles'
-            },
+              block : 'kit-item-header',
+              content : [
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Tiles'
+                    },
+                  ]
+                },
+                {
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
