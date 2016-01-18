@@ -12,6 +12,7 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
+
     /* eliv-icons
     {
       bem: false,
@@ -21,7 +22,44 @@ module.exports = {
         'data-size': 'm'
       }
     },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  block : 'footer',
+                  mix : { block : 'kit', elem : 'item'},
+                  content : [
+
+
+                  ]
+                },
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          content : [
+
+          ]
+        }
+      ]
+    },
     */
+
     {
       block : 'promo',
       content : [
@@ -55,20 +93,7 @@ module.exports = {
       ]
     },
 
-    /*
-    {
-      block : 'row',
-      content : [
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
-          content : [
 
-          ]
-        }
-      ]
-    },
-    */
 
     {
       block : 'row',
@@ -1185,7 +1210,7 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'typography',
@@ -1222,20 +1247,61 @@ module.exports = {
                 }
               ]
             },
+            {
+              block : 'typography',
+              content : [
+                {
+                  mix : { block : 'typography', elem : 'item' },
+                  block : 'text',
+                  mods : { size : 'l', view : 'base'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', view : 'project'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', view : 'alert'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', view : 'active'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', view : 'link'},
+                  content : 'Typography'
+                }
+              ]
+            },
           ]
         },
         {
           elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
+          mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
               block : 'typography',
               content : [
                 {
-                  elem : 'item',
+                  mix : { block : 'typography', elem : 'item' },
+                  block : 'text',
+                  mods : { size : 'xl', weight : 'bold' },
+                  content : 'Typography'
                 },
                 {
-                  elem : 'item'
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', weight : 'bold'},
+                  content : 'Typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
@@ -1246,80 +1312,54 @@ module.exports = {
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
-                  mods : { size : 's', view : 'active'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xs', transform : 'uppercase', view : 'normal'},
-                  content : 'Typography'
-                }
-              ]
-            },
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
-          content : [
-            {
-              block : 'typography',
-              content : [
-                {
-                  elem : 'item',
-                },
-                {
-                  elem : 'item'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'm', view : 'normal'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 's', view : 'link'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xs', transform : 'uppercase', view : 'project'},
-                  content : 'Typography'
-                }
-              ]
-            },
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
-          content : [
-            {
-              block : 'typography',
-              content : [
-                {
-                  elem : 'item',
-                },
-                {
-                  elem : 'item'
-                },
-                {
-                  elem : 'item'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
                   mods : { size : 's', weight : 'bold'},
                   content : 'Typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
-                  mods : { size : 'xs', view : 'link'},
+                  mods : { size : 'xs', weight : 'bold'},
+                  content : 'Typography'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'typography',
+              content : [
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xl', transform : 'uppercase'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'l', transform : 'uppercase'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'm', transform : 'uppercase'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 's', transform : 'uppercase'},
+                  content : 'Typography'
+                },
+                {
+                  mix : { block : 'typography', elem : 'item'},
+                  block : 'text',
+                  mods : { size : 'xs', transform : 'uppercase'},
                   content : 'Typography'
                 }
               ]
@@ -1328,6 +1368,8 @@ module.exports = {
         },
       ]
     },
+
+
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -1638,6 +1680,7 @@ module.exports = {
         }
       ]
     },
+
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -2422,81 +2465,303 @@ module.exports = {
       content : [
         {
           elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'footer-section',
+              block : 'kit-item-header',
               content : [
                 {
-                  block : 'row',
+                  elem : 'name',
                   content : [
                     {
-                      elem : 'col',
-                      mods : { lw : 3, xl : 3, xxl : 3 },
-                      content : [
-                        {
-                          block : 'footer-section-item',
-                          content : [
-
-                          ]
-                        },
-                      ]
+                      block : 'text',
+                      mods : { size : 'l' },
+                      content : 'Sections'
                     },
                   ]
                 },
-              ]
-            },
-          ]
-        }
-      ]
-    },
-
-
-    {
-      block : 'row',
-      content : [
-        {
-          block : 'kit-item-header',
-          content : [
-            {
-              elem : 'name',
-              content : [
                 {
-                  block : 'text',
-                  mods : { size : 'l' },
-                  content : 'Sections'
-                },
-              ]
-            },
-            {
-              elem : 'name',
-              content : [
-                {
-                  block : 'text',
-                  mods : { size : 's',},
-                  content : 'Description description description'
-                },
+                  elem : 'name',
+                  content : [
+                    {
+                      block : 'text',
+                      mods : { size : 's',},
+                      content : 'Description description description'
+                    },
+                  ]
+                }
               ]
             }
           ]
         },
         {
           elem : 'col',
+          mods : { lw : 3, xl : 3, xxl : 3 },
+          content : [
+            {
+              block : 'footer-section',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                {
+                  block : 'footer-section-item',
+                  content : [
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                          content : 'heading'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'footer-list',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 3, xl : 3, xxl : 3 },
+          content : [
+            {
+              block : 'footer-section',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                {
+                  block : 'footer-section-item',
+                  content : [
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                          content : 'heading'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'footer-list',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 3, xl : 3, xxl : 3 },
+          content : [
+            {
+              block : 'footer-section',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                {
+                  block : 'footer-section-item',
+                  content : [
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                          content : 'heading'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'footer-list',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 3, xl : 3, xxl : 3 },
+          content : [
+            {
+              block : 'footer-section',
+              mix : { block : 'kit', elem : 'item'},
+              content : [
+                {
+                  block : 'footer-section-item',
+                  content : [
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                          content : 'heading'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'footer-list',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size: 'm' },
+                                  url : 'https://bem.info/',
+                                  content : 'bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+
+    {
+      block : 'row',
+      content : [
+        {
+          elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'footer',
+              block : 'kit',
               content : [
-
                 {
-                  block : 'link',
-                  mods : { theme : 'islands' },
-                  url : 'http://bem.info',
-                  content : 'Stay BEMed!',
-                  target : '_blank'
-                }
+                  block : 'footer',
+                  mix : { block : 'kit', elem : 'item'},
+                  content : [
+                    {
+                      block : 'link',
+                      mods : { theme : 'islands' },
+                      url : 'http://bem.info',
+                      content : 'Stay BEMed!',
+                      target : '_blank'
+                    }
+                  ]
+                },
               ]
-            },
+            }
           ]
         }
       ]
