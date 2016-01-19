@@ -2550,57 +2550,40 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          mix : { block : 'kit', elem : 'item'},
           content : [
             {
-              block : 'footer-section',
-              mix : { block : 'kit', elem : 'item'},
+              block : 'header-section',
               content : [
                 {
-                  block : 'footer-section-item',
+                  elem : 'name',
                   content : [
                     {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                          content : 'heading'
-                        },
-                      ]
+                      block : 'text',
+                      mods : { size : 'xl', weight : 'bold' },
+                      content : 'name'
                     },
+                  ]
+                },
+                {
+                  elem : 'description',
+                  content : [
                     {
-                      elem : 'content',
-                      content : [
-                        {
-                          block : 'footer-list',
-                          content : [
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                      block : 'text',
+                      mods : { size : 's', transform : 'uppercase' },
+                      content : 'description'
                     },
+                  ],
+                },
+                {
+                  elem : 'action',
+                  content : [
+                    {
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'xl', view : 'action' },
+                      text : 'Action'
+                    }
                   ]
                 }
               ]
@@ -2609,187 +2592,129 @@ module.exports = {
         },
         {
           elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
               block : 'footer-section',
               mix : { block : 'kit', elem : 'item'},
               content : [
                 {
-                  block : 'footer-section-item',
+                  block : 'row',
                   content : [
                     {
-                      elem : 'name',
+                      elem : 'col',
+                      mods : { lw : 3, xl : 3, xxl : 3 },
                       content : [
                         {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                          content : 'heading'
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'content',
-                      content : [
-                        {
-                          block : 'footer-list',
+                          block : 'footer-section-item',
                           content : [
                             {
-                              elem : 'item',
+                              elem : 'name',
                               content : [
                                 {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
+                                  block : 'text',
+                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                  content : 'heading'
+                                },
                               ]
                             },
                             {
-                              elem : 'item',
+                              elem : 'content',
                               content : [
                                 {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
+                                  block : 'footer-list',
+                                  content : [
+                                    {
+                                      elem : 'item',
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size: 'm' },
+                                          url : 'https://bem.info/',
+                                          content : 'bem.info'
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem : 'item',
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size: 'm' },
+                                          url : 'https://bem.info/',
+                                          content : 'bem.info'
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
-                            }
+                            },
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      elem : 'col',
+                      mods : { lw : 3, xl : 3, xxl : 3 },
+                      content : [
+                        {
+                          block : 'footer-section-item',
+                          content : [
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                  content : 'heading'
+                                },
+                              ]
+                            },
+                            {
+                              elem : 'content',
+                              content : [
+                                {
+                                  block : 'footer-list',
+                                  content : [
+                                    {
+                                      elem : 'item',
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size: 'm' },
+                                          url : 'https://bem.info/',
+                                          content : 'bem.info'
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem : 'item',
+                                      content : [
+                                        {
+                                          block : 'link',
+                                          mods : { theme : 'islands', size: 'm' },
+                                          url : 'https://bem.info/',
+                                          content : 'bem.info'
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
                           ]
                         }
                       ]
                     },
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
-          content : [
-            {
-              block : 'footer-section',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  block : 'footer-section-item',
-                  content : [
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                          content : 'heading'
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'content',
-                      content : [
-                        {
-                          block : 'footer-list',
-                          content : [
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 3, xl : 3, xxl : 3 },
-          content : [
-            {
-              block : 'footer-section',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  block : 'footer-section-item',
-                  content : [
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                          content : 'heading'
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'content',
-                      content : [
-                        {
-                          block : 'footer-list',
-                          content : [
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'link',
-                                  mods : { theme : 'islands', size: 'm' },
-                                  url : 'https://bem.info/',
-                                  content : 'bem.info'
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                  ]
-                }
+                },
               ]
             }
           ]
         }
       ]
     },
-
-
-
-
     {
       block : 'row',
       content : [
