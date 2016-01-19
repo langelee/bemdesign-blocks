@@ -2481,7 +2481,7 @@ module.exports = {
                   elem: 'content',
                   content: [
                     {
-                      block: 'content-txt',
+                      block: 'social-group-content',
                       content: [
                         {
                           elem: 'name-group',
@@ -2504,12 +2504,73 @@ module.exports = {
                         }
                       ]
                     },
+                    {
+                        block: 'button-group',
+                        content: [
+                            {
+                                elem: 'like',
+                                content: [
+                                    {
+                                        block: 'button',
+                                        text: 'Like'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                   ]
                 }
               ]
             }
           ]
-        }
+      },
+      {
+        elem : 'col',
+        mix : { block : 'kit', elem : 'item'},
+        mods : { lw : 4, xl : 4, xxl : 4},
+        content : [
+          {
+            block : 'social-group-tile',
+            content : [
+              {
+                elem: 'header'
+              },
+              {
+                elem: 'avatar'
+              },
+              {
+                elem: 'content',
+                content: [
+                  {
+                    block: 'content-txt',
+                    content: [
+                      {
+                        elem: 'name-group',
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {size : 'l', view: 'project'},
+                            content: 'Facebook Design'
+                          }
+                        ]
+                      },
+                      {
+                        elem: 'description',
+                        content: [
+                          {
+                            block: 'text',
+                            content: 'next block'
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                ]
+              }
+            ]
+          }
+        ]
+      }
       ]
     },
     {
