@@ -2466,6 +2466,59 @@ module.exports = {
         {
           elem : 'col',
           mix : { block : 'kit', elem : 'item'},
+          mods : { lw : 4, xl : 4, xxl : 4},
+          content : [
+            {
+              block : 'social-group-tile',
+              content : [
+                {
+                  elem: 'header'
+                },
+                {
+                  elem: 'avatar'
+                },
+                {
+                  elem: 'content',
+                  content: [
+                    {
+                      block: 'content-txt',
+                      content: [
+                        {
+                          elem: 'name-group',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'l', view: 'project'},
+                              content: 'Facebook Design'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'description',
+                          content: [
+                            {
+                              block: 'text',
+                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
