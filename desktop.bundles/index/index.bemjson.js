@@ -2530,43 +2530,38 @@ module.exports = {
         mods : { lw : 4, xl : 4, xxl : 4},
         content : [
           {
-            block : 'social-group-tile',
+            block : 'social-user-tile',
             content : [
               {
-                elem: 'header'
+                elem: 'profile',
+                content: [
+                    {
+                        block: 'avatar-image',
+                        mods : { size : 'l' }
+                    }
+                ]
               },
               {
-                elem: 'avatar'
+                elem: 'button-group'
               },
               {
-                elem: 'content',
+                elem: 'user-info',
                 content: [
                   {
-                    block: 'content-txt',
-                    content: [
-                      {
-                        elem: 'name-group',
-                        content: [
-                          {
-                            block: 'text',
-                            mods: {size : 'l', view: 'project'},
-                            content: 'Facebook Design'
-                          }
-                        ]
-                      },
-                      {
-                        elem: 'description',
-                        content: [
-                          {
-                            block: 'text',
-                            content: 'next block'
-                          }
-                        ]
-                      }
-                    ]
-                  },
+                      block: '',
+                  }
                 ]
-              }
+            },
+            {
+                elem: 'button-show',
+                content: [
+                    {
+                        block: 'button',
+                        mods: {},
+                        text: 'Show more'
+                    }
+                ]
+            }
             ]
           }
         ]
