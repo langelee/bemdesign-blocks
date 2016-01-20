@@ -2920,7 +2920,39 @@ module.exports = {
                   block : 'social-group-tile',
                   content : [
                     {
-
+                      elem: 'header'
+                    },
+                    {
+                      elem: 'avatar'
+                    },
+                    {
+                      elem: 'content',
+                      content: [
+                        {
+                          block: 'content-txt',
+                          content: [
+                            {
+                              elem: 'name-group',
+                              content: [
+                                {
+                                  block: 'text',
+                                  mods: {size : 'l', view: 'project'},
+                                  content: 'Facebook Design'
+                                }
+                              ]
+                            },
+                            {
+                              elem: 'description',
+                              content: [
+                                {
+                                  block: 'text',
+                                  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                      ]
                     }
                   ]
                 }
