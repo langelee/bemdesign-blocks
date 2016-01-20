@@ -1368,8 +1368,6 @@ module.exports = {
         },
       ]
     },
-
-
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -1411,106 +1409,115 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
+              block : 'kit',
               content : [
                 {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Log in'
-                },
-                {
-                  elem : 'content',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'form-control',
+                      block : 'form',
                       content : [
                         {
-                          elem : 'item',
+                          mix : { block : 'form', elem : 'header'},
+                          block : 'text',
+                          mods : { size : 'l',},
+                          content : 'Log in'
+                        },
+                        {
+                          elem : 'content',
                           content : [
                             {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
+                              block : 'form-control',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'E-mail'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  content: [
+                                    {
+                                      block : 'input',
+                                      mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'Password'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
+                            {
+                              block : 'form-action',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm' },
+                                      name: 'islands',
+                                      val: 'val_3',
+                                      text : 'Remember me'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Log in'
+                                    }
+                                  ]
+                                },
+                              ]
                             }
                           ]
                         },
                         {
-                          elem : 'item',
-                          content: [
-                            {
-                              block : 'input',
-                              mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Password'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
+                          elem : 'footer',
                           content : [
                             {
-                              block : 'checkbox',
-                              mods : { theme : 'islands', size : 'm' },
-                              name: 'islands',
-                              val: 'val_3',
-                              text : 'Remember me'
-                            }
+                              block : 'form-link',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Forgot password?'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Sing up now!'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
                           ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Log in'
-                            }
-                          ]
-                        },
+                        }
                       ]
                     }
                   ]
                 },
-                {
-                  elem : 'footer',
-                  content : [
-                    {
-                      block : 'form-link',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Forgot password?'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Sing up now!'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                  ]
-                }
               ]
             }
           ]
@@ -1520,97 +1527,105 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
+              block : 'kit',
               content : [
                 {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Reset your password '
-                },
-                {
-                  elem : 'content',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'form-control',
+                      block : 'form',
                       content : [
                         {
-                          elem : 'item',
+                          mix : { block : 'form', elem : 'header'},
+                          block : 'text',
+                          mods : { size : 'l',},
+                          content : 'Reset your password '
+                        },
+                        {
+                          elem : 'content',
                           content : [
                             {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
+                              block : 'form-control',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'E-mail'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block : 'form-action',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Forgot e-mail?'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Reset'
+                                    }
+                                  ]
+                                },
+                              ]
                             }
+                          ]
+                        },
+                        {
+                          elem : 'footer',
+                          content : [
+                            {
+                              block : 'form-link',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Log in'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Sing up now!'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
                           ]
                         }
-                      ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Forgot e-mail?'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Reset'
-                            }
-                          ]
-                        },
                       ]
                     }
                   ]
                 },
-                {
-                  elem : 'footer',
-                  content : [
-                    {
-                      block : 'form-link',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Log in'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Sing up now!'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                  ]
-                }
               ]
             }
-
           ]
         },
         {
@@ -1618,62 +1633,72 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
+              block : 'kit',
               content : [
                 {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Sing up'
-                },
-                {
-                  elem : 'content',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'form-control',
+                      block : 'form',
+                      mix : { block : 'kit', elem : 'item'},
                       content : [
                         {
-                          elem : 'item',
+                          mix : { block : 'form', elem : 'header'},
+                          block : 'text',
+                          mods : { size : 'l',},
+                          content : 'Sing up'
+                        },
+                        {
+                          elem : 'content',
                           content : [
                             {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
+                              block : 'form-control',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'E-mail'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block : 'form-action',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Log in'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Sing up'
+                                    }
+                                  ]
+                                },
+                              ]
                             }
                           ]
                         }
                       ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Log in'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Sing up'
-                            }
-                          ]
-                        },
-                      ]
                     }
                   ]
-                }
+                },
               ]
             }
           ]
