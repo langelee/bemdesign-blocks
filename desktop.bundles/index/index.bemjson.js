@@ -2921,46 +2921,218 @@ module.exports = {
                   block : 'social-group-tile',
                   content : [
                     {
-                      elem: 'header'
-                    },
-                    {
-                      elem: 'avatar'
-                    },
-                    {
-                      elem: 'content',
-                      content: [
-                        {
-                          block: 'content-txt',
-                          content: [
-                            {
-                              elem: 'name-group',
-                              content: [
-                                {
-                                  block: 'text',
-                                  mods: {size : 'l', view: 'project'},
-                                  content: 'Facebook Design'
-                                }
-                              ]
-                            },
-                            {
-                              elem: 'description',
-                              content: [
-                                {
-                                  block: 'text',
-                                  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                      ]
+
                     }
                   ]
                 }
               ]
             },
           ]
-        }
+      },
+      {
+        elem : 'col',
+        mix : { block : 'kit', elem : 'item'},
+        mods : { lw : 4, xl : 4, xxl : 4},
+        content : [
+          {
+            block : 'social-user-tile',
+            content : [
+              {
+                elem: 'profile',
+                content: [
+                    {
+                        block: 'social-user-avatar'
+                    },
+                    {
+                        block: 'social-user-name',
+                        content: [
+                            {
+                                elem: 'name',
+                                content: [
+                                    {
+                                        block: 'text',
+                                        mods: {size : 'l', weight: 'bold'},
+                                        content: 'Jonathan Ive'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        block: 'social-user-date',
+                        content: [
+                            {
+                                elem: 'date',
+                                content: [
+                                    {
+                                        block: 'text',
+                                        mods: { size: 'xs'},
+                                        content: 'last seen today at 3:56 pm'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+              },
+              {
+                elem: 'button-group',
+                content: [
+                    {
+                        block: 'social-user-button',
+                        content: [
+                            {
+                                elem: 'top',
+                                content: [
+                                    {
+                                        block: 'button',
+                                        mods : { theme : 'islands', size : 'm', type : 'link' },
+                                        text: 'Send message'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        block: 'social-user-button',
+                        content: [
+                            {
+                                elem: 'bottom',
+                                content: [
+                                    {
+                                        block: 'button',
+                                        mods : { theme : 'islands', size : 'm', type : 'link' },
+                                        text: 'Unfriend'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+              },
+              {
+                elem: 'user-info',
+                content: [
+                  {
+                      block: 'social-user-row',
+                      content: [
+                          {
+                              elem: 'left',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Relationship:'
+                                  }
+
+                              ]
+                          },
+                          {
+                              elem: 'right',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'In Love'
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      block: 'social-user-row',
+                      content: [
+                          {
+                              elem: 'left',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Company:'
+                                  }
+
+                              ]
+                          },
+                          {
+                              elem: 'right',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Senyaars.com'
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      block: 'social-user-row',
+                      content: [
+                          {
+                              elem: 'left',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Sister:'
+                                  }
+
+                              ]
+                          },
+                          {
+                              elem: 'right',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Saniel San'
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      block: 'social-user-row',
+                      content: [
+                          {
+                              elem: 'left',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Mobile:'
+                                  }
+
+                              ]
+                          },
+                          {
+                              elem: 'right',
+                              content: [
+                                  {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: '+ 38 (095) 061 08 33'
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+                ]
+            },
+            {
+                elem: 'button-show',
+                content: [
+                    {
+                        block: 'button',
+                        mods : { theme : 'islands', size : 'm', type : 'link' },
+                        text: 'Show more'
+                    }
+                ]
+            }
+            ]
+          }
+        ]
+      }
       ]
     },
     {
