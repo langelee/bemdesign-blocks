@@ -12,7 +12,6 @@ module.exports = {
   scripts: [{ elem : 'js', url : 'index.min.js' }],
   mods : { theme : 'islands' },
   content : [
-
     /* eliv-icons
     {
       bem: false,
@@ -22,30 +21,41 @@ module.exports = {
         'data-size': 'm'
       }
     },
+    */
     {
-      block : 'row',
+      block : 'promo',
       content : [
         {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
+          block : 'image',
+          url : 'https://img-fotki.yandex.ru/get/5405/259818507.0/0_130be5_948d59aa_S'
+        } ,
+        {
+          mix : { block : 'promo', elem : 'heading'},
+          block : 'text',
+          mods : { size : 'xl'},
+          content : 'B__E_M Design'
+        },
+        {
+          mix : { block : 'promo', elem : 'description'},
+          block : 'text',
+          mods : { size : 's' },
+          content : 'The main idea of BEM methodology is to speed development process up and ease the teamwork of developers.'
+        },
+        {
+          elem : 'download',
           content : [
             {
-              block : 'kit',
-              content : [
-                {
-                  block : 'footer',
-                  mix : { block : 'kit', elem : 'item'},
-                  content : [
-
-
-                  ]
-                },
-              ]
+              block : 'button',
+              mods : { theme : 'islands', size : 'xl', view : 'action', type : 'link' },
+              url : 'https://github.com/bemcustom',
+              text : 'Quick start'
             }
           ]
         }
       ]
     },
+
+    /*
     {
       block : 'row',
       content : [
@@ -61,42 +71,8 @@ module.exports = {
     */
 
     {
-      block : 'promo',
-      content : [
-        {
-          block : 'image',
-          url : 'https://img-fotki.yandex.ru/get/5405/259818507.0/0_130be5_948d59aa_S'
-        } ,
-        {
-          mix : { block : 'promo', elem : 'heading'},
-          block : 'text',
-          mods : { size : 'xl'},
-          content : 'BEM Design'
-        },
-        {
-          mix : { block : 'promo', elem : 'description'},
-          block : 'text',
-          mods : { size : 's' },
-          content : 'The main idea of BEM methodology is to speed development process up and ease the teamwork of developers.'
-        },
-        {
-          elem : 'download',
-          content : [
-            {
-              block : 'button',
-              mods : { theme : 'islands', size : 'xl', view : 'action', type : 'link' },
-              url : 'https://github.com/bemdesign',
-              text : 'Quick start'
-            }
-          ]
-        }
-      ]
-    },
-
-
-
-    {
       block : 'row',
+      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
@@ -171,7 +147,7 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'button' },
                       name: 'list',
                       val: '1',
-                      text : ' lists'
+                      text : ' list'
                     },
                     {
                       block : 'checkbox',
@@ -179,13 +155,6 @@ module.exports = {
                       name: 'tile',
                       val: '1',
                       text : 'tiles'
-                    },
-                    {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'sections',
-                      val: '1',
-                      text : 'sections'
                     },
                   ]
                 }
@@ -195,6 +164,7 @@ module.exports = {
         }
       ]
     },
+
 
     /* Colors */
     {
@@ -207,30 +177,11 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Colors'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Colors'
+            },
           ]
         },
         {
@@ -252,7 +203,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$project'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -263,7 +213,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#fc0'
                     },
-                    */
                   ]
                 }
               ]
@@ -283,7 +232,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$base'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -294,7 +242,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#000'
                     }
-                    */
                   ]
                 }
               ]
@@ -314,7 +261,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$normal'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -325,7 +271,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#f6f5f3'
                     }
-                    */
                   ]
                 }
               ]
@@ -345,7 +290,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$clean'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -356,7 +300,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#fff'
                     }
-                    */
                   ]
                 }
               ]
@@ -376,7 +319,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$alert'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -387,7 +329,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#e00'
                     }
-                    */
                   ]
                 }
               ]
@@ -407,7 +348,6 @@ module.exports = {
                       mods : { color: 'base'},
                       content : '$active'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { color: 'base'},
@@ -418,7 +358,6 @@ module.exports = {
                       mods : { color: 'base'},
                       content : '#070'
                     }
-                    */
                   ]
                 }
               ]
@@ -438,7 +377,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '$link'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -449,7 +387,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#44b'
                     }
-                    */
                   ]
                 }
               ]
@@ -475,7 +412,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : 'lighten($project, 63%)'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -486,7 +422,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#ffdb4d'
                     }
-                    */
                   ]
                 }
               ]
@@ -506,7 +441,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : 'lighten($base, 18%)'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -517,33 +451,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#2e2e2e'
                     }
-                    */
-                  ]
-                }
-              ]
-            },
-            {
-              block : 'color',
-              content : [
-                {
-                  elem : 'image',
-                  mods : { color: 'l-normal-86'}
-                },
-                {
-                  elem : 'text',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'lighten($normal, 86%)'
-                    },
-                    /*
-                    {
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'hsl(40, 14%, 86%)'
-                    },
-                    */
                   ]
                 }
               ]
@@ -569,7 +476,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : 'lighten($project, 81%)'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -580,7 +486,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#ffeba0'
                     }
-                    */
                   ]
                 }
               ]
@@ -600,7 +505,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : 'lighten($base, 60%)'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -611,7 +515,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#999'
                     }
-                    */
                   ]
                 }
               ]
@@ -643,7 +546,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : 'lighten($base, 80%)'
                     },
-                    /*
                     {
                       block : 'text',
                       mods : { size : 's'},
@@ -654,7 +556,6 @@ module.exports = {
                       mods : { size : 's'},
                       content : '#ccc'
                     }
-                    */
                   ]
                 }
               ]
@@ -663,7 +564,6 @@ module.exports = {
         },
       ]
     },
-
 
 
     /* Spaces */
@@ -677,30 +577,11 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Spaces'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Spaces'
+            },
           ]
         },
         {
@@ -904,30 +785,11 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Avatars'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Avatars'
+            },
           ]
         },
         {
@@ -950,7 +812,7 @@ module.exports = {
                   mix : { block : 'avatar', elem : 'text'},
                   block : 'text',
                   mods : { size : 's' },
-                  content : '$l'
+                  content : '$l = 120px'
                 }
               ]
             },
@@ -976,7 +838,7 @@ module.exports = {
                   mix : { block : 'avatar', elem : 'text'},
                   block : 'text',
                   mods : { size : 's' },
-                  content : '$m'
+                  content : '$m = 90px'
                 }
               ]
             },
@@ -1002,7 +864,7 @@ module.exports = {
                   mix : { block : 'avatar', elem : 'text'},
                   block : 'text',
                   mods : { size : 's' },
-                  content : '$l'
+                  content : '$l = 60px'
                 }
               ]
             }
@@ -1022,30 +884,11 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Icons'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Icons'
+            },
           ]
         },
         {
@@ -1080,7 +923,7 @@ module.exports = {
                     {
                       block : 'text',
                       mods : { size : 's' },
-                      content : '$l'
+                      content : '$l = 96px'
                     }
                   ]
                 }
@@ -1120,7 +963,7 @@ module.exports = {
                     {
                       block : 'text',
                       mods : { size : 's' },
-                      content : '$m'
+                      content : '$m = 48px'
                     }
                   ]
                 }
@@ -1160,7 +1003,7 @@ module.exports = {
                     {
                       block : 'text',
                       mods : { size : 's' },
-                      content : '$s'
+                      content : '$s = 24px'
                     }
                   ]
                 }
@@ -1182,30 +1025,11 @@ module.exports = {
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Typography'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Typography'
+            },
           ]
         },
         {
@@ -1219,66 +1043,31 @@ module.exports = {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
                   mods : { size : 'xl'},
-                  content : 'Typography'
+                  content : '$xl typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
                   mods : { size : 'l'},
-                  content : 'Typography'
+                  content : '$l typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
                   mods : { size : 'm'},
-                  content : 'Typography'
+                  content : '$m typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
                   mods : { size : 's'},
-                  content : 'Typography'
+                  content : '$s typography'
                 },
                 {
                   mix : { block : 'typography', elem : 'item'},
                   block : 'text',
-                  mods : { size : 'xs', transform : 'uppercase'},
-                  content : 'Typography'
-                }
-              ]
-            },
-            {
-              block : 'typography',
-              content : [
-                {
-                  mix : { block : 'typography', elem : 'item' },
-                  block : 'text',
-                  mods : { size : 'l', view : 'base'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', view : 'project'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', view : 'alert'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', view : 'active'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', view : 'link'},
-                  content : 'Typography'
+                  mods : { size : 'xs'},
+                  content : '$xs typography'
                 }
               ]
             },
@@ -1288,435 +1077,40 @@ module.exports = {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
-            {
-              block : 'typography',
-              content : [
-                {
-                  mix : { block : 'typography', elem : 'item' },
-                  block : 'text',
-                  mods : { size : 'xl', weight : 'bold' },
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', weight : 'bold'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'm', weight : 'bold'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 's', weight : 'bold'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xs', weight : 'bold'},
-                  content : 'Typography'
-                }
-              ]
-            },
+
           ]
         },
         {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
-            {
-              block : 'typography',
-              content : [
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xl', transform : 'uppercase'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'l', transform : 'uppercase'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'm', transform : 'uppercase'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 's', transform : 'uppercase'},
-                  content : 'Typography'
-                },
-                {
-                  mix : { block : 'typography', elem : 'item'},
-                  block : 'text',
-                  mods : { size : 'xs', transform : 'uppercase'},
-                  content : 'Typography'
-                }
-              ]
-            },
+
           ]
         },
       ]
     },
-
-
     {
       block : 'row',
-      mix : { block : 'page-row'},
       content : [
         {
           elem : 'col',
           mix : { block : 'kit', elem : 'item'},
-          mods : { lw : 12, xl : 12, xxl : 12 },
+          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Forms'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Log in'
-                },
-                {
-                  elem : 'content',
-                  content : [
-                    {
-                      block : 'form-control',
-                      content : [
-                        {
-                          elem : 'item',
-                          content : [
-                            {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          content: [
-                            {
-                              block : 'input',
-                              mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'Password'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'checkbox',
-                              mods : { theme : 'islands', size : 'm' },
-                              name: 'islands',
-                              val: 'val_3',
-                              text : 'Remember me'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Log in'
-                            }
-                          ]
-                        },
-                      ]
-                    }
-                  ]
-                },
-                {
-                  elem : 'footer',
-                  content : [
-                    {
-                      block : 'form-link',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Forgot password?'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Sing up now!'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Reset your password '
-                },
-                {
-                  elem : 'content',
-                  content : [
-                    {
-                      block : 'form-control',
-                      content : [
-                        {
-                          elem : 'item',
-                          content : [
-                            {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Forgot e-mail?'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Reset'
-                            }
-                          ]
-                        },
-                      ]
-                    }
-                  ]
-                },
-                {
-                  elem : 'footer',
-                  content : [
-                    {
-                      block : 'form-link',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Log in'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Sing up now!'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                  ]
-                }
-              ]
-            }
-
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'form',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  mix : { block : 'form', elem : 'header'},
-                  block : 'text',
-                  mods : { size : 'l',},
-                  content : 'Sing up'
-                },
-                {
-                  elem : 'content',
-                  content : [
-                    {
-                      block : 'form-control',
-                      content : [
-                        {
-                          elem : 'item',
-                          content : [
-                            {
-                              block : 'input',
-                              mods : { theme : 'islands', size : 'l', width : 'available' },
-                              placeholder : 'E-mail'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      block : 'form-action',
-                      content : [
-                        {
-                          elem : 'item',
-                          mods : { align : 'left' },
-                          content : [
-                            {
-                              block : 'link',
-                              mods : { theme : 'islands', size : 'm', pseudo : true },
-                              content : 'Log in'
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'item',
-                          mods : { align : 'right' },
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Sing up'
-                            }
-                          ]
-                        },
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'Forms'
+            },
           ]
         }
       ]
     },
-
     {
       block : 'row',
       mix : { block : 'page-row'},
       content : [
-        {
-          elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Lists'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
@@ -1725,319 +1119,114 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  elem : 'item',
+                  content : [
                     {
-                      documentTitle : 'Inbox',
-                      documentText : '200',
-                      documentImage : [
+                      block : 'form',
+                      content : [
                         {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-envelope',
-                            'data-size': 'm'
-                          }
+                          mix : { block : 'form', elem : 'header'},
+                          block : 'text',
+                          mods : { size : 'l',},
+                          content : 'Log in'
+                        },
+                        {
+                          elem : 'content',
+                          content : [
+                            {
+                              block : 'form-control',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'E-mail'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  content: [
+                                    {
+                                      block : 'input',
+                                      mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'Password'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
+                            {
+                              block : 'form-action',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm' },
+                                      name: 'islands',
+                                      val: 'val_3',
+                                      text : 'Remember me'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Log in'
+                                    }
+                                  ]
+                                },
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'footer',
+                          content : [
+                            {
+                              block : 'form-link',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Forgot password?'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Sing up now!'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
+                          ]
                         }
                       ]
-                    },
-                    {
-                      documentTitle : 'Trash',
-                      documentText : '6',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-trash',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-                },
-
-                {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      documentTitle : 'Photos',
-                      documentText : '1022',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-camera',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Posts',
-                      documentText : '102',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-pencil',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Events',
-                      documentText : '22',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-calendar',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-                },
-
-                {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      documentTitle : 'Work',
-                      documentText : '60',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Family',
-                      documentText : '12',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Friends',
-                      documentText : '104',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-                },
-
-                {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      documentTitle : 'React',
-                      documentText : 'React is a JavaScript library for creating user interfaces',
-                      documentImage : '/i/react.png'
-                    },
-                    {
-                      documentTitle : 'Pop',
-                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
-                      documentImage : '/i/pop.png'
-                    },
-                    {
-                      documentTitle : 'Origami',
-                      documentText : 'Design prototyping',
-                      documentImage : '/i/origami.png'
                     }
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            url: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
-                },
-
-                {
-                  block : 'top-news-list',
-                  mix : { block : 'kit', elem : 'item' },
-                  content: [
-                    {
-                      topNewsDate : 'Dec 15, 2015',
-                      topNewsText : 'Designing Facebook Collage'
-                    },
-                    {
-                      topNewsDate : 'Nov 14, 2015',
-                      topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
-                    },
-                    {
-                      topNewsDate : 'Oct 8, 2015',
-                      topNewsText : 'Photographing Diverse Hands at Facebook'
-                    }
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'top-news',
-                        mix : { block: 'top-news-list', elem : 'item' },
-                        content : [
-                          {
-                            mix : { block: 'top-news', elem : 'date' },
-                            block : 'text',
-                            mods : { size : 's' },
-                            content : item.topNewsDate
-                          },
-                          {
-                            mix : { block: 'top-news', elem : 'text' },
-                            block : 'text',
-                            mods : { size : 'm' },
-                            content : item.topNewsText
-                          }
-                        ]
-                      }
-                    ]
-                  })
-                },
+                  ]
+                }
               ]
             }
-
           ]
         },
         {
@@ -2045,125 +1234,100 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'user-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
+              elem : 'item',
+              content : [
                 {
-                  userName : 'Julie Zhuo',
-                  userPosition : 'Design director at Facebook',
-                  userIcon : '/i/juliezhuo.jpg'
-                },
-                {
-                  userName : 'Andrew Hwang',
-                  userPosition : 'Product designer at Facebook',
-                  userIcon : '/i/ahwng.jpg'
-                },
-                {
-                  userName : 'Frankie Gaw',
-                  userPosition : 'Stories from the design team at Facebook',
-                  userIcon : '/i/frankiegaw.jpg'
+                  block : 'form',
+                  content : [
+                    {
+                      mix : { block : 'form', elem : 'header'},
+                      block : 'text',
+                      mods : { size : 'l',},
+                      content : 'Reset your password '
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'form-control',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'input',
+                                  mods : { theme : 'islands', size : 'l', width : 'available' },
+                                  placeholder : 'E-mail'
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          block : 'form-action',
+                          content : [
+                            {
+                              elem : 'item',
+                              mods : { align : 'left' },
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size : 'm', pseudo : true },
+                                  content : 'Forgot e-mail?'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              mods : { align : 'right' },
+                              content : [
+                                {
+                                  block : 'button',
+                                  mods : { theme : 'islands', size : 'l', view : 'action' },
+                                  text : 'Reset'
+                                }
+                              ]
+                            },
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      elem : 'footer',
+                      content : [
+                        {
+                          block : 'form-link',
+                          content : [
+                            {
+                              elem : 'item',
+                              mods : { align : 'left' },
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size : 'm', pseudo : true },
+                                  content : 'Log in'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              mods : { align : 'right' },
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size : 'm', pseudo : true },
+                                  content : 'Sing up now!'
+                                }
+                              ]
+                            },
+                          ]
+                        },
+                      ]
+                    }
+                  ]
                 }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'user',
-                    mix : { block: 'user-list', elem : 'item'},
-                    content: [
-                      {
-                        mix : { block : 'user', elem : 'image'},
-                        block: 'image',
-                        url: item.userIcon
-                      },
-                      {
-                        elem : 'content',
-                        content: [
-                          {
-                            block: 'user-content',
-                            content: [
-                              {
-                                mix : { block : 'user-content', elem : 'name'},
-                                block : 'text',
-                                mods : { size : 'm'},
-                                content : item.userName
-                              },
-                              {
-                                mix : { block : 'user-content', elem : 'position'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.userPosition
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                    ]
-                  }
-                ]
-              })
-            },
-            {
-              block : 'news-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
-                {
-                  newsContentTitle : 'Here’s to 2016 with Messenger',
-                  newsContentDate : 'January 7, 2016',
-                  newsContentText : 'The first week of the New Year is always a good moment to look back at the year behind and think about the one ahead.'
-                },
-                {
-                  newsContentTitle : 'Messenger Adds New Features For Sharing During the Holidays',
-                  newsContentDate : 'December 17, 2015',
-                  newsContentText : 'In preparation for the coming weeks as many of us spend lots of time with friends.'
-                },
-                {
-                  newsContentTitle : 'Introducing Transportation on Messenger',
-                  newsContentDate : 'December 16, 2015',
-                  newsContentText : 'Messenger is your place to communicate seamlessly with everyone – from making plans with friends.'
-                }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'news',
-                    mix : { block: 'news-list', elem : 'item'},
-                    content: [
-                      {
-                        mix : { block : 'news', elem : 'image'},
-                        block: 'image',
-                        url: '/i/document.png'
-                      },
-                      {
-                        elem : 'content',
-                        content: [
-                          {
-                            block : 'news-content',
-                            content: [
-                              {
-                                mix : { block: 'news-content', elem : 'title'},
-                                block : 'text',
-                                mods : { size : 'm'},
-                                content : item.newsContentTitle
-                              },
-                              {
-                                mix : { block: 'news-content', elem : 'date'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.newsContentDate
-                              },
-                              {
-                                mix : { block: 'news-content', elem : 'text'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.newsContentText
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                    ]
-                  }
-                ]
-              })
-            },
+              ]
+            }
           ]
         },
         {
@@ -2171,62 +1335,68 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'position-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
+              elem : 'item',
+              content : [
                 {
-                  position : 'UI Engineer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
-                },
-                {
-                  position : 'UX Designer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
-                },
-                {
-                  position : 'Chief design officer',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
-                },
-                {
-                  position : 'UI Designer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
-                },
-                {
-                  position : 'Illustrator',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
-                },
-                {
-                  position : 'Iteraction designer',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
+                  block : 'form',
+                  content : [
+                    {
+                      mix : { block : 'form', elem : 'header'},
+                      block : 'text',
+                      mods : { size : 'l',},
+                      content : 'Sing up'
+                    },
+                    {
+                      elem : 'content',
+                      content : [
+                        {
+                          block : 'form-control',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'input',
+                                  mods : { theme : 'islands', size : 'l', width : 'available' },
+                                  placeholder : 'E-mail'
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          block : 'form-action',
+                          content : [
+                            {
+                              elem : 'item',
+                              mods : { align : 'left' },
+                              content : [
+                                {
+                                  block : 'link',
+                                  mods : { theme : 'islands', size : 'm', pseudo : true },
+                                  content : 'Log in'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'item',
+                              mods : { align : 'right' },
+                              content : [
+                                {
+                                  block : 'button',
+                                  mods : { theme : 'islands', size : 'l', view : 'action' },
+                                  text : 'Sing up'
+                                }
+                              ]
+                            },
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'position',
-                    mix : { block: 'position-list', elem : 'item'},
-                    content : [
-                      {
-                        mix : { block : 'position', elem : 'image'},
-                        block: 'image',
-                        alt: item.alt,
-                        url: item.icon
-                      },
-                      {
-                        mix : { block : 'position', elem : 'text'},
-                        block : 'text',
-                        mods : { size : 'm'},
-                        content : item.position
-                      }
-                    ]
-                  }
-                ]
-              })
-            },
+              ]
+            }
           ]
         }
       ]
@@ -2240,30 +1410,11 @@ module.exports = {
           mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Tiles'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
+              mix : { block : 'document-content', elem : 'title' },
+              block : 'text',
+              mods : { size : 'l' },
+              content : 'List'
+            },
           ]
         }
       ]
@@ -2280,80 +1431,417 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'user-tile',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  elem : 'item',
+                  content : [
                     {
-                      mix : { block : 'user-tile', elem : 'icon'},
-                      block: 'image',
-                      alt: 'elizabeth',
-                      url: '/i/juliezhuo.jpg'
-                    },
-                    {
-                      mix : { block : 'user-tile', elem : 'name'},
-                      block : 'text',
-                      mods : { size : 'm'},
-                      content : 'Julie Zhuo'
-                    },
-                    {
-                      mix : { block : 'user-tile', elem : 'twitter'},
-                      block : 'link',
-                      mods : { theme : 'islands' },
-                      url : 'http://twitter.com/joulee',
-                      content : '@joulee'
-                    },
-                    {
-                      elem : 'description',
-                      content : [
+                      block : 'document-list',
+                      content: [
                         {
-                          block : 'text',
-                          mods : { size : 's', display : 'inline' },
-                          content : 'Design director at Facebook'
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'action',
-                      content : [
+                          documentTitle : 'React',
+                          documentText : 'React is a JavaScript library for creating user interfaces',
+                          documentImage : '/i/react.png'
+                        },
                         {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Читать'
+                          documentTitle : 'Pop',
+                          documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
+                          documentImage : '/i/pop.png'
+                        },
+                        {
+                          documentTitle : 'Origami',
+                          documentText : 'Design prototyping',
+                          documentImage : '/i/origami.png'
                         }
-                      ]
-                    }
+                      ].map(function(item) {
+                        return [
+                          {
+                            block: 'document',
+                            mix : { block: 'document-list', elem : 'item' },
+                            content: [
+                              {
+                                mix : { block : 'document', elem : 'image' },
+                                block: 'image',
+                                url: item.documentImage
+                              },
+                              {
+                                elem : 'content',
+                                content: [
+                                  {
+                                    mix : { block : 'document-content', elem : 'title' },
+                                    block : 'text',
+                                    mods : { size : 'm' },
+                                    content : item.documentTitle
+                                  },
+                                  {
+                                    mix : { block : 'document-content', elem : 'text' },
+                                    block : 'text',
+                                    mods : { size : 's' },
+                                    content : item.documentText
+                                  }
+                                ]
+                              },
+                            ]
+                          }
+                        ]
+                      })
+                    },
+
                   ]
                 },
                 {
-                  block : 'expert-tile',
-                  mix : { block : 'kit', elem : 'item'},
+                  elem : 'item',
                   content : [
                     {
-                      block : 'expert-info',
-                      mix : { block : 'expert-tile', elem : 'info'},
-                      content : [
+                      block : 'top-news-list',
+                      content: [
                         {
-                          mix : { block : 'expert-info', elem : 'image'},
-                          block: 'image',
-                          alt: 'ahwng',
-                          url: '/i/ahwng.jpg'
+                          topNewsDate : 'Dec 15, 2015',
+                          topNewsText : 'Designing Facebook Collage'
                         },
                         {
-                          mix : { block : 'expert-info', elem : 'name'},
+                          topNewsDate : 'Nov 14, 2015',
+                          topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
+                        },
+                        {
+                          topNewsDate : 'Oct 8, 2015',
+                          topNewsText : 'Photographing Diverse Hands at Facebook'
+                        }
+                      ].map(function(item) {
+                        return [
+                          {
+                            block: 'top-news',
+                            mix : { block: 'top-news-list', elem : 'item' },
+                            content : [
+                              {
+                                mix : { block: 'top-news', elem : 'date' },
+                                block : 'text',
+                                mods : { size : 's' },
+                                content : item.topNewsDate
+                              },
+                              {
+                                mix : { block: 'top-news', elem : 'text' },
+                                block : 'text',
+                                mods : { size : 'm' },
+                                content : item.topNewsText
+                              }
+                            ]
+                          }
+                        ]
+                      })
+                    },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'user-list',
+                  content: [
+                    {
+                      userName : 'Julie Zhuo',
+                      userPosition : 'Design director at Facebook',
+                      userIcon : '/i/juliezhuo.jpg'
+                    },
+                    {
+                      userName : 'Andrew Hwang',
+                      userPosition : 'Product designer at Facebook',
+                      userIcon : '/i/ahwng.jpg'
+                    },
+                    {
+                      userName : 'Frankie Gaw',
+                      userPosition : 'Stories from the design team at Facebook',
+                      userIcon : '/i/frankiegaw.jpg'
+                    }
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'user',
+                        mix : { block: 'user-list', elem : 'item'},
+                        content: [
+                          {
+                            mix : { block : 'user', elem : 'image'},
+                            block: 'image',
+                            url: item.userIcon
+                          },
+                          {
+                            elem : 'content',
+                            content: [
+                              {
+                                block: 'user-content',
+                                content: [
+                                  {
+                                    mix : { block : 'user-content', elem : 'name'},
+                                    block : 'text',
+                                    mods : { size : 'm'},
+                                    content : item.userName
+                                  },
+                                  {
+                                    mix : { block : 'user-content', elem : 'position'},
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.userPosition
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
+                },
+              ]
+            },
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'news-list',
+                  content: [
+                    {
+                      newsContentTitle : 'Here’s to 2016 with Messenger',
+                      newsContentDate : 'January 7, 2016',
+                      newsContentText : 'The first week of the New Year is always a good moment to look back at the year behind and think about the one ahead.'
+                    },
+                    {
+                      newsContentTitle : 'Messenger Adds New Features For Sharing During the Holidays',
+                      newsContentDate : 'December 17, 2015',
+                      newsContentText : 'In preparation for the coming weeks as many of us spend lots of time with friends.'
+                    },
+                    {
+                      newsContentTitle : 'Introducing Transportation on Messenger',
+                      newsContentDate : 'December 16, 2015',
+                      newsContentText : 'Messenger is your place to communicate seamlessly with everyone – from making plans with friends.'
+                    }
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'news',
+                        mix : { block: 'news-list', elem : 'item'},
+                        content: [
+                          {
+                            mix : { block : 'news', elem : 'image'},
+                            block: 'image',
+                            url: '/i/document.png'
+                          },
+                          {
+                            elem : 'content',
+                            content: [
+                              {
+                                block : 'news-content',
+                                content: [
+                                  {
+                                    mix : { block: 'news-content', elem : 'title'},
+                                    block : 'text',
+                                    mods : { size : 'm'},
+                                    content : item.newsContentTitle
+                                  },
+                                  {
+                                    mix : { block: 'news-content', elem : 'date'},
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.newsContentDate
+                                  },
+                                  {
+                                    mix : { block: 'news-content', elem : 'text'},
+                                    block : 'text',
+                                    mods : { size : 's'},
+                                    content : item.newsContentText
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
+                },
+              ]
+            },
+          ]
+
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+
+                {
+                  block : 'position-list',
+                  content: [
+                    {
+                      position : 'UI Engineer',
+                      icon : '/i/messenger.png',
+                      alt : 'messenger'
+                    },
+                    {
+                      position : 'UX Designer',
+                      icon : '/i/messenger.png',
+                      alt : 'messenger'
+                    },
+                    {
+                      position : 'Chief design officer',
+                      icon : '/i/facebook.png',
+                      alt : 'facebook'
+                    },
+                    {
+                      position : 'UI Designer',
+                      icon : '/i/messenger.png',
+                      alt : 'messenger'
+                    },
+                    {
+                      position : 'Illustrator',
+                      icon : '/i/facebook.png',
+                      alt : 'facebook'
+                    },
+                    {
+                      position : 'Iteraction designer',
+                      icon : '/i/facebook.png',
+                      alt : 'facebook'
+                    }
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'position',
+                        mix : { block: 'position-list', elem : 'item'},
+                        content : [
+                          {
+                            mix : { block : 'position', elem : 'image'},
+                            block: 'image',
+                            alt: item.alt,
+                            url: item.icon
+                          },
+                          {
+                            mix : { block : 'position', elem : 'text'},
+                            block : 'text',
+                            mods : { size : 'm'},
+                            content : item.position
+                          }
+                        ]
+                      }
+                    ]
+                  })
+                },
+
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      content : [
+
+            {
+              elem : 'col',
+              mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+              content : [
+                {
+                  mix : { block : 'document-content', elem : 'title' },
+                  block : 'text',
+                  mods : { size : 'l' },
+                  content : 'Tiles'
+                },
+              ]
+            }
+
+      ]
+    },
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+
+                    {
+                      block : 'user-tile',
+                      content: [
+                        {
+                          mix : { block : 'user-tile', elem : 'icon'},
+                          block: 'image',
+                          alt: 'elizabeth',
+                          url: '/i/juliezhuo.jpg'
+                        },
+                        {
+                          mix : { block : 'user-tile', elem : 'name'},
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Andrew Hwang'
+                          content : 'Julie Zhuo'
+                        },
+                        {
+                          mix : { block : 'user-tile', elem : 'twitter'},
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : 'http://twitter.com/joulee',
+                          content : '@joulee'
+                        },
+                        {
+                          elem : 'description',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's', display : 'inline' },
+                              content : 'Design director at Facebook'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Читать'
+                            }
+                          ]
                         }
                       ]
                     },
+
                     {
-                      mix : { block : 'expert-tile', elem : 'description'},
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'Product designer at Facebook. Encourager of empathy.'
-                    }
-                  ]
-                },
+                      block : 'expert-tile',
+                      mix : { block : 'kit', elem : 'item'},
+                      content : [
+                        {
+                          block : 'expert-info',
+                          mix : { block : 'expert-tile', elem : 'info'},
+                          content : [
+                            {
+                              mix : { block : 'expert-info', elem : 'image'},
+                              block: 'image',
+                              alt: 'ahwng',
+                              url: '/i/ahwng.jpg'
+                            },
+                            {
+                              mix : { block : 'expert-info', elem : 'name'},
+                              block : 'text',
+                              mods : { size : 'm'},
+                              content : 'Andrew Hwang'
+                            }
+                          ]
+                        },
+                        {
+                          mix : { block : 'expert-tile', elem : 'description'},
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Product designer at Facebook. Encourager of empathy.'
+                        }
+                      ]
+                    },
+
               ]
             },
           ]
@@ -2365,9 +1853,9 @@ module.exports = {
             {
               block : 'kit',
               content : [
+
                 {
                   block : 'product-tile',
-                  mix : { block : 'kit', elem : 'item'},
                   content: [
                     {
                       mix : { block : 'product-tile', elem : 'icon'},
@@ -2410,9 +1898,9 @@ module.exports = {
                     }
                   ]
                 },
+
                 {
                   block : 'partner-tile',
-                  mix : { block : 'kit', elem : 'item'},
                   content : [
                     {
                       mix : { block : 'partner-tile', elem : 'icon'},
@@ -2437,6 +1925,7 @@ module.exports = {
                     }
                   ]
                 },
+
               ]
             },
           ]
@@ -2686,281 +2175,21 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
-          mods : { lw : 4, xl : 4, xxl : 4},
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'social-group-tile',
+              block : 'footer',
               content : [
+
                 {
-                  elem: 'header'
-                },
-                {
-                  elem: 'avatar'
-                },
-                {
-                  elem: 'content',
-                  content: [
-                    {
-                      block: 'content-txt',
-                      content: [
-                        {
-                          elem: 'name-group',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: {size : 'l', view: 'project'},
-                              content: 'Facebook Design'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'description',
-                          content: [
-                            {
-                              block: 'text',
-                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                  ]
+                  block : 'link',
+                  mods : { theme : 'islands' },
+                  url : 'http://bem.info',
+                  content : 'Stay BEMed!',
+                  target : '_blank'
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      content : [
-        {
-          elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'kit-item-header',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Sections'
-                    },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              block : 'header-section',
-              content : [
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 'xl', weight : 'bold' },
-                      content : 'name'
-                    },
-                  ]
-                },
-                {
-                  elem : 'description',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's', transform : 'uppercase' },
-                      content : 'description'
-                    },
-                  ],
-                },
-                {
-                  elem : 'action',
-                  content : [
-                    {
-                      block : 'button',
-                      mods : { theme : 'islands', size : 'xl', view : 'action' },
-                      text : 'Action'
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'footer-section',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  block : 'row',
-                  content : [
-                    {
-                      elem : 'col',
-                      mods : { lw : 3, xl : 3, xxl : 3 },
-                      content : [
-                        {
-                          block : 'footer-section-item',
-                          content : [
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                  content : 'heading'
-                                },
-                              ]
-                            },
-                            {
-                              elem : 'content',
-                              content : [
-                                {
-                                  block : 'footer-list',
-                                  content : [
-                                    {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'col',
-                      mods : { lw : 3, xl : 3, xxl : 3 },
-                      content : [
-                        {
-                          block : 'footer-section-item',
-                          content : [
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                  content : 'heading'
-                                },
-                              ]
-                            },
-                            {
-                              elem : 'content',
-                              content : [
-                                {
-                                  block : 'footer-list',
-                                  content : [
-                                    {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                          ]
-                        }
-                      ]
-                    },
-                  ]
-                },
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      block : 'row',
-      content : [
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  block : 'footer',
-                  mix : { block : 'kit', elem : 'item'},
-                  content : [
-                    {
-                      block : 'link',
-                      mods : { theme : 'islands' },
-                      url : 'http://bem.info',
-                      content : 'Stay BEMed!',
-                      target : '_blank'
-                    }
-                  ]
-                },
-              ]
-            }
+            },
           ]
         }
       ]
