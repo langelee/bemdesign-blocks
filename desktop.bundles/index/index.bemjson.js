@@ -910,7 +910,6 @@ module.exports = {
       ]
     },
 
-
     /* Avatars */
     {
       block : 'row',
