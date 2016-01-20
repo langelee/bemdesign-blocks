@@ -1750,319 +1750,379 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      documentTitle : 'Inbox',
-                      documentText : '200',
-                      documentImage : [
+                      elem : 'item',
+                      content : [
                         {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-envelope',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Trash',
-                      documentText : '6',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-trash',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
+                          block : 'document-list',
+                          content: [
+                            {
+                              documentTitle : 'Inbox',
+                              documentText : '200',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-envelope',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              documentTitle : 'Trash',
+                              documentText : '6',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-trash',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
 
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
+                          ].map(function(item) {
+                            return [
                               {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
+                                block: 'document',
+                                mix : { block: 'document-list', elem : 'item' },
+                                content: [
+                                  {
+                                    mix : { block : 'document', elem : 'image' },
+                                    block: 'image',
+                                    content: item.documentImage
+                                  },
+                                  {
+                                    elem : 'content',
+                                    content: [
+                                      {
+                                        mix : { block : 'document-content', elem : 'title' },
+                                        block : 'text',
+                                        mods : { size : 'm' },
+                                        content : item.documentTitle
+                                      },
+                                      {
+                                        mix : { block : 'document-content', elem : 'text' },
+                                        block : 'text',
+                                        mods : { size : 's' },
+                                        content : item.documentText
+                                      }
+                                    ]
+                                  },
+                                ]
                               }
                             ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
+                          })
+                        },
+                      ]
+                    },
+                  ]
                 },
-
                 {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      documentTitle : 'Photos',
-                      documentText : '1022',
-                      documentImage : [
+                      elem : 'item',
+                      content : [
                         {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-camera',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Posts',
-                      documentText : '102',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-pencil',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Events',
-                      documentText : '22',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-calendar',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
+                          block : 'document-list',
+                          content: [
+                            {
+                              documentTitle : 'Photos',
+                              documentText : '1022',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-camera',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              documentTitle : 'Posts',
+                              documentText : '102',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-pencil',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              documentTitle : 'Events',
+                              documentText : '22',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-calendar',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                          ].map(function(item) {
+                            return [
                               {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
+                                block: 'document',
+                                mix : { block: 'document-list', elem : 'item' },
+                                content: [
+                                  {
+                                    mix : { block : 'document', elem : 'image' },
+                                    block: 'image',
+                                    content: item.documentImage
+                                  },
+                                  {
+                                    elem : 'content',
+                                    content: [
+                                      {
+                                        mix : { block : 'document-content', elem : 'title' },
+                                        block : 'text',
+                                        mods : { size : 'm' },
+                                        content : item.documentTitle
+                                      },
+                                      {
+                                        mix : { block : 'document-content', elem : 'text' },
+                                        block : 'text',
+                                        mods : { size : 's' },
+                                        content : item.documentText
+                                      }
+                                    ]
+                                  },
+                                ]
                               }
                             ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
+                          })
+                        },
+                      ]
+                    },
+                  ]
                 },
-
                 {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      documentTitle : 'Work',
-                      documentText : '60',
-                      documentImage : [
+                      elem : 'item',
+                      content : [
                         {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Family',
-                      documentText : '12',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      documentTitle : 'Friends',
-                      documentText : '104',
-                      documentImage : [
-                        {
-                          bem: false,
-                          attrs: {
-                            'data-icon': 'ei-heart',
-                            'data-size': 'm'
-                          }
-                        }
-                      ]
-                    },
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            content: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
+                          block : 'document-list',
+                          content: [
+                            {
+                              documentTitle : 'Work',
+                              documentText : '60',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-heart',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              documentTitle : 'Family',
+                              documentText : '12',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-heart',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              documentTitle : 'Friends',
+                              documentText : '104',
+                              documentImage : [
+                                {
+                                  bem: false,
+                                  attrs: {
+                                    'data-icon': 'ei-heart',
+                                    'data-size': 'm'
+                                  }
+                                }
+                              ]
+                            },
+                          ].map(function(item) {
+                            return [
                               {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
+                                block: 'document',
+                                mix : { block: 'document-list', elem : 'item' },
+                                content: [
+                                  {
+                                    mix : { block : 'document', elem : 'image' },
+                                    block: 'image',
+                                    content: item.documentImage
+                                  },
+                                  {
+                                    elem : 'content',
+                                    content: [
+                                      {
+                                        mix : { block : 'document-content', elem : 'title' },
+                                        block : 'text',
+                                        mods : { size : 'm' },
+                                        content : item.documentTitle
+                                      },
+                                      {
+                                        mix : { block : 'document-content', elem : 'text' },
+                                        block : 'text',
+                                        mods : { size : 's' },
+                                        content : item.documentText
+                                      }
+                                    ]
+                                  },
+                                ]
                               }
                             ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
+                          })
+                        },
+                      ]
+                    },
+                  ]
                 },
-
                 {
-                  block : 'document-list',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      documentTitle : 'React',
-                      documentText : 'React is a JavaScript library for creating user interfaces',
-                      documentImage : '/i/react.png'
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'kit',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'document-list',
+                                  content: [
+                                    {
+                                      documentTitle : 'React',
+                                      documentText : 'React is a JavaScript library for creating user interfaces',
+                                      documentImage : '/i/react.png'
+                                    },
+                                    {
+                                      documentTitle : 'Pop',
+                                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
+                                      documentImage : '/i/pop.png'
+                                    },
+                                    {
+                                      documentTitle : 'Origami',
+                                      documentText : 'Design prototyping',
+                                      documentImage : '/i/origami.png'
+                                    }
+                                  ].map(function(item) {
+                                    return [
+                                      {
+                                        block: 'document',
+                                        mix : { block: 'document-list', elem : 'item' },
+                                        content: [
+                                          {
+                                            mix : { block : 'document', elem : 'image' },
+                                            block: 'image',
+                                            url: item.documentImage
+                                          },
+                                          {
+                                            elem : 'content',
+                                            content: [
+                                              {
+                                                mix : { block : 'document-content', elem : 'title' },
+                                                block : 'text',
+                                                mods : { size : 'm' },
+                                                content : item.documentTitle
+                                              },
+                                              {
+                                                mix : { block : 'document-content', elem : 'text' },
+                                                block : 'text',
+                                                mods : { size : 's' },
+                                                content : item.documentText
+                                              }
+                                            ]
+                                          },
+                                        ]
+                                      }
+                                    ]
+                                  })
+                                },
+                              ]
+                            },
+                          ]
+                        },
+                      ]
                     },
-                    {
-                      documentTitle : 'Pop',
-                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
-                      documentImage : '/i/pop.png'
-                    },
-                    {
-                      documentTitle : 'Origami',
-                      documentText : 'Design prototyping',
-                      documentImage : '/i/origami.png'
-                    }
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'document',
-                        mix : { block: 'document-list', elem : 'item' },
-                        content: [
-                          {
-                            mix : { block : 'document', elem : 'image' },
-                            block: 'image',
-                            url: item.documentImage
-                          },
-                          {
-                            elem : 'content',
-                            content: [
-                              {
-                                mix : { block : 'document-content', elem : 'title' },
-                                block : 'text',
-                                mods : { size : 'm' },
-                                content : item.documentTitle
-                              },
-                              {
-                                mix : { block : 'document-content', elem : 'text' },
-                                block : 'text',
-                                mods : { size : 's' },
-                                content : item.documentText
-                              }
-                            ]
-                          },
-                        ]
-                      }
-                    ]
-                  })
+                  ]
                 },
-
                 {
-                  block : 'top-news-list',
-                  mix : { block : 'kit', elem : 'item' },
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      topNewsDate : 'Dec 15, 2015',
-                      topNewsText : 'Designing Facebook Collage'
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'kit',
+                          content : [
+                            {
+                              elem : 'item',
+                              content : [
+                                {
+                                  block : 'top-news-list',
+                                  content: [
+                                    {
+                                      topNewsDate : 'Dec 15, 2015',
+                                      topNewsText : 'Designing Facebook Collage'
+                                    },
+                                    {
+                                      topNewsDate : 'Nov 14, 2015',
+                                      topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
+                                    },
+                                    {
+                                      topNewsDate : 'Oct 8, 2015',
+                                      topNewsText : 'Photographing Diverse Hands at Facebook'
+                                    }
+                                  ].map(function(item) {
+                                    return [
+                                      {
+                                        block: 'top-news',
+                                        mix : { block: 'top-news-list', elem : 'item' },
+                                        content : [
+                                          {
+                                            mix : { block: 'top-news', elem : 'date' },
+                                            block : 'text',
+                                            mods : { size : 's' },
+                                            content : item.topNewsDate
+                                          },
+                                          {
+                                            mix : { block: 'top-news', elem : 'text' },
+                                            block : 'text',
+                                            mods : { size : 'm' },
+                                            content : item.topNewsText
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  })
+                                },
+                              ]
+                            },
+                          ]
+                        },
+                      ]
                     },
-                    {
-                      topNewsDate : 'Nov 14, 2015',
-                      topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
-                    },
-                    {
-                      topNewsDate : 'Oct 8, 2015',
-                      topNewsText : 'Photographing Diverse Hands at Facebook'
-                    }
-                  ].map(function(item) {
-                    return [
-                      {
-                        block: 'top-news',
-                        mix : { block: 'top-news-list', elem : 'item' },
-                        content : [
-                          {
-                            mix : { block: 'top-news', elem : 'date' },
-                            block : 'text',
-                            mods : { size : 's' },
-                            content : item.topNewsDate
-                          },
-                          {
-                            mix : { block: 'top-news', elem : 'text' },
-                            block : 'text',
-                            mods : { size : 'm' },
-                            content : item.topNewsText
-                          }
-                        ]
-                      }
-                    ]
-                  })
+                  ]
                 },
               ]
             }
-
           ]
         },
         {
@@ -2070,124 +2130,143 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'user-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
+              block : 'kit',
+              content : [
                 {
-                  userName : 'Julie Zhuo',
-                  userPosition : 'Design director at Facebook',
-                  userIcon : '/i/juliezhuo.jpg'
-                },
-                {
-                  userName : 'Andrew Hwang',
-                  userPosition : 'Product designer at Facebook',
-                  userIcon : '/i/ahwng.jpg'
-                },
-                {
-                  userName : 'Frankie Gaw',
-                  userPosition : 'Stories from the design team at Facebook',
-                  userIcon : '/i/frankiegaw.jpg'
-                }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'user',
-                    mix : { block: 'user-list', elem : 'item'},
-                    content: [
-                      {
-                        mix : { block : 'user', elem : 'image'},
-                        block: 'image',
-                        url: item.userIcon
-                      },
-                      {
-                        elem : 'content',
-                        content: [
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'user-list',
+                      content: [
+                        {
+                          userName : 'Julie Zhuo',
+                          userPosition : 'Design director at Facebook',
+                          userIcon : '/i/juliezhuo.jpg'
+                        },
+                        {
+                          userName : 'Andrew Hwang',
+                          userPosition : 'Product designer at Facebook',
+                          userIcon : '/i/ahwng.jpg'
+                        },
+                        {
+                          userName : 'Frankie Gaw',
+                          userPosition : 'Stories from the design team at Facebook',
+                          userIcon : '/i/frankiegaw.jpg'
+                        }
+                      ].map(function(item) {
+                        return [
                           {
-                            block: 'user-content',
+                            block: 'user',
+                            mix : { block: 'user-list', elem : 'item'},
                             content: [
                               {
-                                mix : { block : 'user-content', elem : 'name'},
-                                block : 'text',
-                                mods : { size : 'm'},
-                                content : item.userName
+                                mix : { block : 'user', elem : 'image'},
+                                block: 'image',
+                                url: item.userIcon
                               },
                               {
-                                mix : { block : 'user-content', elem : 'position'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.userPosition
-                              }
+                                elem : 'content',
+                                content: [
+                                  {
+                                    block: 'user-content',
+                                    content: [
+                                      {
+                                        mix : { block : 'user-content', elem : 'name'},
+                                        block : 'text',
+                                        mods : { size : 'm'},
+                                        content : item.userName
+                                      },
+                                      {
+                                        mix : { block : 'user-content', elem : 'position'},
+                                        block : 'text',
+                                        mods : { size : 's'},
+                                        content : item.userPosition
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
                             ]
                           }
                         ]
-                      },
-                    ]
-                  }
-                ]
-              })
+                      })
+                    },
+                  ]
+                },
+              ]
             },
             {
-              block : 'news-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
+              block : 'kit',
+              content : [
                 {
-                  newsContentTitle : 'Here’s to 2016 with Messenger',
-                  newsContentDate : 'January 7, 2016',
-                  newsContentText : 'The first week of the New Year is always a good moment to look back at the year behind and think about the one ahead.'
-                },
-                {
-                  newsContentTitle : 'Messenger Adds New Features For Sharing During the Holidays',
-                  newsContentDate : 'December 17, 2015',
-                  newsContentText : 'In preparation for the coming weeks as many of us spend lots of time with friends.'
-                },
-                {
-                  newsContentTitle : 'Introducing Transportation on Messenger',
-                  newsContentDate : 'December 16, 2015',
-                  newsContentText : 'Messenger is your place to communicate seamlessly with everyone – from making plans with friends.'
-                }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'news',
-                    mix : { block: 'news-list', elem : 'item'},
-                    content: [
-                      {
-                        mix : { block : 'news', elem : 'image'},
-                        block: 'image',
-                        url: '/i/document.png'
-                      },
-                      {
-                        elem : 'content',
-                        content: [
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'news-list',
+                      mix : { block : 'kit', elem : 'item'},
+                      content: [
+                        {
+                          newsContentTitle : 'Here’s to 2016 with Messenger',
+                          newsContentDate : 'January 7, 2016',
+                          newsContentText : 'The first week of the New Year is always a good moment to look back at the year behind and think about the one ahead.'
+                        },
+                        {
+                          newsContentTitle : 'Messenger Adds New Features For Sharing During the Holidays',
+                          newsContentDate : 'December 17, 2015',
+                          newsContentText : 'In preparation for the coming weeks as many of us spend lots of time with friends.'
+                        },
+                        {
+                          newsContentTitle : 'Introducing Transportation on Messenger',
+                          newsContentDate : 'December 16, 2015',
+                          newsContentText : 'Messenger is your place to communicate seamlessly with everyone – from making plans with friends.'
+                        }
+                      ].map(function(item) {
+                        return [
                           {
-                            block : 'news-content',
+                            block: 'news',
+                            mix : { block: 'news-list', elem : 'item'},
                             content: [
                               {
-                                mix : { block: 'news-content', elem : 'title'},
-                                block : 'text',
-                                mods : { size : 'm'},
-                                content : item.newsContentTitle
+                                mix : { block : 'news', elem : 'image'},
+                                block: 'image',
+                                url: '/i/document.png'
                               },
                               {
-                                mix : { block: 'news-content', elem : 'date'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.newsContentDate
+                                elem : 'content',
+                                content: [
+                                  {
+                                    block : 'news-content',
+                                    content: [
+                                      {
+                                        mix : { block: 'news-content', elem : 'title'},
+                                        block : 'text',
+                                        mods : { size : 'm'},
+                                        content : item.newsContentTitle
+                                      },
+                                      {
+                                        mix : { block: 'news-content', elem : 'date'},
+                                        block : 'text',
+                                        mods : { size : 's'},
+                                        content : item.newsContentDate
+                                      },
+                                      {
+                                        mix : { block: 'news-content', elem : 'text'},
+                                        block : 'text',
+                                        mods : { size : 's'},
+                                        content : item.newsContentText
+                                      }
+                                    ]
+                                  }
+                                ]
                               },
-                              {
-                                mix : { block: 'news-content', elem : 'text'},
-                                block : 'text',
-                                mods : { size : 's'},
-                                content : item.newsContentText
-                              }
                             ]
                           }
                         ]
-                      },
-                    ]
-                  }
-                ]
-              })
+                      })
+                    },
+                  ]
+                },
+              ]
             },
           ]
         },
@@ -2196,61 +2275,70 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
-              block : 'position-list',
-              mix : { block : 'kit', elem : 'item'},
-              content: [
+              block : 'kit',
+              content : [
                 {
-                  position : 'UI Engineer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'position-list',
+                      content: [
+                        {
+                          position : 'UI Engineer',
+                          icon : '/i/messenger.png',
+                          alt : 'messenger'
+                        },
+                        {
+                          position : 'UX Designer',
+                          icon : '/i/messenger.png',
+                          alt : 'messenger'
+                        },
+                        {
+                          position : 'Chief design officer',
+                          icon : '/i/facebook.png',
+                          alt : 'facebook'
+                        },
+                        {
+                          position : 'UI Designer',
+                          icon : '/i/messenger.png',
+                          alt : 'messenger'
+                        },
+                        {
+                          position : 'Illustrator',
+                          icon : '/i/facebook.png',
+                          alt : 'facebook'
+                        },
+                        {
+                          position : 'Iteraction designer',
+                          icon : '/i/facebook.png',
+                          alt : 'facebook'
+                        }
+                      ].map(function(item) {
+                        return [
+                          {
+                            block: 'position',
+                            mix : { block: 'position-list', elem : 'item'},
+                            content : [
+                              {
+                                mix : { block : 'position', elem : 'image'},
+                                block: 'image',
+                                alt: item.alt,
+                                url: item.icon
+                              },
+                              {
+                                mix : { block : 'position', elem : 'text'},
+                                block : 'text',
+                                mods : { size : 'm'},
+                                content : item.position
+                              }
+                            ]
+                          }
+                        ]
+                      })
+                    },
+                  ]
                 },
-                {
-                  position : 'UX Designer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
-                },
-                {
-                  position : 'Chief design officer',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
-                },
-                {
-                  position : 'UI Designer',
-                  icon : '/i/messenger.png',
-                  alt : 'messenger'
-                },
-                {
-                  position : 'Illustrator',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
-                },
-                {
-                  position : 'Iteraction designer',
-                  icon : '/i/facebook.png',
-                  alt : 'facebook'
-                }
-              ].map(function(item) {
-                return [
-                  {
-                    block: 'position',
-                    mix : { block: 'position-list', elem : 'item'},
-                    content : [
-                      {
-                        mix : { block : 'position', elem : 'image'},
-                        block: 'image',
-                        alt: item.alt,
-                        url: item.icon
-                      },
-                      {
-                        mix : { block : 'position', elem : 'text'},
-                        block : 'text',
-                        mods : { size : 'm'},
-                        content : item.position
-                      }
-                    ]
-                  }
-                ]
-              })
+              ]
             },
           ]
         }
@@ -2262,7 +2350,7 @@ module.exports = {
         {
           elem : 'col',
           mix : { block : 'kit', elem : 'item'},
-          mods : { sw : 12, mw : 12, lw : 12, xl : 12, xxl : 12 },
+          mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
               block : 'kit-item-header',
@@ -2305,78 +2393,197 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'user-tile',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  block : 'kit',
+                  content : [
                     {
-                      mix : { block : 'user-tile', elem : 'icon'},
-                      block: 'image',
-                      alt: 'elizabeth',
-                      url: '/i/juliezhuo.jpg'
-                    },
-                    {
-                      mix : { block : 'user-tile', elem : 'name'},
-                      block : 'text',
-                      mods : { size : 'm'},
-                      content : 'Julie Zhuo'
-                    },
-                    {
-                      mix : { block : 'user-tile', elem : 'twitter'},
-                      block : 'link',
-                      mods : { theme : 'islands' },
-                      url : 'http://twitter.com/joulee',
-                      content : '@joulee'
-                    },
-                    {
-                      elem : 'description',
+                      elem : 'item',
                       content : [
                         {
-                          block : 'text',
-                          mods : { size : 's', display : 'inline' },
-                          content : 'Design director at Facebook'
-                        }
+                          block : 'user-tile',
+                          content: [
+                            {
+                              mix : { block : 'user-tile', elem : 'icon'},
+                              block: 'image',
+                              alt: 'elizabeth',
+                              url: '/i/juliezhuo.jpg'
+                            },
+                            {
+                              mix : { block : 'user-tile', elem : 'name'},
+                              block : 'text',
+                              mods : { size : 'm'},
+                              content : 'Julie Zhuo'
+                            },
+                            {
+                              mix : { block : 'user-tile', elem : 'twitter'},
+                              block : 'link',
+                              mods : { theme : 'islands' },
+                              url : 'http://twitter.com/joulee',
+                              content : '@joulee'
+                            },
+                            {
+                              elem : 'description',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 's', display : 'inline' },
+                                  content : 'Design director at Facebook'
+                                }
+                              ]
+                            },
+                            {
+                              elem : 'action',
+                              content : [
+                                {
+                                  block : 'button',
+                                  mods : { theme : 'islands', size : 'l', view : 'action' },
+                                  text : 'Читать'
+                                }
+                              ]
+                            }
+                          ]
+                        },
                       ]
                     },
-                    {
-                      elem : 'action',
-                      content : [
-                        {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Читать'
-                        }
-                      ]
-                    }
                   ]
                 },
                 {
-                  block : 'expert-tile',
-                  mix : { block : 'kit', elem : 'item'},
+                  block : 'kit',
                   content : [
                     {
-                      block : 'expert-info',
-                      mix : { block : 'expert-tile', elem : 'info'},
+                      elem : 'item',
                       content : [
                         {
-                          mix : { block : 'expert-info', elem : 'image'},
+                          block : 'expert-tile',
+                          content : [
+                            {
+                              block : 'expert-info',
+                              mix : { block : 'expert-tile', elem : 'info'},
+                              content : [
+                                {
+                                  mix : { block : 'expert-info', elem : 'image'},
+                                  block: 'image',
+                                  alt: 'ahwng',
+                                  url: '/i/ahwng.jpg'
+                                },
+                                {
+                                  mix : { block : 'expert-info', elem : 'name'},
+                                  block : 'text',
+                                  mods : { size : 'm'},
+                                  content : 'Andrew Hwang'
+                                }
+                              ]
+                            },
+                            {
+                              mix : { block : 'expert-tile', elem : 'description'},
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : 'Product designer at Facebook. Encourager of empathy.'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+
+
+
+
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'product-tile',
+                      content: [
+                        {
+                          mix : { block : 'product-tile', elem : 'icon'},
                           block: 'image',
-                          alt: 'ahwng',
-                          url: '/i/ahwng.jpg'
+                          alt: 'facebookdesign',
+                          url: '/i/facebookdesign.jpg'
                         },
                         {
-                          mix : { block : 'expert-info', elem : 'name'},
+                          mix : { block : 'product-tile', elem : 'name'},
                           block : 'text',
                           mods : { size : 'm'},
-                          content : 'Andrew Hwang'
+                          content : 'Facebook Design'
+                        },
+                        {
+                          mix : { block : 'product-tile', elem : 'web'},
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : 'http://medium.com/@facebookdesign',
+                          content : '@facebookdesign'
+                        },
+                        {
+                          elem : 'description',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : 'Stories from the design team at Facebook offices across the world'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Перейти'
+                            }
+                          ]
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  block : 'kit',
+                  content : [
                     {
-                      mix : { block : 'expert-tile', elem : 'description'},
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'Product designer at Facebook. Encourager of empathy.'
-                    }
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'partner-tile',
+                          content : [
+                            {
+                              mix : { block : 'partner-tile', elem : 'icon'},
+                              block: 'image',
+                              alt: 'frankiegaw',
+                              url: '/i/frankiegaw.jpg'
+                            },
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'm'},
+                                  content : 'Frankie Gaw'
+                                },
+                              ]
+                            },
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : 'Stories from the design team at Facebook offices across the world'
+                            }
+                          ]
+                        },
+
+                      ]
+                    },
                   ]
                 },
               ]
@@ -2391,128 +2598,50 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'product-tile',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
+                  elem : 'item',
+                  content : [
                     {
-                      mix : { block : 'product-tile', elem : 'icon'},
-                      block: 'image',
-                      alt: 'facebookdesign',
-                      url: '/i/facebookdesign.jpg'
-                    },
-                    {
-                      mix : { block : 'product-tile', elem : 'name'},
-                      block : 'text',
-                      mods : { size : 'm'},
-                      content : 'Facebook Design'
-                    },
-                    {
-                      mix : { block : 'product-tile', elem : 'web'},
-                      block : 'link',
-                      mods : { theme : 'islands' },
-                      url : 'http://medium.com/@facebookdesign',
-                      content : '@facebookdesign'
-                    },
-                    {
-                      elem : 'description',
-                      content : [
+                      block : 'event-tile',
+                      content: [
                         {
+                          mix : { block : 'event-tile', elem : 'icon'},
+                          block: 'image',
+                          alt: 'FBF8',
+                          url: '/i/fbf8.svg'
+                        },
+                        {
+                          mix : { block : 'event-tile', elem : 'name'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Facebook Developer Conference'
+                        },
+                        {
+                          mix : { block : 'event-tile', elem : 'date'},
                           block : 'text',
                           mods : { size : 's'},
-                          content : 'Stories from the design team at Facebook offices across the world'
+                          content : 'April 12, 2016'
                         },
-                      ]
-                    },
-                    {
-                      elem : 'action',
-                      content : [
                         {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Перейти'
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  block : 'partner-tile',
-                  mix : { block : 'kit', elem : 'item'},
-                  content : [
-                    {
-                      mix : { block : 'partner-tile', elem : 'icon'},
-                      block: 'image',
-                      alt: 'frankiegaw',
-                      url: '/i/frankiegaw.jpg'
-                    },
-                    {
-                      elem : 'name',
-                      content : [
-                        {
+                          mix : { block : 'event-tile', elem : 'description'},
                           block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Frankie Gaw'
+                          mods : { size : 's'},
+                          content : 'Join us in San Francisco for our annual developer conference'
                         },
-                      ]
-                    },
-                    {
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'Stories from the design team at Facebook offices across the world'
-                    }
-                  ]
-                },
-              ]
-            },
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  block : 'event-tile',
-                  mix : { block : 'kit', elem : 'item'},
-                  content: [
-                    {
-                      mix : { block : 'event-tile', elem : 'icon'},
-                      block: 'image',
-                      alt: 'FBF8',
-                      url: '/i/fbf8.svg'
-                    },
-                    {
-                      mix : { block : 'event-tile', elem : 'name'},
-                      block : 'text',
-                      mods : { size : 'm'},
-                      content : 'Facebook Developer Conference'
-                    },
-                    {
-                      mix : { block : 'event-tile', elem : 'date'},
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'April 12, 2016'
-                    },
-                    {
-                      mix : { block : 'event-tile', elem : 'description'},
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'Join us in San Francisco for our annual developer conference'
-                    },
-                    {
-                      elem : 'action',
-                      content : [
                         {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'l', view : 'action' },
-                          text : 'Собираюсь пойти'
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Собираюсь пойти'
+                            }
+                          ]
                         }
                       ]
-                    }
+                    },
                   ]
                 },
+
                 /*
                 {
                   block : 'document-tile',
@@ -2711,49 +2840,53 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 4, xl : 4, xxl : 4},
           content : [
             {
-              block : 'social-group-tile',
+              elem : 'item',
               content : [
                 {
-                  elem: 'header'
-                },
-                {
-                  elem: 'avatar'
-                },
-                {
-                  elem: 'content',
-                  content: [
+                  block : 'social-group-tile',
+                  content : [
                     {
-                      block: 'content-txt',
+                      elem: 'header'
+                    },
+                    {
+                      elem: 'avatar'
+                    },
+                    {
+                      elem: 'content',
                       content: [
                         {
-                          elem: 'name-group',
+                          block: 'content-txt',
                           content: [
                             {
-                              block: 'text',
-                              mods: {size : 'l', view: 'project'},
-                              content: 'Facebook Design'
+                              elem: 'name-group',
+                              content: [
+                                {
+                                  block: 'text',
+                                  mods: {size : 'l', view: 'project'},
+                                  content: 'Facebook Design'
+                                }
+                              ]
+                            },
+                            {
+                              elem: 'description',
+                              content: [
+                                {
+                                  block: 'text',
+                                  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
+                                }
+                              ]
                             }
                           ]
                         },
-                        {
-                          elem: 'description',
-                          content: [
-                            {
-                              block: 'text',
-                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
-                            }
-                          ]
-                        }
                       ]
-                    },
+                    }
                   ]
                 }
               ]
-            }
+            },
           ]
         }
       ]
@@ -2764,34 +2897,38 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              elem : 'item',
               content : [
                 {
-                  elem : 'name',
+                  block : 'kit-item-header',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Sections'
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'l' },
+                          content : 'Sections'
+                        },
+                      ]
                     },
-                  ]
-                },
-                {
-                  elem : 'name',
-                  content : [
                     {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's',},
+                          content : 'Description description description'
+                        },
+                      ]
+                    }
                   ]
                 }
               ]
-            }
+            },
           ]
         },
         {
@@ -2800,40 +2937,45 @@ module.exports = {
           mix : { block : 'kit', elem : 'item'},
           content : [
             {
-              block : 'header-section',
+              elem : 'item',
               content : [
                 {
-                  elem : 'name',
+                  block : 'header-section',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'xl', weight : 'bold' },
-                      content : 'name'
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'xl', weight : 'bold' },
+                          content : 'name'
+                        },
+                      ]
                     },
-                  ]
-                },
-                {
-                  elem : 'description',
-                  content : [
                     {
-                      block : 'text',
-                      mods : { size : 's', transform : 'uppercase' },
-                      content : 'description'
+                      elem : 'description',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase' },
+                          content : 'description'
+                        },
+                      ],
                     },
-                  ],
-                },
-                {
-                  elem : 'action',
-                  content : [
                     {
-                      block : 'button',
-                      mods : { theme : 'islands', size : 'xl', view : 'action' },
-                      text : 'Action'
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'xl', view : 'action' },
+                          text : 'Action'
+                        }
+                      ]
                     }
                   ]
                 }
               ]
-            }
+            },
           ]
         },
         {
@@ -2842,119 +2984,124 @@ module.exports = {
           content : [
             {
               block : 'footer-section',
-              mix : { block : 'kit', elem : 'item'},
               content : [
                 {
-                  block : 'row',
+                  elem : 'item',
                   content : [
                     {
-                      elem : 'col',
-                      mods : { lw : 3, xl : 3, xxl : 3 },
+                      block : 'row',
                       content : [
                         {
-                          block : 'footer-section-item',
+                          elem : 'col',
+                          mods : { lw : 3, xl : 3, xxl : 3 },
                           content : [
                             {
-                              elem : 'name',
+                              block : 'footer-section-item',
                               content : [
                                 {
-                                  block : 'text',
-                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                  content : 'heading'
-                                },
-                              ]
-                            },
-                            {
-                              elem : 'content',
-                              content : [
-                                {
-                                  block : 'footer-list',
+                                  elem : 'name',
                                   content : [
                                     {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
+                                      block : 'text',
+                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                      content : 'heading'
                                     },
+                                  ]
+                                },
+                                {
+                                  elem : 'content',
+                                  content : [
                                     {
-                                      elem : 'item',
+                                      block : 'footer-list',
                                       content : [
                                         {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
                                   ]
-                                }
-                              ]
-                            },
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'col',
-                      mods : { lw : 3, xl : 3, xxl : 3 },
-                      content : [
-                        {
-                          block : 'footer-section-item',
-                          content : [
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                  content : 'heading'
                                 },
                               ]
-                            },
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'col',
+                          mods : { lw : 3, xl : 3, xxl : 3 },
+                          content : [
                             {
-                              elem : 'content',
+                              block : 'footer-section-item',
                               content : [
                                 {
-                                  block : 'footer-list',
+                                  elem : 'name',
                                   content : [
                                     {
-                                      elem : 'item',
-                                      content : [
-                                        {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
-                                        }
-                                      ]
+                                      block : 'text',
+                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                      content : 'heading'
                                     },
+                                  ]
+                                },
+                                {
+                                  elem : 'content',
+                                  content : [
                                     {
-                                      elem : 'item',
+                                      block : 'footer-list',
                                       content : [
                                         {
-                                          block : 'link',
-                                          mods : { theme : 'islands', size: 'm' },
-                                          url : 'https://bem.info/',
-                                          content : 'bem.info'
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
                                   ]
-                                }
+                                },
                               ]
-                            },
+                            }
                           ]
-                        }
+                        },
                       ]
                     },
                   ]
                 },
+
               ]
             }
           ]
