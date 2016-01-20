@@ -203,34 +203,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Colors'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Colors'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -673,34 +682,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Spaces'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Spaces'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -900,34 +918,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Avatars'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Avatars'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -1018,34 +1045,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Icons'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Icons'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -1178,34 +1214,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Typography'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Typography'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -1374,34 +1419,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Forms'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Forms'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -1712,34 +1766,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Lists'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Lists'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         },
         {
@@ -2349,34 +2412,43 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mix : { block : 'kit', elem : 'item'},
           mods : { lw : 12, xl : 12, xxl : 12 },
           content : [
             {
-              block : 'kit-item-header',
+              block : 'kit',
               content : [
                 {
-                  elem : 'name',
+                  elem : 'item',
                   content : [
                     {
-                      block : 'text',
-                      mods : { size : 'l' },
-                      content : 'Tiles'
-                    },
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Tiles'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
-                {
-                  elem : 'name',
-                  content : [
-                    {
-                      block : 'text',
-                      mods : { size : 's',},
-                      content : 'Description description description'
-                    },
-                  ]
-                }
               ]
-            }
+            },
           ]
         }
       ]
@@ -3075,30 +3147,40 @@ module.exports = {
               elem : 'item',
               content : [
                 {
-                  block : 'kit-item-header',
+                  block : 'kit',
                   content : [
                     {
-                      elem : 'name',
+                      elem : 'item',
                       content : [
                         {
-                          block : 'text',
-                          mods : { size : 'l' },
-                          content : 'Sections'
-                        },
+                          block : 'kit-item-header',
+                          content : [
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'l' },
+                                  content : 'Sections'
+                                },
+                              ]
+                            },
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 's',},
+                                  content : 'Description description description'
+                                },
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's',},
-                          content : 'Description description description'
-                        },
-                      ]
-                    }
                   ]
-                }
+                },
               ]
             },
           ]
