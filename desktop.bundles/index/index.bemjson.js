@@ -1729,6 +1729,83 @@ module.exports = {
                   mix : { block : 'kit', elem : 'item'},
                   content: [
                     {
+                      documentTitle : 'Photos',
+                      documentText : '1022',
+                      documentImage : [
+                        {
+                          bem: false,
+                          attrs: {
+                            'data-icon': 'ei-camera',
+                            'data-size': 'm'
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      documentTitle : 'Posts',
+                      documentText : '102',
+                      documentImage : [
+                        {
+                          bem: false,
+                          attrs: {
+                            'data-icon': 'ei-pencil',
+                            'data-size': 'm'
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      documentTitle : 'Events',
+                      documentText : '22',
+                      documentImage : [
+                        {
+                          bem: false,
+                          attrs: {
+                            'data-icon': 'ei-calendar',
+                            'data-size': 'm'
+                          }
+                        }
+                      ]
+                    },
+                  ].map(function(item) {
+                    return [
+                      {
+                        block: 'document',
+                        mix : { block: 'document-list', elem : 'item' },
+                        content: [
+                          {
+                            mix : { block : 'document', elem : 'image' },
+                            block: 'image',
+                            content: item.documentImage
+                          },
+                          {
+                            elem : 'content',
+                            content: [
+                              {
+                                mix : { block : 'document-content', elem : 'title' },
+                                block : 'text',
+                                mods : { size : 'm' },
+                                content : item.documentTitle
+                              },
+                              {
+                                mix : { block : 'document-content', elem : 'text' },
+                                block : 'text',
+                                mods : { size : 's' },
+                                content : item.documentText
+                              }
+                            ]
+                          },
+                        ]
+                      }
+                    ]
+                  })
+                },
+
+                {
+                  block : 'document-list',
+                  mix : { block : 'kit', elem : 'item'},
+                  content: [
+                    {
                       documentTitle : 'React',
                       documentText : 'React is a JavaScript library for creating user interfaces',
                       documentImage : '/i/react.png'
@@ -1776,6 +1853,7 @@ module.exports = {
                     ]
                   })
                 },
+
                 {
                   block : 'top-news-list',
                   mix : { block : 'kit', elem : 'item' },
@@ -1817,6 +1895,7 @@ module.exports = {
                 },
               ]
             }
+
           ]
         },
         {
