@@ -3005,8 +3005,8 @@ module.exports = {
               ]
             },
           ]
-      },
-      {
+        },
+        {
         elem : 'col',
         mix : { block : 'kit', elem : 'item'},
         mods : { lw : 4, xl : 4, xxl : 4},
@@ -3207,9 +3207,90 @@ module.exports = {
                 ]
             }
             ]
-          }
-        ]
-      }
+            }
+            ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                        {
+                            block: 'social-text-tile',
+                            content: [
+                                {
+                                    elem: 'p',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'xs'},
+                                            content: '1 year ago'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'h1',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'l', weight: 'bold'},
+                                            content: 'Sample text post'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'h2',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'm', weight: 'bold'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur eveniet enim dolores dignissimos odio. Deserunt est magni minus nam?'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'p',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 's'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'p',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 's'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'button',
+                                    content: [
+                                        {
+                                            block: 'button',
+                                            mods: { theme : 'islands', size : 'm', type : 'link'},
+                                            text: 'Keep reading'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
