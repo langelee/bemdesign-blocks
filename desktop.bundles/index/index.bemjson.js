@@ -1459,6 +1459,49 @@ module.exports = {
         },
         {
           elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'kit-item-info',
+                      content : [
+                        {
+                          block : 'row',
+                          content : [
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : [
+
+                              ]
+                            },
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : 'example'
+                            },
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : 'example'
+                            }
+                          ]
+                        },
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
             {
@@ -1568,6 +1611,24 @@ module.exports = {
                           ]
                         }
                       ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1674,6 +1735,24 @@ module.exports = {
                           ]
                         }
                       ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1693,7 +1772,6 @@ module.exports = {
                   content : [
                     {
                       block : 'form',
-                      mix : { block : 'kit', elem : 'item'},
                       content : [
                         {
                           mix : { block : 'form', elem : 'header'},
@@ -1745,6 +1823,24 @@ module.exports = {
                                   ]
                                 },
                               ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
                             }
                           ]
                         }
@@ -1802,6 +1898,49 @@ module.exports = {
                 },
               ]
             },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'kit-item-info',
+                      content : [
+                        {
+                          block : 'row',
+                          content : [
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : [
+
+                              ]
+                            },
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : 'example'
+                            },
+                            {
+                              elem : 'col',
+                              mods : { lw : 4, xl : 4, xxl : 4 },
+                              content : 'example'
+                            }
+                          ]
+                        },
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -2448,6 +2587,49 @@ module.exports = {
                 },
               ]
             },
+          ]
+        }
+      ]
+    },
+    {
+      elem : 'col',
+      mods : { lw : 12, xl : 12, xxl : 12 },
+      content : [
+        {
+          block : 'kit',
+          content : [
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'kit-item-info',
+                  content : [
+                    {
+                      block : 'row',
+                      content : [
+                        {
+                          elem : 'col',
+                          mods : { lw : 4, xl : 4, xxl : 4 },
+                          content : [
+
+                          ]
+                        },
+                        {
+                          elem : 'col',
+                          mods : { lw : 4, xl : 4, xxl : 4 },
+                          content : 'example'
+                        },
+                        {
+                          elem : 'col',
+                          mods : { lw : 4, xl : 4, xxl : 4 },
+                          content : 'example'
+                        }
+                      ]
+                    },
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
