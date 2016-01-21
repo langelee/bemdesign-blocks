@@ -3224,7 +3224,7 @@ module.exports = {
                             block: 'social-text-tile',
                             content: [
                                 {
-                                    elem: 'p',
+                                    elem: 'date',
                                     content: [
                                         {
                                             block: 'text',
@@ -3234,7 +3234,7 @@ module.exports = {
                                     ]
                                 },
                                 {
-                                    elem: 'h1',
+                                    elem: 'name',
                                     content: [
                                         {
                                             block: 'text',
@@ -3244,7 +3244,7 @@ module.exports = {
                                     ]
                                 },
                                 {
-                                    elem: 'h2',
+                                    elem: 'description',
                                     content: [
                                         {
                                             block: 'text',
@@ -3254,7 +3254,7 @@ module.exports = {
                                     ]
                                 },
                                 {
-                                    elem: 'p',
+                                    elem: 'content',
                                     content: [
                                         {
                                             block: 'text',
@@ -3264,7 +3264,7 @@ module.exports = {
                                     ]
                                 },
                                 {
-                                    elem: 'p',
+                                    elem: 'content',
                                     content: [
                                         {
                                             block: 'text',
