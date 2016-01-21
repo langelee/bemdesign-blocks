@@ -3142,53 +3142,213 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4},
           content : [
             {
-              elem : 'item',
-              content : [
-                {
-                  block : 'social-group-tile',
-                  content : [
+                block: 'kit',
+                content: [
                     {
-                      elem: 'header'
-                    },
-                    {
-                      elem: 'avatar'
-                    },
-                    {
-                      elem: 'content',
-                      content: [
+                      elem : 'item',
+                      content : [
                         {
-                          block: 'content-txt',
-                          content: [
+                          block : 'social-group-tile',
+                          content : [
                             {
-                              elem: 'name-group',
-                              content: [
-                                {
-                                  block: 'text',
-                                  mods: {size : 'l', view: 'project'},
-                                  content: 'Facebook Design'
-                                }
-                              ]
+                              elem: 'header'
                             },
                             {
-                              elem: 'description',
+                              elem: 'avatar'
+                            },
+                            {
+                              elem: 'content',
                               content: [
                                 {
-                                  block: 'text',
-                                  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
-                                }
+                                  block: 'content-txt',
+                                  content: [
+                                    {
+                                      elem: 'name-group',
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          mods: {size : 'l', view: 'project'},
+                                          content: 'Facebook Design'
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem: 'description',
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
                               ]
                             }
                           ]
-                        },
+                        }
                       ]
-                    }
-                  ]
-                }
+                  }
               ]
             },
+            {
+                block: 'kit',
+                content: [
+                    {
+                        elem: 'item',
+                        content: [
+                            {
+                                block: 'social-location-tile',
+                                content: [
+                                    {
+                                        elem: 'header',
+                                        content: [
+                                            {
+                                                block: 'social-location-header',
+                                                content: [
+                                                    {
+                                                        elem: 'name',
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                mods: {transform : 'uppercase', weight : 'bold'},
+                                                                content: 'Информация'
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'icon',
+                                                        content: [
+                                                            {
+                                                                tag: 'div',
+                                                                attrs: {'data-icon':'ei-chevron-right', 'data-size':'s'}
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'map',
+                                        content: [
+                                            {
+                                                block: 'social-location-map',
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'adress',
+                                        content: [
+                                            {
+                                                block: 'social-location-adress',
+                                                content: [
+                                                    {
+                                                        elem: 'string',
+                                                        content: [
+                                                            {
+                                                                block: 'social-location-string',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'image',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'div',
+                                                                                attrs: {'data-icon':'ei-location', 'data-size':'s'}
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {size: 'xs'},
+                                                                                content: '6, Leninskiy Avenue, Fifth Floor'
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                block: 'social-location-string',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'image',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'div',
+                                                                                attrs: {'data-icon':'ei-paperclip', 'data-size':'s'}
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {size: 'xs'},
+                                                                                content: '8 (915) 432-25-04'
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                block: 'social-location-string',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'image',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'div',
+                                                                                attrs: {'data-icon':'ei-link', 'data-size':'s'}
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {size: 'xs'},
+                                                                                content: 'http://www.hungryboys.ru'
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+
+                                                ]
+                                            },
+                                            {
+                                                block: 'social-location-button',
+                                                content: [
+                                                    {
+                                                        elem: 'button',
+                                                        content: [
+                                                            {
+                                                                block: 'button',
+                                                                mods : { theme : 'islands', size : 'm', type : 'link' },
+                                                                text: 'Сохранить'
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
           ]
-      },
-      {
+        },
+        {
         elem : 'col',
         mix : { block : 'kit', elem : 'item'},
         mods : { lw : 4, xl : 4, xxl : 4},
@@ -3389,9 +3549,90 @@ module.exports = {
                 ]
             }
             ]
-          }
-        ]
-      }
+            }
+            ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                        {
+                            block: 'social-text-tile',
+                            content: [
+                                {
+                                    elem: 'date',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'xs'},
+                                            content: '1 year ago'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'name',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'l', weight: 'bold'},
+                                            content: 'Sample text post'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'description',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 'm', weight: 'bold'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur eveniet enim dolores dignissimos odio. Deserunt est magni minus nam?'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'content',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 's'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'content',
+                                    content: [
+                                        {
+                                            block: 'text',
+                                            mods: {size : 's'},
+                                            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'button',
+                                    content: [
+                                        {
+                                            block: 'button',
+                                            mods: { theme : 'islands', size : 'm', type : 'link'},
+                                            text: 'Keep reading'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
