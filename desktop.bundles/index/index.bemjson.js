@@ -3090,48 +3090,48 @@ module.exports = {
     {
       block : 'row',
       content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
             {
-                elem : 'col',
-                mods : { lw : 12, xl : 12, xxl : 12 },
-                content : [
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
                     {
-                        block : 'kit',
-                        content : [
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
                             {
-                                elem : 'item',
-                                content : [
-                                    {
-                                        block : 'kit-item-header',
-                                        content : [
-                                            {
-                                                elem : 'name',
-                                                content : [
-                                                    {
-                                                        block : 'text',
-                                                        mods : { size : 'l' },
-                                                        content : 'Social tiles'
-                                                    },
-                                                ]
-                                            },
-                                            {
-                                                elem : 'name',
-                                                content : [
-                                                    {
-                                                        block : 'text',
-                                                        mods : { size : 's',},
-                                                        content : 'Description description description'
-                                                    },
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Social tiles'
                             },
-                        ]
-                    },
-                ]
-            }
-        ]
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      ]
     },
     {
         block : 'row',
