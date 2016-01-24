@@ -3667,7 +3667,20 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Kevin Ertan'
+                                      mods: {size: 's'},
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Kevin Ertan'
+                                        },
+                                        ' Added 4 photos to album ',
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Summer'
+                                        }
+                                      ]
                                     },
                                     {
                                       block: 'social-image-box',
@@ -3677,20 +3690,62 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'link',
+                                              url: '#',
                                               content: [
                                                 {
-                                                  block: 'social-image-icon1'
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/tobias.jpg'
                                                 }
                                               ]
-                                            },
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'icons',
+                                          content: [
                                             {
-                                              block: 'social-image-icon1'
-                                            },
+                                              block: 'link',
+                                              url: '#',
+                                              content: [
+                                                {
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/behance.jpg'
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'icons',
+                                          content: [
                                             {
-                                              block: 'social-image-icon3'
-                                            },
+                                              block: 'link',
+                                              url: '#',
+                                              content: [
+                                                {
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/dribbble.png'
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'icons',
+                                          content: [
                                             {
-                                              block: 'social-image-icon4'
+                                              block: 'link',
+                                              url: '#',
+                                              content: [
+                                                {
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/facebook.png'
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
@@ -3717,7 +3772,20 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Kevin Ertan'
+                                      mods: {size: 's'},
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'john Doe'
+                                        },
+                                        ' liked 2 photos of ',
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Alex Wayne'
+                                        }
+                                      ]
                                     },
                                     {
                                       block: 'social-image-box',
@@ -3727,17 +3795,33 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'link',
+                                              url: '#',
                                               content: [
                                                 {
-                                                  block: 'social-image-icon1'
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/medium.png'
                                                 }
                                               ]
-                                            },
-                                            {
-                                              block: 'social-image-icon1'
-                                            },
+                                            }
                                           ]
-                                        }
+                                        },
+                                        {
+                                          elem: 'icons',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              url: '#',
+                                              content: [
+                                                {
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/koloskov.png'
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
                                       ]
                                     }
                                   ]
@@ -3761,8 +3845,22 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Kevin Ertan'
-                                    }
+                                      mods: {size: 's'},
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'John Doe'
+                                        },
+                                        ' added ',
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Alex Wayne'
+                                        },
+                                        ' to friends'
+                                      ]
+                                    },
                                   ]
                                 }
                               ]
@@ -3784,8 +3882,22 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Kevin Ertan'
-                                    }
+                                      mods: {size: 's'},
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Alex Gilev'
+                                        },
+                                        ' crested the ',
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'Bowling'
+                                        },
+                                        ' event'
+                                      ]
+                                    },
                                   ]
                                 }
                               ]
@@ -3807,25 +3919,48 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Kevin Ertan'
+                                      mods: {size: 's'},
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', pseudo : true },
+                                          content: 'David Vane'
+                                        },
+                                        ' shared a link:'
+                                      ]
                                     },
                                     {
-                                      block: 'social-image-box',
+                                      block: 'social-activity-info',
                                       content: [
                                         {
                                           elem: 'icons',
                                           content: [
                                             {
                                               block: 'link',
+                                              url: '#',
                                               content: [
                                                 {
-                                                  block: 'social-image-icon1'
+                                                  block: 'image',
+                                                  height: '50',
+                                                  url: '/i/spotify.png'
                                                 }
                                               ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'content',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods : { theme : 'islands', pseudo : true, size: 's' },
+                                              content: 'Lorem ipsum dolor'
                                             },
                                             {
-                                              block: 'social-image-icon1'
-                                            },
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: 'Lorem ipsu dolor sit amet, consectetur adipisicing ips...'
+                                            }
                                           ]
                                         }
                                       ]
