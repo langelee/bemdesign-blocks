@@ -3186,6 +3186,24 @@ module.exports = {
                           ]
                         }
                       ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -3340,6 +3358,24 @@ module.exports = {
                           ]
                         }
                       ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -3353,203 +3389,484 @@ module.exports = {
           mods : { lw : 4, xl : 4, xxl : 4},
           content : [
             {
-              block : 'social-user-tile',
-              content : [
+              block: 'kit',
+              content: [
                 {
-                  elem: 'profile',
+                  elem: 'item',
                   content: [
                     {
-                      block: 'social-user-avatar'
-                    },
-                    {
-                      block: 'social-user-name',
-                      content: [
+                      block : 'social-user-tile',
+                      content : [
                         {
-                          elem: 'name',
+                          elem: 'profile',
                           content: [
                             {
-                              block: 'text',
-                              mods: {size : 'l', weight: 'bold'},
-                              content: 'Jonathan Ive'
+                              block: 'social-user-avatar'
+                            },
+                            {
+                              block: 'social-user-name',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: {size : 'l', weight: 'bold'},
+                                      content: 'Jonathan Ive'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-user-date',
+                              content: [
+                                {
+                                  elem: 'date',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'last seen today at 3:56 pm'
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      block: 'social-user-date',
-                      content: [
+                        },
                         {
-                          elem: 'date',
+                          elem: 'button-group',
                           content: [
                             {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'last seen today at 3:56 pm'
+                              block: 'social-user-button',
+                              content: [
+                                {
+                                  elem: 'top',
+                                  content: [
+                                    {
+                                      block: 'button',
+                                      mods : { theme : 'islands', size : 'm', type : 'link' },
+                                      text: 'Send message'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-user-button',
+                              content: [
+                                {
+                                  elem: 'bottom',
+                                  content: [
+                                    {
+                                      block: 'button',
+                                      mods : { theme : 'islands', size : 'm', type : 'link' },
+                                      text: 'Unfriend'
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  elem: 'button-group',
-                  content: [
-                    {
-                      block: 'social-user-button',
-                      content: [
+                        },
                         {
-                          elem: 'top',
+                          elem: 'user-info',
+                          content: [
+                            {
+                              block: 'social-user-row',
+                              content: [
+                                {
+                                  elem: 'left',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Relationship:'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'right',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'In Love'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-user-row',
+                              content: [
+                                {
+                                  elem: 'left',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Company:'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'right',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Senyaars.com'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-user-row',
+                              content: [
+                                {
+                                  elem: 'left',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Sister:'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'right',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Saniel San'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-user-row',
+                              content: [
+                                {
+                                  elem: 'left',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: 'Mobile:'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'right',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'xs'},
+                                      content: '+ 38 (095) 061 08 33'
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'button-show',
                           content: [
                             {
                               block: 'button',
                               mods : { theme : 'islands', size : 'm', type : 'link' },
-                              text: 'Send message'
+                              text: 'Show more'
                             }
                           ]
                         }
                       ]
                     },
                     {
-                      block: 'social-user-button',
-                      content: [
+                      block : 'codepen',
+                      content : [
                         {
-                          elem: 'bottom',
-                          content: [
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
                             {
-                              block: 'button',
-                              mods : { theme : 'islands', size : 'm', type : 'link' },
-                              text: 'Unfriend'
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
                             }
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  elem: 'user-info',
-                  content: [
-                    {
-                      block: 'social-user-row',
-                      content: [
-                        {
-                          elem: 'left',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Relationship:'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'right',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'In Love'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      block: 'social-user-row',
-                      content: [
-                        {
-                          elem: 'left',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Company:'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'right',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Senyaars.com'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      block: 'social-user-row',
-                      content: [
-                        {
-                          elem: 'left',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Sister:'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'right',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Saniel San'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      block: 'social-user-row',
-                      content: [
-                        {
-                          elem: 'left',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: 'Mobile:'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'right',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'xs'},
-                              content: '+ 38 (095) 061 08 33'
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  elem: 'button-show',
-                  content: [
-                    {
-                      block: 'button',
-                      mods : { theme : 'islands', size : 'm', type : 'link' },
-                      text: 'Show more'
                     }
                   ]
                 }
               ]
             },
             {
-              block: 'social-feed-tile',
+              block: 'kit',
               content: [
                 {
-                  
+                  elem: 'item',
+                  content: [
+                    {
+                      block: 'social-activity-list',
+                      content: [
+                        {
+                          elem: 'header',
+                          content: [
+                            {
+                              block: 'social-activity-header',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'l'},
+                                      content: 'Activity list'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'image',
+                                  content: [
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-gear', 'data-size':'s'}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'social-activity-row',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content:[
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-image', 'data-size':'s'}
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Kevin Ertan'
+                                    },
+                                    {
+                                      block: 'social-image-box',
+                                      content: [
+                                        {
+                                          elem: 'icons',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              content: [
+                                                {
+                                                  block: 'social-image-icon1'
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-image-icon1'
+                                            },
+                                            {
+                                              block: 'social-image-icon3'
+                                            },
+                                            {
+                                              block: 'social-image-icon4'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-activity-row',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content:[
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-like', 'data-size':'s'}
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Kevin Ertan'
+                                    },
+                                    {
+                                      block: 'social-image-box',
+                                      content: [
+                                        {
+                                          elem: 'icons',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              content: [
+                                                {
+                                                  block: 'social-image-icon1'
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-image-icon1'
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-activity-row',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content:[
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-user', 'data-size':'s'}
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Kevin Ertan'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-activity-row',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content:[
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-calendar', 'data-size':'s'}
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Kevin Ertan'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-activity-row',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content:[
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-bell', 'data-size':'s'}
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Kevin Ertan'
+                                    },
+                                    {
+                                      block: 'social-image-box',
+                                      content: [
+                                        {
+                                          elem: 'icons',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              content: [
+                                                {
+                                                  block: 'social-image-icon1'
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-image-icon1'
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                            elem: 'footer',
+                            content: [
+                              {
+                                block: 'button',
+                                mods: {theme: 'islands', size: 's'},
+                                text: 'Show earlier activity'
+                              }
+                            ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -3625,6 +3942,24 @@ module.exports = {
                               block: 'button',
                               mods: { theme : 'islands', size : 'm', type : 'link'},
                               text: 'Keep reading'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
                             }
                           ]
                         }
