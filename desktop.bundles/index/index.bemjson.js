@@ -3160,14 +3160,14 @@ module.exports = {
                           elem: 'content',
                           content: [
                             {
-                              block: 'content-txt',
+                              block: 'social-group-content',
                               content: [
                                 {
-                                  elem: 'name-group',
+                                  elem: 'name',
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: {size : 'l', view: 'project'},
+                                      mods: {size : 'm', view: 'project'},
                                       content: 'Facebook Design'
                                     }
                                   ]
@@ -3629,7 +3629,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'l'},
+                                      mods: { size: 'm', transform : 'uppercase', weight : 'bold'},
                                       content: 'Activity list'
                                     }
                                   ]
@@ -3674,7 +3674,7 @@ module.exports = {
                                           mods : { theme : 'islands', pseudo : true },
                                           content: 'Kevin Ertan'
                                         },
-                                        ' Added 4 photos to album ',
+                                        'Added 4 photos to album ',
                                         {
                                           block: 'link',
                                           mods : { theme : 'islands', pseudo : true },
@@ -3976,7 +3976,7 @@ module.exports = {
                             content: [
                               {
                                 block: 'button',
-                                mods: {theme: 'islands', size: 's'},
+                                mods: {theme: 'islands', size: 'l'},
                                 text: 'Show earlier activity'
                               }
                             ]
@@ -4035,7 +4035,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              mods: {size : 'l', weight: 'bold'},
+                              mods: {size : 'l'},
                               content: 'Sample text post'
                             }
                           ]
@@ -4045,7 +4045,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              mods: {size : 'm', weight: 'bold'},
+                              mods: {size : 's', weight: 'bold'},
                               content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur eveniet enim dolores dignissimos odio. Deserunt est magni minus nam?'
                             }
                           ]
@@ -4118,7 +4118,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              mods: {size: 'l', transform: 'uppercase', weight: 'bold'},
+                              mods: {size: 'm', transform: 'uppercase', weight: 'bold'},
                               content: 'Filters'
                             }
                           ]
