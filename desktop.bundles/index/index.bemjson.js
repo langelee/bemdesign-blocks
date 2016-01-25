@@ -4103,6 +4103,271 @@ module.exports = {
                   ]
                 }
               ]
+            },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-filter-list',
+                      content: [
+                        {
+                          elem: 'header',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size: 'l', transform: 'uppercase', weight: 'bold'},
+                              content: 'Filters'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'social-filter-name',
+                              content: [
+                                {
+                                  elem: 'text',
+                                  content: 'Categories'
+                                },
+                                {
+                                  elem: 'icon',
+                                  content: [
+                                    {
+                                      attrs: {
+                                        'data-icon':'ei-image',
+                                        'data-size':'s'
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-filter-checkbox-list',
+                              content: [
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm', checked : true },
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Category 1'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm'},
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Category 2'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm'},
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Category 3'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'social-filter-name',
+                              content: [
+                                {
+                                  elem: 'text',
+                                  content: 'Groups'
+                                },
+                                {
+                                  elem: 'icon',
+                                  content: [
+                                    {
+                                      attrs: {
+                                        'data-icon':'ei-image',
+                                        'data-size':'s'
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-filter-checkbox-list',
+                              content: [
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm' },
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Group 1'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm', checked : true},
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Group 2'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'row',
+                                  content: [
+                                    {
+                                      block : 'checkbox',
+                                      mods : { theme : 'islands', size : 'm', checked : true},
+                                      name: 'name1',
+                                      val : 'val_1',
+                                      text : 'Group 3'
+                                    },
+                                    {
+                                      block: 'social-filter-result',
+                                      content: [
+                                        {
+                                          elem: 'text',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 'xs'},
+                                              content: '18'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
