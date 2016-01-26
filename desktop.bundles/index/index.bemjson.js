@@ -1484,12 +1484,12 @@ module.exports = {
                             {
                               elem : 'col',
                               mods : { lw : 4, xl : 4, xxl : 4 },
-                              content : 'example'
+                              content : ''
                             },
                             {
                               elem : 'col',
                               mods : { lw : 4, xl : 4, xxl : 4 },
-                              content : 'example'
+                              content : ''
                             }
                           ]
                         },
@@ -1927,12 +1927,12 @@ module.exports = {
                             {
                               elem : 'col',
                               mods : { lw : 4, xl : 4, xxl : 4 },
-                              content : 'example'
+                              content : ''
                             },
                             {
                               elem : 'col',
                               mods : { lw : 4, xl : 4, xxl : 4 },
-                              content : 'example'
+                              content : ''
                             }
                           ]
                         },
@@ -2618,12 +2618,12 @@ module.exports = {
                         {
                           elem : 'col',
                           mods : { lw : 4, xl : 4, xxl : 4 },
-                          content : 'example'
+                          content : ''
                         },
                         {
                           elem : 'col',
                           mods : { lw : 4, xl : 4, xxl : 4 },
-                          content : 'example'
+                          content : ''
                         }
                       ]
                     },
@@ -3179,7 +3179,7 @@ module.exports = {
                                     {
                                       block: 'text',
                                       mods: { size : 's' },
-                                      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi. Blanditiis cum eos dolor facilis, corporis quam obcaecati inventore doloribus perspiciatis accusamus!'
+                                      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi.'
                                     }
                                   ]
                                 }
@@ -3283,7 +3283,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
-                                              mods: {size: 'xs'},
+                                              mods: {size: 's'},
                                               content: '6, Leninskiy Avenue, Fifth Floor'
                                             }
                                           ]
@@ -3307,7 +3307,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
-                                              mods: {size: 'xs'},
+                                              mods: {size: 's'},
                                               content: '8 (915) 432-25-04'
                                             }
                                           ]
@@ -3331,7 +3331,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
-                                              mods: {size: 'xs'},
+                                              mods: {size: 's'},
                                               content: 'http://www.hungryboys.ru'
                                             }
                                           ]
@@ -3350,7 +3350,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'button',
-                                      mods : { theme : 'islands', size : 'm', type : 'link' },
+                                      mods : { theme : 'islands', size : 'l', type : 'link' },
                                       text: 'Сохранить'
                                     }
                                   ]
@@ -3428,7 +3428,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'last seen today at 3:56 pm'
                                     }
                                   ]
@@ -3448,7 +3448,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'button',
-                                      mods : { theme : 'islands', size : 'm', type : 'link' },
+                                      mods : { theme : 'islands', size : 'l', type : 'link' },
                                       text: 'Send message'
                                     }
                                   ]
@@ -3463,7 +3463,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'button',
-                                      mods : { theme : 'islands', size : 'm', type : 'link' },
+                                      mods : { theme : 'islands', size : 'l', type : 'link' },
                                       text: 'Unfriend'
                                     }
                                   ]
@@ -3483,7 +3483,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'Relationship:'
                                     }
                                   ]
@@ -3493,7 +3493,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'In Love'
                                     }
                                   ]
@@ -3508,7 +3508,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'Company:'
                                     }
                                   ]
@@ -3518,8 +3518,8 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
-                                      content: 'Senyaars.com'
+                                      mods: { size: 's'},
+                                      content: 'apple.com'
                                     }
                                   ]
                                 }
@@ -3533,7 +3533,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'Sister:'
                                     }
                                   ]
@@ -3543,7 +3543,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'Saniel San'
                                     }
                                   ]
@@ -3558,7 +3558,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: 'Mobile:'
                                     }
                                   ]
@@ -3568,7 +3568,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 'xs'},
+                                      mods: { size: 's'},
                                       content: '+ 38 (095) 061 08 33'
                                     }
                                   ]
@@ -3582,7 +3582,7 @@ module.exports = {
                           content: [
                             {
                               block: 'button',
-                              mods : { theme : 'islands', size : 'm', type : 'link' },
+                              mods : { theme : 'islands', size : 'l', type : 'link' },
                               text: 'Show more'
                             }
                           ]
@@ -3676,7 +3676,7 @@ module.exports = {
                                           mods : { theme : 'islands', pseudo : true },
                                           content: 'Kevin Ertan'
                                         },
-                                        'Added 4 photos to album ',
+                                        ' Added 4 photos to album ',
                                         {
                                           block: 'link',
                                           mods : { theme : 'islands', pseudo : true },
@@ -4077,7 +4077,7 @@ module.exports = {
                           content: [
                             {
                               block: 'button',
-                              mods: { theme : 'islands', size : 'm', type : 'link'},
+                              mods: { theme : 'islands', size : 'l', type : 'link'},
                               text: 'Keep reading'
                             }
                           ]
@@ -4156,7 +4156,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm', checked : true },
+                                      mods : { theme : 'islands', size : 'l', checked : true },
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Category 1'
@@ -4183,7 +4183,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm'},
+                                      mods : { theme : 'islands', size : 'l'},
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Category 2'
@@ -4210,7 +4210,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm'},
+                                      mods : { theme : 'islands', size : 'l'},
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Category 3'
@@ -4267,7 +4267,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm' },
+                                      mods : { theme : 'islands', size : 'l' },
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Group 1'
@@ -4294,7 +4294,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm', checked : true},
+                                      mods : { theme : 'islands', size : 'l', checked : true},
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Group 2'
@@ -4321,7 +4321,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'checkbox',
-                                      mods : { theme : 'islands', size : 'm', checked : true},
+                                      mods : { theme : 'islands', size : 'l', checked : true},
                                       name: 'name1',
                                       val : 'val_1',
                                       text : 'Group 3'
