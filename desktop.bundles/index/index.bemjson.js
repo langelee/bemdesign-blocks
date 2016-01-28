@@ -4377,6 +4377,100 @@ module.exports = {
     },
     {
       block : 'row',
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'kit-item-header',
+                      content : [
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'l' },
+                              content : 'Social comment tiles'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's',},
+                              content : 'Description description description'
+                            },
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-comment-tile',
+                      content: [
+                        {
+                          elem: 'image'
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size: 'l'},
+                              content: 'Заголовок поста'
+                            },
+                            {
+                              block: 'text',
+                              content: 'Сегодня с удивлением обнаружил, что rutracker.org все-таки начали блокировать на уровне провайдеров. Еще большее удивление ощутил, когда оказалось, что блокировка обходится с помощью установки бесплатного плагина для браузера, и все работает как и раньше...'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'link-box',
+                          
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      block : 'row',
       mix : { block : 'page-row'},
       content : [
         {
