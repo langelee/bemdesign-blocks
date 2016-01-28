@@ -4427,7 +4427,7 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 6, xl : 6, xxl : 6 },
           content : [
             {
               block : 'kit',
@@ -4445,19 +4445,118 @@ module.exports = {
                           elem: 'content',
                           content: [
                             {
-                              block: 'text',
-                              mods: {size: 'l'},
-                              content: 'Заголовок поста'
+                              block: 'social-comment-text',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: {size: 'l'},
+                                      content: 'Rutracker.org все-таки начали блокировать на уровне провайдеров'
+                                    }
+                                  ]
+                                }
+                              ]
                             },
                             {
-                              block: 'text',
-                              content: 'Сегодня с удивлением обнаружил, что rutracker.org все-таки начали блокировать на уровне провайдеров. Еще большее удивление ощутил, когда оказалось, что блокировка обходится с помощью установки бесплатного плагина для браузера, и все работает как и раньше...'
+                              block: 'social-comment-text',
+                              content: [
+                                {
+                                  elem: 'content',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      content: 'Сегодня с удивлением обнаружил, что rutracker.org все-таки начали блокировать на уровне провайдеров. Еще большее удивление ощутил, когда оказалось, что блокировка обходится с помощью установки бесплатного плагина для браузера, и все работает как и раньше...'
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         },
                         {
                           elem: 'link-box',
-                          
+                          content: [
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content: [
+                                    {
+                                      attrs: {
+                                        'data-icon': 'ei-like',
+                                        'data-size': 's'
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Нравится'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content: [
+                                    {
+                                      attrs: {
+                                        'data-icon': 'ei-comment',
+                                        'data-size': 's'
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Комментарий'
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'image',
+                                  content: [
+                                    {
+                                      attrs: {
+                                        'data-icon': 'ei-retweet',
+                                        'data-size': 's'
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Поделиться'
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
