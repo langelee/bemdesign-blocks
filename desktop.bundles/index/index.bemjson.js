@@ -3483,7 +3483,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 's'},
+                                      mods: { size: 's', weight : 'bold' },
                                       content: 'Relationship:'
                                     }
                                   ]
@@ -3493,7 +3493,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 's'},
+                                      mods: { size: 's' },
                                       content: 'In Love'
                                     }
                                   ]
@@ -3508,7 +3508,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 's'},
+                                      mods: { size: 's', weight : 'bold' },
                                       content: 'Company:'
                                     }
                                   ]
@@ -3533,7 +3533,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 's'},
+                                      mods: { size: 's', weight : 'bold'},
                                       content: 'Sister:'
                                     }
                                   ]
@@ -3558,7 +3558,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: { size: 's'},
+                                      mods: { size: 's', weight : 'bold'},
                                       content: 'Mobile:'
                                     }
                                   ]
