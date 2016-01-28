@@ -4564,6 +4564,24 @@ module.exports = {
                 },
               ]
             },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-comment',
+                      content: [
+                        {
+
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
           ]
         }
       ]
