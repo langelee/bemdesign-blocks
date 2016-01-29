@@ -2004,7 +2004,7 @@ module.exports = {
                                       {
                                         mix : { block : 'mail-content', elem : 'title' },
                                         block : 'text',
-                                        mods : { size : 'm' },
+                                        mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
                                       {
@@ -2089,7 +2089,7 @@ module.exports = {
                                       {
                                         mix : { block : 'accet-content', elem : 'title' },
                                         block : 'text',
-                                        mods : { size : 'm' },
+                                        mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
                                       {
@@ -2174,7 +2174,7 @@ module.exports = {
                                       {
                                         mix : { block : 'friend-content', elem : 'title' },
                                         block : 'text',
-                                        mods : { size : 'm' },
+                                        mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
                                       {
