@@ -1958,7 +1958,7 @@ module.exports = {
                       elem : 'item',
                       content : [
                         {
-                          block : 'document-list',
+                          block : 'mail-list',
                           content: [
                             {
                               documentTitle : 'Inbox',
@@ -1990,11 +1990,11 @@ module.exports = {
                           ].map(function(item) {
                             return [
                               {
-                                block: 'document',
-                                mix : { block: 'document-list', elem : 'item' },
+                                block: 'mail',
+                                mix : { block: 'mail-list', elem : 'item' },
                                 content: [
                                   {
-                                    mix : { block : 'document', elem : 'image' },
+                                    mix : { block : 'mail', elem : 'image' },
                                     block: 'image',
                                     content: item.documentImage
                                   },
@@ -2002,13 +2002,13 @@ module.exports = {
                                     elem : 'content',
                                     content: [
                                       {
-                                        mix : { block : 'document-content', elem : 'title' },
+                                        mix : { block : 'mail-content', elem : 'title' },
                                         block : 'text',
                                         mods : { size : 'm' },
                                         content : item.documentTitle
                                       },
                                       {
-                                        mix : { block : 'document-content', elem : 'text' },
+                                        mix : { block : 'mail-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
@@ -2031,7 +2031,7 @@ module.exports = {
                       elem : 'item',
                       content : [
                         {
-                          block : 'document-list',
+                          block : 'accet-list',
                           content: [
                             {
                               documentTitle : 'Photos',
@@ -2075,11 +2075,11 @@ module.exports = {
                           ].map(function(item) {
                             return [
                               {
-                                block: 'document',
-                                mix : { block: 'document-list', elem : 'item' },
+                                block: 'accet',
+                                mix : { block: 'accet-list', elem : 'item' },
                                 content: [
                                   {
-                                    mix : { block : 'document', elem : 'image' },
+                                    mix : { block : 'accet', elem : 'image' },
                                     block: 'image',
                                     content: item.documentImage
                                   },
@@ -2087,13 +2087,13 @@ module.exports = {
                                     elem : 'content',
                                     content: [
                                       {
-                                        mix : { block : 'document-content', elem : 'title' },
+                                        mix : { block : 'accet-content', elem : 'title' },
                                         block : 'text',
                                         mods : { size : 'm' },
                                         content : item.documentTitle
                                       },
                                       {
-                                        mix : { block : 'document-content', elem : 'text' },
+                                        mix : { block : 'accet-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
@@ -2116,7 +2116,7 @@ module.exports = {
                       elem : 'item',
                       content : [
                         {
-                          block : 'document-list',
+                          block : 'friend-list',
                           content: [
                             {
                               documentTitle : 'Work',
@@ -2160,11 +2160,11 @@ module.exports = {
                           ].map(function(item) {
                             return [
                               {
-                                block: 'document',
-                                mix : { block: 'document-list', elem : 'item' },
+                                block: 'friend',
+                                mix : { block: 'friend-list', elem : 'item' },
                                 content: [
                                   {
-                                    mix : { block : 'document', elem : 'image' },
+                                    mix : { block : 'friend', elem : 'image' },
                                     block: 'image',
                                     content: item.documentImage
                                   },
@@ -2172,13 +2172,13 @@ module.exports = {
                                     elem : 'content',
                                     content: [
                                       {
-                                        mix : { block : 'document-content', elem : 'title' },
+                                        mix : { block : 'friend-content', elem : 'title' },
                                         block : 'text',
                                         mods : { size : 'm' },
                                         content : item.documentTitle
                                       },
                                       {
-                                        mix : { block : 'document-content', elem : 'text' },
+                                        mix : { block : 'friend-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
