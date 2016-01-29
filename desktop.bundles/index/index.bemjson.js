@@ -4655,7 +4655,7 @@ module.exports = {
             },
           ]
         },
-        {
+                {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
           mix : { block : 'kit', elem : 'item'},
@@ -4667,12 +4667,22 @@ module.exports = {
                   block : 'header-section',
                   content : [
                     {
+                      elem : 'icon',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'xl', weight : 'bold' },
+                          content : 'i'
+                        },
+                      ]
+                    },
+                    {
                       elem : 'name',
                       content : [
                         {
                           block : 'text',
                           mods : { size : 'xl', weight : 'bold' },
-                          content : 'name'
+                          content : 'Heading'
                         },
                       ]
                     },
@@ -4705,6 +4715,64 @@ module.exports = {
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
+          mix : { block : 'kit', elem : 'item'},
+          content : [
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'header-section',
+                  content : [
+                    {
+                      elem : 'icon',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'xl', weight : 'bold' },
+                          content : 'i'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'xl', weight : 'bold' },
+                          content : 'Heading'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'description',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase' },
+                          content : 'description'
+                        },
+                      ],
+                    },
+                    {
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'xl', view : 'action' },
+                          text : 'Action'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          mix : { block : 'kit', elem : 'item'},
           content : [
             {
               block : 'footer-section',
@@ -4829,7 +4897,135 @@ module.exports = {
               ]
             }
           ]
-        }
+        },
+                {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          mix : { block : 'kit', elem : 'item'},
+          content : [
+            {
+              block : 'footer-section',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'row',
+                      content : [
+                        {
+                          elem : 'col',
+                          mods : { lw : 3, xl : 3, xxl : 3 },
+                          content : [
+                            {
+                              block : 'footer-section-item',
+                              content : [
+                                {
+                                  elem : 'name',
+                                  content : [
+                                    {
+                                      block : 'text',
+                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                      content : 'heading'
+                                    },
+                                  ]
+                                },
+                                {
+                                  elem : 'content',
+                                  content : [
+                                    {
+                                      block : 'footer-list',
+                                      content : [
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'col',
+                          mods : { lw : 3, xl : 3, xxl : 3 },
+                          content : [
+                            {
+                              block : 'footer-section-item',
+                              content : [
+                                {
+                                  elem : 'name',
+                                  content : [
+                                    {
+                                      block : 'text',
+                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                      content : 'heading'
+                                    },
+                                  ]
+                                },
+                                {
+                                  elem : 'content',
+                                  content : [
+                                    {
+                                      block : 'footer-list',
+                                      content : [
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'm' },
+                                              url : 'https://bem.info/',
+                                              content : 'bem.info'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                              ]
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+              ]
+            }
+          ]
+        },
       ]
     },
     {
@@ -4861,5 +5057,6 @@ module.exports = {
         }
       ]
     },
+
   ]
 };
