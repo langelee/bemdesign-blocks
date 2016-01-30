@@ -1634,7 +1634,138 @@ module.exports = {
                   ]
                 },
               ]
-            }
+            },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'form',
+                      content : [
+                        {
+                          mix : { block : 'form', elem : 'header'},
+                          block : 'text',
+                          mods : { size : 'l',},
+                          content : 'Sing up'
+                        },
+                        {
+                          elem : 'content',
+                          content : [
+                            {
+                              block : 'form-control',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'First name'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'Last name'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  content : [
+                                    {
+                                      block : 'input',
+                                      mods : { type: 'email', theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'E-mail'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  content: [
+                                    {
+                                      block : 'input',
+                                      mods : { type: 'password', theme : 'islands', size : 'l', width : 'available' },
+                                      placeholder : 'Password'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
+                            {
+                              block: 'form-description',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'xs',},
+                                  content : 'Нажимая «Присоединиться», вы принимаете условия Пользовательского соглашения, Политики конфиденциальности и Политики использования файлов cookie'
+                                },
+                              ]
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'footer',
+                          content : [
+                            {
+                              block : 'form-link',
+                              content : [
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'left' },
+                                  content : [
+                                    {
+                                      block : 'link',
+                                      mods : { theme : 'islands', size : 'm', pseudo : true },
+                                      content : 'Sing in'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'item',
+                                  mods : { align : 'right' },
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Sing up'
+                                    }
+                                  ]
+                                },
+                              ]
+                            },
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
           ]
         },
         {
@@ -1778,7 +1909,7 @@ module.exports = {
                           mix : { block : 'form', elem : 'header'},
                           block : 'text',
                           mods : { size : 'l',},
-                          content : 'Sing up'
+                          content : 'Sing up!'
                         },
                         {
                           elem : 'content',
@@ -1799,7 +1930,22 @@ module.exports = {
                               ]
                             },
                             {
-                              block : 'form-action',
+                              block: 'form-description',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'xs',},
+                                  content : 'Нажимая «Присоединиться», вы принимаете условия Пользовательского соглашения, Политики конфиденциальности и Политики использования файлов cookie'
+                                },
+                              ]
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'footer',
+                          content : [
+                            {
+                              block : 'form-link',
                               content : [
                                 {
                                   elem : 'item',
@@ -1824,7 +1970,7 @@ module.exports = {
                                   ]
                                 },
                               ]
-                            }
+                            },
                           ]
                         }
                       ]
