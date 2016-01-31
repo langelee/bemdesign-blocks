@@ -4219,7 +4219,7 @@ module.exports = {
                           ]
                         },
                         {
-                          elem: 'button',
+                          elem: 'action',
                           content: [
                             {
                               block: 'button',
