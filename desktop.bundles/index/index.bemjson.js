@@ -2890,10 +2890,6 @@ module.exports = {
                     },
                   ]
                 },
-
-
-
-
               ]
             },
           ]
@@ -4816,6 +4812,7 @@ module.exports = {
               content : [
                 {
                   block : 'header-section',
+                  mods : { align : 'center' },
                   content : [
                     {
                       elem : 'image',
@@ -4874,6 +4871,7 @@ module.exports = {
               content : [
                 {
                   block : 'header-section',
+                  mods : { align : 'left' },
                   content : [
                     {
                       elem : 'image',
