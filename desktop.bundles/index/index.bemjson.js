@@ -4907,13 +4907,13 @@ module.exports = {
                                   ]
                                 }
                               ]
-                            },
+                            }
                           ]
                         }
                       ]
                     }
                   ]
-                },
+                }
               ]
             },
             {
@@ -4929,17 +4929,17 @@ module.exports = {
                           elem: 'image'
                         },
                         {
-                          elem: 'name-user',
+                          elem: 'user-name',
                           content: [
                             {
-                              block: 'text',
-                              mods: {view: 'project'},
+                              block: 'link',
+                              mods: {theme: 'islands'},
                               content: 'Алексей Федотов'
                             }
                           ]
                         },
                         {
-                          elem: 'discription',
+                          elem: 'comment',
                           content: [
                             {
                               block: 'text',
@@ -4947,6 +4947,93 @@ module.exports = {
                             }
                           ]
                         },
+                        {
+                          elem: 'link-box',
+                          content: [
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-like',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Нравится'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-comment',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Ответить'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ]
