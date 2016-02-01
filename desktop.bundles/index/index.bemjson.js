@@ -3529,6 +3529,158 @@ module.exports = {
                   ]
                 }
               ]
+            },
+            {
+              block: 'kit',
+              content: [
+                {
+                elem: 'item',
+                content: [
+                  {
+                    block: 'social-suggested-people',
+                    content: [
+                      {
+                        elem: 'header',
+                        content: [
+                          {
+                            block: 'social-suggested-people-header',
+                            content: [
+                              {
+                                elem: 'name',
+                                content: [
+                                  {
+                                    block: 'text',
+                                    mods: { size: 'm', transform : 'uppercase', weight : 'bold'},
+                                    content: 'Suggested People'
+                                  }
+                                ]
+                              },
+                              {
+                                elem: 'image',
+                                content: [
+                                  {
+                                    tag: 'div',
+                                    attrs: {'data-icon':'ei-chevron-right', 'data-size':'s'}
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        elem: 'content',
+                        content: [
+                          {
+                            suggestedUserName : 'Tobias van Schneider',
+                            suggestedUserPosition : 'Lead Product Designer',
+                            suggestedUserIcon : '/i/tobias.jpg'
+                          },
+                          {
+                            suggestedUserName : 'Julie Zhuo',
+                            suggestedUserPosition : 'Design director at Facebook',
+                            suggestedUserIcon : '/i/juliezhuo.jpg'
+                          },
+                          {
+                            suggestedUserName : 'Andrew Hwang',
+                            suggestedUserPosition : 'Product designer at Facebook',
+                            suggestedUserIcon : '/i/ahwng.jpg'
+                          },
+                          {
+                            suggestedUserName : 'Frankie Gaw',
+                            suggestedUserPosition : 'Stories from the design team at Facebook',
+                            suggestedUserIcon : '/i/frankiegaw.jpg'
+                          }
+                        ].map(function(item) {
+                          return [
+                            {
+                              block: 'social-suggested-people-row',
+                              content: [
+                                {
+                                  block: 'social-suggested-people-profile',
+                                  content: [
+                                    {
+                                      elem: 'picture',
+                                      content: [
+                                        {
+                                          block: 'image',
+                                          height: '60',
+                                          url: item.suggestedUserIcon
+                                        },
+                                      ]
+                                    },
+                                    {
+                                      elem : 'content',
+                                      content: [
+                                        {
+                                          block: 'social-suggested-people-profile-content',
+                                          content: [
+                                            {
+                                              mix : { block : 'social-suggested-people-profile-content', elem : 'name'},
+                                              block : 'text',
+                                              mods : { size : 'm'},
+                                              content : item.suggestedUserName
+                                            },
+                                            {
+                                              mix : { block : 'social-suggested-people-profile-content', elem : 'description'},
+                                              block : 'text',
+                                              mods : { size : 's'},
+                                              content : item.suggestedUserPosition
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      elem: 'action',
+                                      content: [
+                                        {
+                                          block: 'link',
+                                          mods : { theme : 'islands', size : 'm' , disabled : true },
+                                          content: 'Add'
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        })
+                      },
+                      {
+                        elem: 'footer',
+                        content: [
+                          {
+                            block: 'button',
+                            mods: { theme : 'islands', size : 'l', type : 'link' },
+                            text: 'Show all'
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    block : 'codepen',
+                    content : [
+                      {
+                        block : 'link',
+                        mix : { block : 'codepen', elem : 'link'},
+                        url : 'http://codepen.io',
+                        content : [
+                          {
+                            block : 'image',
+                            height : '20',
+                            url : '/i/codepen.png',
+                            title : 'Все подробности на bem.info'
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+                },
+              ]
             }
           ]
         },
