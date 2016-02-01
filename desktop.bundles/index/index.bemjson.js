@@ -59,7 +59,10 @@ module.exports = {
       ]
     },
     */
-
+    {
+      block : 'alpha',
+      content : 'BEM Design alpha version'
+    },
     {
       block : 'promo',
       content : [
@@ -3329,6 +3332,16 @@ module.exports = {
                                       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat vitae, accusantium reprehenderit in neque recusandae repellat quasi.'
                                     }
                                   ]
+                                },
+                                {
+                                  elem : 'action',
+                                  content : [
+                                    {
+                                      block : 'button',
+                                      mods : { theme : 'islands', size : 'l', view : 'action' },
+                                      text : 'Перейти'
+                                    }
+                                  ]
                                 }
                               ]
                             },
@@ -4317,6 +4330,92 @@ module.exports = {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
+
+
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-text-tile',
+                      content: [
+                        {
+                          elem: 'date',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'xs'},
+                              content: '1 year ago'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'name',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'l'},
+                              content: 'Sample text post'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'description',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 's', weight: 'bold'},
+                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur eveniet enim dolores dignissimos odio. Deserunt est magni minus nam?'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 's'},
+                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'action',
+                          content: [
+                            {
+                              block: 'button',
+                              mods: { theme : 'islands', size : 'l', type : 'link'},
+                              text: 'Keep reading'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
             {
               block : 'kit',
               content : [
@@ -4410,6 +4509,10 @@ module.exports = {
                 }
               ]
             },
+
+
+            /*
+
             {
               block : 'kit',
               content : [
@@ -4675,6 +4778,9 @@ module.exports = {
                 }
               ]
             }
+
+            */
+
           ]
         }
       ]
