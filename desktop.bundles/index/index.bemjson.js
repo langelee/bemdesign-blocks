@@ -2114,7 +2114,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-envelope',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2127,7 +2127,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-trash',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2187,7 +2187,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-camera',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2200,7 +2200,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-pencil',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2213,7 +2213,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-calendar',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2272,7 +2272,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-heart',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2285,7 +2285,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-heart',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2298,7 +2298,7 @@ module.exports = {
                                   bem: false,
                                   attrs: {
                                     'data-icon': 'ei-heart',
-                                    'data-size': 'm'
+                                    'data-size': 's'
                                   }
                                 }
                               ]
@@ -2577,7 +2577,12 @@ module.exports = {
                               {
                                 mix : { block : 'news', elem : 'image'},
                                 block: 'image',
-                                url: '/i/document.png'
+                                content : {
+                                  attrs: {
+                                    'data-icon': 'ei-archive',
+                                    'data-size': 'm'
+                                  }
+                                }
                               },
                               {
                                 elem : 'content',
@@ -4813,13 +4818,14 @@ module.exports = {
                   block : 'header-section',
                   content : [
                     {
-                      elem : 'icon',
+                      elem : 'image',
                       content : [
                         {
-                          block : 'text',
-                          mods : { size : 'xl', weight : 'bold' },
-                          content : 'i'
-                        },
+                          block : 'image',
+                          url : '/i/f8-logo-w.svg',
+                          title : 'fbf8',
+                          height : '90'
+                        }
                       ]
                     },
                     {
@@ -4828,7 +4834,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 'xl', weight : 'bold' },
-                          content : 'Heading'
+                          content : 'F8 2016 April 12 + 13'
                         },
                       ]
                     },
@@ -4838,7 +4844,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 's', transform : 'uppercase' },
-                          content : 'description'
+                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
                         },
                       ],
                     },
@@ -4848,7 +4854,7 @@ module.exports = {
                         {
                           block : 'button',
                           mods : { theme : 'islands', size : 'xl', view : 'action' },
-                          text : 'Action'
+                          text : 'Connect with facebook'
                         }
                       ]
                     }
@@ -4870,13 +4876,14 @@ module.exports = {
                   block : 'header-section',
                   content : [
                     {
-                      elem : 'icon',
+                      elem : 'image',
                       content : [
                         {
-                          block : 'text',
-                          mods : { size : 'xl', weight : 'bold' },
-                          content : 'i'
-                        },
+                          block : 'image',
+                          url : '/i/f8-logo-w.svg',
+                          title : 'fbf8',
+                          height : '90'
+                        }
                       ]
                     },
                     {
@@ -4885,7 +4892,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 'xl', weight : 'bold' },
-                          content : 'Heading'
+                          content : 'F8 2016 April 12 + 13'
                         },
                       ]
                     },
@@ -4895,7 +4902,7 @@ module.exports = {
                         {
                           block : 'text',
                           mods : { size : 's', transform : 'uppercase' },
-                          content : 'description'
+                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
                         },
                       ],
                     },
@@ -4905,7 +4912,7 @@ module.exports = {
                         {
                           block : 'button',
                           mods : { theme : 'islands', size : 'xl', view : 'action' },
-                          text : 'Action'
+                          text : 'Connect with facebook'
                         }
                       ]
                     }
