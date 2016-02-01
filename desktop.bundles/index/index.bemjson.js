@@ -5167,9 +5167,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'React'
                                             }
                                           ]
                                         },
@@ -5178,9 +5178,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'HHVM'
                                             }
                                           ]
                                         },
@@ -5189,9 +5189,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Hack'
                                             }
                                           ]
                                         },
@@ -5200,12 +5200,34 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Presto'
                                             }
                                           ]
-                                        }
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Buck'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'More Projects'
+                                            }
+                                          ]
+                                        },
                                       ]
                                     }
                                   ]
@@ -5242,9 +5264,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : '@fbOpenSource'
                                             }
                                           ]
                                         },
@@ -5253,9 +5275,42 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Engineering Page'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Facebook Research'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Facebook Developers'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Open Compute Project'
                                             }
                                           ]
                                         }
@@ -5295,9 +5350,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Facebook'
                                             }
                                           ]
                                         },
@@ -5306,9 +5361,31 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Instagram'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Parse'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'OculusVR'
                                             }
                                           ]
                                         }
@@ -5348,9 +5425,9 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Blog'
                                             }
                                           ]
                                         },
@@ -5359,9 +5436,20 @@ module.exports = {
                                           content : [
                                             {
                                               block : 'link',
-                                              mods : { theme : 'islands', size: 'm' },
+                                              mods : { theme : 'islands', size: 'l' },
                                               url : 'https://bem.info/',
-                                              content : 'bem.info'
+                                              content : 'Events'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'link',
+                                              mods : { theme : 'islands', size: 'l' },
+                                              url : 'https://bem.info/',
+                                              content : 'Video'
                                             }
                                           ]
                                         }
