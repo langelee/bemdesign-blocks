@@ -4265,6 +4265,21 @@ module.exports = {
                                           ]
                                         }
                                       ]
+                                    },
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-activity-action',
+                              content: [
+                                {
+                                  elem: 'footer',
+                                  content: [
+                                    {
+                                      block: 'button',
+                                      mods: {theme: 'islands', size: 'l'},
+                                      text: 'Show earlier activity'
                                     }
                                   ]
                                 }
@@ -4272,16 +4287,6 @@ module.exports = {
                             }
                           ]
                         },
-                        {
-                            elem: 'footer',
-                            content: [
-                              {
-                                block: 'button',
-                                mods: {theme: 'islands', size: 'l'},
-                                text: 'Show earlier activity'
-                              }
-                            ]
-                        }
                       ]
                     },
                     {
@@ -4780,24 +4785,40 @@ module.exports = {
                             {
                               block: 'social-comment-link',
                               content: [
-                                {
-                                  elem: 'image',
-                                  content: [
-                                    {
-                                      attrs: {
-                                        'data-icon': 'ei-like',
-                                        'data-size': 's'
-                                      }
-                                    }
-                                  ]
-                                },
+
                                 {
                                   elem: 'name',
                                   content: [
                                     {
                                       block: 'link',
                                       mods: {theme: 'islands'},
-                                      content: 'Нравится'
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-like',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Нравится'
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -4806,24 +4827,40 @@ module.exports = {
                             {
                               block: 'social-comment-link',
                               content: [
-                                {
-                                  elem: 'image',
-                                  content: [
-                                    {
-                                      attrs: {
-                                        'data-icon': 'ei-comment',
-                                        'data-size': 's'
-                                      }
-                                    }
-                                  ]
-                                },
+
                                 {
                                   elem: 'name',
                                   content: [
                                     {
                                       block: 'link',
                                       mods: {theme: 'islands'},
-                                      content: 'Комментарий'
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-comment',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Комментарий'
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -4832,29 +4869,45 @@ module.exports = {
                             {
                               block: 'social-comment-link',
                               content: [
-                                {
-                                  elem: 'image',
-                                  content: [
-                                    {
-                                      attrs: {
-                                        'data-icon': 'ei-retweet',
-                                        'data-size': 's'
-                                      }
-                                    }
-                                  ]
-                                },
+
                                 {
                                   elem: 'name',
                                   content: [
                                     {
                                       block: 'link',
                                       mods: {theme: 'islands'},
-                                      content: 'Поделиться'
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-retweet',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Поделиться'
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
                               ]
-                            }
+                            },
                           ]
                         }
                       ]
