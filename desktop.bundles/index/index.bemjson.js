@@ -3762,6 +3762,7 @@ module.exports = {
                           content: [
                             {
                               block: 'social-user-row',
+                              mix: {block: 'clearfix'},
                               content: [
                                 {
                                   elem: 'left',
@@ -3787,6 +3788,7 @@ module.exports = {
                             },
                             {
                               block: 'social-user-row',
+                              mix: {block: 'clearfix'},
                               content: [
                                 {
                                   elem: 'left',
@@ -3812,6 +3814,7 @@ module.exports = {
                             },
                             {
                               block: 'social-user-row',
+                              mix: {block: 'clearfix'},
                               content: [
                                 {
                                   elem: 'left',
@@ -3837,6 +3840,7 @@ module.exports = {
                             },
                             {
                               block: 'social-user-row',
+                              mix: {block: 'clearfix'},
                               content: [
                                 {
                                   elem: 'left',
@@ -3971,6 +3975,7 @@ module.exports = {
                                     },
                                     {
                                       block: 'social-image-box',
+                                      mix: {block: 'clearfix'},
                                       content: [
                                         {
                                           elem: 'icons',
@@ -4076,6 +4081,7 @@ module.exports = {
                                     },
                                     {
                                       block: 'social-image-box',
+                                      mix: {block: 'clearfix'},
                                       content: [
                                         {
                                           elem: 'icons',
@@ -5060,6 +5066,7 @@ module.exports = {
                         },
                         {
                           elem: 'link-box',
+                          mix: {block: 'clearfix'},
                           content: [
                             {
                               block: 'social-comment-link',
@@ -5228,6 +5235,7 @@ module.exports = {
                         },
                         {
                           elem: 'link-box',
+                          mix: {block: 'clearfix'},
                           content: [
                             {
                               block: 'social-comment-link',
