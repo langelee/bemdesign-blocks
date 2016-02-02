@@ -3584,92 +3584,68 @@ module.exports = {
                       {
                         elem: 'content',
                         content: [
-                          {
-                            suggestedUserName : 'Tobias van Schneider',
-                            suggestedUserPosition : 'Lead Product Designer',
-                            suggestedUserIcon : '/i/tobias.jpg'
-                          },
-                          {
-                            suggestedUserName : 'Julie Zhuo',
-                            suggestedUserPosition : 'Design director at Facebook',
-                            suggestedUserIcon : '/i/juliezhuo.jpg'
-                          },
-                          {
-                            suggestedUserName : 'Andrew Hwang',
-                            suggestedUserPosition : 'Product designer at Facebook',
-                            suggestedUserIcon : '/i/ahwng.jpg'
-                          },
-                          {
-                            suggestedUserName : 'Frankie Gaw',
-                            suggestedUserPosition : 'Stories from the design team at Facebook',
-                            suggestedUserIcon : '/i/frankiegaw.jpg'
-                          }
-                        ].map(function(item) {
-                          return [
                             {
-                              block: 'social-suggested-people-row',
-                              content: [
-                                {
-                                  block: 'social-suggested-people-profile',
-                                  content: [
-                                    {
-                                      elem: 'picture',
-                                      content: [
-                                        {
-                                          block: 'image',
-                                          height: '60',
-                                          url: item.suggestedUserIcon
-                                        },
-                                      ]
-                                    },
-                                    {
-                                      elem : 'content',
-                                      content: [
-                                        {
-                                          block: 'social-suggested-people-profile-content',
-                                          content: [
-                                            {
-                                              mix : { block : 'social-suggested-people-profile-content', elem : 'name'},
-                                              block : 'text',
-                                              mods : { size : 'm'},
-                                              content : item.suggestedUserName
-                                            },
-                                            {
-                                              mix : { block : 'social-suggested-people-profile-content', elem : 'description'},
-                                              block : 'text',
-                                              mods : { size : 's'},
-                                              content : item.suggestedUserPosition
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      elem: 'action',
-                                      content: [
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', size : 'm' , disabled : true },
-                                          content: 'Add'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        })
-                      },
-                      {
-                        elem: 'footer',
-                        content: [
-                          {
-                            block: 'button',
-                            mods: { theme : 'islands', size : 'l', type : 'link' },
-                            text: 'Show all'
-                          }
-                        ]
+                              suggestedUserName : 'Tobias van Schneider',
+                              suggestedUserPosition : 'Lead Product Designer',
+                              suggestedUserIcon : '/i/tobias.jpg'
+                            },
+                          ].map(function(item) {
+                            return [
+                              {
+                                block: 'social-suggested-people-row',
+                                content: [
+                                  {
+                                    block: 'social-suggested-people-profile',
+                                    content: [
+                                      {
+                                        elem: 'picture',
+                                        content: [
+                                          {
+                                            block: 'image',
+                                            height: '60',
+                                            url: item.suggestedUserIcon
+                                          },
+                                        ]
+                                      },
+                                      {
+                                        elem : 'content',
+                                        content: [
+                                          {
+                                            block: 'social-suggested-people-profile-content',
+                                            content: [
+                                              {
+                                                mix : { block : 'social-suggested-people-profile-content', elem : 'name'},
+                                                block : 'text',
+                                                mods : { size : 'm'},
+                                                content : item.suggestedUserName
+                                              },
+                                              {
+                                                mix : { block : 'social-suggested-people-profile-content', elem : 'description'},
+                                                block : 'text',
+                                                mods : { size : 's'},
+                                                content : item.suggestedUserPosition
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        elem: 'action',
+                                        content: [
+                                          {
+                                            block: 'link',
+                                            mods : { theme : 'islands', size : 'm' , disabled : true },
+                                            content: 'Add'
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          })
+
                       }
                     ]
                   },
@@ -4385,9 +4361,104 @@ module.exports = {
                           elem: 'action',
                           content: [
                             {
-                              block: 'button',
-                              mods: { theme : 'islands', size : 'l', type : 'link'},
-                              text: 'Keep reading'
+                              block : 'social-text-tile-action',
+                              content : [
+                                {
+                                  elem : 'left',
+                                  content : [
+                                    {
+                                      block: 'button',
+                                      mods: { theme : 'islands', size : 'l', type : 'link'},
+                                      text: 'Keep reading'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'right',
+                                  content : [
+                                    {
+                                      block : 'social-text-tile-share-list',
+                                      content :[
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'social-text-tile-share',
+                                              content : [
+                                                {
+                                                  elem : 'icon',
+                                                  content : [
+                                                    {
+                                                      attrs: {
+                                                        'data-icon': 'ei-external-link',
+                                                        'data-size': 's'
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'number',
+                                                  content : '24'
+                                                },
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'social-text-tile-share',
+                                              content : [
+                                                {
+                                                  elem : 'icon',
+                                                  content : [
+                                                    {
+                                                      attrs: {
+                                                        'data-icon': 'ei-heart',
+                                                        'data-size': 's'
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'number',
+                                                  content : '24'
+                                                },
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem : 'item',
+                                          content : [
+                                            {
+                                              block : 'social-text-tile-share',
+                                              content : [
+                                                {
+                                                  elem : 'icon',
+                                                  content : [
+                                                    {
+                                                      attrs: {
+                                                        'data-icon': 'ei-retweet',
+                                                        'data-size': 's'
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'number',
+                                                  content : '24'
+                                                },
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         }
