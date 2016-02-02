@@ -4303,7 +4303,134 @@ module.exports = {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
-
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-text-tile',
+                      mods: { view : 'active'},
+                      content: [
+                        {
+                          elem: 'date',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'xs'},
+                              content: '5 min ago'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'name',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'l'},
+                              content: 'Sample text post'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 's'},
+                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-text-tile',
+                      mods: { view : 'alert'},
+                      content: [
+                        {
+                          elem: 'date',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'xs'},
+                              content: '5 min ago'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'name',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 'l'},
+                              content: 'Sample text post'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
+                            {
+                              block: 'text',
+                              mods: {size : 's'},
+                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
 
             {
               block : 'kit',
