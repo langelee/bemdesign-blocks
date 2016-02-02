@@ -5601,6 +5601,15 @@ module.exports = {
                               block: 'link',
                               mods: {theme: 'islands'},
                               content: 'Алексей Федотов'
+                            }                          ]
+                        },
+                        {
+                          elem: 'date',
+                          mix: {block: 'clearfix'},
+                          content: [
+                            {
+                              block: 'text',
+                              content: '20.01.2016'
                             }
                           ]
                         },
