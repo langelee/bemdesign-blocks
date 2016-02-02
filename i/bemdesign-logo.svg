@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="242px" height="200px" viewBox="0 0 242 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="скачанные-файлы" sketch:type="MSLayerGroup" stroke-width="2" stroke="#1461B9" fill="#1461B9">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-path" x="142.619048" y="170.952381" width="98.8095238" height="28.5714286"></rect>
+                <path d="M109.52381,56.6666667 L56.6666667,56.6666667 L56.6666667,0 L0,0 L0,171.190476 L109.52381,171.190476 C127.857143,171.190476 142.619048,156.428571 142.619048,138.095238 L142.619048,89.7619048 C142.619048,71.4285714 127.857143,56.6666667 109.52381,56.6666667 L109.52381,56.6666667 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

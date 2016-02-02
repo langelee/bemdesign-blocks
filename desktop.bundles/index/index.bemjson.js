@@ -68,8 +68,8 @@ module.exports = {
       content : [
         {
           block : 'image',
-          height : '160',
-          url : 'data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 101.5 83.9%22 enable-background%3D%22new 0 0 101.5 83.9%22%3E%3Cg fill%3D%22%23010101%22%3E%3Crect x%3D%2259.9%22 y%3D%2271.8%22 width%3D%2241.5%22 height%3D%2212%22%2F%3E%3Cpath d%3D%22M46 23.8h-22.2v-23.8h-23.8v71.9h46c7.7 0 13.9-6.2 13.9-13.9v-20.3c0-7.7-6.2-13.9-13.9-13.9z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+          height : '200',
+          url : '/i/bemdesign-logo.svg'
         } ,
         {
           mix : { block : 'promo', elem : 'heading'},
@@ -80,7 +80,7 @@ module.exports = {
         {
           mix : { block : 'promo', elem : 'description'},
           block : 'text',
-          mods : { size : 's' },
+          mods : { size : 'm' },
           content : 'The main idea of BEM methodology is to speed development process up and ease the teamwork of developers.'
         },
         {
