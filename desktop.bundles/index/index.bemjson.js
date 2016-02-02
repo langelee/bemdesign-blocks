@@ -96,9 +96,6 @@ module.exports = {
         }
       ]
     },
-
-
-
     {
       block : 'row',
       content : [
@@ -3510,7 +3507,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'button',
-                                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                                      mods : { theme : 'islands', size : 'l', type : 'link', view : 'action' },
                                       text: 'Сохранить'
                                     }
                                   ]
@@ -3870,7 +3867,7 @@ module.exports = {
                           content: [
                             {
                               block: 'button',
-                              mods : { theme : 'islands', size : 'l', type : 'link' },
+                              mods : { theme : 'islands', size : 'l', type : 'link', view : 'action' },
                               text: 'Show more'
                             }
                           ]
@@ -4267,7 +4264,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'button',
-                                      mods: {theme: 'islands', size: 'l'},
+                                      mods: {theme: 'islands', size: 'l', view : 'action'},
                                       text: 'Show earlier activity'
                                     }
                                   ]
@@ -4323,7 +4320,7 @@ module.exports = {
                             {
                               block: 'text',
                               mods: {size : 'xs'},
-                              content: '1 year ago'
+                              content: '5 min ago'
                             }
                           ]
                         },
@@ -4358,9 +4355,10 @@ module.exports = {
                           ]
                         },
                         {
-                          elem: 'action',
+                          elem : 'action',
                           content: [
                             {
+                              mix : { block : 'clearfix'},
                               block : 'social-text-tile-action',
                               content : [
                                 {
@@ -4383,6 +4381,7 @@ module.exports = {
                                           elem : 'item',
                                           content : [
                                             {
+                                              mix : { block : 'clearfix' },
                                               block : 'social-text-tile-share',
                                               content : [
                                                 {
@@ -4408,6 +4407,7 @@ module.exports = {
                                           elem : 'item',
                                           content : [
                                             {
+                                              mix : { block : 'clearfix' },
                                               block : 'social-text-tile-share',
                                               content : [
                                                 {
@@ -4416,31 +4416,6 @@ module.exports = {
                                                     {
                                                       attrs: {
                                                         'data-icon': 'ei-heart',
-                                                        'data-size': 's'
-                                                      }
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem : 'number',
-                                                  content : '24'
-                                                },
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'social-text-tile-share',
-                                              content : [
-                                                {
-                                                  elem : 'icon',
-                                                  content : [
-                                                    {
-                                                      attrs: {
-                                                        'data-icon': 'ei-retweet',
                                                         'data-size': 's'
                                                       }
                                                     }
@@ -4502,7 +4477,7 @@ module.exports = {
                             {
                               block: 'text',
                               mods: {size : 'xs'},
-                              content: '1 year ago'
+                              content: '5 min ago'
                             }
                           ]
                         },
