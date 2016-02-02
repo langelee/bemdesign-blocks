@@ -4671,24 +4671,6 @@ module.exports = {
                         },
                       ]
                     },
-                    {
-                      block : 'codepen',
-                      content : [
-                        {
-                          block : 'link',
-                          mix : { block : 'codepen', elem : 'link'},
-                          url : 'http://codepen.io',
-                          content : [
-                            {
-                              block : 'image',
-                              height : '20',
-                              url : '/i/codepen.png',
-                              title : 'Все подробности на bem.info'
-                            }
-                          ]
-                        }
-                      ]
-                    }
                   ]
                 },
                 {
@@ -5715,6 +5697,69 @@ module.exports = {
                     },
                   ]
                 },
+              ]
+            },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          block : 'kit',
+          content : [
+            {
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'header-section',
+                      mods : { align : 'center' },
+                      content : [
+                        {
+                          elem : 'image',
+                          content : [
+                            {
+                              block : 'image',
+                              url : '/i/f8-logo-w.svg',
+                              title : 'fbf8',
+                              height : '90'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'xl', weight : 'bold' },
+                              content : 'F8 2016 April 12 + 13'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'description',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's', transform : 'uppercase' },
+                              content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
+                            },
+                          ],
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'xl', view : 'action' },
+                              text : 'Connect with facebook'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   elem : 'codepen',
                   content : [
@@ -5739,7 +5784,7 @@ module.exports = {
                   ]
                 }
               ]
-            },
+            }
           ]
         },
         {
@@ -6193,65 +6238,6 @@ module.exports = {
               content : [
                 {
                   block : 'header-section',
-                  mods : { align : 'center' },
-                  content : [
-                    {
-                      elem : 'image',
-                      content : [
-                        {
-                          block : 'image',
-                          url : '/i/f8-logo-w.svg',
-                          title : 'fbf8',
-                          height : '90'
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'xl', weight : 'bold' },
-                          content : 'F8 2016 April 12 + 13'
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'description',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase' },
-                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
-                        },
-                      ],
-                    },
-                    {
-                      elem : 'action',
-                      content : [
-                        {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'xl', view : 'action' },
-                          text : 'Connect with facebook'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              elem : 'item',
-              content : [
-                {
-                  block : 'header-section',
                   mods : { align : 'left' },
                   content : [
                     {
@@ -6299,108 +6285,365 @@ module.exports = {
                 }
               ]
             },
+            {
+              elem : 'codepen',
+              content : [
+                {
+                  block : 'codepen',
+                  content : [
+                    {
+                      block : 'link',
+                      mix : { block : 'codepen', elem : 'link'},
+                      url : 'http://codepen.io',
+                      content : [
+                        {
+                          block : 'image',
+                          height : '20',
+                          url : '/i/codepen.png',
+                          title : 'Все подробности на bem.info'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
-          mix : { block : 'kit', elem : 'item'},
           content : [
             {
-              block : 'footer-section',
+              block : 'kit',
               content : [
                 {
                   elem : 'item',
                   content : [
                     {
-                      block : 'row',
+                      block : 'footer-section',
                       content : [
                         {
-                          elem : 'col',
-                          mods : { lw : 3, xl : 3, xxl : 3 },
+                          elem : 'item',
                           content : [
                             {
-                              block : 'footer-section-item',
+                              block : 'row',
                               content : [
                                 {
-                                  elem : 'name',
+                                  elem : 'col',
+                                  mods : { lw : 3, xl : 3, xxl : 3 },
                                   content : [
                                     {
-                                      block : 'text',
-                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                      content : 'Open Source'
-                                    },
+                                      block : 'footer-section-item',
+                                      content : [
+                                        {
+                                          elem : 'name',
+                                          content : [
+                                            {
+                                              block : 'text',
+                                              mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                              content : 'Open Source'
+                                            },
+                                          ]
+                                        },
+                                        {
+                                          elem : 'content',
+                                          content : [
+                                            {
+                                              block : 'footer-list',
+                                              content : [
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'React'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'HHVM'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Hack'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Presto'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Buck'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'More Projects'
+                                                    }
+                                                  ]
+                                                },
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
-                                  elem : 'content',
+                                  elem : 'col',
+                                  mods : { lw : 3, xl : 3, xxl : 3 },
                                   content : [
                                     {
-                                      block : 'footer-list',
+                                      block : 'footer-section-item',
                                       content : [
                                         {
-                                          elem : 'item',
+                                          elem : 'name',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'React'
-                                            }
+                                              block : 'text',
+                                              mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                              content : 'Community'
+                                            },
                                           ]
                                         },
                                         {
-                                          elem : 'item',
+                                          elem : 'content',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'HHVM'
+                                              block : 'footer-list',
+                                              content : [
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : '@fbOpenSource'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Engineering Page'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Facebook Research'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Facebook Developers'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Open Compute Project'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         },
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'col',
+                                  mods : { lw : 3, xl : 3, xxl : 3 },
+                                  content : [
+                                    {
+                                      block : 'footer-section-item',
+                                      content : [
                                         {
-                                          elem : 'item',
+                                          elem : 'name',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Hack'
-                                            }
+                                              block : 'text',
+                                              mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                              content : 'On Github'
+                                            },
                                           ]
                                         },
                                         {
-                                          elem : 'item',
+                                          elem : 'content',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Presto'
+                                              block : 'footer-list',
+                                              content : [
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Facebook'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Instagram'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Parse'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'OculusVR'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         },
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem : 'col',
+                                  mods : { lw : 3, xl : 3, xxl : 3 },
+                                  content : [
+                                    {
+                                      block : 'footer-section-item',
+                                      content : [
                                         {
-                                          elem : 'item',
+                                          elem : 'name',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Buck'
-                                            }
+                                              block : 'text',
+                                              mods : { size : 's', transform : 'uppercase', weight : 'bold' },
+                                              content : 'News'
+                                            },
                                           ]
                                         },
                                         {
-                                          elem : 'item',
+                                          elem : 'content',
                                           content : [
                                             {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'More Projects'
+                                              block : 'footer-list',
+                                              content : [
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Blog'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Events'
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem : 'item',
+                                                  content : [
+                                                    {
+                                                      block : 'link',
+                                                      mods : { theme : 'islands', size: 'l' },
+                                                      url : 'https://bem.info/',
+                                                      content : 'Video'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         },
@@ -6409,239 +6652,36 @@ module.exports = {
                                   ]
                                 },
                               ]
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'col',
-                          mods : { lw : 3, xl : 3, xxl : 3 },
-                          content : [
-                            {
-                              block : 'footer-section-item',
-                              content : [
-                                {
-                                  elem : 'name',
-                                  content : [
-                                    {
-                                      block : 'text',
-                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                      content : 'Community'
-                                    },
-                                  ]
-                                },
-                                {
-                                  elem : 'content',
-                                  content : [
-                                    {
-                                      block : 'footer-list',
-                                      content : [
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : '@fbOpenSource'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Engineering Page'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Facebook Research'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Facebook Developers'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Open Compute Project'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'col',
-                          mods : { lw : 3, xl : 3, xxl : 3 },
-                          content : [
-                            {
-                              block : 'footer-section-item',
-                              content : [
-                                {
-                                  elem : 'name',
-                                  content : [
-                                    {
-                                      block : 'text',
-                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                      content : 'On Github'
-                                    },
-                                  ]
-                                },
-                                {
-                                  elem : 'content',
-                                  content : [
-                                    {
-                                      block : 'footer-list',
-                                      content : [
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Facebook'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Instagram'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Parse'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'OculusVR'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem : 'col',
-                          mods : { lw : 3, xl : 3, xxl : 3 },
-                          content : [
-                            {
-                              block : 'footer-section-item',
-                              content : [
-                                {
-                                  elem : 'name',
-                                  content : [
-                                    {
-                                      block : 'text',
-                                      mods : { size : 's', transform : 'uppercase', weight : 'bold' },
-                                      content : 'News'
-                                    },
-                                  ]
-                                },
-                                {
-                                  elem : 'content',
-                                  content : [
-                                    {
-                                      block : 'footer-list',
-                                      content : [
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Blog'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Events'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem : 'item',
-                                          content : [
-                                            {
-                                              block : 'link',
-                                              mods : { theme : 'islands', size: 'l' },
-                                              url : 'https://bem.info/',
-                                              content : 'Video'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                              ]
-                            }
+                            },
                           ]
                         },
                       ]
-                    },
+                    }
                   ]
                 },
-
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
