@@ -1613,6 +1613,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -1632,7 +1637,7 @@ module.exports = {
                       ]
                     }
                   ]
-                },
+                }
               ]
             },
             {
@@ -1744,6 +1749,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -1763,7 +1773,7 @@ module.exports = {
                       ]
                     }
                   ]
-                },
+                }
               ]
             },
           ]
@@ -1868,6 +1878,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -1887,7 +1902,7 @@ module.exports = {
                       ]
                     }
                   ]
-                },
+                }
               ]
             }
           ]
@@ -1975,6 +1990,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -1994,7 +2014,7 @@ module.exports = {
                       ]
                     }
                   ]
-                },
+                }
               ]
             }
           ]
@@ -2168,6 +2188,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2253,6 +2296,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2338,6 +2404,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2409,6 +2498,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2467,6 +2579,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
               ]
@@ -2541,6 +2676,29 @@ module.exports = {
                     },
                   ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -2619,6 +2777,29 @@ module.exports = {
                     },
                   ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
           ]
@@ -2691,6 +2872,29 @@ module.exports = {
                     },
                   ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
           ]
@@ -2849,6 +3053,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2888,6 +3115,29 @@ module.exports = {
                         },
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
               ]
@@ -2982,13 +3232,35 @@ module.exports = {
                             }
                           ]
                         },
-
                       ]
                     },
                   ]
                 },
               ]
             },
+            {
+              elem : 'codepen',
+              content : [
+                {
+                  block : 'codepen',
+                  content : [
+                    {
+                      block : 'link',
+                      mix : { block : 'codepen', elem : 'link'},
+                      url : 'http://codepen.io',
+                      content : [
+                        {
+                          block : 'image',
+                          height : '20',
+                          url : '/i/codepen.png',
+                          title : 'Все подробности на bem.info'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -3068,6 +3340,29 @@ module.exports = {
                 */
               ]
             },
+            {
+              elem : 'codepen',
+              content : [
+                {
+                  block : 'codepen',
+                  content : [
+                    {
+                      block : 'link',
+                      mix : { block : 'codepen', elem : 'link'},
+                      url : 'http://codepen.io',
+                      content : [
+                        {
+                          block : 'image',
+                          height : '20',
+                          url : '/i/codepen.png',
+                          title : 'Все подробности на bem.info'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -3278,7 +3573,7 @@ module.exports = {
               ]
             },
           ]
-        }
+        },
       ]
     },
     {
@@ -3346,6 +3641,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -3518,6 +3818,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -3544,43 +3849,43 @@ module.exports = {
               block: 'kit',
               content: [
                 {
-                elem: 'item',
-                content: [
-                  {
-                    block: 'social-suggested-people',
-                    content: [
-                      {
-                        elem: 'header',
-                        content: [
-                          {
-                            block: 'social-suggested-people-header',
-                            content: [
-                              {
-                                elem: 'name',
-                                content: [
-                                  {
-                                    block: 'text',
-                                    mods: { size: 'm', transform : 'uppercase', weight : 'bold'},
-                                    content: 'Suggested People'
-                                  }
-                                ]
-                              },
-                              {
-                                elem: 'image',
-                                content: [
-                                  {
-                                    tag: 'div',
-                                    attrs: {'data-icon':'ei-chevron-right', 'data-size':'s'}
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        elem: 'content',
-                        content: [
+                  elem: 'item',
+                  content: [
+                    {
+                      block: 'social-suggested-people',
+                      content: [
+                        {
+                          elem: 'header',
+                          content: [
+                            {
+                              block: 'social-suggested-people-header',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: { size: 'm', transform : 'uppercase', weight : 'bold'},
+                                      content: 'Suggested People'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'image',
+                                  content: [
+                                    {
+                                      tag: 'div',
+                                      attrs: {'data-icon':'ei-chevron-right', 'data-size':'s'}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'content',
+                          content: [
                             {
                               suggestedUserName : 'Tobias van Schneider',
                               suggestedUserPosition : 'Lead Product Designer',
@@ -3642,30 +3947,34 @@ module.exports = {
                               }
                             ]
                           })
-
-                      }
-                    ]
-                  },
-                  {
-                    block : 'codepen',
-                    content : [
-                      {
-                        block : 'link',
-                        mix : { block : 'codepen', elem : 'link'},
-                        url : 'http://codepen.io',
-                        content : [
-                          {
-                            block : 'image',
-                            height : '20',
-                            url : '/i/codepen.png',
-                            title : 'Все подробности на bem.info'
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                        }
+                      ]
+                    },
+                  ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -3878,6 +4187,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -4281,6 +4595,11 @@ module.exports = {
                         },
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -4370,6 +4689,29 @@ module.exports = {
                       ]
                     }
                   ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -4415,6 +4757,11 @@ module.exports = {
                         },
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -4572,6 +4919,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -4666,6 +5018,11 @@ module.exports = {
                         }
                       ]
                     },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
                     {
                       block : 'codepen',
                       content : [
@@ -5199,6 +5556,29 @@ module.exports = {
                       ]
                     }
                   ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -5322,9 +5702,32 @@ module.exports = {
                           ]
                         }
                       ]
-                    }
+                    },
                   ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
           ]
@@ -5377,11 +5780,34 @@ module.exports = {
                     },
                   ]
                 },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
           ]
         },
-                {
+        {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
           mix : { block : 'kit', elem : 'item'},
