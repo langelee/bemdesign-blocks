@@ -3899,68 +3899,93 @@ module.exports = {
                         },
                         {
                           elem: 'content',
-                          content: [
+                          content : [
                             {
-                              suggestedUserName : 'Tobias van Schneider',
-                              suggestedUserPosition : 'Lead Product Designer',
-                              suggestedUserIcon : '/i/tobias.jpg'
-                            },
-                          ].map(function(item) {
-                            return [
-                              {
-                                block: 'social-suggested-people-row',
-                                content: [
+                              block : 'social-suggested-people-list',
+                              content: [
+                                {
+                                  suggestedUserName : 'Tobias van Schneider',
+                                  suggestedUserPosition : 'Lead Product Designer',
+                                  suggestedUserIcon : '/i/tobias.jpg'
+                                },
+                                {
+                                  suggestedUserName : 'Tobias van Schneider',
+                                  suggestedUserPosition : 'Lead Product Designer',
+                                  suggestedUserIcon : '/i/tobias.jpg'
+                                },
+                                {
+                                  suggestedUserName : 'Tobias van Schneider',
+                                  suggestedUserPosition : 'Lead Product Designer',
+                                  suggestedUserIcon : '/i/tobias.jpg'
+                                },
+                              ].map(function(item) {
+                                return [
                                   {
-                                    block: 'social-suggested-people-profile',
+                                    block: 'social-suggested-people-row',
                                     content: [
                                       {
-                                        elem: 'picture',
+                                        block: 'social-suggested-people-profile',
                                         content: [
                                           {
-                                            block: 'image',
-                                            height: '60',
-                                            url: item.suggestedUserIcon
-                                          },
-                                        ]
-                                      },
-                                      {
-                                        elem : 'content',
-                                        content: [
-                                          {
-                                            block: 'social-suggested-people-profile-content',
+                                            elem: 'picture',
                                             content: [
                                               {
-                                                mix : { block : 'social-suggested-people-profile-content', elem : 'name'},
-                                                block : 'text',
-                                                mods : { size : 'm'},
-                                                content : item.suggestedUserName
+                                                block: 'image',
+                                                height: '60',
+                                                url: item.suggestedUserIcon
                                               },
+                                            ]
+                                          },
+                                          {
+                                            elem : 'content',
+                                            content: [
                                               {
-                                                mix : { block : 'social-suggested-people-profile-content', elem : 'description'},
-                                                block : 'text',
-                                                mods : { size : 's'},
-                                                content : item.suggestedUserPosition
+                                                block: 'social-suggested-people-profile-content',
+                                                content: [
+                                                  {
+                                                    mix : { block : 'social-suggested-people-profile-content', elem : 'name'},
+                                                    block : 'text',
+                                                    mods : { size : 'm'},
+                                                    content : item.suggestedUserName
+                                                  },
+                                                  {
+                                                    mix : { block : 'social-suggested-people-profile-content', elem : 'description'},
+                                                    block : 'text',
+                                                    mods : { size : 's'},
+                                                    content : item.suggestedUserPosition
+                                                  }
+                                                ]
                                               }
                                             ]
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        elem: 'action',
-                                        content: [
+                                          },
                                           {
-                                            block: 'link',
-                                            mods : { theme : 'islands', size : 'm' , disabled : true },
-                                            content: 'Add'
+                                            elem: 'action',
+                                            content: [
+                                              {
+                                                block: 'link',
+                                                mods : { theme : 'islands', size : 'm' , disabled : true },
+                                                content: 'Add'
+                                              }
+                                            ]
                                           }
                                         ]
                                       }
                                     ]
                                   }
                                 ]
-                              }
-                            ]
-                          })
+                              })
+                            },
+                            {
+                              block : 'social-suggested-people-action',
+                              content : [
+                                {
+                                  block : 'button',
+                                  mods : { theme : 'islands', size : 'l', view : 'action' },
+                                  text : 'Show all'
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     },
