@@ -5880,15 +5880,16 @@ module.exports = {
                                   elem: 'image'
                                 },
                                 {
-                                  elem: 'input',
+                                  elem: 'textarea',
                                   content: [
                                     {
-                                      block : 'input',
-                                      mods : { theme : 'islands', size: 's' },
+                                      block : 'textarea',
+                                      mods : { theme : 'islands', size : 'm', width : 'available' },
                                       placeholder : 'Напишите ответ...'
                                     }
                                   ]
-                                }
+                                },
+
                               ]
                             }
                           ]
@@ -6064,8 +6065,95 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'text',
-                                      mods: {size: 'xs'},
                                       content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'link-box',
+                                  mix: {block: 'clearfix'},
+                                  content: [
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-like',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Нравится'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-comment',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Ответить'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
