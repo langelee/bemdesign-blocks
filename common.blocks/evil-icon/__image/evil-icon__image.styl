@@ -2,10 +2,14 @@
 @import "../../../libs/bem-components/design/spaces.styl"
 
 .evil-icon__image
+  .icon
+    background: $clean
   position: absolute
   top: 0px
   left: 0px
-  height: 96px
-  width: 96px
-  background: $normal
+  height: 102px
+  width: 102px
   box-sizing: border-box
+  background: url('/i/icon-bg.png')
+  &:hover
+    background: url('/i/icon-bg-hover.png')

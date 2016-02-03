@@ -15,13 +15,14 @@ module.exports = {
 
     /* eliv-icons
     {
-      bem: false,
-      tag: 'div',
       attrs: {
         'data-icon': 'ei-spinner',
         'data-size': 'm'
       }
     },
+    */
+
+    /* kit-item
     {
       block : 'row',
       content : [
@@ -46,6 +47,9 @@ module.exports = {
         }
       ]
     },
+    */
+
+    /* grid
     {
       block : 'row',
       content : [
@@ -59,6 +63,7 @@ module.exports = {
       ]
     },
     */
+
     {
       block : 'alpha',
       content : 'BEM Design alpha version'
@@ -1099,10 +1104,8 @@ module.exports = {
                       mods : { size : 'l' },
                       content : [
                         {
-                          bem: false,
-                          tag: 'div',
                           attrs: {
-                            'data-icon': 'ei-spinner',
+                            'data-icon': 'ei-calendar',
                             'data-size': 'l'
                           }
                         },
@@ -1139,10 +1142,8 @@ module.exports = {
                       mods : { size : 'm' },
                       content : [
                         {
-                          bem: false,
-                          tag: 'div',
                           attrs: {
-                            'data-icon': 'ei-spinner',
+                            'data-icon': 'ei-calendar',
                             'data-size': 'm'
                           }
                         },
@@ -1179,10 +1180,8 @@ module.exports = {
                       mods : { size : 's' },
                       content : [
                         {
-                          bem: false,
-                          tag: 'div',
                           attrs: {
-                            'data-icon': 'ei-spinner',
+                            'data-icon': 'ei-calendar',
                             'data-size': 's'
                           }
                         },
