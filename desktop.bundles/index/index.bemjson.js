@@ -22,31 +22,24 @@ module.exports = {
     },
     */
 
-    /* kit-item
+    /* kit 
     {
-      block : 'row',
+      block : 'kit',
       content : [
         {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
+          elem : 'item',
           content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  block : 'footer',
-                  mix : { block : 'kit', elem : 'item'},
-                  content : [
 
-
-                  ]
-                },
-              ]
-            }
           ]
-        }
+        },
+        {
+          elem : 'codepen',
+          content : [
+
+          ]
+        },
       ]
-    },
+    }
     */
 
     /* grid
