@@ -4409,7 +4409,8 @@ module.exports = {
                                     },
                                     {
                                       block: 'social-image-box',
-                                      mix: {block: 'clearfix'},
+                                      mix: {
+                                        block: 'clearfix'},
                                       content: [
                                         {
                                           elem: 'icons',
@@ -6251,76 +6252,80 @@ module.exports = {
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
-          block : 'kit',
           content : [
             {
-              elem : 'item',
+              block : 'kit',
               content : [
                 {
-                  block : 'header-section',
-                  mods : { align : 'center' },
+                  elem : 'item',
                   content : [
                     {
-                      elem : 'image',
+                      block : 'header-section',
+                      mods : { align : 'center' },
                       content : [
                         {
-                          block : 'image',
-                          url : '/i/f8-logo-w.svg',
-                          title : 'fbf8',
-                          height : '90'
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'xl', weight : 'bold' },
-                          content : 'F8 2016 April 12 + 13'
+                          elem : 'image',
+                          content : [
+                            {
+                              block : 'image',
+                              url : '/i/f8-logo-w.svg',
+                              title : 'fbf8',
+                              height : '90'
+                            }
+                          ]
                         },
-                      ]
-                    },
-                    {
-                      elem : 'description',
-                      content : [
                         {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase' },
-                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
+                          elem : 'name',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 'xl', weight : 'bold' },
+                              content : 'F8 2016 April 12 + 13'
+                            },
+                          ]
                         },
-                      ],
-                    },
-                    {
-                      elem : 'action',
-                      content : [
                         {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'xl', view : 'action' },
-                          text : 'Connect with facebook'
+                          elem : 'description',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's', transform : 'uppercase' },
+                              content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
+                            },
+                          ],
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'xl', view : 'action' },
+                              text : 'Connect with facebook'
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              elem : 'codepen',
-              content : [
+                },
                 {
-                  block : 'codepen',
+                  elem : 'codepen',
                   content : [
                     {
-                      block : 'link',
-                      mix : { block : 'codepen', elem : 'link'},
-                      url : 'http://codepen.io',
+                      block : 'codepen',
                       content : [
                         {
-                          block : 'image',
-                          height : '20',
-                          url : '/i/codepen.png',
-                          title : 'Все подробности на bem.info'
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
                         }
                       ]
                     }
