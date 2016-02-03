@@ -2,11 +2,13 @@
 @import "../../../libs/bem-components/design/spaces.styl"
 
 .avatar__image
+  background: url('/i/avatar-bg.png')
   position: absolute
   top: 0px
   left: 0px
-  background: $normal
   border-radius: 50%
   margin-bottom: $xs
   width: 120px
   height: 120px
+  &:hover
+    background: url('/i/avatar-bg-hover.png')
