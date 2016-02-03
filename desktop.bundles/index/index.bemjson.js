@@ -231,7 +231,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'project / base / normal / clean / alert / active'
                             },
                           ]
                         }
@@ -710,7 +710,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'xxl / xl / l / m / s / xs / xxs'
                             },
                           ]
                         }
@@ -945,7 +945,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'l / m / s'
                             },
                           ]
                         }
@@ -1072,7 +1072,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'l / m / s'
                             },
                           ]
                         }
@@ -1241,7 +1241,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'size / weight / transform / color'
                             },
                           ]
                         }
@@ -1446,7 +1446,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'log in / reser / sing up'
                             },
                           ]
                         }
@@ -3198,6 +3198,29 @@ module.exports = {
                         }
                       ]
                     },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -3234,33 +3257,34 @@ module.exports = {
                         },
                       ]
                     },
-                  ]
-                },
-              ]
-            },
-            {
-              elem : 'codepen',
-              content : [
-                {
-                  block : 'codepen',
-                  content : [
                     {
-                      block : 'link',
-                      mix : { block : 'codepen', elem : 'link'},
-                      url : 'http://codepen.io',
+                      elem : 'codepen',
                       content : [
                         {
-                          block : 'image',
-                          height : '20',
-                          url : '/i/codepen.png',
-                          title : 'Все подробности на bem.info'
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
-                }
+                },
               ]
-            }
+            },
+
           ]
         },
         {
@@ -3314,55 +3338,31 @@ module.exports = {
                     },
                   ]
                 },
-
-                /*
                 {
-                  block : 'document-tile',
-                  mix : { block : 'kit', elem : 'item'},
+                  elem : 'codepen',
                   content : [
                     {
-                      elem : 'icon'
-                    },
-                    {
-                      mix : { block : 'document-tile', elem : 'name'},
-                      block : 'text',
-                      mods : { size : 'm'},
-                      content : 'Document'
-                    },
-                    {
-                      mix : { block : 'document-tile', elem : 'text'},
-                      block : 'text',
-                      mods : { size : 's'},
-                      content : 'Document description'
-                    }
-                  ]
-                },
-                */
-              ]
-            },
-            {
-              elem : 'codepen',
-              content : [
-                {
-                  block : 'codepen',
-                  content : [
-                    {
-                      block : 'link',
-                      mix : { block : 'codepen', elem : 'link'},
-                      url : 'http://codepen.io',
+                      block : 'codepen',
                       content : [
                         {
-                          block : 'image',
-                          height : '20',
-                          url : '/i/codepen.png',
-                          title : 'Все подробности на bem.info'
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
-                }
+                },
               ]
-            }
+            },
           ]
         }
       ]
@@ -5707,13 +5707,95 @@ module.exports = {
           block : 'kit',
           content : [
             {
+              elem : 'item',
+              content : [
+                {
+                  block : 'header-section',
+                  mods : { align : 'center' },
+                  content : [
+                    {
+                      elem : 'image',
+                      content : [
+                        {
+                          block : 'image',
+                          url : '/i/f8-logo-w.svg',
+                          title : 'fbf8',
+                          height : '90'
+                        }
+                      ]
+                    },
+                    {
+                      elem : 'name',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 'xl', weight : 'bold' },
+                          content : 'F8 2016 April 12 + 13'
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'description',
+                      content : [
+                        {
+                          block : 'text',
+                          mods : { size : 's', transform : 'uppercase' },
+                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
+                        },
+                      ],
+                    },
+                    {
+                      elem : 'action',
+                      content : [
+                        {
+                          block : 'button',
+                          mods : { theme : 'islands', size : 'xl', view : 'action' },
+                          text : 'Connect with facebook'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              elem : 'codepen',
+              content : [
+                {
+                  block : 'codepen',
+                  content : [
+                    {
+                      block : 'link',
+                      mix : { block : 'codepen', elem : 'link'},
+                      url : 'http://codepen.io',
+                      content : [
+                        {
+                          block : 'image',
+                          height : '20',
+                          url : '/i/codepen.png',
+                          title : 'Все подробности на bem.info'
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
               content : [
                 {
                   elem : 'item',
                   content : [
                     {
                       block : 'header-section',
-                      mods : { align : 'center' },
+                      mods : { align : 'left' },
                       content : [
                         {
                           elem : 'image',
@@ -6226,88 +6308,6 @@ module.exports = {
                 }
               ]
             },
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              elem : 'item',
-              content : [
-                {
-                  block : 'header-section',
-                  mods : { align : 'left' },
-                  content : [
-                    {
-                      elem : 'image',
-                      content : [
-                        {
-                          block : 'image',
-                          url : '/i/f8-logo-w.svg',
-                          title : 'fbf8',
-                          height : '90'
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'name',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 'xl', weight : 'bold' },
-                          content : 'F8 2016 April 12 + 13'
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'description',
-                      content : [
-                        {
-                          block : 'text',
-                          mods : { size : 's', transform : 'uppercase' },
-                          content : 'Join us in San Francisco for our annual developer conference. Sign up now to get F8 updates plus streaming access to the live event in April.'
-                        },
-                      ],
-                    },
-                    {
-                      elem : 'action',
-                      content : [
-                        {
-                          block : 'button',
-                          mods : { theme : 'islands', size : 'xl', view : 'action' },
-                          text : 'Connect with facebook'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              elem : 'codepen',
-              content : [
-                {
-                  block : 'codepen',
-                  content : [
-                    {
-                      block : 'link',
-                      mix : { block : 'codepen', elem : 'link'},
-                      url : 'http://codepen.io',
-                      content : [
-                        {
-                          block : 'image',
-                          height : '20',
-                          url : '/i/codepen.png',
-                          title : 'Все подробности на bem.info'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
           ]
         },
         {
