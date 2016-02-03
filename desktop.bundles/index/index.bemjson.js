@@ -115,38 +115,33 @@ module.exports = {
                   block : 'control-group',
                   content : [
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'colors',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#colors',
                       text : 'colors'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'spaces',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#spaces',
                       text : 'spaces'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'avatars',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#avatars',
                       text : 'avatars'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'icons',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#icons',
                       text : 'icons'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'typography',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#typography',
                       text : 'typography'
                     },
                   ]
@@ -166,33 +161,29 @@ module.exports = {
                   block : 'control-group',
                   content : [
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'form',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#forms',
                       text : 'forms'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'list',
-                      val: '1',
-                      text : ' lists'
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#lists',
+                      text : 'lists'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'tile',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#tiles',
                       text : 'tiles'
                     },
                     {
-                      block : 'checkbox',
-                      mods : { theme : 'islands', size : 'l', type : 'button' },
-                      name: 'sections',
-                      val: '1',
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#sections',
                       text : 'sections'
-                    },
+                    }
                   ]
                 }
               ]
@@ -206,6 +197,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'colors'
+      },
       content : [
         {
           elem : 'col',
@@ -685,6 +679,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'spaces'
+      },
       content : [
         {
           elem : 'col',
@@ -920,6 +917,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'avatars'
+      },
       content : [
         {
           elem : 'col',
@@ -1047,6 +1047,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'icons'
+      },
       content : [
         {
           elem : 'col',
@@ -1210,6 +1213,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'typography'
+      },
       content : [
         {
           elem : 'col',
@@ -1415,6 +1421,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'forms'
+      },
       content : [
         {
           elem : 'col',
@@ -2024,6 +2033,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'lists'
+      },
       content : [
         {
           elem : 'col',
@@ -2906,6 +2918,9 @@ module.exports = {
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
+          attrs : {
+            id : 'tiles'
+          },
           content : [
             {
               block : 'kit',
@@ -6095,6 +6110,9 @@ module.exports = {
     {
       block : 'row',
       mix : { block : 'page-row'},
+      attrs : {
+        id : 'sections'
+      },
       content : [
         {
           elem : 'col',
