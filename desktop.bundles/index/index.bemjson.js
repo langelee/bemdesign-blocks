@@ -4538,6 +4538,7 @@ module.exports = {
                                     },
                                     {
                                       block: 'social-activity-info',
+                                      mix: {block: 'clearfix'},
                                       content: [
                                         {
                                           elem: 'icons',
@@ -5739,6 +5740,372 @@ module.exports = {
                 }
               ]
             },
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 6, xl : 6, xxl : 6 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-comment',
+                      content: [
+                        {
+                          elem: 'image'
+                        },
+                        {
+                          elem: 'user-name',
+                          content: [
+                            {
+                              block: 'link',
+                              mods: {theme: 'islands'},
+                              content: 'Алексей Федотов'
+                            }                          ]
+                        },
+                        {
+                          elem: 'date',
+                          mix: {block: 'clearfix'},
+                          content: [
+                            {
+                              block: 'text',
+                              content: '20.01.2016'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'comment',
+                          content: [
+                            {
+                              block: 'text',
+                              content: 'В любом обществе есть хищники и жертвы. Автор традиционно адресует свои советы возрастным интеллигентным жертвам. Кто будет отвечать за поломанные судьбы зайчиков, которые, вняв советам, пойдут своими неумелыми зубами кусать волков?'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'link-box',
+                          mix: {block: 'clearfix'},
+                          content: [
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-like',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Нравится'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-comment',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Ответить'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'answer',
+                          content: [
+                            {
+                              block: 'social-comment-answer',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'input',
+                                  content: [
+                                    {
+                                      block : 'input',
+                                      mods : { theme : 'islands', size: 's' },
+                                      placeholder : 'Напишите ответ...'
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block: 'social-comment',
+                      content: [
+                        {
+                          elem: 'image'
+                        },
+                        {
+                          elem: 'user-name',
+                          content: [
+                            {
+                              block: 'link',
+                              mods: {theme: 'islands'},
+                              content: 'Алексей Федотов'
+                            }                          ]
+                        },
+                        {
+                          elem: 'date',
+                          mix: {block: 'clearfix'},
+                          content: [
+                            {
+                              block: 'text',
+                              content: '20.01.2016'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'comment',
+                          content: [
+                            {
+                              block: 'text',
+                              content: 'В любом обществе есть хищники и жертвы. Автор традиционно адресует свои советы возрастным интеллигентным жертвам. Кто будет отвечать за поломанные судьбы зайчиков, которые, вняв советам, пойдут своими неумелыми зубами кусать волков?'
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'link-box',
+                          mix: {block: 'clearfix'},
+                          content: [
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-like',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Нравится'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'social-comment-link',
+                              content: [
+                                {
+                                  elem: 'name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: [
+                                        {
+                                          elem: 'icon',
+                                          content: [
+                                            {
+                                              block: 'social-comment-icon',
+                                              content: [
+                                                {
+                                                  attrs: {
+                                                    'data-icon': 'ei-comment',
+                                                    'data-size': 's'
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              content: 'Ответить'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'answer',
+                          content: [
+                            {
+                              block: 'social-comment-answer',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'answer',
+                                  content: [
+                                    {
+                                      block : 'text',
+                                      mods: {size: 'xs'},
+                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
