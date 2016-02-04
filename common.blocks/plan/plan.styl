@@ -1,5 +1,10 @@
 @import "../../libs/bem-components/design/colors.styl"
 @import "../../libs/bem-components/design/spaces.styl"
 
-.plan {
-}
+.plan
+  position: relative
+  border: 1px solid lighten($base, 80%)
+  &_type_ultimate
+    background: darken($project, 10%)
+    border: 0
+    color: white

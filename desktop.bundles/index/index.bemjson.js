@@ -22,7 +22,7 @@ module.exports = {
     },
     */
 
-    /* kit 
+    /* kit
     {
       block : 'kit',
       content : [
@@ -176,6 +176,12 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'link' },
                       url : '#sections',
                       text : 'sections'
+                    },
+                    {
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#plans',
+                      text : 'plans'
                     }
                   ]
                 }
@@ -6211,6 +6217,312 @@ module.exports = {
             }
           ]
         }
+      ]
+    },
+
+    {
+      block : 'row',
+      mix : { block : 'page-row'},
+      attrs : {
+        id : 'plans'
+      },
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'kit',
+                  content : [
+                    {
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'kit-item-header',
+                          content : [
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'l' },
+                                  content : 'Plans'
+                                },
+                              ]
+                            },
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 's',},
+                                  content : 'Description description description'
+                                },
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'plan',
+                      content : [
+                        {
+                          elem : 'header',
+                          mods : { align : 'center' },
+                          content: 'Free'
+                        },
+                        {
+                          elem : 'price',
+                          content : [
+                            {
+                              block : 'plan-price',
+                              content : '$0'
+                            },
+                            {
+                              block : 'text',
+                              mods : { size : 's', align : 'center' },
+                              content : '14 days'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'content',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { transform : 'uppercase', align : 'center' },
+                              content : 'Basic features'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                                block : 'button',
+                                mods : { theme : 'islands', size : 'l', view : 'action' },
+                                text : 'Get started'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'plan',
+                      content : [
+                        {
+                          elem : 'header',
+                          mods : { align : 'center' },
+                          content: 'Professional'
+                        },
+                        {
+                          elem : 'price',
+                          content : [
+                            {
+                              block : 'plan-price',
+                              content : '$49'
+                            },
+                            {
+                              block : 'text',
+                              mods : { size : 's', align : 'center' },
+                              content : 'per month'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'content',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { transform : 'uppercase', align : 'center' },
+                              content : 'advanced features'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                                block : 'button',
+                                mods : { theme : 'islands', size : 'l', view : 'action' },
+                                text : 'Get started'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 4, xl : 4, xxl : 4 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'plan',
+                      mods : { type : 'ultimate' },
+                      content : [
+                        {
+                          elem : 'header',
+                          mods : { align : 'center' },
+                          content: 'Ultimate'
+                        },
+                        {
+                          elem : 'price',
+                          content : [
+                            {
+                              block : 'plan-price',
+                              content : '$99'
+                            },
+                            {
+                              block : 'text',
+                              mods : { size : 's', align : 'center' },
+                              content : 'per month'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'content',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { transform : 'uppercase', align : 'center' },
+                              content : 'All included'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                                block : 'button',
+                                mods : { theme : 'islands', size : 'l', view : 'action' },
+                                text : 'Get started'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
       ]
     },
 
