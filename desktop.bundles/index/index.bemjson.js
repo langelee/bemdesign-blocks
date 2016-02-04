@@ -2452,65 +2452,55 @@ module.exports = {
                       elem : 'item',
                       content : [
                         {
-                          block : 'kit',
-                          content : [
+                          block : 'document-list',
+                          content: [
                             {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'document-list',
-                                  content: [
-                                    {
-                                      documentTitle : 'React',
-                                      documentText : 'React is a JavaScript library for creating user interfaces',
-                                      documentImage : '/i/react.png'
-                                    },
-                                    {
-                                      documentTitle : 'Pop',
-                                      documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
-                                      documentImage : '/i/pop.png'
-                                    },
-                                    {
-                                      documentTitle : 'Origami',
-                                      documentText : 'Design prototyping',
-                                      documentImage : '/i/origami.png'
-                                    }
-                                  ].map(function(item) {
-                                    return [
+                              documentTitle : 'React',
+                              documentText : 'React is a JavaScript library for creating user interfaces',
+                              documentImage : '/i/react.png'
+                            },
+                            {
+                              documentTitle : 'Pop',
+                              documentText : 'Pop is an extensible animation engine for iOS, tvOS, and OS X',
+                              documentImage : '/i/pop.png'
+                            },
+                            {
+                              documentTitle : 'Origami',
+                              documentText : 'Design prototyping',
+                              documentImage : '/i/origami.png'
+                            }
+                          ].map(function(item) {
+                            return [
+                              {
+                                block: 'document',
+                                mix : { block: 'document-list', elem : 'item' },
+                                content: [
+                                  {
+                                    mix : { block : 'document', elem : 'image' },
+                                    block: 'image',
+                                    url: item.documentImage
+                                  },
+                                  {
+                                    elem : 'content',
+                                    content: [
                                       {
-                                        block: 'document',
-                                        mix : { block: 'document-list', elem : 'item' },
-                                        content: [
-                                          {
-                                            mix : { block : 'document', elem : 'image' },
-                                            block: 'image',
-                                            url: item.documentImage
-                                          },
-                                          {
-                                            elem : 'content',
-                                            content: [
-                                              {
-                                                mix : { block : 'document-content', elem : 'title' },
-                                                block : 'text',
-                                                mods : { size : 'm' },
-                                                content : item.documentTitle
-                                              },
-                                              {
-                                                mix : { block : 'document-content', elem : 'text' },
-                                                block : 'text',
-                                                mods : { size : 's' },
-                                                content : item.documentText
-                                              }
-                                            ]
-                                          },
-                                        ]
+                                        mix : { block : 'document-content', elem : 'title' },
+                                        block : 'text',
+                                        mods : { size : 'm' },
+                                        content : item.documentTitle
+                                      },
+                                      {
+                                        mix : { block : 'document-content', elem : 'text' },
+                                        block : 'text',
+                                        mods : { size : 's' },
+                                        content : item.documentText
                                       }
                                     ]
-                                  })
-                                },
-                              ]
-                            },
-                          ]
+                                  },
+                                ]
+                              }
+                            ]
+                          })
                         },
                       ]
                     },
@@ -2546,52 +2536,42 @@ module.exports = {
                       elem : 'item',
                       content : [
                         {
-                          block : 'kit',
-                          content : [
+                          block : 'top-news-list',
+                          content: [
                             {
-                              elem : 'item',
-                              content : [
-                                {
-                                  block : 'top-news-list',
-                                  content: [
-                                    {
-                                      topNewsDate : 'Dec 15, 2015',
-                                      topNewsText : 'Designing Facebook Collage'
-                                    },
-                                    {
-                                      topNewsDate : 'Nov 14, 2015',
-                                      topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
-                                    },
-                                    {
-                                      topNewsDate : 'Oct 8, 2015',
-                                      topNewsText : 'Photographing Diverse Hands at Facebook'
-                                    }
-                                  ].map(function(item) {
-                                    return [
-                                      {
-                                        block: 'top-news',
-                                        mix : { block: 'top-news-list', elem : 'item' },
-                                        content : [
-                                          {
-                                            mix : { block: 'top-news', elem : 'date' },
-                                            block : 'text',
-                                            mods : { size : 's' },
-                                            content : item.topNewsDate
-                                          },
-                                          {
-                                            mix : { block: 'top-news', elem : 'text' },
-                                            block : 'text',
-                                            mods : { size : 'm' },
-                                            content : item.topNewsText
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  })
-                                },
-                              ]
+                              topNewsDate : 'Dec 15, 2015',
+                              topNewsText : 'Designing Facebook Collage'
                             },
-                          ]
+                            {
+                              topNewsDate : 'Nov 14, 2015',
+                              topNewsText : 'What I’ve Learned Designing Small Things at Facebook'
+                            },
+                            {
+                              topNewsDate : 'Oct 8, 2015',
+                              topNewsText : 'Photographing Diverse Hands at Facebook'
+                            }
+                          ].map(function(item) {
+                            return [
+                              {
+                                block: 'top-news',
+                                mix : { block: 'top-news-list', elem : 'item' },
+                                content : [
+                                  {
+                                    mix : { block: 'top-news', elem : 'date' },
+                                    block : 'text',
+                                    mods : { size : 's' },
+                                    content : item.topNewsDate
+                                  },
+                                  {
+                                    mix : { block: 'top-news', elem : 'text' },
+                                    block : 'text',
+                                    mods : { size : 'm' },
+                                    content : item.topNewsText
+                                  }
+                                ]
+                              }
+                            ]
+                          })
                         },
                       ]
                     },
@@ -2619,6 +2599,7 @@ module.exports = {
                       ]
                     }
                   ]
+
                 },
               ]
             }
