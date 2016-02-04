@@ -5744,6 +5744,140 @@ module.exports = {
                               ]
                             }
                           ]
+                        },
+                        {
+                          elem: 'answer',
+                          content: [
+                            {
+                              block: 'social-comment-answer',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'answer',
+                                  content: [
+                                    {
+                                      block : 'text',
+                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'link-box',
+                                  mix: {block: 'clearfix'},
+                                  content: [
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-like',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Нравится'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-comment',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Ответить'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'answer-textarea',
+                          content: [
+                            {
+                              block: 'social-comment-textarea',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'textarea',
+                                  content: [
+                                    {
+                                      block : 'textarea',
+                                      mods : { theme : 'islands', size : 'm', width : 'available' },
+                                      placeholder : 'Напишите ответ...'
+                                    }
+                                  ]
+                                },
+
+                              ]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -5909,10 +6043,10 @@ module.exports = {
                           ]
                         },
                         {
-                          elem: 'answer',
+                          elem: 'answer-textarea',
                           content: [
                             {
-                              block: 'social-comment-answer',
+                              block: 'social-comment-textarea',
                               content: [
                                 {
                                   elem: 'image'
@@ -6078,6 +6212,116 @@ module.exports = {
                                             {
                                               block: 'text',
                                               content: 'Ответить'
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          elem: 'answer',
+                          content: [
+                            {
+                              block: 'social-comment-answer',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'answer',
+                                  content: [
+                                    {
+                                      block : 'text',
+                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                    }
+                                  ]
+                                },
+                                {
+                                  elem: 'link-box',
+                                  mix: {block: 'clearfix'},
+                                  content: [
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-like',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Нравится'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-comment-link',
+                                      content: [
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: [
+                                                {
+                                                  elem: 'icon',
+                                                  content: [
+                                                    {
+                                                      block: 'social-comment-icon',
+                                                      content: [
+                                                        {
+                                                          attrs: {
+                                                            'data-icon': 'ei-comment',
+                                                            'data-size': 's'
+                                                          }
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'text',
+                                                      content: 'Ответить'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
