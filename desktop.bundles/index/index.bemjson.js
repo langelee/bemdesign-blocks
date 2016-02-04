@@ -1716,7 +1716,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 'xs',},
-                                  content : 'Нажимая «Присоединиться», вы принимаете условия Пользовательского соглашения, Политики конфиденциальности и Политики использования файлов cookie'
+                                  content : 'By clicking Join now, you agree to BEMs Users Agreement, Privacy Policy, and Cookie Policy'
                                 },
                               ]
                             },
@@ -1957,7 +1957,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 'xs',},
-                                  content : 'Нажимая «Присоединиться», вы принимаете условия Пользовательского соглашения, Политики конфиденциальности и Политики использования файлов cookie'
+                                  content : 'By clicking Join now, you agree to BEMs Users Agreement, Privacy Policy, and Cookie Policy'
                                 },
                               ]
                             },
