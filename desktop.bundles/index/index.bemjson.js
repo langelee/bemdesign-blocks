@@ -4307,324 +4307,334 @@ module.exports = {
                           elem: 'content',
                           content: [
                             {
-                              block: 'social-activity-row',
+                              block: 'social-activity-content',
                               content: [
                                 {
-                                  elem: 'image',
-                                  content:[
-                                    {
-                                      tag: 'div',
-                                      attrs: {'data-icon':'ei-image', 'data-size':'s'}
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'name',
+                                  elem: 'list',
                                   content: [
                                     {
-                                      block: 'text',
-                                      mods: {size: 's'},
+                                      block: 'social-activity-row',
                                       content: [
                                         {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Kevin Ertan'
-                                        },
-                                        ' Added 4 photos to album ',
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Summer'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'social-image-box',
-                                      mix: {block: 'clearfix'},
-                                      content: [
-                                        {
-                                          elem: 'icons',
-                                          content: [
+                                          elem: 'image',
+                                          content:[
                                             {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/tobias.jpg'
-                                                }
-                                              ]
+                                              tag: 'div',
+                                              attrs: {'data-icon':'ei-image', 'data-size':'s'}
                                             }
                                           ]
                                         },
                                         {
-                                          elem: 'icons',
+                                          elem: 'name',
                                           content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/behance.jpg'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem: 'icons',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/dribbble.png'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem: 'icons',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/facebook.png'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              block: 'social-activity-row',
-                              content: [
-                                {
-                                  elem: 'image',
-                                  content:[
-                                    {
-                                      tag: 'div',
-                                      attrs: {'data-icon':'ei-like', 'data-size':'s'}
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'name',
-                                  content: [
-                                    {
-                                      block: 'text',
-                                      mods: {size: 's'},
-                                      content: [
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'john Doe'
-                                        },
-                                        ' liked 2 photos of ',
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Alex Wayne'
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'social-image-box',
-                                      mix: {
-                                        block: 'clearfix'},
-                                      content: [
-                                        {
-                                          elem: 'icons',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/medium.png'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem: 'icons',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/koloskov.png'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              block: 'social-activity-row',
-                              content: [
-                                {
-                                  elem: 'image',
-                                  content:[
-                                    {
-                                      tag: 'div',
-                                      attrs: {'data-icon':'ei-user', 'data-size':'s'}
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'name',
-                                  content: [
-                                    {
-                                      block: 'text',
-                                      mods: {size: 's'},
-                                      content: [
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'John Doe'
-                                        },
-                                        ' added ',
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Alex Wayne'
-                                        },
-                                        ' to friends'
-                                      ]
-                                    },
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              block: 'social-activity-row',
-                              content: [
-                                {
-                                  elem: 'image',
-                                  content:[
-                                    {
-                                      tag: 'div',
-                                      attrs: {'data-icon':'ei-calendar', 'data-size':'s'}
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'name',
-                                  content: [
-                                    {
-                                      block: 'text',
-                                      mods: {size: 's'},
-                                      content: [
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Alex Gilev'
-                                        },
-                                        ' crested the ',
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'Bowling'
-                                        },
-                                        ' event'
-                                      ]
-                                    },
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              block: 'social-activity-row',
-                              content: [
-                                {
-                                  elem: 'image',
-                                  content:[
-                                    {
-                                      tag: 'div',
-                                      attrs: {'data-icon':'ei-bell', 'data-size':'s'}
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'name',
-                                  content: [
-                                    {
-                                      block: 'text',
-                                      mods: {size: 's'},
-                                      content: [
-                                        {
-                                          block: 'link',
-                                          mods : { theme : 'islands', pseudo : true },
-                                          content: 'David Vane'
-                                        },
-                                        ' shared a link:'
-                                      ]
-                                    },
-                                    {
-                                      block: 'social-activity-info',
-                                      mix: {block: 'clearfix'},
-                                      content: [
-                                        {
-                                          elem: 'icons',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              url: '#',
-                                              content: [
-                                                {
-                                                  block: 'image',
-                                                  height: '50',
-                                                  url: '/i/spotify.png'
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem: 'content',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              mods : { theme : 'islands', pseudo : true, size: 's' },
-                                              content: 'Lorem ipsum dolor'
-                                            },
                                             {
                                               block: 'text',
-                                              mods: {size: 'xs'},
-                                              content: 'Lorem ipsu dolor sit amet, consectetur adipisicing ips...'
+                                              mods: {size: 's'},
+                                              content: [
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Kevin Ertan'
+                                                },
+                                                ' Added 4 photos to album ',
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Summer'
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-image-box',
+                                              mix: {block: 'clearfix'},
+                                              content: [
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/tobias.jpg'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/behance.jpg'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/dribbble.png'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/facebook.png'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
                                       ]
                                     },
+                                    {
+                                      block: 'social-activity-row',
+                                      content: [
+                                        {
+                                          elem: 'image',
+                                          content:[
+                                            {
+                                              tag: 'div',
+                                              attrs: {'data-icon':'ei-like', 'data-size':'s'}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 's'},
+                                              content: [
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'john Doe'
+                                                },
+                                                ' liked 2 photos of ',
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Alex Wayne'
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-image-box',
+                                              mix: {
+                                                block: 'clearfix'},
+                                              content: [
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/medium.png'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/koloskov.png'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-activity-row',
+                                      content: [
+                                        {
+                                          elem: 'image',
+                                          content:[
+                                            {
+                                              tag: 'div',
+                                              attrs: {'data-icon':'ei-user', 'data-size':'s'}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 's'},
+                                              content: [
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'John Doe'
+                                                },
+                                                ' added ',
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Alex Wayne'
+                                                },
+                                                ' to friends'
+                                              ]
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-activity-row',
+                                      content: [
+                                        {
+                                          elem: 'image',
+                                          content:[
+                                            {
+                                              tag: 'div',
+                                              attrs: {'data-icon':'ei-calendar', 'data-size':'s'}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 's'},
+                                              content: [
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Alex Gilev'
+                                                },
+                                                ' crested the ',
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'Bowling'
+                                                },
+                                                ' event'
+                                              ]
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'social-activity-row',
+                                      content: [
+                                        {
+                                          elem: 'image',
+                                          content:[
+                                            {
+                                              tag: 'div',
+                                              attrs: {'data-icon':'ei-bell', 'data-size':'s'}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'name',
+                                          content: [
+                                            {
+                                              block: 'text',
+                                              mods: {size: 's'},
+                                              content: [
+                                                {
+                                                  block: 'link',
+                                                  mods : { theme : 'islands', pseudo : true },
+                                                  content: 'David Vane'
+                                                },
+                                                ' shared a link:'
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-activity-info',
+                                              mix: {block: 'clearfix'},
+                                              content: [
+                                                {
+                                                  elem: 'icons',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      url: '#',
+                                                      content: [
+                                                        {
+                                                          block: 'image',
+                                                          height: '50',
+                                                          url: '/i/spotify.png'
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  elem: 'content',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      mods : { theme : 'islands', pseudo : true, size: 's' },
+                                                      content: 'Lorem ipsum dolor'
+                                                    },
+                                                    {
+                                                      block: 'text',
+                                                      mods: {size: 'xs'},
+                                                      content: 'Lorem ipsu dolor sit amet, consectetur adipisicing ips...'
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
@@ -4645,9 +4655,9 @@ module.exports = {
                               ]
                             }
                           ]
-                        },
+                        }
                       ]
-                    },
+                    }
                   ]
                 },
                 {
