@@ -2183,12 +2183,14 @@ module.exports = {
                                         mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
+                                      /*
                                       {
                                         mix : { block : 'mail-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
                                       }
+                                      */
                                     ]
                                   },
                                 ]
@@ -2291,12 +2293,14 @@ module.exports = {
                                         mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
+                                      /*
                                       {
                                         mix : { block : 'accet-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
                                       }
+                                      */
                                     ]
                                   },
                                 ]
@@ -2399,12 +2403,14 @@ module.exports = {
                                         mods : { size : 's', weight : 'bold' },
                                         content : item.documentTitle
                                       },
+                                      /*
                                       {
                                         mix : { block : 'friend-content', elem : 'text' },
                                         block : 'text',
                                         mods : { size : 's' },
                                         content : item.documentText
                                       }
+                                      */
                                     ]
                                   },
                                 ]
@@ -3014,6 +3020,32 @@ module.exports = {
             {
               block : 'kit',
               content : [
+                {
+                  block : 'kit',
+                  content : [
+                    {
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'photo-tile',
+                          content : [
+                            {
+                              elem : 'header',
+                              content : 'sdsds'
+                            }
+                          ]
+                        }
+
+                      ]
+                    },
+                    {
+                      elem : 'codepen',
+                      content : [
+
+                      ]
+                    },
+                  ]
+                },
                 {
                   block : 'kit',
                   content : [
