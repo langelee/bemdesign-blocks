@@ -56,11 +56,6 @@ module.exports = {
       ]
     },
     */
-
-    {
-      block : 'alpha',
-      content : 'BEM Design alpha version'
-    },
     {
       block : 'promo',
       content : [
@@ -3002,170 +2997,139 @@ module.exports = {
               block : 'kit',
               content : [
                 {
-                  block : 'kit',
+                  elem : 'item',
                   content : [
                     {
-                      elem : 'item',
-                      content : [
+                      block : 'user-tile',
+                      content: [
                         {
-                          block : 'photo-tile',
+                          mix : { block : 'user-tile', elem : 'icon'},
+                          block: 'image',
+                          alt: 'elizabeth',
+                          url: '/i/juliezhuo.jpg'
+                        },
+                        {
+                          mix : { block : 'user-tile', elem : 'name'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Julie Zhuo'
+                        },
+                        {
+                          mix : { block : 'user-tile', elem : 'twitter'},
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : 'http://twitter.com/joulee',
+                          content : '@joulee'
+                        },
+                        {
+                          elem : 'description',
                           content : [
                             {
-                              elem : 'header',
-                              content : 'sdsds'
+                              block : 'text',
+                              mods : { size : 's', display : 'inline' },
+                              content : 'Design director at Facebook'
+                            }
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Читать'
                             }
                           ]
                         }
-
-                      ]
-                    },
-                    {
-                      elem : 'codepen',
-                      content : [
-
                       ]
                     },
                   ]
                 },
                 {
-                  block : 'kit',
+                  elem : 'codepen',
                   content : [
                     {
-                      elem : 'item',
+                      block : 'codepen',
                       content : [
                         {
-                          block : 'user-tile',
-                          content: [
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
                             {
-                              mix : { block : 'user-tile', elem : 'icon'},
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'expert-tile',
+                      content : [
+                        {
+                          block : 'expert-info',
+                          mix : { block : 'expert-tile', elem : 'info'},
+                          content : [
+                            {
+                              mix : { block : 'expert-info', elem : 'image'},
                               block: 'image',
-                              alt: 'elizabeth',
-                              url: '/i/juliezhuo.jpg'
+                              alt: 'ahwng',
+                              url: '/i/ahwng.jpg'
                             },
                             {
-                              mix : { block : 'user-tile', elem : 'name'},
+                              mix : { block : 'expert-info', elem : 'name'},
                               block : 'text',
                               mods : { size : 'm'},
-                              content : 'Julie Zhuo'
-                            },
-                            {
-                              mix : { block : 'user-tile', elem : 'twitter'},
-                              block : 'link',
-                              mods : { theme : 'islands' },
-                              url : 'http://twitter.com/joulee',
-                              content : '@joulee'
-                            },
-                            {
-                              elem : 'description',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 's', display : 'inline' },
-                                  content : 'Design director at Facebook'
-                                }
-                              ]
-                            },
-                            {
-                              elem : 'action',
-                              content : [
-                                {
-                                  block : 'button',
-                                  mods : { theme : 'islands', size : 'l', view : 'action' },
-                                  text : 'Читать'
-                                }
-                              ]
+                              content : 'Andrew Hwang'
                             }
                           ]
                         },
-                      ]
-                    },
-                    {
-                      elem : 'codepen',
-                      content : [
                         {
-                          block : 'codepen',
-                          content : [
-                            {
-                              block : 'link',
-                              mix : { block : 'codepen', elem : 'link'},
-                              url : 'http://codepen.io',
-                              content : [
-                                {
-                                  block : 'image',
-                                  height : '20',
-                                  url : '/i/codepen.png',
-                                  title : 'Все подробности на bem.info'
-                                }
-                              ]
-                            }
-                          ]
+                          mix : { block : 'expert-tile', elem : 'description'},
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Product designer at Facebook. Encourager of empathy.'
                         }
                       ]
-                    }
+                    },
                   ]
                 },
                 {
-                  block : 'kit',
+                  elem : 'codepen',
                   content : [
                     {
-                      elem : 'item',
+                      block : 'codepen',
                       content : [
                         {
-                          block : 'expert-tile',
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
                           content : [
                             {
-                              block : 'expert-info',
-                              mix : { block : 'expert-tile', elem : 'info'},
-                              content : [
-                                {
-                                  mix : { block : 'expert-info', elem : 'image'},
-                                  block: 'image',
-                                  alt: 'ahwng',
-                                  url: '/i/ahwng.jpg'
-                                },
-                                {
-                                  mix : { block : 'expert-info', elem : 'name'},
-                                  block : 'text',
-                                  mods : { size : 'm'},
-                                  content : 'Andrew Hwang'
-                                }
-                              ]
-                            },
-                            {
-                              mix : { block : 'expert-tile', elem : 'description'},
-                              block : 'text',
-                              mods : { size : 's'},
-                              content : 'Product designer at Facebook. Encourager of empathy.'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'codepen',
-                      content : [
-                        {
-                          block : 'codepen',
-                          content : [
-                            {
-                              block : 'link',
-                              mix : { block : 'codepen', elem : 'link'},
-                              url : 'http://codepen.io',
-                              content : [
-                                {
-                                  block : 'image',
-                                  height : '20',
-                                  url : '/i/codepen.png',
-                                  title : 'Все подробности на bem.info'
-                                }
-                              ]
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
                             }
                           ]
                         }
                       ]
                     }
                   ]
-                },
+                }
               ]
             },
           ]
@@ -6526,7 +6490,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 's',},
-                                  content : 'Description description description'
+                                  content : 'plan'
                                 },
                               ]
                             }
@@ -6792,7 +6756,6 @@ module.exports = {
         },
       ]
     },
-
     {
       block : 'row',
       mix : { block : 'page-row'},
@@ -6832,7 +6795,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 's',},
-                                  content : 'Description description description'
+                                  content : 'header-section / footer-section'
                                 },
                               ]
                             }
