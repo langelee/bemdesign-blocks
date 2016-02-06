@@ -3043,7 +3043,7 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Читать'
+                              text : 'Follow'
                             }
                           ]
                         }
@@ -3188,7 +3188,7 @@ module.exports = {
                             {
                               block : 'button',
                               mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Перейти'
+                              text : 'Follow'
                             }
                           ]
                         }
