@@ -5098,7 +5098,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 'l' },
-                              content : 'Social comment'
+                              content : 'Comments'
                             },
                           ]
                         },
