@@ -1448,7 +1448,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'log in / reser / sing up'
+                              content : 'log in / reset / sing up'
                             },
                           ]
                         }
@@ -2928,7 +2928,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : ' user-tile / product-tile / event-tile / expert-tile / partner-tile'
                             },
                           ]
                         }
