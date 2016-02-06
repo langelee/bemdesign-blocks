@@ -82,7 +82,7 @@ module.exports = {
             {
               block : 'button',
               mods : { theme : 'islands', size : 'xl', view : 'action', type : 'link' },
-              url : 'https://github.com/bemdesign',
+              url : 'https://github.com/bemdesign/bemdesign-info',
               text : 'Quick start'
             }
           ]
