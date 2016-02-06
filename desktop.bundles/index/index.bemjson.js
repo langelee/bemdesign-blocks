@@ -177,6 +177,12 @@ module.exports = {
                       mods : { theme : 'islands', size : 'l', type : 'link' },
                       url : '#plans',
                       text : 'plans'
+                    },
+                    {
+                      block : 'button',
+                      mods : { theme : 'islands', size : 'l', type : 'link' },
+                      url : '#headers',
+                      text : 'headers'
                     }
                   ]
                 }
@@ -3945,7 +3951,7 @@ module.exports = {
                                                     attrs: {
                                                       'data-icon': 'ei-plus',
                                                       'data-size': 's'
-                                                    }  
+                                                    }
                                                   }
                                                 ]
                                               }
@@ -6727,6 +6733,144 @@ module.exports = {
                                 block : 'button',
                                 mods : { theme : 'islands', size : 'l', view : 'action' },
                                 text : 'Get started'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+      ]
+    },
+    {
+      block : 'row',
+      mix : { block : 'page-row' },
+      attrs : {
+        id : 'headers'
+      },
+      content : [
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              elem : 'item',
+              content : [
+                {
+                  block : 'kit',
+                  content : [
+                    {
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'kit-item-header',
+                          content : [
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'l' },
+                                  content : 'Headers'
+                                },
+                              ]
+                            },
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 's',},
+                                  content : 'headers-section'
+                                },
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          elem : 'col',
+          mods : { lw : 12, xl : 12, xxl : 12 },
+          content : [
+            {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'header',
+                      content : [
+                        {
+                          elem : 'content',
+                          mix : { block : 'clearfix' },
+                          content : [
+                            {
+                              elem : 'left',
+                              content : [
+                                {
+                                  elem : 'logo',
+                                  content : [
+                                    'Logotype'
+                                  ]
+                                },
+
+                              ]
+                            },
+                            {
+                              elem : 'right',
+                              content : [
+                                {
+                                  elem : 'user-avatar',
+                                  attrs : { 'data-icon':'ei-user', 'data-size':'s' },
+                                },
+                                {
+                                  block : 'link',
+                                  mix : [{ block : 'header', elem : 'user-name' }],
+                                  mods : { theme : 'islands', size: 'l', pseudo : true },
+                                  content : 'User Profile'
+                                },
+                                {
+                                  block : 'button',
+                                  mix : [{ block : 'header', elem : 'action' }],
+                                  mods : { theme : 'islands', size: 'm', type : 'button' },
+                                  text : 'Log out'
+                                },
+                              ]
                             }
                           ]
                         }
