@@ -2060,7 +2060,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'mail-list / accet-list / friend-list / document-list / top-news-list / user-list / news-list / position-list'
                             },
                           ]
                         }
@@ -3552,7 +3552,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'social-group-tile / social-location-tile / social-suggested-people / social-user-tile / social-activity-list / social-text-tile'
                             },
                           ]
                         }
@@ -5362,7 +5362,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : 'Description description description'
+                              content : 'social-comment-tile / social-comment'
                             },
                           ]
                         }
