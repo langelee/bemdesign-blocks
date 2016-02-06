@@ -5625,7 +5625,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: '20.01.2016'
+                              content: '06.02.2016'
                             }
                           ]
                         },
@@ -5930,7 +5930,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: '20.01.2016'
+                              content: '06.02.2016'
                             }
                           ]
                         },
@@ -6036,6 +6036,7 @@ module.exports = {
                           content: [
                             {
                               block: 'social-comment-textarea',
+                              mods: {lastChild: 'last'},
                               content: [
                                 {
                                   elem: 'image'
@@ -6111,7 +6112,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: '20.01.2016'
+                              content: '04.02.2016'
                             }
                           ]
                         },
@@ -6213,228 +6214,238 @@ module.exports = {
                           ]
                         },
                         {
-                          elem: 'answer',
+                          elem: 'answer-list',
                           content: [
                             {
-                              block: 'social-comment-answer',
+                              block: 'social-comment-answer-list',
                               content: [
                                 {
-                                  elem: 'image3'
-                                },
-                                {
-                                  elem: 'user-name',
+                                  elem: 'answer',
                                   content: [
                                     {
-                                      block: 'link',
-                                      mods: {theme: 'islands'},
-                                      content: 'David Clinch'
-                                    }                          ]
+                                      block: 'social-comment-answer',
+                                      content: [
+                                        {
+                                          elem: 'image3'
+                                        },
+                                        {
+                                          elem: 'user-name',
+                                          content: [
+                                            {
+                                              block: 'link',
+                                              mods: {theme: 'islands'},
+                                              content: 'David Clinch'
+                                            }                          ]
+                                        },
+                                        {
+                                          elem: 'answer',
+                                          content: [
+                                            {
+                                              block : 'text',
+                                              content: 'Very cool. I&nbsp;did mine, but because&nbsp;I use Facebook for work as&nbsp;well my&nbsp;video was sprinkled with people from China, Afghanistan and other places&nbsp;I have friended because they were witnesses to&nbsp;big news events over the years. I&nbsp;still consider them friends'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'link-box',
+                                          mix: {block: 'clearfix'},
+                                          content: [
+                                            {
+                                              block: 'social-comment-link',
+                                              content: [
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      mods: {theme: 'islands'},
+                                                      content: [
+                                                        {
+                                                          elem: 'icon',
+                                                          content: [
+                                                            {
+                                                              block: 'social-comment-icon',
+                                                              content: [
+                                                                {
+                                                                  attrs: {
+                                                                    'data-icon': 'ei-like',
+                                                                    'data-size': 's'
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          elem: 'name',
+                                                          content: [
+                                                            {
+                                                              block: 'text',
+                                                              content: 'Нравится'
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              block: 'social-comment-link',
+                                              content: [
+                                                {
+                                                  elem: 'name',
+                                                  content: [
+                                                    {
+                                                      block: 'link',
+                                                      mods: {theme: 'islands'},
+                                                      content: [
+                                                        {
+                                                          elem: 'icon',
+                                                          content: [
+                                                            {
+                                                              block: 'social-comment-icon',
+                                                              content: [
+                                                                {
+                                                                  attrs: {
+                                                                    'data-icon': 'ei-comment',
+                                                                    'data-size': 's'
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          elem: 'name',
+                                                          content: [
+                                                            {
+                                                              block: 'text',
+                                                              content: 'Ответить'
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 },
                                 {
                                   elem: 'answer',
                                   content: [
                                     {
-                                      block : 'text',
-                                      content: 'Very cool. I&nbsp;did mine, but because&nbsp;I use Facebook for work as&nbsp;well my&nbsp;video was sprinkled with people from China, Afghanistan and other places&nbsp;I have friended because they were witnesses to&nbsp;big news events over the years. I&nbsp;still consider them friends'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'link-box',
-                                  mix: {block: 'clearfix'},
-                                  content: [
-                                    {
-                                      block: 'social-comment-link',
+                                      block: 'social-comment-answer',
                                       content: [
                                         {
-                                          elem: 'name',
+                                          elem: 'image4'
+                                        },
+                                        {
+                                          elem: 'user-name',
                                           content: [
                                             {
                                               block: 'link',
                                               mods: {theme: 'islands'},
+                                              content: 'Griselda Molina'
+                                            }                          ]
+                                        },
+                                        {
+                                          elem: 'answer',
+                                          content: [
+                                            {
+                                              block : 'text',
+                                              content: 'Thanks Mark!! I&rsquo;m really fascinated with Friends Day video!! It&rsquo;s beautiful and i&nbsp;have to&nbsp;confess that a&nbsp;only few videos&nbsp;I like how this!! I&nbsp;hope that your job continue surprising&nbsp;us through all the time that we&nbsp;can share together, and apology for my&nbsp;english if&nbsp;it&nbsp;have mistakes but, you know? I&acute;m still learnig it !! Blessings for you, always!!'
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          elem: 'link-box',
+                                          mix: {block: 'clearfix'},
+                                          content: [
+                                            {
+                                              block: 'social-comment-link',
                                               content: [
-                                                {
-                                                  elem: 'icon',
-                                                  content: [
-                                                    {
-                                                      block: 'social-comment-icon',
-                                                      content: [
-                                                        {
-                                                          attrs: {
-                                                            'data-icon': 'ei-like',
-                                                            'data-size': 's'
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                },
                                                 {
                                                   elem: 'name',
                                                   content: [
                                                     {
-                                                      block: 'text',
-                                                      content: 'Нравится'
+                                                      block: 'link',
+                                                      mods: {theme: 'islands'},
+                                                      content: [
+                                                        {
+                                                          elem: 'icon',
+                                                          content: [
+                                                            {
+                                                              block: 'social-comment-icon',
+                                                              content: [
+                                                                {
+                                                                  attrs: {
+                                                                    'data-icon': 'ei-like',
+                                                                    'data-size': 's'
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          elem: 'name',
+                                                          content: [
+                                                            {
+                                                              block: 'text',
+                                                              content: 'Нравится'
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
                                                     }
                                                   ]
                                                 }
                                               ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'social-comment-link',
-                                      content: [
-                                        {
-                                          elem: 'name',
-                                          content: [
+                                            },
                                             {
-                                              block: 'link',
-                                              mods: {theme: 'islands'},
+                                              block: 'social-comment-link',
                                               content: [
-                                                {
-                                                  elem: 'icon',
-                                                  content: [
-                                                    {
-                                                      block: 'social-comment-icon',
-                                                      content: [
-                                                        {
-                                                          attrs: {
-                                                            'data-icon': 'ei-comment',
-                                                            'data-size': 's'
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                },
                                                 {
                                                   elem: 'name',
                                                   content: [
                                                     {
-                                                      block: 'text',
-                                                      content: 'Ответить'
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'answer',
-                          content: [
-                            {
-                              block: 'social-comment-answer',
-                              content: [
-                                {
-                                  elem: 'image4'
-                                },
-                                {
-                                  elem: 'user-name',
-                                  content: [
-                                    {
-                                      block: 'link',
-                                      mods: {theme: 'islands'},
-                                      content: 'Griselda Molina'
-                                    }                          ]
-                                },
-                                {
-                                  elem: 'answer',
-                                  content: [
-                                    {
-                                      block : 'text',
-                                      content: 'Thanks Mark!! I&rsquo;m really fascinated with Friends Day video!! It&rsquo;s beautiful and i&nbsp;have to&nbsp;confess that a&nbsp;only few videos&nbsp;I like how this!! I&nbsp;hope that your job continue surprising&nbsp;us through all the time that we&nbsp;can share together, and apology for my&nbsp;english if&nbsp;it&nbsp;have mistakes but, you know? I&acute;m still learnig it !! Blessings for you, always!!'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'link-box',
-                                  mix: {block: 'clearfix'},
-                                  content: [
-                                    {
-                                      block: 'social-comment-link',
-                                      content: [
-                                        {
-                                          elem: 'name',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              mods: {theme: 'islands'},
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  content: [
-                                                    {
-                                                      block: 'social-comment-icon',
+                                                      block: 'link',
+                                                      mods: {theme: 'islands'},
                                                       content: [
                                                         {
-                                                          attrs: {
-                                                            'data-icon': 'ei-like',
-                                                            'data-size': 's'
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'name',
-                                                  content: [
-                                                    {
-                                                      block: 'text',
-                                                      content: 'Нравится'
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'social-comment-link',
-                                      content: [
-                                        {
-                                          elem: 'name',
-                                          content: [
-                                            {
-                                              block: 'link',
-                                              mods: {theme: 'islands'},
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  content: [
-                                                    {
-                                                      block: 'social-comment-icon',
-                                                      content: [
+                                                          elem: 'icon',
+                                                          content: [
+                                                            {
+                                                              block: 'social-comment-icon',
+                                                              content: [
+                                                                {
+                                                                  attrs: {
+                                                                    'data-icon': 'ei-comment',
+                                                                    'data-size': 's'
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
                                                         {
-                                                          attrs: {
-                                                            'data-icon': 'ei-comment',
-                                                            'data-size': 's'
-                                                          }
+                                                          elem: 'name',
+                                                          content: [
+                                                            {
+                                                              block: 'text',
+                                                              content: 'Ответить'
+                                                            }
+                                                          ]
                                                         }
                                                       ]
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'name',
-                                                  content: [
-                                                    {
-                                                      block: 'text',
-                                                      content: 'Ответить'
                                                     }
                                                   ]
                                                 }
