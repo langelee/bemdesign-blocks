@@ -3945,7 +3945,7 @@ module.exports = {
                                                     attrs: {
                                                       'data-icon': 'ei-plus',
                                                       'data-size': 's'
-                                                    }  
+                                                    }
                                                   }
                                                 ]
                                               }
@@ -5415,7 +5415,7 @@ module.exports = {
                                     {
                                       block: 'text',
                                       mods: {size: 'l'},
-                                      content: 'Rutracker.org все-таки начали блокировать на уровне провайдеров'
+                                      content: 'Today we&rsquo;re having our 50th hackathon at&nbsp;Facebook.'
                                     }
                                   ]
                                 }
@@ -5429,7 +5429,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      content: 'Сегодня с удивлением обнаружил, что rutracker.org все-таки начали блокировать на уровне провайдеров. Еще большее удивление ощутил, когда оказалось, что блокировка обходится с помощью установки бесплатного плагина для браузера, и все работает как и раньше...'
+                                      content: 'Hackathons are an&nbsp;important part of&nbsp;how we&nbsp;come up&nbsp;with new ideas. Everyone takes a&nbsp;day to&nbsp;explore any idea they want, and then everyone presents what they&rsquo;ve come up&nbsp;with at&nbsp;the end.'
                                     }
                                   ]
                                 }
@@ -5616,7 +5616,7 @@ module.exports = {
                             {
                               block: 'link',
                               mods: {theme: 'islands'},
-                              content: 'Алексей Федотов'
+                              content: 'Mark Zuckerberg'
                             }                          ]
                         },
                         {
@@ -5634,7 +5634,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: 'В любом обществе есть хищники и жертвы. Автор традиционно адресует свои советы возрастным интеллигентным жертвам. Кто будет отвечать за поломанные судьбы зайчиков, которые, вняв советам, пойдут своими неумелыми зубами кусать волков?'
+                              content: 'We&rsquo;ve activated Safety Check in&nbsp;response to&nbsp;the earthquake that struck Taiwan. My&nbsp;thoughts are with everyone in&nbsp;Taiwan and across our global community affected by&nbsp;this disaster. If&nbsp;you&rsquo;re in&nbsp;the area affected you&rsquo;ll get a&nbsp;notification to&nbsp;mark yourself as&nbsp;safe. You can also check that your friends and loved ones are safe.'
                             }
                           ]
                         },
@@ -5727,6 +5727,29 @@ module.exports = {
                           ]
                         },
                         {
+                          elem: 'answer-textarea',
+                          content: [
+                            {
+                              block: 'social-comment-textarea',
+                              content: [
+                                {
+                                  elem: 'image'
+                                },
+                                {
+                                  elem: 'textarea',
+                                  content: [
+                                    {
+                                      block : 'textarea',
+                                      mods : { theme : 'islands', size : 's', width : 'available' },
+                                      placeholder : 'Напишите ответ...'
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
                           elem: 'answer',
                           content: [
                             {
@@ -5736,11 +5759,20 @@ module.exports = {
                                   elem: 'image'
                                 },
                                 {
+                                  elem: 'user-name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Sheryl Sandberg'
+                                    }                          ]
+                                },
+                                {
                                   elem: 'answer',
                                   content: [
                                     {
                                       block : 'text',
-                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                      content: 'Thinking of&nbsp;everyone affected by&nbsp;this earthquake&nbsp;&mdash; and hoping that no&nbsp;more lives are at&nbsp;risk.'
                                     }
                                   ]
                                 },
@@ -5832,30 +5864,6 @@ module.exports = {
                                     }
                                   ]
                                 }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'answer-textarea',
-                          content: [
-                            {
-                              block: 'social-comment-textarea',
-                              content: [
-                                {
-                                  elem: 'image'
-                                },
-                                {
-                                  elem: 'textarea',
-                                  content: [
-                                    {
-                                      block : 'textarea',
-                                      mods : { theme : 'islands', size : 'm', width : 'available' },
-                                      placeholder : 'Напишите ответ...'
-                                    }
-                                  ]
-                                },
-
                               ]
                             }
                           ]
@@ -5913,7 +5921,7 @@ module.exports = {
                             {
                               block: 'link',
                               mods: {theme: 'islands'},
-                              content: 'Алексей Федотов'
+                              content: 'Mark Zuckerberg'
                             }                          ]
                         },
                         {
@@ -5931,7 +5939,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: 'В любом обществе есть хищники и жертвы. Автор традиционно адресует свои советы возрастным интеллигентным жертвам. Кто будет отвечать за поломанные судьбы зайчиков, которые, вняв советам, пойдут своими неумелыми зубами кусать волков?'
+                              content: 'We&rsquo;ve activated Safety Check in&nbsp;response to&nbsp;the earthquake that struck Taiwan. My&nbsp;thoughts are with everyone in&nbsp;Taiwan and across our global community affected by&nbsp;this disaster. If&nbsp;you&rsquo;re in&nbsp;the area affected you&rsquo;ll get a&nbsp;notification to&nbsp;mark yourself as&nbsp;safe. You can also check that your friends and loved ones are safe.'
                             }
                           ]
                         },
@@ -6037,7 +6045,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'textarea',
-                                      mods : { theme : 'islands', size : 'm', width : 'available' },
+                                      mods : { theme : 'islands', size : 's', width : 'available' },
                                       placeholder : 'Напишите ответ...'
                                     }
                                   ]
@@ -6094,7 +6102,7 @@ module.exports = {
                             {
                               block: 'link',
                               mods: {theme: 'islands'},
-                              content: 'Алексей Федотов'
+                              content: 'Mark Zuckerberg'
                             }                          ]
                         },
                         {
@@ -6112,7 +6120,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
-                              content: 'В любом обществе есть хищники и жертвы. Автор традиционно адресует свои советы возрастным интеллигентным жертвам. Кто будет отвечать за поломанные судьбы зайчиков, которые, вняв советам, пойдут своими неумелыми зубами кусать волков?'
+                              content: 'We&rsquo;ve activated Safety Check in&nbsp;response to&nbsp;the earthquake that struck Taiwan. My&nbsp;thoughts are with everyone in&nbsp;Taiwan and across our global community affected by&nbsp;this disaster. If&nbsp;you&rsquo;re in&nbsp;the area affected you&rsquo;ll get a&nbsp;notification to&nbsp;mark yourself as&nbsp;safe. You can also check that your friends and loved ones are safe.'
                             }
                           ]
                         },
@@ -6214,11 +6222,20 @@ module.exports = {
                                   elem: 'image'
                                 },
                                 {
+                                  elem: 'user-name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Sheryl Sandberg'
+                                    }                          ]
+                                },
+                                {
                                   elem: 'answer',
                                   content: [
                                     {
                                       block : 'text',
-                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                      content: 'Thinking of&nbsp;everyone affected by&nbsp;this earthquake&nbsp;&mdash; and hoping that no&nbsp;more lives are at&nbsp;risk.'
                                     }
                                   ]
                                 },
@@ -6321,14 +6338,23 @@ module.exports = {
                               block: 'social-comment-answer',
                               content: [
                                 {
-                                  elem: 'image'
+                                  elem: 'image2'
+                                },
+                                {
+                                  elem: 'user-name',
+                                  content: [
+                                    {
+                                      block: 'link',
+                                      mods: {theme: 'islands'},
+                                      content: 'Shivam Jalan'
+                                    }                          ]
                                 },
                                 {
                                   elem: 'answer',
                                   content: [
                                     {
                                       block : 'text',
-                                      content: 'Теперь этому чуваку наверное не до хохлов, Крыма и Обамы, будет ближайшее время...'
+                                      content: 'Mark, you are really an&nbsp;awesome human being, thank you for doing this for the people of&nbsp;Taiwan and&nbsp;I really hope that the people there are safe also my&nbsp;friends there stay strong.'
                                     }
                                   ]
                                 },
