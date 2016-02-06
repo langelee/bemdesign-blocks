@@ -3904,7 +3904,7 @@ module.exports = {
                               ].map(function(item) {
                                 return [
                                   {
-                                    block: 'social-suggested-people-row',
+                                    block: 'social-suggested-people-item',
                                     content: [
                                       {
                                         block: 'social-suggested-people-profile',
