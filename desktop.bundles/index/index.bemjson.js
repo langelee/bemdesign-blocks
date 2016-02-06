@@ -3940,7 +3940,14 @@ module.exports = {
                                               {
                                                 block: 'link',
                                                 mods : { theme : 'islands', size : 'm' , disabled : true },
-                                                content: 'Add'
+                                                content: [
+                                                  {
+                                                    attrs: {
+                                                      'data-icon': 'ei-plus',
+                                                      'data-size': 's'
+                                                    }  
+                                                  }
+                                                ]
                                               }
                                             ]
                                           }
