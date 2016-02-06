@@ -169,8 +169,8 @@ module.exports = {
                     {
                       block : 'button',
                       mods : { theme : 'islands', size : 'l', type : 'link' },
-                      url : '#sections',
-                      text : 'sections'
+                      url : '#comments',
+                      text : 'comments'
                     },
                     {
                       block : 'button',
@@ -181,9 +181,10 @@ module.exports = {
                     {
                       block : 'button',
                       mods : { theme : 'islands', size : 'l', type : 'link' },
-                      url : '#headers',
-                      text : 'headers'
-                    }
+                      url : '#sections',
+                      text : 'sections'
+                    },
+
                   ]
                 }
               ]
@@ -4668,6 +4669,7 @@ module.exports = {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
+            /*
             {
               block : 'kit',
               content : [
@@ -4737,6 +4739,7 @@ module.exports = {
                 }
               ]
             },
+            */
             {
               block : 'kit',
               content : [
@@ -5349,6 +5352,9 @@ module.exports = {
         {
           elem : 'col',
           mods : { lw : 12, xl : 12, xxl : 12 },
+          attrs : {
+            id : 'comments'
+          },
           content : [
             {
               block : 'kit',
@@ -5365,7 +5371,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 'l' },
-                              content : 'Social comment tiles'
+                              content : 'Social comment'
                             },
                           ]
                         },
