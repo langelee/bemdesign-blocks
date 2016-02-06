@@ -3077,6 +3077,7 @@ module.exports = {
                 }
               ]
             },
+            /*
             {
               block : 'kit',
               content : [
@@ -3139,6 +3140,7 @@ module.exports = {
                 }
               ]
             },
+            */
           ]
         },
         {
@@ -3220,6 +3222,7 @@ module.exports = {
                     }
                   ]
                 },
+                /*
                 {
                   block : 'kit',
                   content : [
@@ -3279,6 +3282,7 @@ module.exports = {
                     }
                   ]
                 },
+                */
               ]
             },
 
