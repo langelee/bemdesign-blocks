@@ -4396,7 +4396,7 @@ module.exports = {
                 },
               ]
             },
-            /*
+            
             {
               block : 'kit',
               content : [
@@ -4466,7 +4466,7 @@ module.exports = {
                 }
               ]
             },
-            */
+            
             {
               block : 'kit',
               content : [
@@ -4536,7 +4536,7 @@ module.exports = {
                 }
               ]
             },
-
+            /*
             {
               block : 'kit',
               content : [
@@ -4698,7 +4698,7 @@ module.exports = {
                 }
               ]
             },
-
+            */
             {
               block : 'kit',
               content : [
@@ -4735,16 +4735,6 @@ module.exports = {
                               block: 'text',
                               mods: {size : 's', weight: 'bold'},
                               content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur eveniet enim dolores dignissimos odio. Deserunt est magni minus nam?'
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'content',
-                          content: [
-                            {
-                              block: 'text',
-                              mods: {size : 's'},
-                              content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis aspernatur voluptate sit incidunt veritatis, accusamus quam laudantium! Quis aspernatur quibusdam ipsam id officiis laudantium aliquam ab, aperiam eum cumque!'
                             }
                           ]
                         },
