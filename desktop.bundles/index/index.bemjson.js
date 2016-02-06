@@ -2935,7 +2935,7 @@ module.exports = {
                             {
                               block : 'text',
                               mods : { size : 's',},
-                              content : ' user-tile / product-tile / event-tile / expert-tile / partner-tile'
+                              content : 'user-tile / event-tile / partner-tile / social-group-tile / social-location-tile / social-suggested-people / social-user-tile / social-activity-list / social-text-tile'
                             },
                           ]
                         }
@@ -2946,50 +2946,7 @@ module.exports = {
               ]
             },
           ]
-        }
-      ]
-    },
-    {
-      elem : 'col',
-      mods : { lw : 12, xl : 12, xxl : 12 },
-      content : [
-        {
-          block : 'kit',
-          content : [
-            {
-              elem : 'item',
-              content : [
-                {
-                  block : 'kit-item-info',
-                  content : [
-                    {
-                      block : 'row',
-                      content : [
-                        {
-                          elem : 'col',
-                          mods : { lw : 4, xl : 4, xxl : 4 },
-                          content : [
-
-                          ]
-                        },
-                        {
-                          elem : 'col',
-                          mods : { lw : 4, xl : 4, xxl : 4 },
-                          content : ''
-                        },
-                        {
-                          elem : 'col',
-                          mods : { lw : 4, xl : 4, xxl : 4 },
-                          content : ''
-                        }
-                      ]
-                    },
-                  ]
-                }
-              ]
-            }
-          ]
-        }
+        },
       ]
     },
     {
@@ -2998,9 +2955,9 @@ module.exports = {
       content : [
         {
           elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
+          mods : { lw : 4, xl : 4, xxl : 4},
           content : [
-            {
+                      {
               block : 'kit',
               content : [
                 {
@@ -3141,450 +3098,6 @@ module.exports = {
               ]
             },
             */
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  elem : 'item',
-                  content : [
-                    {
-                      block : 'product-tile',
-                      content: [
-                        {
-                          mix : { block : 'product-tile', elem : 'icon'},
-                          block: 'image',
-                          alt: 'facebookdesign',
-                          url: '/i/facebookdesign.jpg'
-                        },
-                        {
-                          mix : { block : 'product-tile', elem : 'name'},
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Facebook Design'
-                        },
-                        {
-                          mix : { block : 'product-tile', elem : 'web'},
-                          block : 'link',
-                          mods : { theme : 'islands' },
-                          url : 'http://medium.com/@facebookdesign',
-                          content : '@facebookdesign'
-                        },
-                        {
-                          elem : 'description',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 's'},
-                              content : 'Stories from the design team at Facebook offices across the world'
-                            },
-                          ]
-                        },
-                        {
-                          elem : 'action',
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Follow'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      elem : 'codepen',
-                      content : [
-                        {
-                          block : 'codepen',
-                          content : [
-                            {
-                              block : 'link',
-                              mix : { block : 'codepen', elem : 'link'},
-                              url : 'http://codepen.io',
-                              content : [
-                                {
-                                  block : 'image',
-                                  height : '20',
-                                  url : '/i/codepen.png',
-                                  title : 'Все подробности на bem.info'
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                /*
-                {
-                  block : 'kit',
-                  content : [
-                    {
-                      elem : 'item',
-                      content : [
-                        {
-                          block : 'partner-tile',
-                          content : [
-                            {
-                              mix : { block : 'partner-tile', elem : 'icon'},
-                              block: 'image',
-                              alt: 'frankiegaw',
-                              url: '/i/frankiegaw.jpg'
-                            },
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 'm'},
-                                  content : 'Frankie Gaw'
-                                },
-                              ]
-                            },
-                            {
-                              block : 'text',
-                              mods : { size : 's'},
-                              content : 'Stories from the design team at Facebook offices across the world'
-                            }
-                          ]
-                        },
-                      ]
-                    },
-                    {
-                      elem : 'codepen',
-                      content : [
-                        {
-                          block : 'codepen',
-                          content : [
-                            {
-                              block : 'link',
-                              mix : { block : 'codepen', elem : 'link'},
-                              url : 'http://codepen.io',
-                              content : [
-                                {
-                                  block : 'image',
-                                  height : '20',
-                                  url : '/i/codepen.png',
-                                  title : 'Все подробности на bem.info'
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                */
-              ]
-            },
-
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  elem : 'item',
-                  content : [
-                    {
-                      block : 'event-tile',
-                      content: [
-                        {
-                          mix : { block : 'event-tile', elem : 'icon'},
-                          block: 'image',
-                          alt: 'FBF8',
-                          url: '/i/fbf8.svg'
-                        },
-                        {
-                          mix : { block : 'event-tile', elem : 'name'},
-                          block : 'text',
-                          mods : { size : 'm'},
-                          content : 'Facebook Developer Conference'
-                        },
-                        {
-                          mix : { block : 'event-tile', elem : 'date'},
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'April 12, 2016'
-                        },
-                        {
-                          mix : { block : 'event-tile', elem : 'description'},
-                          block : 'text',
-                          mods : { size : 's'},
-                          content : 'Join us in San Francisco for our annual developer conference'
-                        },
-                        {
-                          elem : 'action',
-                          content : [
-                            {
-                              block : 'button',
-                              mods : { theme : 'islands', size : 'l', view : 'action' },
-                              text : 'Собираюсь пойти'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                  ]
-                },
-                {
-                  elem : 'codepen',
-                  content : [
-                    {
-                      block : 'codepen',
-                      content : [
-                        {
-                          block : 'link',
-                          mix : { block : 'codepen', elem : 'link'},
-                          url : 'http://codepen.io',
-                          content : [
-                            {
-                              block : 'image',
-                              height : '20',
-                              url : '/i/codepen.png',
-                              title : 'Все подробности на bem.info'
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-              ]
-            },
-          ]
-        }
-      ]
-    },
-    /*
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      content : [
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'menu-list',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  mix : { block : 'menu-list', elem : 'item'},
-                  block : 'menu-item',
-                  content : 'item'
-                },
-                {
-                  mix : { block : 'menu-list', elem : 'item'},
-                  block : 'menu-item',
-                  content : 'item'
-                },
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'breadcrumbs',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  elem : 'link',
-                  content : 'link'
-                },
-                {
-                  elem : 'dash',
-                  content : '/'
-                },
-                {
-                  elem : 'link',
-                  content : 'link'
-                },
-                {
-                  elem : 'dash',
-                  content : '/'
-                },
-                {
-                  elem : 'link',
-                  content : 'link'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          content : [
-            {
-              block : 'tag-list',
-              mix : { block : 'kit', elem : 'item'},
-              content : [
-                {
-                  mix : { block : 'tag-list', elem : 'item'},
-                  block : 'tag',
-                  content : 'tag'
-                },
-                {
-                  mix : { block : 'tag-list', elem : 'item'},
-                  block : 'tag',
-                  content : 'tag'
-                },
-                {
-                  mix : { block : 'tag-list', elem : 'item'},
-                  block : 'tag',
-                  content : 'tag'
-                },
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    */
-    /*
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      content : [
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              block : 'alert',
-              content : [
-                {
-                  elem : 'icon',
-                  content : [
-
-                  ]
-                },
-                {
-                  elem : 'text',
-                  content : 'alert text'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              block : 'tip',
-              content : [
-                {
-                  elem : 'icon',
-                  content : [
-
-                  ]
-                },
-                {
-                  elem : 'text',
-                  content : 'tip text'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          elem : 'col',
-          mods : { sw : 12, mw : 12, lw : 4, xl : 4, xxl : 4 },
-          mix : { block : 'kit', elem : 'item'},
-          content : [
-            {
-              block : 'success',
-              content : [
-                {
-                  elem : 'icon',
-                  content : [
-
-                  ]
-                },
-                {
-                  elem : 'text',
-                  content : 'success text'
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    */
-    {
-      block : 'row',
-      content : [
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              block : 'kit',
-              content : [
-                {
-                  elem : 'item',
-                  content : [
-                    {
-                      block : 'kit-item-header',
-                      content : [
-                        {
-                          elem : 'name',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 'l' },
-                              content : 'Social tiles'
-                            },
-                          ]
-                        },
-                        {
-                          elem : 'name',
-                          content : [
-                            {
-                              block : 'text',
-                              mods : { size : 's',},
-                              content : 'social-group-tile / social-location-tile / social-suggested-people / social-user-tile / social-activity-list / social-text-tile'
-                            },
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-              ]
-            },
-          ]
-        },
-      ]
-    },
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      content : [
-        {
-          elem : 'col',
-          mods : { lw : 4, xl : 4, xxl : 4},
-          content : [
             {
               block: 'kit',
               content: [
@@ -4017,6 +3530,144 @@ module.exports = {
           mix : { block : 'kit', elem : 'item'},
           mods : { lw : 4, xl : 4, xxl : 4},
           content : [
+                      {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'product-tile',
+                      content: [
+                        {
+                          mix : { block : 'product-tile', elem : 'icon'},
+                          block: 'image',
+                          alt: 'facebookdesign',
+                          url: '/i/facebookdesign.jpg'
+                        },
+                        {
+                          mix : { block : 'product-tile', elem : 'name'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Facebook Design'
+                        },
+                        {
+                          mix : { block : 'product-tile', elem : 'web'},
+                          block : 'link',
+                          mods : { theme : 'islands' },
+                          url : 'http://medium.com/@facebookdesign',
+                          content : '@facebookdesign'
+                        },
+                        {
+                          elem : 'description',
+                          content : [
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : 'Stories from the design team at Facebook offices across the world'
+                            },
+                          ]
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Follow'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                /*
+                {
+                  block : 'kit',
+                  content : [
+                    {
+                      elem : 'item',
+                      content : [
+                        {
+                          block : 'partner-tile',
+                          content : [
+                            {
+                              mix : { block : 'partner-tile', elem : 'icon'},
+                              block: 'image',
+                              alt: 'frankiegaw',
+                              url: '/i/frankiegaw.jpg'
+                            },
+                            {
+                              elem : 'name',
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'm'},
+                                  content : 'Frankie Gaw'
+                                },
+                              ]
+                            },
+                            {
+                              block : 'text',
+                              mods : { size : 's'},
+                              content : 'Stories from the design team at Facebook offices across the world'
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                    {
+                      elem : 'codepen',
+                      content : [
+                        {
+                          block : 'codepen',
+                          content : [
+                            {
+                              block : 'link',
+                              mix : { block : 'codepen', elem : 'link'},
+                              url : 'http://codepen.io',
+                              content : [
+                                {
+                                  block : 'image',
+                                  height : '20',
+                                  url : '/i/codepen.png',
+                                  title : 'Все подробности на bem.info'
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                */
+              ]
+            },
             {
               block: 'kit',
               content: [
@@ -4673,6 +4324,78 @@ module.exports = {
           elem : 'col',
           mods : { lw : 4, xl : 4, xxl : 4 },
           content : [
+                      {
+              block : 'kit',
+              content : [
+                {
+                  elem : 'item',
+                  content : [
+                    {
+                      block : 'event-tile',
+                      content: [
+                        {
+                          mix : { block : 'event-tile', elem : 'icon'},
+                          block: 'image',
+                          alt: 'FBF8',
+                          url: '/i/fbf8.svg'
+                        },
+                        {
+                          mix : { block : 'event-tile', elem : 'name'},
+                          block : 'text',
+                          mods : { size : 'm'},
+                          content : 'Facebook Developer Conference'
+                        },
+                        {
+                          mix : { block : 'event-tile', elem : 'date'},
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'April 12, 2016'
+                        },
+                        {
+                          mix : { block : 'event-tile', elem : 'description'},
+                          block : 'text',
+                          mods : { size : 's'},
+                          content : 'Join us in San Francisco for our annual developer conference'
+                        },
+                        {
+                          elem : 'action',
+                          content : [
+                            {
+                              block : 'button',
+                              mods : { theme : 'islands', size : 'l', view : 'action' },
+                              text : 'Собираюсь пойти'
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                  ]
+                },
+                {
+                  elem : 'codepen',
+                  content : [
+                    {
+                      block : 'codepen',
+                      content : [
+                        {
+                          block : 'link',
+                          mix : { block : 'codepen', elem : 'link'},
+                          url : 'http://codepen.io',
+                          content : [
+                            {
+                              block : 'image',
+                              height : '20',
+                              url : '/i/codepen.png',
+                              title : 'Все подробности на bem.info'
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+              ]
+            },
             /*
             {
               block : 'kit',
