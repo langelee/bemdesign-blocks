@@ -4396,7 +4396,7 @@ module.exports = {
                 },
               ]
             },
-            
+
             {
               block : 'kit',
               content : [
@@ -6527,9 +6527,9 @@ module.exports = {
     },
     {
       block : 'row',
-      mix : { block : 'page-row' },
+      mix : { block : 'page-row'},
       attrs : {
-        id : 'headers'
+        id : 'sections'
       },
       content : [
         {
@@ -6554,7 +6554,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 'l' },
-                                  content : 'Headers'
+                                  content : 'Sections'
                                 },
                               ]
                             },
@@ -6564,7 +6564,7 @@ module.exports = {
                                 {
                                   block : 'text',
                                   mods : { size : 's',},
-                                  content : 'headers-section'
+                                  content : 'header-section / footer-section'
                                 },
                               ]
                             }
@@ -6650,61 +6650,6 @@ module.exports = {
                               height : '20',
                               url : '/i/codepen.png',
                               title : 'Все подробности на bem.info'
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-      ]
-    },
-    {
-      block : 'row',
-      mix : { block : 'page-row'},
-      attrs : {
-        id : 'sections'
-      },
-      content : [
-        {
-          elem : 'col',
-          mods : { lw : 12, xl : 12, xxl : 12 },
-          content : [
-            {
-              elem : 'item',
-              content : [
-                {
-                  block : 'kit',
-                  content : [
-                    {
-                      elem : 'item',
-                      content : [
-                        {
-                          block : 'kit-item-header',
-                          content : [
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 'l' },
-                                  content : 'Sections'
-                                },
-                              ]
-                            },
-                            {
-                              elem : 'name',
-                              content : [
-                                {
-                                  block : 'text',
-                                  mods : { size : 's',},
-                                  content : 'header-section / footer-section'
-                                },
-                              ]
                             }
                           ]
                         }
