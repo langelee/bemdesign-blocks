@@ -5139,7 +5139,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
-                                      mods: {size: 'l'},
+                                      mods: {size: 'm'},
                                       content: 'Today we&rsquo;re having our 50th hackathon at&nbsp;Facebook.'
                                     }
                                   ]
@@ -5154,6 +5154,7 @@ module.exports = {
                                   content: [
                                     {
                                       block: 'text',
+                                      mods : { size : 's' },
                                       content: 'Hackathons are an&nbsp;important part of&nbsp;how we&nbsp;come up&nbsp;with new ideas. Everyone takes a&nbsp;day to&nbsp;explore any idea they want, and then everyone presents what they&rsquo;ve come up&nbsp;with at&nbsp;the end.'
                                     }
                                   ]
@@ -5198,6 +5199,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Нравится'
                                             }
                                           ]
@@ -5240,6 +5242,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Комментарий'
                                             }
                                           ]
@@ -5282,6 +5285,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Поделиться'
                                             }
                                           ]
@@ -5359,6 +5363,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
+                              mods : { size : 's' },
                               content: 'We&rsquo;ve activated Safety Check in&nbsp;response to&nbsp;the earthquake that struck Taiwan. My&nbsp;thoughts are with everyone in&nbsp;Taiwan and across our global community affected by&nbsp;this disaster. If&nbsp;you&rsquo;re in&nbsp;the area affected you&rsquo;ll get a&nbsp;notification to&nbsp;mark yourself as&nbsp;safe. You can also check that your friends and loved ones are safe.'
                             }
                           ]
@@ -5439,6 +5444,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Ответить'
                                             }
                                           ]
@@ -5497,6 +5503,7 @@ module.exports = {
                                   content: [
                                     {
                                       block : 'text',
+                                      mods : { size : 's' },
                                       content: 'Thinking of&nbsp;everyone affected by&nbsp;this earthquake&nbsp;&mdash; and hoping that no&nbsp;more lives are at&nbsp;risk.'
                                     }
                                   ]
@@ -5536,6 +5543,7 @@ module.exports = {
                                                   content: [
                                                     {
                                                       block: 'text',
+                                                      mods : { size : 's' },
                                                       content: 'Нравится'
                                                     }
                                                   ]
@@ -5577,6 +5585,7 @@ module.exports = {
                                                   content: [
                                                     {
                                                       block: 'text',
+                                                      mods : { size : 's' },
                                                       content: 'Ответить'
                                                     }
                                                   ]
@@ -5664,6 +5673,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
+                              mods : { size : 's' },
                               content: 'One of&nbsp;my&nbsp;favorite Friends Day moments this year was meeting Raman and Priya Gulati, and their baby girl Sohana. Raman and Priya first met on&nbsp;Facebook in&nbsp;2011, got engaged the next year and married in&nbsp;2013. Last November, they welcomed baby Sohana. She is&nbsp;a&nbsp;beautiful and living example of&nbsp;the power of&nbsp;connection. Thank you Raman and Priya for sharing your story with&nbsp;us!'
                             }
                           ]
@@ -5703,6 +5713,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Нравится'
                                             }
                                           ]
@@ -5744,6 +5755,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Ответить'
                                             }
                                           ]
@@ -5846,6 +5858,7 @@ module.exports = {
                           content: [
                             {
                               block: 'text',
+                              mods : { size : 's' },
                               content: 'For Friends Day, you can celebrate the important people in&nbsp;your life with a&nbsp;personalized video we&rsquo;ve made for you and everyone in&nbsp;our community. Here&rsquo;s mine. These are just some of&nbsp;the amazing people who have made a&nbsp;big difference in&nbsp;my&nbsp;life. I&rsquo;m so&nbsp;grateful to&nbsp;have them in&nbsp;my&nbsp;life and have so&nbsp;many wonderful memories together.'
                             }
                           ]
@@ -5885,6 +5898,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Нравится'
                                             }
                                           ]
@@ -5926,6 +5940,7 @@ module.exports = {
                                           content: [
                                             {
                                               block: 'text',
+                                              mods : { size : 's' },
                                               content: 'Ответить'
                                             }
                                           ]
@@ -5967,6 +5982,7 @@ module.exports = {
                                           content: [
                                             {
                                               block : 'text',
+                                              mods : { size : 's' },
                                               content: 'Very cool. I&nbsp;did mine, but because&nbsp;I use Facebook for work as&nbsp;well my&nbsp;video was sprinkled with people from China, Afghanistan and other places&nbsp;I have friended because they were witnesses to&nbsp;big news events over the years. I&nbsp;still consider them friends'
                                             }
                                           ]
@@ -6006,6 +6022,7 @@ module.exports = {
                                                           content: [
                                                             {
                                                               block: 'text',
+                                                              mods : { size : 's' },
                                                               content: 'Нравится'
                                                             }
                                                           ]
@@ -6047,6 +6064,7 @@ module.exports = {
                                                           content: [
                                                             {
                                                               block: 'text',
+                                                              mods : { size : 's' },
                                                               content: 'Ответить'
                                                             }
                                                           ]
@@ -6086,6 +6104,7 @@ module.exports = {
                                           content: [
                                             {
                                               block : 'text',
+                                              mods : { size : 's' },
                                               content: 'Thanks Mark!! I&rsquo;m really fascinated with Friends Day video!! It&rsquo;s beautiful and i&nbsp;have to&nbsp;confess that a&nbsp;only few videos&nbsp;I like how this!! I&nbsp;hope that your job continue surprising&nbsp;us through all the time that we&nbsp;can share together, and apology for my&nbsp;english if&nbsp;it&nbsp;have mistakes but, you know? I&acute;m still learnig it !! Blessings for you, always!!'
                                             }
                                           ]
@@ -6125,6 +6144,7 @@ module.exports = {
                                                           content: [
                                                             {
                                                               block: 'text',
+                                                              mods : { size : 's' },
                                                               content: 'Нравится'
                                                             }
                                                           ]
@@ -6166,6 +6186,7 @@ module.exports = {
                                                           content: [
                                                             {
                                                               block: 'text',
+                                                              mods : { size : 's' },
                                                               content: 'Ответить'
                                                             }
                                                           ]
