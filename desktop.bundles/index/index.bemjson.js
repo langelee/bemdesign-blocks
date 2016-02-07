@@ -6309,7 +6309,6 @@ module.exports = {
                       content : [
                         {
                           elem : 'header',
-                          mods : { align : 'center' },
                           content: 'Free'
                         },
                         {
@@ -6317,11 +6316,17 @@ module.exports = {
                           content : [
                             {
                               block : 'plan-price',
-                              content : '$0'
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'xl' },
+                                  content : '$0'
+                                }
+                              ]
                             },
                             {
                               block : 'text',
-                              mods : { size : 's', align : 'center' },
+                              mods : { size : 's' },
                               content : '14 days'
                             }
                           ]
@@ -6331,7 +6336,7 @@ module.exports = {
                           content : [
                             {
                               block : 'text',
-                              mods : { transform : 'uppercase', align : 'center' },
+                              mods : { transform : 'uppercase' },
                               content : 'Basic features'
                             }
                           ]
@@ -6400,11 +6405,17 @@ module.exports = {
                           content : [
                             {
                               block : 'plan-price',
-                              content : '$49'
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'xl' },
+                                  content : '$49'
+                                }
+                              ]
                             },
                             {
                               block : 'text',
-                              mods : { size : 's', align : 'center' },
+                              mods : { size : 's' },
                               content : 'per month'
                             }
                           ]
@@ -6414,7 +6425,7 @@ module.exports = {
                           content : [
                             {
                               block : 'text',
-                              mods : { transform : 'uppercase', align : 'center' },
+                              mods : { transform : 'uppercase' },
                               content : 'advanced features'
                             }
                           ]
@@ -6484,7 +6495,13 @@ module.exports = {
                           content : [
                             {
                               block : 'plan-price',
-                              content : '$99'
+                              content : [
+                                {
+                                  block : 'text',
+                                  mods : { size : 'xl', align : 'center' },
+                                  content : '$99'
+                                }
+                              ]
                             },
                             {
                               block : 'text',
