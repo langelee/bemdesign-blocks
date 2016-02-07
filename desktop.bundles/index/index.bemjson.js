@@ -4466,7 +4466,6 @@ module.exports = {
                 }
               ]
             },
-            
             {
               block : 'kit',
               content : [
@@ -4787,10 +4786,7 @@ module.exports = {
                 }
               ]
             },
-
-
             /*
-
             {
               block : 'kit',
               content : [
