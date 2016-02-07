@@ -3404,19 +3404,19 @@ module.exports = {
                               block : 'social-suggested-people-list',
                               content: [
                                 {
-                                  suggestedUserName : 'Tobias van Schneider',
-                                  suggestedUserPosition : 'Lead Product Designer',
-                                  suggestedUserIcon : '/i/tobias.jpg'
+                                  suggestedUserName : 'Julie Zhuo',
+                                  suggestedUserPosition : 'Design director at Facebook',
+                                  suggestedUserIcon : '/i/juliezhuo.jpg'
                                 },
                                 {
-                                  suggestedUserName : 'Tobias van Schneider',
-                                  suggestedUserPosition : 'Lead Product Designer',
-                                  suggestedUserIcon : '/i/tobias.jpg'
+                                  suggestedUserName : 'Andrew Hwang',
+                                  suggestedUserPosition : 'Product designer at Facebook',
+                                  suggestedUserIcon : '/i/ahwng.jpg'
                                 },
                                 {
-                                  suggestedUserName : 'Tobias van Schneider',
-                                  suggestedUserPosition : 'Lead Product Designer',
-                                  suggestedUserIcon : '/i/tobias.jpg'
+                                  suggestedUserName : 'Frankie Gaw',
+                                  suggestedUserPosition : 'Stories from the design team at Facebook',
+                                  suggestedUserIcon : '/i/frankiegaw.jpg'
                                 },
                               ].map(function(item) {
                                 return [
